@@ -1,0 +1,271 @@
+\documentclass{beamer}
+
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Short title]{Main Topic } % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\title[Your Short Title]{Pulsar Timing and Gravitational Waves}
+\author{Zahra Kader}
+%\institute{Where You're From}
+\date{October 20th 2017}
+
+\begin{document}
+	
+	\begin{frame}
+	\titlepage
+\end{frame}
+
+% Uncomment these lines for an automatically generated outline.
+%\begin{frame}{Outline}
+%  \tableofcontents
+%\end{frame}
+
+\section{Introduction}
+
+\begin{frame}{What is a pulsar?}
+
+\begin{itemize}
+	\item Pulsars are rapidly rotating neutron stars
+	\item Supernova explosions of massive stars leave behind immensely dense and highly magnetized neutron stars
+\end{itemize}
+\begin{figure}
+	\centering
+	\includegraphics[width=6cm]{"../Desktop/Project/pulsar pic"}
+	\caption{Pulsar shown with its rotation and magnetic axes misaligned}
+	\label{fig:pulsar-pic}
+\end{figure}
+\end{frame}
+
+
+\section{MSPs}
+
+\begin{frame}{Millisecond pulsars}
+
+\begin{itemize}
+\item Millisecond pulsars are formed in binary systems
+\item Pulsar in binary system is spun up due to accretion of matter from the companion star
+\begin{figure}
+	\centering
+	\includegraphics[width=6cm]{"../Desktop/Project/accreting pulsar"}
+	\caption{Accretion of pulsar from companion star}
+	\label{fig:accreting-pulsar}
+\end{figure}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Hulse and Taylor}
+\begin{itemize}
+\item First to detect a pulsar in a binary system
+\item General relativity states that gravitational radiation carries energy away from the system 
+\item Orbits of the two masses should shorten with time
+\end{itemize}
+
+\begin{figure}
+	\includegraphics[width=8cm]{C:/Users/Zahra/Desktop/Project/hulsetaylor}
+	\caption{\label{fig:hulsetaylor.jpg}The Binary Pulsar}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Indirect gravitational wave detection}
+\begin{itemize}
+\item Measurements obtained for the advance of periastron and gravitational redshift were used to find masses 
+\item The $\dot Pb$ expected from GR was ${(-2.403\pm 0.005)}\times 10^{-12}$
+\item The measured value for $\dot Pb$ was ${(-2.3\pm 0.22)}\times 10^{-12}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Timing model for isolated pulsar\\Spin down frequency}
+\begin{itemize}
+\item The spin of the pulsar decreases as it ages
+\item The equation for the spin down frequency is:
+$$\phi(t)=\phi_0 +\omega t+\frac{1}{2}\dot{\omega} t^2$$ 
+\item which has fitting functions:
+$$
+\psi_a(t)=
+\begin{pmatrix}
+1\\
+t\\
+t^2\\
+\end{pmatrix}, a=1,2,3
+$$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Position errors, proper motion and parallax}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{../Desktop/Project/parallax}
+	\caption{Pulsar observed from earth}
+	\label{fig:parallax}
+\end{figure}
+Pulsar has latitudinal and longitudinal positions affected by:
+\begin{itemize}
+\item The circular rotation of the earth around the SSB
+\item The precession of the earth due to the sun and moon  
+\end{itemize}
+\end{frame}
+
+
+%\begin{equation}\label{error in latitude}
+%\delta\alpha=\delta\alpha_{0}+\delta\mu_{\alpha}t
+%\end{equation}
+%\begin{equation}\label{error in longitude}
+%\delta\lambda=\delta\lambda_{0}+\delta\mu_{\lambda}t
+%\end{equation}
+%\begin{equation}{\label{N with 8 fit functions}}
+%\begin{aligned}
+%r(t)=&\frac{\delta N_{0}}{\nu}+\frac{\delta \nu}{\nu}t+\frac{\delta \dot\nu }{2 \nu}t^2+\frac{a}{c \sqrt{2}}[\delta\alpha \sin{\alpha}(\sin{2 \pi t}-\cos{2 \pi t})\\
+%&+\delta\lambda \cos{\alpha}(\sin{2 \pi t}+\cos{2 \pi t})] %+\frac{a}{4c}p\cos^{2}\alpha \sin{4 \pi t}
+%\end{aligned}
+%\end{equation}
+
+\begin{frame}
+The fitting functions due to the modelling of these effects are:
+	$$
+\psi_a=
+\begin{pmatrix}
+sin2 \pi t\\
+cos2 \pi t\\
+t cos2 \pi t\\
+t sin2 \pi t\\
+sin4 \pi t\\
+\end{pmatrix}, a=4,5,6,7,8
+$$
+
+\begin{itemize}
+	\item $\psi_4$ and $\psi_5$ account for position errors
+	\item $\psi_6$ and $\psi_7$ account for proper motion errors
+	\item $\psi_8$ accounts for errors in timing parallax
+\end{itemize}
+\end{frame} 
+
+\begin{frame}{Timing residual plots}
+\begin{itemize}
+	\item Timing residual is the difference between expected and observed arrival times
+	\item The observed data has white noise;random fluctuations in arrival time for each observation
+\end{itemize}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Desktop/Project/timing residual plots"}
+	\caption{Characteristic plots for timing residual}
+	\label{fig:timing-residual-plots}
+\end{figure}
+\end{frame}
+\begin{frame}{Dispersion corrections}
+\begin{itemize}
+\item Particles in ISM cause dispersion of light which delays the arrival time
+\item  Pulses emitted at lower radio frequencies travel slower than those emitted at higher frequencies
+\begin{figure}
+	\centering
+	\includegraphics[width=5cm]{"../Desktop/Project/integrated pulse profile"}
+	\caption{Pulse dispersion}
+	\label{fig:integrated-pulse-profile}
+\end{figure}
+\end{itemize}
+%$$T=t+\frac{D}{f^2}-\Delta R_s-\Delta E_s +\Delta S_s+\Delta R+\Delta E +\Delta S$$
+\end{frame}
+
+%\begin{frame}{Barycentric corrections}
+%\begin{itemize}
+%\item Spin down frequency equation requires time measured in an inertial reference %frame
+%\end{itemize}
+%$$T=t+\frac{D}{f^2}-\Delta R_s-\Delta E_s +\Delta S_s+\Delta R+\Delta E +\Delta S$$
+%\end{frame}
+\begin{frame}{Gravitational waves}
+\begin{itemize}
+	\item Waves of a quadrupole nature 
+	\item Created from acceleration of non-spherically symmetric mass distributions 
+\end{itemize}
+\begin{figure}
+	\centering
+	\includegraphics[width=6cm]{"../Desktop/Project/GW polarisations"}
+	\caption{Gravitational wave polarisations}
+	\label{fig:gw-polarisations}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Gravitational wave detectors}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{../Desktop/Project/The_Gravitational_wave_spectrum_Sources_and_Detectors}
+	\caption{Frequency range of gravitational wave detectors}
+	\label{fig:thegravitationalwavespectrumsourcesanddetectors}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Gravitational wave sources\\Supermassive black hole binaries}
+Most likely source of gravitational waves that can be detected using pulsar timing
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Desktop/Project/smbhb image"}
+	\caption{Gravitational waves produced by coalescing masses}
+	\label{fig:smbhb-image}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Primordial gravitational waves}
+\begin{itemize}
+	\item Originate from quantum fluctuations in the early universe 
+	\item Their detection may prove the theory of inflation
+\end{itemize}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Desktop/Project/prim gws inflation"}
+	\caption{Primordial gravitational waves}
+	\label{fig:prim-gws-inflation}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Mean residual squared}
+\begin{itemize}
+	\item The residual is expressed as:
+\begin{equation}\label{residual with beta}
+r(t,\theta^*)=\epsilon(t)-\sum_{a=1}^{m}\beta_a \psi_a(t,\theta^*)%+O(\beta_a^2)
+\end{equation}
+\item which is used to obtain the expression for mean residual squared
+\begin{equation}
+<r^{2}(t)>=\int_{0}^{\infty}P(f)T(f)df
+\end{equation}
+where P(f) is the power spectrum and $$T(f)=1-\frac{1}{N}\sum_{a=1}^{8}\psi_a^{'}(f)\psi_a^{'*}(f)$$ is the transfer function
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Fitting functions}
+
+\begin{itemize}
+	\item Plot of the fitting functions that account for the decrease in spin frequency and timing parallax of the pulsar
+\begin{figure}
+	\centering
+	\includegraphics[width=8cm]{"../Desktop/Project/blandford psi1238"}
+	\caption{Fitting functions for $\psi_a(f), a=1,2,3,8$}
+	\label{fig:blandford-psi1238}
+\end{figure}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\item Plot of the fitting functions that account for the errors in position and proper motion of the pulsar
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Desktop/Project/blandford psi4567"}
+	\caption{Fitting functions for $|\psi_a(f)|^2, a=4,5,6,7$}
+	\label{fig:blandford-psi4567}
+\end{figure}
+\end{frame}
+
+\begin{frame} 
+$$\LARGE \text{Thank you for listening}$$
+\end{frame}
+\end{document}
+

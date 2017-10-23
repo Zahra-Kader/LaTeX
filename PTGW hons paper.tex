@@ -2,12 +2,14 @@
 \usepackage{tgtermes}
 %\usepackage[english]{babel}
 %\usepackage[utf8]{inputenc}
-\linespread{1.3}
 \usepackage[a4paper,top=3cm,bottom=2.54cm,left=2.54cm,right=2.54cm,marginparwidth=1.75cm]{geometry}
+
 \usepackage{amsmath}
+\usepackage{multirow}
 \usepackage{graphicx}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage[normalem]{ulem}
+\linespread{1.3}
 %opening
 
 %% Useful packages
@@ -21,14 +23,14 @@
 \begin{abstract}
 	Your abstract.
 \end{abstract}		
-	
+	\section{Introduction}
 	\section{Pulsars}
 	\label{sec:Pulsars}
 	
 	\subsection{Discovery and basic properties}
 	
 	Pulsars were discovered by accident in 1967 when Jocelyn Bell and Anthony Hewish noticed regular radio pulses arriving at the Observatory. The scientific community was unable to understand the cause of these pulses until Thomas Gold showed that these pulsars were actually rapidly rotating neutron stars \cite{gold1968rotating}. Neutron stars had been predicted a few decades earlier but had only just been confirmed with the detection of pulsars. Neutron stars are remnants from the supernova explosions of massive stars on the scale of 8-25 sun masses. The original star has a typical radius of a few 100 000 km. Neutron stars have masses which are very similar to that of the sun, yet this matter is compressed into just twenty kilometres, making the neutron star extremely dense. The gravity is so strong that the protons and electrons combine within the core of the star, forming neutrons. Hence it is called a neutron star. The protons and electrons remain as separate, charged particles at the surface of the star, where the gravity is weakest. Because the mass and radius of the neutron star are so much smaller than the original star, the neutron star has to spin much faster to conserve angular momentum. Besides the higher density, neutron stars also have a very strong magnetic field which can be up to a trillion times stronger than that of the sun. The isolated pulsars have typical magnetic fields in the range of $10^{11}$ to $10^{13}$ G while millisecond pulsars have lower magnetic field strengths ranging from $10^{8}$ to $10^{10
-	}$ G \cite{bisnovatyi2006binary}. The rapid spin rate causes the magnetic field to get wound up. Charged particles that are stripped off of the surface of the star are accelerated along the magnetic field lines. Therefore two radiation beams are emitted from both ends of the star, as the star spins. This light is mostly detected at the radio wave frequency. If the magnetic axis, and hence the radiation beam, is in the line of sight of earth then the neutron star is called a pulsar. The misalignment of the magnetic field with the axis of rotation results in only one radiation beam reaching earth, instead of two. From earth, regular pulses are seen every time the pulsar makes one full rotation. So the repetition of the pulse arrivals at earth will be the rotation period of the star. This is known as the lighthouse model since the regular arrival of the beam is analogous to the sweeping beam from a lighthouse. Pulsar timing involves constructing a timing model which accurately determines the time of arrival (TOA) of the pulses. Deviations from the expected arrival time gives insight into many phenomena.  Many pulsars have been found to be in binary systems using pulsar timing. The first exoplanets ever discovered were orbiting the pulsar PSR B1257+12 and thus their discovery would not have been possible without the technique of pulsar timing. 
+	}$ G \cite{bisnovatyi2006binary}. The rapid spin rate causes the magnetic field to get wound up. Charged particles that are stripped off of the surface of the star are accelerated along the magnetic field lines. Therefore two radiation beams are emitted from both ends of the star, as the star spins. This light is mostly detected at the radio wave frequency. If the magnetic axis, and hence the radiation beam, is in the line of sight of earth then the neutron star is called a pulsar. The misalignment of the magnetic field with the axis of rotation results in only one radiation beam reaching earth, instead of two. From earth, regular pulses are seen every time the pulsar makes one full rotation. So the repetition of the pulse arrivals at earth will be the rotation period of the star. This is known as the lighthouse model since the regular arrival of the beam is analogous to the sweeping beam from a lighthouse. Pulsar timing involves constructing a timing model which accurately determines the time of arrival (TOA) of the pulses. Deviations from the expected arrival time gives insight into many phenomena.  Many pulsars have been found to be in binary systems using pulsar timing. The first exoplanets ever discovered were orbiting the pulsar PSR B1257+12 and thus their discovery would not have been possible without the technique of pulsar timing.\\ 
 	
 	%\section{Effects due to the ISM}
 	%\label{sec:Effects due to ISM}
@@ -41,9 +43,9 @@
 	%Brief explanation of the integrated profile
 	
 	
-	The most stable astrophysical clocks in the universe are MSPs, which spin 1000 times faster than regular pulsars. The reason for the faster spin is that MSP's are formed in binary systems. In a binary star system, the death of the more massive star could result in a supernova explosion. The result would be a neutron star and main sequence star system. If the binary disrupts, this would result in an isolated pulsar and star. If the binary survives, the aging of the companion star may result in the overflow of the Roche lobe if the companion is massive enough and at a close enough distance to the pulsar. The pulsar will then have an increased spin as a result of the accretion of matter. These pulsars are termed recycled pulsars. If the companion star is massive enough, another supernova explosion will occur thereby producing a second neutron star. If the binary system survives, it will be a double pulsar binary system. Such a system was discovered in 2003 by the Parkes Pulsar Observatory. A smaller mass companion star would result in a white dwarf-neutron star system. On average MSP's in binary systems have significantly larger masses than other pulsar types which gives evidence of their formation through a longer accretion period from a binary companion. Some MSP's have been found in isolated systems. However, it is thought the pulsar was formed in a binary system and that the companion star was ablated from the strong winds which result from the incredibly fast spin of the pulsars \cite{kluzniak1988nature}. It is also possible for a white dwarf-neutron star system to become an isolated pulsar system if the neutron star further accretes matter from the white dwarf, thereby disrupting the white dwarf star. 
+	\noindent The most stable astrophysical clocks in the universe are MSPs, which spin 1000 times faster than regular pulsars. The reason for the faster spin is that MSP's are formed in binary systems. In a binary star system, the death of the more massive star could result in a supernova explosion. The result would be a neutron star and main sequence star system. If the binary disrupts, this would result in an isolated pulsar and star. If the binary survives, the aging of the companion star may result in the overflow of the Roche lobe if the companion is massive enough and at a close enough distance to the pulsar. The pulsar will then have an increased spin as a result of the accretion of matter. These pulsars are termed recycled pulsars. If the companion star is massive enough, another supernova explosion will occur thereby producing a second neutron star. If the binary system survives, it will be a double pulsar binary system. Such a system was discovered in 2003 by the Parkes Pulsar Observatory. A smaller mass companion star would result in a white dwarf-neutron star system. On average MSP's in binary systems have significantly larger masses than other pulsar types which gives evidence of their formation through a longer accretion period from a binary companion. Some MSP's have been found in isolated systems. However, it is thought the pulsar was formed in a binary system and that the companion star was ablated from the strong winds which result from the incredibly fast spin of the pulsars \cite{kluzniak1988nature}. It is also possible for a white dwarf-neutron star system to become an isolated pulsar system if the neutron star further accretes matter from the white dwarf, thereby disrupting the white dwarf star. 
 	
-	\section{Mechanics of binary systems}
+	\subsection{Mechanics of binary systems}
 	\label{sec:Mechanics of binary systems}
 	
 	Many pulsars are found in binary systems and the observations of such pulsars requires knowledge of celestial mechanics. There are five parameters which are necessary to define the orbit. These are called Keplerian parameters and include the orbital period, Pb, eccentricity, e, inclination angle, i, longitude of periastron, $\omega$ and the time of periastron, $T_0$. The inclination angle is the angle between the orbital and equatorial planes. The angular distance from the intersection of the two planes to the point of periastron, i.e. the point at which the two masses are closest to each other, gives the value for the longitude of periastron.\\
@@ -63,16 +65,14 @@
 	where $T_{sun}=\frac{G M_{sun}}{c^3}$, $M=m_p+m_c$ where $m_p$ is the mass of the pulsar and $m_c$ is the mass of the companion star.
 	The Shapiro delay is a change in the travel time of light which results from the bending of light as it passes through the gravitational well of the companion star of the pulsar, where the range and shape are denoted by r and s, respectively \cite{iorio2007post}. 
 	
-	\section{Hulse and Taylor}
+	\subsection{Hulse and Taylor}
 	\label{sec:Hulse and Taylor}
 	
-	Hulse and Taylor were the first to ever detect a pulsar in a binary system. The pulsar was identified as a binary pulsar due to the variations in the arrival time of the pulses as the pulsar moved along its orbit. At times the pulses arrived sooner than expected, and at other times the time of arrival was later than expected. These variations were repetitive with a period of 7.75 hours. This pulsar famously became known as 'The Binary Pulsar'. Hulse and Taylor used this pulsar to test theories of gravity, such as General relativity, Brans-Dicke, Rosen, Ni and Lightman Lee \cite{taylor1982new}. Their results provided proof of Einstein's theory of general relativity and gave an indirect detection of gravitational waves. General relativity states that the movement of mass in space distorts space-time. Just as an accelerating charge emits electromagnetic waves, so too does moving matter cause these ripples in space time known as gravitational waves that travel outwards from the source, travelling at the speed of light. According to Einsteins theory, the rapid movements of the pulsar and its companion star should result in gravitational radiation being carried away from the system. As this happens the distance between the two masses should decrease resulting in a shorter orbital period. In other words the pulsar should have a negative orbital period derivative. 
+	Hulse and Taylor were the first to ever detect a pulsar in a binary system. The pulsar was identified as a binary pulsar due to the variations in the arrival time of the pulses as the pulsar moved along its orbit. At times the pulses arrived sooner than expected, and at other times the time of arrival was later than expected. These variations were repetitive with a period of 7.75 hours. This pulsar famously became known as 'The Binary Pulsar'. Hulse and Taylor used this pulsar to test theories of gravity, such as General relativity, Brans-Dicke, Rosen, Ni and Lightman Lee \cite{taylor1982new}. Their results provided proof of Einstein's theory of general relativity and gave an indirect detection of gravitational waves. General relativity states that the movement of mass in space distorts space-time. Just as an accelerating charge emits electromagnetic waves, so too does moving matter cause these ripples in space time known as gravitational waves that travel outwards from the source, travelling at the speed of light. According to Einsteins theory, the rapid movements of the pulsar and its companion star should result in gravitational radiation being carried away from the system. As this happens the distance between the two masses should decrease resulting in a shorter orbital period. In other words the pulsar should have a negative orbital period derivative.\\ 
 	
 	\noindent Observations were made for approximately 7 years by Hulse and Taylor, allowing for the accurate measurements of the orbital parameters of the stars. The Keplerian parameters of Pb and e were measured, together with the Post-Keplerian parameters of $\gamma$, $\dot{\omega}$ and $\dot{Pb}$.  formula from general relativity, for the orbital period derivative, to find the theoretical value predicted by Einstein. The expected value was $-2.403 \pm 0.005 \times 10^{-12}$. The value which they measured through observations was $(-2.3 \pm 0.22) \times 10^{-12}$, which translates to a change in orbital period of 75 microseconds per year. The expected value falls within the error limits of the observed orbital period derivative. This gives strong evidence of gravitational waves. Most of the other theories of gravity which they tested gave positive values for the orbital period derivative which was not in accordance with their observations. Hulse and Taylor were awarded the Nobel Prize in 1993 for their indirect detection of gravitational waves. Other binary pulsar systems have been observed since 1974. In 2003, the first double pulsar system was discovered in the Parkes radio observatory in Australia \cite{burgay2004highly}. In fact, no other double pulsar systems have been detected since. This pulsar, known as PSR J0737-3039, had a very short orbital period of 2.4 hours and is the best candidate for testing GR. The observations from this system gave a Shapiro delay which was within 0.05 \% of the value predicted from GR.
 	
-	\noindent Gravitational waves have not yet been directly detected using pulsars. The direct detection would require an external source of gravitational waves which causes massive distortions in space time, such as a supermassive black hole. The frequency of the GW would have to be very small since long wavelength GW's cause the most noticeable change in pulse arrival time. 
-	
-	\subsection{Timing model}
+	\subsection{Basics of pulsar timing}\label{Timing model}
 	
 	Pulsar timing compares arrival times of pulses to a model describing the pulsar and the interstellar medium (ISM) between the pulsar and Earth. Although GWs were indirectly detected by Hulse and Taylor, Sazhin (1978) was the ﬁrst to suggest that direct detection of GWs could be possible through pulsar timing. In order to detect gravitational waves, one first needs to construct a timing model for the pulsar. The main equation to use for the timing model is the spin down frequency equation. Neutron stars do not continue to spin at the same incredibly fast rate forever. As the neutron star rotates, rotational energy is converted into the kinetic energy of the electrons and other charged particles that escape the star. The kinetic energy of the electrons is in turn transferred to photons. The equation for the rotational energy of the pulsar is given by
 	\begin{equation}\label{rotational energy}
@@ -86,75 +86,109 @@
 	Clearly a decrease in rotational energy requires a decreasing spin, which is expressed as a simple Taylor expansion.
 	
 	\begin{equation}\label{spin down frequency equation}
-	\phi(t)=\omega t +\frac{1}{2}\dot{\omega} t^2+\frac{1}{6} \ddot{\omega} t^3
+	\phi(t)=\phi_0+\omega t +\frac{1}{2}\dot{\omega} t^2
 	\end{equation}
-	where $\phi$ is the pulse phase, with $\dot{\phi}$=${\omega}$. This is called the spin down frequency equation. 
+	where $\phi$ is the pulse phase, with $\dot{\phi}$=${\omega}$. This is called the spin down frequency equation.\\
 	
-	Assume the earth has a circular orbit of radius, a, around the solar system barycentre and the distance of the pulsar from the barycentre is length, d. This gives a pulsar parallax, $p=a/d$. The position of the pulsar, as measured from the vernal equinox, is given by heliocentric latitude and longitude of $\alpha$ and $\lambda$, respectively. For a stationary system, the distance that a pulse travels to earth would simply be found from Pythagoreans rule to be $D^2=d^2+a^2$. However, for the non stationary case, the earth has a circular rotation about the SSB which causes a sinusoidal change in the longitudinal position of the pulsar, as measured from earth. The angle which describes the position of a body in an orbit is known as the mean anomaly, $\phi$.  We also need to take into account the precession of the earth due to the gravitational pull from the sun and moon, which causes a sinusoidal change in both the latitude and longitude of the pulsar. The vertical distance, d, is multiplied by the sinusoidal change in latitude. The precession of the earth coupled with the orbital motion around the SSB cause the longitude to change as a function of the angle $\phi-\lambda$. Thus, the distance, D, is modified by multiplying the horizontal distance, a, by the sine and cosine terms of that angle. The expression for the distance that the pulse travels to reach earth is thus given by
-	\begin{equation}\label{D eqn}
-	D^2=d^2 \sin^2{\alpha}+[d \cos{\alpha}+a \cos(\phi-\lambda)]^2+a^2 \sin^2(\phi-\lambda)
-	\end{equation}
-	Square rooting both sides and eliminating constant terms gives the simplified expression 
-	\begin{equation}\label{simplified D eqn}
-	D=a[\cos \alpha \cos(\phi-\lambda)-\frac{1}{4}p\cos^2{\alpha} \cos{2(\phi-\lambda)}]
-	\end{equation}
-	The error in the latitude and longitude of the pulsar can be written as \cite{blandford1976arrival}.
-	\begin{equation}\label{error in latitude}
-	\delta\alpha=\delta\alpha_{0}+\delta\mu_{\alpha}t
-	\end{equation}
-	\begin{equation}\label{error in longitude}
-	\delta\lambda=\delta\lambda_{0}+\delta\mu_{\lambda}t
-	\end{equation}
-	where the first terms in equations \ref{error in latitude} and \ref{error in longitude} refer to errors in initial pulsar positions. The second terms refer to errors in the magnitude of the proper motion of the pulsar as it moves across the sky with angular velocity, $\mu$, in time, t. For convenience, we fix the time of observation to occur at an anomaly of 
-	\begin{equation}\label{convenient mean anomaly relation}
-	\phi=\lambda +\pi/4
-	\end{equation}
-	The timing residual is obtained by dividing the distance, D, that the light travels by the speed of light, c. Substituting equation \ref{convenient mean anomaly relation} into equation \ref{simplified D eqn} and using equation \ref{residual r relating to model N}, the model, N, can be found in terms of errors in pulsar parameters as
-	\begin{equation}\label{N with 8 fit functions}
-	N=\frac{\delta N_{0}}{\nu}+\frac{\delta \nu}{\nu}t+\frac{\delta \dot\nu }{2 \nu}t^2+\frac{a}{c \sqrt{2}}[\delta\alpha \sin{\alpha}(\sin{2 \pi t}-\cos{2 \pi t})+\delta\lambda \cos{\alpha}(\sin{2 \pi t}+\cos{2 \pi t})]+\frac{a}{4c}p\cos^{2}\alpha \sin{4 \pi t}
-	\end{equation}
-	The sine and cosine terms for the error in latitude have opposite signs. This is to account for the possibility of the pulsar having a negative latitude. A pulsar with an initial position located below the celestial equator, and which is moving further south, will have negative $\alpha_{0}$ and $\mu_{\alpha}$ terms, respectively, thus giving an overall negative value for the latitude.\\
-	Substituting equations \ref{error in latitude} and \ref{error in longitude} into equation \ref{N with 8 fit functions} gives a set of fitting functions, $\psi_a(t)$, a=1...m=8 \cite{blandford1976arrival} 
-	$$
-	\psi_a=
-	\begin{pmatrix}
-	1\\
-	t\\
-	t^2\\
-	sin2 \pi t\\
-	cos2 \pi t\\
-	t cos2 \pi t\\
-	t sin2 \pi t\\
-	sin4 \pi t\\
-	\end{pmatrix}
-	$$
-	The first three fitting functions were expressed in equation \ref{spin down frequency equation}. The next four fitting functions account for errors in position and proper motion. Lastly, as seen in equation \ref{N with 8 fit functions}, the fitting function, $\psi_{8}$, accounts for timing parallax. 
-	This simple model accounts for  errors due to earths motion around the SSB only and does not take into consideration any effects between the pulsar and its companion. This model is in fact designed for the isolated millisecond pulsar PSR B1937+214 whose companion star was tidally disrupted \cite{kochhar1984model}. Thus, the model does not contain all the necessary terms for binary pulsars.\\
-	
-	\noindent In equation \ref{N with 8 fit functions} the time, t, should be the time measured by an inertial observer. Earth is not an inertial reference frame, due to its acceleration as it orbits the sun. The solar system centre of mass, known as the solar system barycentre (SSB), is an inertial reference frame to a very good approximation. Therefore a transformation is done to measure the time of arrival at the barycentre. Likewise, for a pulsar in a binary system, the closest inertial frame is the barycentre of the binary system. The reason for this transformation is that non-inertial frames are time dependant. Therefore, in equation \ref{spin down frequency equation} it cannot be assumed that the star has aged five years during the five years of observations on earth. The equation for the transformation between the time measured at the barycentre, T, and the TOA at the observatory, t, is given as
+	\noindent In equation \ref{spin down frequency equation} the time, t, should be the time measured by an inertial observer. Earth is not an inertial reference frame, due to its acceleration as it orbits the sun. The solar system centre of mass, known as the solar system barycentre (SSB), is an inertial reference frame to a very good approximation. Therefore a transformation is done to measure the time of arrival at the barycentre. Likewise, for a pulsar in a binary system, the closest inertial frame is the barycentre of the binary system. The reason for this transformation is that non-inertial frames are time dependant. Therefore, in equation \ref{spin down frequency equation} it cannot be assumed that the star has aged five years during the five years of observations on earth. The equation for the transformation between the time measured at the barycentre, T, and the TOA at the observatory, t, is given as
 	\begin{equation}\label{Barycentric correction}
 	T=t+\frac{\uline{r}.\hat{n}}{c}+\frac{D}{v^2}+\Delta t_{rel}
 	\end{equation}
 	where the second term accounts for the travel time for light from the observatory to the SSB. The vector \uline{r} gives the distance between the SSB and the observatory. The dot product of this vector, in units \uline{r}/c, with the unit vector $\hat{n}$ in the direction of the pulsar, gives the correct light travel time \cite{backer1986pulsar}.\\ 
 	
-	\noindent The third term accounts for the dispersion delay due to the propagation of light through the interstellar medium. The electron density in the plasma of the ISM undergoes rapid oscillations, known as plasma frequency, $\omega$. For $v>>\omega$, the light is unaffected by the ISM. However, light with a frequency lower than that of the plasma frequency will experience a large time delay. As seen in the equation, the delay is inversely proportional to $v^2$, where $v$ is measured in GHz. The parameter, D, is obtained from the relation D=4.15 ms $\times$ $\frac{DM}{pc cm^{-3}}$, where DM is the dispersion measure. When timing a pulsar, the individual pulse profiles are summed over an integration time, $t_int$, to obtain a single pulse profile. As discussed, the pulses arrive at different times due to dispersion. To obtain an integrated pulse profile, the high frequency pulses are delayed to align with low frequency pulses before integrating over all frequency channels. This process is called de-dispersion and prevents pulse profiles from appearing smeared and blurred.\\
+	\noindent The third term accounts for the dispersion delay due to the propagation of light through the interstellar medium. The electron density in the plasma of the ISM undergoes rapid oscillations, known as plasma frequency, $\omega$. For $v>>\omega$, the light is unaffected by the ISM. However, light with a frequency lower than that of the plasma frequency will experience a large time delay. As seen in the equation, the delay is inversely proportional to $v^2$, where $v$ is measured in GHz. The parameter, D, is obtained from the relation D=4.15 ms $\times$ $\frac{DM}{pc cm^{-3}}$, where DM is the dispersion measure. When timing a pulsar, the individual pulse profiles are summed over an integration time, $t_{int}$, to obtain a single pulse profile. As discussed, the pulses arrive at different times due to dispersion. To obtain an integrated pulse profile, the high frequency pulses are delayed to align with low frequency pulses before integrating over all frequency channels. This process is called de-dispersion and prevents pulse profiles from appearing smeared and blurred.\\
 	The last term in equation \ref{Barycentric correction} describes relativistic effects such as the Einstein delay and Shapiro delay also affect TOA. The Einstein delay is the time dilation and gravitational redshift due to masses in the solar system and the pulsars companion star. The Shapiro delay is the increase in arrival time caused by light bending as it passes through the gravitational well of the Sun and the pulsars companion \cite{stairs2003testing}. Once the barycentric corrections are made, equation \ref{N with 8 fit functions} would have to be rewritten in terms of the corrected time.\\  
 	
-	The timing model gives the expected TOA. Computing the difference between the expected and observed arrival times allows for timing residual to be plotted against observation time. If the timing model perfectly matches the observed data, the timing residual will only contain noise from the equipment, discussed further in section \ref{Detectibility of gws}. If there is an error in the model, then a characteristic plot can be expected which gives an indication of this error. For example, an error in the frequency derivative value in equation \ref{N with 8 fit functions} will cause the timing residual plot to have a parabolic shape, as expected by the second order polynomial, $\psi_3$. Likewise, an error in modelling the effects of proper motion of the pulsar will result in a timing residual with waves of increasing amplitude. In this way, the error in the model can be easily identified and corrected for. 
+	\noindent The timing model gives the expected TOA. Computing the difference between the expected and observed arrival times allows for timing residual to be plotted against observation time. If the timing model perfectly matches the observed data, the timing residual will only contain noise from the equipment, discussed further in section \ref{Detectibility of gws}. If there is an error in the model, then a characteristic plot can be expected which gives an indication of this error. For example, an error in the frequency derivative value in equation \ref{spin down frequency equation} will cause the timing residual plot to have a parabolic shape, as expected by the second order polynomial, $\psi_3$. Likewise, an error in modelling the effects of proper motion of the pulsar will result in a timing residual with waves of increasing amplitude, explained further in section \ref{Analysis of timing residuals for gravitational waves}. In this way, the error in the model can be easily identified and corrected for. 
 
 	\section{Gravitational waves}
 	
 	\subsection{Properties of gravitational waves}
 	Over the past few centuries, electromagnetic radiation of different wavelengths have been discovered and classified. Astronomers have discovered that different astrophysical sources emit light of different wavelengths. For instance, AGN and neutron stars emit radio jets, whereas interacting neutron stars and black holes emit higher energy x-rays. 
 	As is the case with electromagnetic radiation, gravitational waves too have different frequencies, varying in accordance with the source which produced the GW. The gravitational wave universe spans a frequency range from less than one cycle per month (on the order of $10^{-7}$ Hertz) to $10^4$ hertz. Different detectors are designed to detect different frequency GWs. Frequencies in the audio frequency band ($10-10^3$ Hz) will be detectable using ground-based detectors, such as LIGO, Virgo, etc.  However, lower frequencies require space-based detectors, such as eLISA. To probe even smaller frequencies requires the use of pulsar timing arrays. GWs cause the perpendicular, oscillatory stretching and squeezing of space time. Thus a small wavelength GW, on the order of $\approx 10^3$ will cause the most noticeable change in phase of light that is travelling along the interferometer arm. Likewise, the PTAs can be thought of as naturally occurring interferometers with arm lengths equal to the distance of the pulsars from earth. The lowest frequencies will consist of primordial GWs, which are the extremely red-shifted signals from the very early universe, as well as the slow interactions of supermassive black hole binaries. The frequency of the GW signal is inversely proportional to the mass of the astrophysical system. Black holes below 100 solar masses, and neutron stars will produce gravitational waves in the audio frequency range, and can thus only be detected by ground-based detectors. The nanohertz frequencies of SMBHBs, which typically have masses of 10 million solar masses, can only hope to be probed by PTAs.\\
-	Gravitational waves are waves of a quadrupole nature that are produced as a result of the acceleration of non-spherically symmetric mass distributions. To understand this, we need to understand how gravitational waves are generated. Firstly, let’s consider electromagnetic waves. We know that accelerating charges generate electromagnetic waves. For electric monopoles, we know that an accelerating negative charge is equivalent to a positive charge accelerating in the opposite direction. Clearly, the electric field distribution of electric monopoles do not vary with time, which leads to the known fact that electric monopoles do not generate electromagnetic waves. Consider an electric dipole which has positive charges and negative charges separated by some distance. Interchanging the positive and negative charges of an electric dipole, as in the case of an oscillating electric dipole, causes a change in the electric field distribution, thereby producing an electromagnetic field.\\ The gravitational monopole of an object is simply its mass. The dipole of an object is a vector which gives a measure of the mass distribution from some chosen centre in some direction. This centre about which the mass distribution is measured is typically chosen to be the centre of mass, thus giving a dipole of zero. It does not matter which point is chosen to be the centre; as long as the gravitational dipole remains constant in time, there will be no gravitational radiation produced. Unlike oscillating electric dipoles, it is impossible to create an oscillating mass dipole since mass cannot be negative. The quadrupole is an indication of the symmetric distribution of the mass. For instance, a sphere has zero quadrupole as it is symmetric in all three dimensions. A rod, on the other hand, is stretched out along one axis and thus has a quadrupole. A flat disk is a sphere which has been squashed along an axis and therefore it too has a quadrupole. Consider two objects of equal mass with constant mass and centre of mass, but varying distance of separation. Such a system has constant monopole and dipole moments with a time varying quadrupole moment. The quadrupole moment will also vary if the system is altered such that it rotates with a constant distance of separation. Note that the quadrupole moment is proportional to the moment of inertia of the system and thus differs for rods, disks, etc. To be certain of the quadrupole nature of gravitational waves, consider a spherically symmetric array of masses that collapse inwardly towards a point. The gravitational field of this collapsing system is equivalent to that of a spherical point mass. At a distance there is no difference between the gravitational field of a point mass and that of the same mass distributed in a uniform spherical distribution. We know that a single spherical mass does not produce gravitational waves, thereby implying that gravitational waves must be created from the motions of non-spherical masses.
-	%In presentation talk about interferometers-have two perpendicular arms of length on the order of $10^3$m. Light trvels along one arm and interacts with a beam splitter, causing the light to split and travel along the perpendicular arm, before returning and interfering with the original light ray. Now, GWs cause the perpendicular, oscillatory stretching and squeezing of space time. Thus a GW will cause a change in phase of one of the light rays, causing the two rays to interfere differently. Clearly the arms of the interferometer are designed for frequencies in the audio band. For PTA-as light travels space is stretched and light takes longer to cover the distance, when space is squeezed, light takes a shorter amount of time to cover the distance. So to get the most noticeable change in pulse arrival time, you want gw to have a long wavelength. The most noticeable timing residual will be found for a gw with wavelength equal to the distance between pulsar and earth. 
-	\subsection{Gravitational wave sources}
-
 	
-A stochastic GWB from binary black holes at galaxy centres is the most likely signal to be detectable due to their higher amplitudes and ubiquitous nature. Primordial GWs, in comparison, have amplitudes that are $10^-3$ times smaller than that of SMBHB, making their detection much more difficult. Since SMBHBs are found throughout the universe, the timing residuals of many of pulsars will be affected by these GWs, thus allowing for the success of pulsar timing arrays (PTAs). The origins of SMBHBs is not very well understood. It is theorised that galaxies contain a SMB at their centre and thus the forming of SMBHBs requires the merging of galaxies. This theory arises from the fact that the luminosity and velocity dispersion, which gives the mass distribution of astrophysical objects, of SMBHs and their host galaxies are correlated. However, it is not known how frequently galaxy mergers occur and what fraction of these mergers will result in the interactions of the SMBHs at their centres. This affects predictions of GW strength from SMBHBs. Of course a collection of SMBHBs will increase the amplitude of the GW signal and definitely improve our chances of making a detection. Positive research shows that massive galaxies have undergone very little star formation between redshift z = 1 and the present, yet they appear to have significantly increased in mass and size by factors of ~2 and 4 respectively \cite{van2012stellar}. This suggests that galaxy mergers occur 10–30 times higher than previously estimated \cite{mcwilliams2012imminent}.	
+	\noindent Gravitational waves are waves of a quadrupole nature that are produced as a result of the acceleration of non-spherically symmetric and non-rotationally symmetric mass distributions. To understand this, we need to understand how gravitational waves are generated. The gravitational monopole of an object is simply its mass. The dipole of an object is a vector which gives a measure of the mass distribution from some chosen centre in some direction. This centre about which the mass distribution is measured is typically chosen to be the centre of mass, thus giving a dipole of zero. It does not matter which point is chosen to be the centre; as long as the gravitational dipole remains constant in time, there will be no gravitational radiation produced. Unlike oscillating electric dipoles, it is impossible to create an oscillating mass dipole since mass cannot be negative. The quadrupole is an indication of the symmetric distribution of the mass. For instance, a sphere has zero quadrupole as it is symmetric in all three dimensions. A rod, on the other hand, is stretched out along one axis and thus has a quadrupole. A flat disk is a sphere which has been squashed along an axis and therefore it too has a quadrupole. Consider two objects of equal mass with constant mass and centre of mass, but varying distance of separation. Such a system has constant monopole and dipole moments with a time varying quadrupole moment. However, the quadrupole moment will be zero if the system rotates symmetrically with a constant distance of separation. Note that the quadrupole moment is proportional to the moment of inertia of the system and thus differs for rods, disks, etc. To be certain of the quadrupole nature of gravitational waves, consider a spherically symmetric array of masses that collapse inwardly towards a point. The gravitational field of this collapsing system is equivalent to that of a spherical point mass. At a distance there is no difference between the gravitational field of a point mass and that of the same mass distributed in a uniform spherical distribution. We know that a single spherical mass does not produce gravitational waves, thereby implying that gravitational waves must be created from the motions of non-spherical masses.
+	%In presentation talk about interferometers-have two perpendicular arms of length on the order of $10^3$m. Light trvels along one arm and interacts with a beam splitter, causing the light to split and travel along the perpendicular arm, before returning and interfering with the original light ray. Now, GWs cause the perpendicular, oscillatory stretching and squeezing of space time. Thus a GW will cause a change in phase of one of the light rays, causing the two rays to interfere differently. Clearly the arms of the interferometer are designed for frequencies in the audio band. For PTA-as light travels space is stretched and light takes longer to cover the distance, when space is squeezed, light takes a shorter amount of time to cover the distance. So to get the most noticeable change in pulse arrival time, you want gw to have a long wavelength.  
+	
+	%The total GW metric is expressed as a sum of the plus and cross polarisations, as shown in equation \ref{GW metric in component form} 
+	
+	%\begin{equation}{\label{GW metric in component form}}
+	%h_{uv}=h_{+}e_{+uv}+h_{\times}e_{\times uv}
+	%\end{equation}
+	%where $e_{+}$ and $e_{\times}$ are the amplitudes of the $h_{+}$ and $h_{\times}$ polarisations, respectively. 
+	
+	\subsection{Gravitational wave sources}\label{GW sources}
 
-	\section{Least squares fitting}
+The amplitude of the GW emitted by a source is extremely small, thus making it very difficult to detect. However, if we make observations over a time interval this would allow the signal to accumulate over the time scale, thereby making it easier to detect \cite{moore2014gravitational}. This is achieved by computing the dimensionless characteristic strain spectrum of the GW, $h_{c}(f)$, given by \cite{moore2014gravitational}
+\begin{equation}\label{charac strain}
+h_{c}(f)=A (\frac{f}{yr^{-1}})^{\alpha}
+\end{equation}
+where A is the dimensionless strain amplitude of the wave and $\alpha$ is the spectral index. The amplitude and spectral indices differ for different sources.\\
+The characteristic strain can be related to the power spectrum using 
+\begin{equation}\label{power spec}
+P(f)=\frac{h_{c}(f)^2}{12 \pi^2 f^3}
+\end{equation}
+where P(f) is the one-sided power spectrum of timing residuals, defined by the relation
+
+\begin{equation}{\label{power spectrum related to TOA}}
+\int_{0}^{\infty}P(f)df=\sigma^2
+\end{equation}
+where $\sigma^2$ is the timing residuals due to a GW.
+An upper limit on the amplitude of the GW can be obtained if the spectral index is known for the source type. We assume that the timing residual is due only to a GW signal 
+
+The two gravitational wave sources that I will focus on are supermassive black hole binaries and primordial GWs from cosmic inflation.
+
+\subsubsection{Supermassive black hole binary systems}\label{SMBHB source}
+
+\noindent A stochastic GWB from binary black holes at galaxy centres is the most likely signal to be detectable due to their higher amplitudes and ubiquitous nature. Primordial GWs, in comparison, have amplitudes that are $10^{-3}$ times smaller than that of a SMBHB, making their detection much more difficult \cite{arzoumanian2016nanograv}. Since SMBHBs are found throughout the universe, the timing residuals of many of pulsars will be affected by these GWs, thus allowing for the success of pulsar timing arrays (PTAs). The origins of SMBHBs is not very well understood. It is theorised that galaxies contain a SMB at their centre and thus the forming of SMBHBs requires the merging of galaxies. This theory arises from the fact that the luminosity and velocity dispersion, which gives the mass distribution of astrophysical objects, of SMBHs and their host galaxies are correlated. However, it is not known how frequently galaxy mergers occur and what fraction of these mergers will result in the interactions of the SMBHs at their centres. This affects predictions of GW strength from SMBHBs. Of course a collection of SMBHBs will increase the amplitude of the GW signal and definitely improve our chances of making a detection. Positive research shows that massive galaxies have undergone very little star formation between redshift z = 1 and the present, yet they appear to have significantly increased in mass and size by factors of ~2 and 4 respectively \cite{van2012stellar}. This suggests that galaxy mergers occur 10 to 30 times higher than previously estimated \cite{mcwilliams2012imminent}.\\	
+
+\noindent The exact processes that allow for a black hole binary to merge within orbital separations of one parsec are not well understood. This is known as the final parsec problem. A black hole binary separation may remain at the parsec scale, making them very weak GW sources. If the binary system is surrounded by a gaseous accretion disk formed from the galaxy merger, the binary interaction with this disk will decrease the angular momentum of the binary and eventually allow the system to reach an orbital separation on the milliparsec scale, which is a strong GW region. At this distance GWs will carry energy away from the system and allow for the coalescence of the two black holes. For SMBHBs with high eccentricity orbits, the gravitational radiation, is strongest near the pericentre and will eventually circularise the orbit before the merging. These SMBHBs are the main targets for GW detection by PTAs. The eventual detection of this GWB from SMBHBs with PTAs will provide insights into many factors which we do not fully understand, such as the number of galactic mergers which lead to black hole mergers and possibly give information on how the final parsec problem was overcome. We may also be able to get an upper limit on the coalescence rate of SMBHBs by analysing the strength of the GWB from the black hole binary sources.\\
+%Clarify in presentation that circular orbits also emit GWs because the quadrupole moment is time varying in direction not magnitude, but elliptical orbits have time varying quadrupole moments in magnitude and direction
+
+To find the spectral index for the characteristic strain of supermassive black hole binaries, we first consider the energy of the gravitational waves. Consider a GW of frequency, $f_w$, in its rest frame. Now, redshift, z, is defined as the difference between the observed and emitted wavelengths divided by the emitted. Expressing this in terms of frequency we have
+\begin{equation}{\label{redshift}}
+1+z=\frac{f_{gw}}{f}
+\end{equation}
+where $f_w$ is the emitted frequency and f is the frequency observed at Earth. To find the total energy we first consider the energy, $dE_{gw}$ emitted in the frequency range $f_w$ to $f_w + df_w$, which can be expressed in terms of the denisty parameter. This parameter is defined in cosmology as the ratio of the current density of the universe to the critical density, where the critical density is the density of a flat universe. From this definition a flat universe has a density parameter of 1, while an open universe has $\Omega<1$ and a closed universe has $\Omega>1$. The density parameter can be obtained for different quantities such as matter and dark energy, and thereafter summed up to obtain the total density parameter of the universe. Thus we can define the density parameter of GWs per logarithmic frequency interval to be
+\begin{equation}
+\Omega_{gw}(f)=\frac{\rho_g}{\rho_c}
+\end{equation}
+where $\rho_g$ is the density of the GWs and $\rho_c=\frac{3H_0^2}{8 \pi G}$ is the critical density. We can rewrite $\rho_g$ in terms of energy density using the relation $E_{gw}=\rho_g c^2$. Expressing $dE_{gw}$ in terms of $\Omega_{gw}(f)$ and integrating over all frequencies, we obtain the total present day energy density 
+\begin{equation}{\label{total energy density of gws ito density parameter}}
+E_{gw}=\int_{0}^{\infty}\rho_c c^2\Omega_{gw}(f)dlogf=\int_{0}^{\infty}\rho_c c^2\Omega_{gw}(f)\frac{df}{f}
+\end{equation}
+Substituting equation we can write the energy density in terms of characteristic strain.
+\begin{equation}
+E_{gw}=\int_{0}^{\infty}\frac{\pi c^2}{4G}f^2hc^2(f)\frac{df}{f}
+\end{equation}
+Consider N sources that produce gravitational waves. The formation of these SMBHBs occur at different redshifts so that N=N(z). The total energy density of emitted GWs is obtained by summing over the energy densities of each event. Using equation \ref{redshift}, this is used to find the energy density of GWs that reach earth, resulting in the second expression for total energy density, expressed as 
+\begin{equation}{\label{second total energy eqn}}
+E_{gw}=\int_{0}^{\infty} \int_{0}^{\infty}\frac{N(z)}{1+z}dE_{gw}dz=\int_{0}^{\infty} \int_{0}^{\infty}\frac{N(z)}{1+z}f_w\frac{dE_{gw}}{df_w}\frac{df}{f}dz
+\end{equation}
+
+Equating \ref{total energy density of gws ito density parameter} and \ref{second total energy eqn}, we obtain the expression
+
+\begin{equation}{\label{equating the two energy density expressions}}
+\frac{\pi c^2}{4G}f^2hc^2(f)=\int_{0}^{\infty}\frac{N(z)}{1+z}f_w\frac{dE_{gw}}{df_w}dz
+\end{equation}
+
+The rate of change of energy density of GWs emitted from merging masses, $M_1$ and $M_2$, in a circular orbit is given by
+
+\begin{equation}{\label{rate of change of energy density}}
+\frac{dE_{gw}}{df_w}=\frac{\pi}{3G}\frac{(GM_c)^{5/3}}{(\pi f_w)^{1/3}}
+\end{equation}
+where $M_c$ is the chirp mass with ${M_c}^5=\frac{M_1 M_2}{(M_1 +M_2)^{1/3}}$ 
+Substituting equations \ref{rate of change of energy density} and \ref{redshift} into equation \ref{equating the two energy density expressions} we can solve for ${h_c}^2(f)$.
+
+\begin{equation}{\label{hc squared eqn}}
+{h_c}^2(f)=\frac{4}{3\pi^{1/3}c^2}\frac{(GM_c)^{5/3}}{f^{4/3}}\int_{0}^{\infty}N(z)(1+z)^{-1/3}dz
+\end{equation}
+From equation \ref{hc squared eqn} it can be seen that $h_c \propto f^{-2/3}$ for a circular binary system that loses energy due to gravitational radiation. 
+\subsubsection{Primordial}\label{prim GW}
+
+\noindent Primordial GWs originate from the early universe. John Wheeler hypothesized that on a microscopic scale of $10^{-34}$ metres, space-time can be seen as a quantum foam which consists of virtual particles. The quantum fluctuations in the early universe are believed to have been the source of primordial gravitational radiation. These waves are believed to have formed in the Planck era, which is the initial period of $\approx 10^{-43}$ seconds after the big bang. Now, the theory of inflation states that the universe expanded very rapidly in the first few moments after the Big Bang. This solves problems such as the horizon problem and the flatness problem. The GWs from such small quantum fluctuations will be undetectable unless the theory of inflation is true, as inflation would have resulted in the amplification of the primordial gravitational wave signal. The hope is that the increase in amplitude is high enough to make it detectable. and their detection will prove that inflation did occur. These relic GWs combine both the theories of general relativity and quantum mechanics since the GWs, which stem from general relativity, were produced by quantum particles. Their detection may help physicists to unify the two theories, as well as provide proof of inflation. 
+ 
+	\section{Least squares fitting}\label{Least squares fitting}
 	
 	The chi squared formula is a method used in statistics to determine how closely actual data fits the expected model by subtracting the two for each discrete data point. This formula is given by
 	\begin{equation}\label{chi squared sum form}
@@ -175,7 +209,7 @@ A stochastic GWB from binary black holes at galaxy centres is the most likely si
 	Thus the $\chi$ squared equation can be rewritten in matrix form as
 	
 	\begin{equation}\label{chi squared matrix form}
-	\chi^2=r^{T}C^{-1}r
+	\chi^2=\underline{r}^{T}\underline{C}^{-1}\underline{r}
 	\end{equation}\\
 	where $C^{-1}$ is the covariance matrix of errors in data values. 
 	The true parameter values are not known. Rather, the least squares estimate for these parameters, $\theta^*$, is obtained by minimizing chi squared giving 
@@ -231,10 +265,54 @@ A stochastic GWB from binary black holes at galaxy centres is the most likely si
 	%Should I state that there are 14 parameters, i.e. that m=14? 
 	%multiplying two 2 digit numbers requires 4 multiplications so that means multiplication scales as n^2. The complexity of the algorithm is written as O(something) and in the case of multiplication it is O(n^2). Addition requires a less complex algorithm presented by O(n). 
 	
-	\section{Analysis of timing residuals for gravitational waves}
+	\section{Analysis of timing residuals for gravitational waves}\label{Analysis of timing residuals for gravitational waves}
 	
+	\noindent Assume the earth has a circular orbit of radius, a, around the solar system barycentre and the distance of the pulsar from the barycentre is length, d. This gives a pulsar parallax, $p=a/d$. The position of the pulsar, as measured from the vernal equinox, is given by heliocentric latitude and longitude of $\alpha$ and $\lambda$, respectively. For a stationary system, the distance that a pulse travels to earth would simply be found from Pythagoreans rule to be $D^2=d^2+a^2$. However, for the non stationary case, the earth has a circular rotation about the SSB which causes a sinusoidal change in the longitudinal position of the pulsar, as measured from earth. The angle which describes the position of a body in an orbit is known as the mean anomaly, $\phi$.  We also need to take into account the precession of the earth due to the gravitational pull from the sun and moon, which causes a sinusoidal change in both the latitude and longitude of the pulsar. The vertical distance, d, is multiplied by the sinusoidal change in latitude. The precession of the earth coupled with the orbital motion around the SSB cause the longitude to change as a function of the angle $\phi-\lambda$. Thus, the distance, D, is modified by multiplying the horizontal distance, a, by the sine and cosine terms of that angle. The expression for the distance that the pulse travels to reach earth is thus given by
+	\begin{equation}\label{D eqn}
+	D^2=d^2 \sin^2{\alpha}+[d \cos{\alpha}+a \cos(\phi-\lambda)]^2+a^2 \sin^2(\phi-\lambda)
+	\end{equation}
+	Square rooting both sides and eliminating constant terms gives the simplified expression 
+	\begin{equation}\label{simplified D eqn}
+	D=a[\cos \alpha \cos(\phi-\lambda)-\frac{1}{4}p\cos^2{\alpha} \cos{2(\phi-\lambda)}]
+	\end{equation}
+	The error in the latitude and longitude of the pulsar can be written as \cite{blandford1976arrival}.
+	\begin{equation}\label{error in latitude}
+	\delta\alpha=\delta\alpha_{0}+\delta\mu_{\alpha}t
+	\end{equation}
+	\begin{equation}\label{error in longitude}
+	\delta\lambda=\delta\lambda_{0}+\delta\mu_{\lambda}t
+	\end{equation}
+	where the first terms in equations \ref{error in latitude} and \ref{error in longitude} refer to errors in initial pulsar positions. The second terms refer to errors in the magnitude of the proper motion of the pulsar as it moves across the sky. For convenience, we fix the time of observation to occur at an anomaly of 
+	\begin{equation}\label{convenient mean anomaly relation}
+	\phi=\lambda +\pi/4
+	\end{equation}
+	The timing residual is obtained by dividing the distance, D, that the light travels by the speed of light, c. Substituting equation \ref{convenient mean anomaly relation} into equation \ref{simplified D eqn} the timing residual can be found in terms of errors in pulsar parameters as
+	\begin{equation}{\label{N with 8 fit functions}}
+	\begin{aligned}
+	r(t)=&\frac{\delta N_{0}}{\nu}+\frac{\delta \nu}{\nu}t+\frac{\delta \dot\nu }{2 \nu}t^2+\frac{a}{c \sqrt{2}}[\delta\alpha \sin{\alpha}(\sin{2 \pi t}-\cos{2 \pi t})\\
+	&+\delta\lambda \cos{\alpha}(\sin{2 \pi t}+\cos{2 \pi t})] +\frac{a}{4c}p\cos^{2}\alpha \sin{4 \pi t}
+	\end{aligned}
+	\end{equation}
 	
-	Now, let's introduce a set of functions, $\psi_{a}^{'}(t_i)$ that are linear combinations of $\psi_a(t_i)$ such that
+	The sine and cosine terms for the error in latitude have opposite signs. This is to account for the possibility of the pulsar having a negative latitude. A pulsar with an initial position located below the celestial equator, and which is moving further south, will have negative $\alpha_{0}$ and $\mu_{\alpha}$ terms, respectively, thus giving an overall negative value for the latitude.\\
+	Substituting equations \ref{error in latitude} and \ref{error in longitude} into equation \ref{N with 8 fit functions} gives a set of fitting functions, $\psi_a(t)$, a=1...m=8 \cite{blandford1976arrival} 
+	$$
+	\psi_a=
+	\begin{pmatrix}
+	1\\
+	t\\
+	t^2\\
+	sin2 \pi t\\
+	cos2 \pi t\\
+	t cos2 \pi t\\
+	t sin2 \pi t\\
+	sin4 \pi t\\
+	\end{pmatrix}
+	$$
+	The first three fitting functions were expressed in equation \ref{spin down frequency equation}. The next four fitting functions account for errors in position and proper motion. Lastly, as seen in equation \ref{N with 8 fit functions}, the fitting function, $\psi_{8}$, accounts for timing parallax. 
+	This simple model accounts for  errors due to earths motion around the SSB only and does not take into consideration any effects between the pulsar and its companion. This model is in fact designed for the isolated millisecond pulsar PSR B1937+214 whose companion star was tidally disrupted \cite{kochhar1984model}. Thus, the model does not contain all the necessary terms for binary pulsars.\\
+	
+	\noindent Now, let's introduce a set of functions, $\psi_{a}^{'}(t_i)$ that are linear combinations of $\psi_a(t_i)$ such that
 	\begin{equation}\label{psi'}
 	\psi_{a}^{'}(t_i)=K_{ab}\psi_{b}(t_i), a,b=1...8
 	\end{equation}
@@ -278,9 +356,9 @@ A stochastic GWB from binary black holes at galaxy centres is the most likely si
 	\begin{equation}\label{transfer function frequency space}
 	T(f)=1-\frac{1}{N}\sum_{a=1}^{8}\psi_a^{'}(f)\psi_a^{'*}(f)
 	\end{equation}\\
-	The transfer functions are shown in Figure \ref{fig:transferfunction.png} for N=1, 3 and 10 years. 
+	The transfer functions are shown in Figure \ref{fig:transferfunction} for N=1, 3 and 10 years. 
 \begin{figure}[th!]
-	\includegraphics[width=0.7\linewidth]{../Desktop/Project/transferfunction}
+	\includegraphics[width=1\linewidth]{../Desktop/Project/transferfunction}
 	\caption{\label{fig:transferfunction}Transmission coefficients for N=1, 3 and 10 years. The plot shows dips at the origin, as well as f=1 yr$^{-1}$ and f=2 yr$^{-1}$. It is clear that as N increases the dips become narrower as $\propto$ 1/N}
 \end{figure}
 	As seen in the figure, the plots have dips at the origin. This is due to the first 3 fitting functions which model the spin down frequency of the pulsar. At f=1 yr$^{-1}$, the dip corresponds to fits for the position and proper motion, given by fitting functions $\psi_4^{'}$ to $\psi_7^{'}$. Lastly, the parallax term due to the fitting function, $\psi_8^{'}$, causes a dip in the transfer functions at f=2yr$^{-1}$. The dips become narrower as N increases, scaling as 1/N. The figure also shows a shift in the plots as N increases, i.e. increasing the number of years over which the pulsar is observed lowers the minimum frequency of the function.
@@ -293,19 +371,25 @@ A stochastic GWB from binary black holes at galaxy centres is the most likely si
 	\begin{equation}\label{new new avg of r squared}
 	<r^{2}(t)>=\int_{0}^{\infty}P(f)T(f)df
 	\end{equation}
-	Suppose that the residuals are entirely due to the noise generated by the power spectrum of a gravitational wave \cite{blandford1976arrival}. The transfer function describes the fractional transmission in the power spectrum of the signal of the GW. Thus, equation \ref{new new avg of r squared} shows that the residuals caused by the GW depend are influenced by the timing. Low frequency GWs are absorbed by the transfer function since the fraction of the GW signal that is transmitted, is zero for $f<f_{min}$, as seen in figure \ref{fig:transferfunction.png}. The frequency range on which the gravitational wave can be detected \cite{hobbs2009international} depends on the time span over which the pulsar is observed as well as the number of observations made. The frequency band is therefore between $f_{min}=1/N$, where N is the number of years, and the Nyquist frequency, $f_{max}=1/{2\Delta t}$, where $\Delta t$ is the time between two observations \cite{sesana2010gravitational}. As seen in figure \ref{fig:transferfunction.png}, observing for only 1 year allows only the detection of GWs with frequency larger than f=2 yr$^{-1}$. Hence, observing for larger time spans increases the chances of detecting ultra-low frequency gravitational waves. \\ Gravitational waves cause the stretching and squeezing of space time yet the amplitude of the wave is extremely small, thus making it very difficult to detect. However, if we make observations over a time interval this would allow the signal to accumulate over the time scale, thereby making it easier to detect \cite{moore2014gravitational}. This is achieved by computing the dimensionless characteristic strain spectrum of the GW, $h_{c}(f)$, given by \cite{moore2014gravitational}
-	\begin{equation}\label{charac strain}
-	h_{c}(f)=A (\frac{f}{yr^{-1}})^{\alpha}
-	\end{equation}
-	where A is the dimensionless strain amplitude of the wave and $\alpha$ is the spectral index, with $\alpha=-2/3$ for the stochastic background of binaries \cite{moore2014gravitational} and $\alpha=-1$ for primordial GWs \cite{zhao2013constraints}.\\
-	The characteristic strain can be related to the power spectrum using 
-	\begin{equation}\label{power spec}
-	P(f)=\frac{h_{c}(f)^2}{12 \pi^2 f^3}
-	\end{equation}
-	The constraint on the amplitude, A, is $A \leq 10^{-18}$ \cite{zhao2013constraints} for the primordial GW and for SMBHBs we have an upper limit of $A \leq 10^{-15}$ \cite{arzoumanian2016nanograv}. The characteristic strains of primordial and SMBHBs are shown in the plot. 
+	Suppose that the residuals are entirely due to the noise generated by the power spectrum of a gravitational wave \cite{blandford1976arrival}. The transfer function describes the fractional transmission in the power spectrum of the signal of the GW. Thus, equation \ref{new new avg of r squared} shows that the residuals caused by the GW depend are influenced by the timing model. Low frequency GWs are absorbed by the transfer function since the fraction of the GW signal that is transmitted, is zero for $f<f_{min}$, as seen in figure \ref{fig:transferfunction}. The frequency range on which the gravitational wave can be detected \cite{hobbs2010international} depends on the time span over which the pulsar is observed as well as the number of observations made. The frequency band is therefore between $f_{min}=1/N$, where N is the number of years, and the Nyquist frequency, $f_{max}=1/{2\Delta t}$, where $\Delta t$ is the time between two observations \cite{sesana2010gravitational}. As seen in figure \ref{fig:transferfunction}, observing for only 1 year allows only the detection of GWs with frequency larger than f=2 yr$^{-1}$. Hence, observing for larger time spans increases the chances of detecting ultra-low frequency gravitational waves. \\ 
 	
+	 $\alpha=-2/3$ for the stochastic background of binaries \cite{moore2014gravitational} and $\alpha=-1$ for primordial GWs \cite{zhao2013constraints}. The actual GWB spectrum for SMBHBs is strongly dependant on the merger history, which was discussed in section \ref{GW sources}, resulting in a range of possible spectral indices. However, $\alpha = −2/3$ is a widely accepted approximation. The constraint on the amplitude, A, is $A \leq 10^{-18}$ \cite{zhao2013constraints} for the primordial GW and for SMBHBs we have an upper limit of $A \leq 10^{-15}$ \cite{arzoumanian2016nanograv}. The characteristic strains of primordial and SMBHBs are shown in Figure \ref{fig:gw-two-strains-xlim}. 
+	
+	\begin{figure}[h!]
+		\includegraphics[width=1\textwidth]{"../Desktop/Project/gw two strains xlim"}
+		\caption{Characteristic strain for primordial and supermassive black hole GWs}
+		\label{fig:gw-two-strains-xlim}
+	\end{figure} It is clearly seen that the gravitational waves have a higher strength at lower frequencies, as expected for a red noise spectrum. Also, we see that the primordial GW has a much lower characteristic strain than that of the SMBHB. This plot can be compared to the characteristic strain for the GWB of primordial and SMBHBs in Figure \ref{fig:gw_spectrum_for_primordial.png}. The primordial is depicted in the figure as the green dotted line. The constraint obtained from Planck provides a characteristic strain upper limit of $h_{c}<2.34 \times 10^{-9}$ at a frequency of f $ \approx 1.5 \times 10^{-18}$ Hz and is labeled on the plot as Planck. Similarly, the constraint from the Keck Array gives a characteristic strain value upper limit of $h_{c}<5.57 \times 10^{-8}$ Hz at f $\approx 3.8 \times 10^{-17}$ and is labeled as BICEP2/Keck. The SMBHB GWB is also shown in the plot in purple. The plot also shows that primordial GWs span a wide range of frequencies. 
+   
+\begin{figure}[h!]
+	\includegraphics[width=1\textwidth]{"../Desktop/Project/gw characstrain for primordial"}
+	\caption{\label{fig:gw_spectrum_for_primordial.png} The upper limit for the characteristic strain of the primordial gravitational waves is depicted on the plot as the green dotted line, labelled on the figure as the BICEP2-KECK inflation limit. The SMBHB-GWB is also labelled on the diagram as the purple plot \cite{kuroda2015gravitational}.}
+\end{figure}
+		
 	\section{Detectibility of gravitational waves} \label{Detectibility of gws}
-	In order to determine whether or not the GW can be detected we need to compute the characteristic strain of the noise from the telescope and compare the spectrum to that of the GW signal. The white noise from the telescope has a Gaussian distribution since the data from pulsar observations are uncorrelated and independent. As a result of the uncorrelated data the auto-correlation function is zero. The only non-zero component of the auto-correlation function is at zero lag, $\tau=0$, where the auto-correlation function reduces to the squared average of the noise. This is just the distribution of the data from the mean, thus giving the expression for the auto-correlation for a zero mean, gaussian white noise process, of 
+	In order to determine whether or not the GW can be detected we need to compute the characteristic strain of the noise from the telescope and compare the spectrum to that of the GW signal. First, let us consider the GW signal.\\
+	
+	The white noise from the telescope has a Gaussian distribution since the data from pulsar observations are uncorrelated and independent. As a result of the uncorrelated data the auto-correlation function is zero. The only non-zero component of the auto-correlation function is at zero lag, $\tau=0$, where the auto-correlation function reduces to the squared average of the noise. This is just the distribution of the data from the mean, thus giving the expression for the auto-correlation for a zero mean, gaussian white noise process, of 
 	\begin{equation}\label{auto-correlation of white noise}
 	<\epsilon(t)\epsilon(t+\tau)>=\sigma^2 \delta(\tau)
 	\end{equation}
@@ -314,65 +398,102 @@ A stochastic GWB from binary black holes at galaxy centres is the most likely si
 	\frac{\sigma_{TOA}}{P}=(\frac{S_{psr}}{mJy})^{-1}(\frac{T_{rec}+T_{sky}}{K})(\frac{G}{K{Jy}^{-1}})^{-1}(\frac{\Delta{v}}{MHz})^{-1/2}(\frac{t_{int}}{s})^{-1/2}(\frac{W}{P})^{3/2}
 	\end{equation}
 	
-	\begin{table}[ht!]
+	\begin{table}[h!]
 		\centering
-		\begin{tabular}{l|l}
-			Parameter & Value \\\hline
-			Flux density, $S_{psr}$ (mJy)& 1.59 \\
+		\begin{tabular}{|l|l|}
+			\hline
+			\textbf{Parameter} & \textbf{Value} \\\hline
+			Flux density, $S_{psr}$ (mJy)& 2.0 \\
+			\hline
 			Receiver noise temperatures, $T_{rec}$ (K) & 23\\
+			\hline
 			Sky noise temperatures, $T_{sky}$ (K) & 3\\
-			Antenna gain, G (K${Jy}^{-1}$)&1.37\\
+			\hline
+			Antenna gain, $G$ (K{Jy}$^{-1}$)&1.37\\
+			\hline
 			Observing bandwidth, $\Delta{v}$ (MHz) & 1400\\
-			Integration time, $t_{int}$ (s)& 20*60\\
-			Pulse width, W (s)&$0.5 \times 10^{-3}$\\
-			Period, P (s) & $3.06 \times 10^{-3}$ 	
+			\hline
+			Integration time, $t_{int}$ (min)& 50\\
+			\hline
+			Pulse width, $W$ ($\mu$s)& 43\\
+			\hline
+			Period, $P$ (ms) & 2.96\\
+			\hline
+			No. of orthogonal polarisations, $N_{pol}$&1\\ 	
+			\hline
 		\end{tabular}
 		\caption{\label{tab:noise}Parameter values for the calculation of the uncertainty in pulse arrival time for the Effelsberg Telescope for the pulsar J1643-1224.}
 	\end{table} 
-	The flux density gives the number of photons that reach the Earths antenna. The power of the antenna in converting this electromagnetic radiation to electric current depends on the number of photons reaching Earth from the pulsar source, $S_{psr}$, the collecting area of the dish, A, of the dish and the frequency interval, $\delta \nu$ over which the radiation is measured. The antenna gain is often used instead of the collecting area of the dish to account for the fact that the antenna does not use all the radio power entering its physical aperture. The gain is given as
+	The flux density gives the number of photons that reach the Earths antenna. The power of the antenna in converting this electromagnetic radiation to electric current depends on the number of photons reaching Earth from the pulsar source, $S_{psr}$, the collecting area of the dish, A, of the dish and the frequency interval, $\Delta \nu$ over which the radiation is measured. The antenna gain is often used instead of the collecting area of the dish to account for the fact that the antenna does not use all the radio power entering its physical aperture. The gain is given as
 	\begin{equation}\label{gain}
 	G=e_p \pi R_{eff}^2/2k
 	\end{equation}
-	where $e_p$ is the aperture efficiency, $R_{eff}$ is the effective radius of the collecting dish and k is the Boltzmann constant given in units of Jy/K.\\
-	\noindent Equation \ref{uncertainty in toa} shows that bright pulsars observed for a longer duration, at a higher observing bandwidth, with minimal noise, will have a smaller uncertainty in TOA, as expected. The values in Table \ref{tab:noise} yielded a $\sigma_{TOA}$ value of $1.5 \mu s$.\\
-	Now, using equation \ref{auto-correlation of white noise}, with the calculated $\sigma_{TOA}$, and the Wiener-Khinchin theorem, the power spectrum of the noise is found to be a constant value of $15 \mu s^3$. Equation \ref{power spec} gives the dimensionless characteristic strain for white noise, $h_{n}^{white}$ where $h_{n}$ the noise counterpart of the characteristic strain signal, $h_{c}$. Aside from radiometer noise from instruments, the pulsar itself has timing noise which are slight irregularities in the TOA which are possibly due to changes in the internal structure of the pulsar. Timing noise is not to be confused with glitches or pulse jitter noise, which is a white noise contribution resulting from stochastic variability in the shape and arrival of individual pulses and can thus be reduced by increasing observation time. Timing noise, however, has a red power spectrum with a non-steep slope and is more prevalent in slow moving pulsars than in MSPs. The changes in the internal structure occur gradually over time and thus observing a pulsar over a longer time span increases the red noise contribution. The red noise spectrum is given by
+	where $e_p$ is the aperture efficiency, $R_{eff}$ is the effective radius of the collecting dish and k is the Boltzmann constant given in units of Jy/K. The Effelsberg telescope has a 100m diameter dish with an aperture efficiency of 0.5. Using equation \ref{gain} we obtain the gain for Effelsberg, given in Table \ref{tab:noise}.\\
+	\noindent Equation \ref{uncertainty in toa} shows that bright pulsars observed for a longer duration, at a higher observing bandwidth, with minimal receiver temperature, will have a smaller uncertainty in TOA, as expected. Table \ref{tab:noise2} shows the comparison of the parameters for three different telescopes for the pulsar PSR J1643-1224.\\
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{|l|l|l|l|}
+			\hline
+			\multirow{2}{*}{\textbf{Parameter}} &
+			\multicolumn{3}{c|}{\textbf{Radio Telescopes}}\\
+			& \textbf{Parkes} & \textbf{Effelsberg} & \textbf{MeerKAT}\\
+			\hline
+			Receiver noise temperatures, $T_{rec}$ (K) & 24 & 23 & 20 \\
+			\hline
+			Antenna gain, $G$ (K{Jy}$^{-1}$) & 0.65 & 1.37 & 2.3 \\
+			\hline
+			Observing bandwidth, $\Delta{v}$ (MHz) & 256 & 1400 & 850 \\
+			\hline
+			No.of orthogonal polarisations, $N_{pol}$&1&1&2\\
+			\hline
+			\textbf{Uncertainty in TOA, $\sigma$ (ns)} & \textbf{172} & \textbf{38} & \textbf{8}\\
+			\hline
+		\end{tabular}
+		\caption{\label{tab:noise2} Parameter values for uncertainty in pulse arrival time of Parkes, Effelsberg and MeerKAT for Pulsar PSR J1643-1224}
+	\end{table}
+	Now, using equation \ref{auto-correlation of white noise} and the Wiener-Khinchin theorem, we can obtain the power spectrum of the white noise which is given by
+	\begin{equation}
+	P_{white}(f)=\int_{f_{min}}^{f_{max}} \sigma^2 \delta(t)e^{-2 \pi i ft}dt
+	\end{equation}
+	Thereafter, equation \ref{power spec} is used to find the dimensionless characteristic strain for white noise, $h_{n}^{white}$ where $h_{n}$ is the noise counterpart of the characteristic strain signal, $h_{c}$. Aside from radiometer noise from instruments, the pulsar itself has timing noise which are slight irregularities in the TOA which are possibly due to changes in the internal structure of the pulsar. Timing noise is not to be confused with glitches or pulse jitter noise, which is a white noise contribution resulting from random variations in the arrival and shape of individual pulses. This noise can be reduced by increasing observation time. Timing noise, however, has a red power spectrum with a non-steep slope and is more prevalent in slow moving pulsars than in MSPs. The changes in the internal structure occur gradually over time and thus observing a pulsar over a longer time span increases the red noise contribution. The red noise spectrum is given by
 	\begin{equation}
 	P_{red}=\frac{A_{red}}{{(1+{(f/f_c)}^2)}^{\alpha/2}}
 	\end{equation}
-	where $f_{c}$ is the corner frequency which signifies the point at which the spectrum decreases as the described power law, such that the spectrum is approximately flat for $f<f_{c}$. The corner frequency is chosen to be the $f_{min}$.
+	where $f_{c}$ is the corner frequency which signifies the point at which the spectrum decreases as the described power law, such that the spectrum is approximately flat for $f<f_{c}$. The corner frequency is chosen to be $f_{min}$.
 	The autocorrelation function for the red noise is given as
 	\begin{equation}\label{autocorr for red noise}
 	C_{\tau}=C_0 e^{-\tau/t}
 	\end{equation}
-	where $C_0=\sqrt[\pi]{2}A_{red}f_{c}$ and $t=1/f_{c}$. Using the $C_0$ value of $400 \times 10^{-13} s^2$ for pulsar J1643-1224, and making use again of the Wiener-Khinchin, we compute the power spectrum of the red noise in units of $s^3$. The characteristic strain is obtained from the power spectrum using equation \ref{power spec}, as was done for the white noise characteristic strain spectrum.
-\begin{figure}[th!]
-	\includegraphics[width=1\textwidth]{"../Desktop/Project/prim smbhb whitenrednoise TF"}
-	\caption{\label{fig:prim_smbhb_whitenrednoise_TF.png} The figure contains the characteristic strain for primordial and SMBHB GWs. The characteristic strain is shown for red noise and for white noise, with $\sigma \approx 1 \times 10^{-6}$, and divided by the transfer function for N=10 years.}
-	\label{fig:prim-smbhb-whitenrednoise-tf}
+	where $C_0=\sqrt{\pi/2}A_{red}f_{c}$ and $t=1/f_{c}$. Using the $C_0$ value of $400 \times 10^{-13} s^2$ for pulsar PSR J1643-1224, and making use again of the Wiener-Khinchin, we compute the power spectrum of the red noise in units of $s^3$. It is found that the power spectrum of the timing noise has spectral index, $\alpha=2$ for PSR J1643-1224. This noise is infrared divergent, meaning the noise decreases with frequency. Most pulsars do not have a strong timing noise component thus we can assume a spectrum which is not very steep. The Crab Pulsar has a steeper timing noise spectrum of $\alpha=6$ with a corresponding amplitude of A$_{red}=1 \times 10^{-6}$ cycles$^2$/day$^2$. The timing noise contribution of both pulsars is plotted in Figure \ref{fig:red-noise-of-two-pulsars}. The timing noise increases faster over time for the Crab Pulsar than it does for the PSR J1643-1224. In Figure \ref{fig:transferfunction} we showed the importance of observing pulsars for longer time spans. Now, it is clear that the pulsars which are used in pulsar timing must have a minimal noise contribution so that a longer observation time does not negatively affect the results. 
+	
+\begin{figure}
+	\includegraphics[width=1\textwidth]{"../Desktop/Project/red noise of two pulsars"}
+	\caption{Timing noise for the Crab Pulsar, $\alpha=6$ and PSR J1643-1224, $\alpha=2$}
+	\label{fig:red-noise-of-two-pulsars}
 \end{figure}
-	It is clearly seen that the gravitational waves have a higher strength at lower frequencies, as expected for a red noise spectrum. Also, we see that the primordial GW has a much lower characteristic strain than that of the SMBHB. The curve of $h_{n}^{white}/T(f)$ increases at lower frequencies as expected since the transfer function approaches zero at $f_{min}$. This plot can be compared to the characteristic strain for primordial GWs depicted in figure \ref{fig:gw_spectrum_for_primordial.png} as the green dotted line. The constraint obtained from Planck provides a characteristic strain of $h_{c}<2.34 \times 10^{-9}$ at a frequency of f $ \approx 1.5 \times 10^{-18}$ Hz and is labeled on the plot as Planck. Similarly, the constraint from the Keck Array gives a characteristic strain value of $h_{c}<5.57 \times 10^{-8}$ Hz at f $\approx 3.8 \times 10^{-17}$ and is labeled as BICEP2/Keck.
-\begin{figure}[th!]
-	\includegraphics[width=1\textwidth]{"../Desktop/Project/gw characstrain for primordial"}
-	\caption{\label{fig:gw_spectrum_for_primordial.png} The upper limit for the characteristic strain of the primordial gravitational waves is depicted on the plot as the green dotted line \cite{kuroda2015gravitational}}
-\end{figure}
-	The plot for the characteristic strain for SMBHBs can be compared to literature using figure \ref{fig:gw_characstrain_for_smbhb.png}. The figure contains one-sigma predictions for the strain spectra adopted from different papers, viz. McWilliam et al.(2014), Ravi et al. (2014) and Sesana et al. (2015). 
-\begin{figure}[th!]
-	\includegraphics[width=1\textwidth]{"../Desktop/Project/gw characstrain for smbhb"}
-	\caption{\label{fig:gw_characstrain_for_smbhb.png} The blue, red and gray curves give one-sigma prediction on the strain spectra for SMBHBs from various papers \cite{arzoumanian2016nanograv}}
-\end{figure}
+
 	To determine whether or not a GW can be detected using our telescopes we compute the signal to noise ratio, SNR using the following relation 
 	\begin{equation}\label{snr eqn}
-	\rho^2=\int_{-\infty}^{\infty}\frac{1}{f}{(\frac{h_c}{h_n})^2}df=\int_{-\infty}^{\infty}{(\frac{h_c}{h_n})^2}dlogf
+	\rho^2=\int_{f_{min}}^{f_{max}}\frac{1}{f}{(\frac{h_c}{h_n})^2}df
 	\end{equation}
-	where the extreme right hand side of the equation shows how the area between the $h_c$ and $h_n$ on a log-log plot is related to the total signal to noise. Computing the SNR using $h_n=(h_n^{white}+h_n^{red})/T(f)$ we get a plot of the functions for the signal and noise contributions for the gravitational radiation from a SMBHB.
-\begin{figure}[th!]
-	\includegraphics[width=1\textwidth]{"../Desktop/Project/snr n=10"}
-	\caption{\label{fig:snr_n_10.png} signal to noise ratio for N=10 years for the Effelsberg Telescope. Also shown are the characteristic strain spectra for the noise and the SMBHB GW}
-\end{figure}	
+	where $h_c$ is the signal from the SMBHB and $h_n$ is the sum of the radiometer noise and timing noise. From equation \ref{power spec}, the ratio of characteristic strains is equivalent to the ratio of power spectra for the signal and noise. In Figure \ref{fig:many-graphs-2} the power spectrum for the GW signal from the SMBHB is multiplied by the transfer function to give the detectable signal. The individual noise spectra are plotted together with the total noise. The individual SNR values for each discrete frequency value can be plotted as $\frac{1}{\sqrt{f}}\frac{P_{c}}{P_{n}}$ and is shown in green. Summing over all frequency values gives the total SNR, plotted in blue. 
 	
 	%In my presentation mention that gws have different wavelengths, depending on the source of the gw. We have found short wavelength gws using LIGO. Now we are trying to find long wavelength gws using pulsar timing. Just as the electromagnetic spectrum has light of different wavelengths, so too are there gws of different wavelengths.
+	%Why is it likely for us to detect a GW in the next five years-1. Decrease white noise, meerkat Trec and bandwidth, increase no. of pulsars with meertime 1000 pulsars, choose pulsars with low red noise spectrum..parkes did a lot of work on this, better constraints on GW amplitude
+\begin{figure}[h!]
+	\includegraphics[width=1\textwidth]{"../Desktop/Project/many graphs 2"}
+	\caption{Power spectrum and signal to noise for SMBHB GW signal from PSR J1643-1224 using MeerKAT with monthly observations for five years}
+	\label{fig:many-graphs-2}
+\end{figure}
+
+	%A 2009 paper on the international pulsar timing array (IPTA) project predicted that ultra-low frequency GWs will be detected using pulsar timing within 5 to 10 years \cite{hobbs2010international}
 	
-	A 2009 paper on the international pulsar timing array (IPTA) project predicted that ultra-low frequency GWs will be detected using pulsar timing within 5 to 10 years \cite{hobbs2010international}
+	\section{Pulsar Timing Arrays}
+	\begin{figure}[h!]
+		\includegraphics[width=1\textwidth]{"../Desktop/Project/snr 3 diff years 2"}
+		\caption{Signal to noise ratio for 100 MSPs with $\sigma=8ns$ observed for N=1 year, 3 years and 5 years}
+		\label{fig:snr-3-diff-years-2}
+	\end{figure}
 	
 	\section{Conclusion}
 	
@@ -406,8 +527,7 @@ A stochastic GWB from binary black holes at galaxy centres is the most likely si
 	\end{equation}
 	For h=g, we find that the autocorrelation of h is equal to the inverse fourier transform of H$^{*}$(f)H(f), defined as the power spectrum of h. Thus the Wiener-Khinchin relation has been proven. 
 	\bibliographystyle{plain}
-	\bibliography{bibliography}
-
+	\bibliography{bibattempt1}
 
 \end{document}
 

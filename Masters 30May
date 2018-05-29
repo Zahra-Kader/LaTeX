@@ -1,0 +1,560 @@
+\documentclass[12pt]{article}
+\usepackage{tgtermes}
+%\usepackage[english]{babel}
+%\usepackage[utf8]{inputenc}
+\linespread{1.3}
+\usepackage[a4paper,top=3cm,bottom=2.54cm,left=2.54cm,right=2.54cm,marginparwidth=1.75cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{ {../jpg/}{C:\Users\kaderf\Downloads} }
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[normalem]{ulem}
+
+%opening
+\title{HIRAX: Data analysis and cosmological cross-correlations}
+\author{Zahra Kader}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+\section{Cross correlation of CMB lensing and 21 cm HI signal}
+
+\section{CMB lensing}
+
+The concept of gravitational lensing stems from Einsteins theory of general relativity and refers to the bending of light due to the gravitational pull of large structures in the universe. CMB lensing specifically refers to the deflection of CMB photons. Thus, the CMB photons observed today are a lensed version of the photons that emerged from last scattering. Since the photons are affected by the gravitational potential wells, the CMB lensing signal can be used to gain insight into the large scale structures (LSS) in the universe and is measured by computing the convergence field, $\kappa$. The two dimensional angular projection of the three dimensional matter density, $\kappa(\theta$) is found by integrating over all comoving distances along our line of sight, $\chi_{\parallel}$.
+
+\begin{equation}\label{original kappa equation}
+\kappa(\vec{\theta})=\int d\chi_{\parallel}W_\kappa(\chi_{\parallel})\delta_{m}(\vec{\theta},\chi_{\parallel})
+\end{equation}
+
+\noindent where $\delta_{m}$ is the matter density and $W_\kappa(\chi_{\parallel})$ is the lensing kernel which represents the probability of finding a LSS a certain comoving distance away from us. Since $W_\kappa(\chi_{\parallel})$ is a probability, $\int_{0}^{\chi_{|| \infty}} d\chi_{\parallel} W_\kappa(\chi_{\parallel})=1$.
+
+\noindent The matter density, $\delta_{m}(\vec{\theta},\chi_{\parallel})$ can be rewritten in terms of wave vector, $\vec{k}$, by computing the inverse Fourier Transform.
+
+\begin{equation}\label{IFT of delta m ito chi perp}
+\delta_{m}(\vec{\chi_{\bot}},\chi_{\parallel})=\int \frac{d^3 \vec{k}}{(2 \pi)^3} e^{i\vec{k}.\vec{\chi_\bot}}\delta_{m}(\vec{k},\chi_{\parallel})=\int \frac{d^2 \vec{k_\bot}}{(2\pi)^2} e^{i\vec{k_\bot}.\chi_\bot} \int \frac{dk_\parallel}{2\pi} e^{ik_{\parallel}\chi_\parallel} \delta_{m}(\vec{k_\bot},k_\parallel,\chi_{\parallel})
+\end{equation}
+
+\noindent where the second equality was obtained by separating $\vec{k}$ into its components, $k_\parallel$ and $\vec{k_\bot}$. In equation \ref{IFT of delta m ito chi perp}, $\theta$ is replaced with the vector 
+\begin{subequations}
+\begin{equation}\label{chi perp equals theta times chi parallel}
+\vec{\chi_{\bot}}=\vec{\theta}\chi_{\parallel}
+\end{equation}
+\text{Since $\vec{l}$ is the fourier conjugate of $\vec{\theta}$ and $\vec{k_{\bot}}$ is the fourier conjugate of $\vec{\chi_{\bot}}$, the expression for $\vec{\chi_{\bot}}$ becomes}
+\begin{equation}\label{k perp equals l divided by chi parallel}
+\vec{k_{\bot}}=\frac{\vec{l}}{\chi_{\parallel}}
+\end{equation}
+\end{subequations}
+
+By combining equations \ref{chi perp equals theta times chi parallel} and \ref{k perp equals l divided by chi parallel}, equation \ref{IFT of delta m ito chi perp} can be expressed as 
+
+\begin{equation}\label{IFT of delta m ito l}
+\delta_{m}(\vec{\theta},\chi_{\parallel})=\int \frac{d^2 \vec{l}}{(2\pi)^2} e^{i\vec{l}.\vec{\theta}} \int \frac{dk_\parallel}{2\pi} e^{ik_{\parallel}\chi_\parallel}\frac{\delta_{m}(\vec{k_\bot},k_\parallel,\chi_{\parallel})}{\chi_{\parallel}^2}
+\end{equation}
+
+Substituting equation \ref{IFT of delta m ito l} into equation \ref{original kappa equation}, we have
+
+\begin{equation}\label{kappa of theta with l}
+\kappa(\vec{\theta})=\int d\chi_\parallel\frac{W_\kappa(\chi_{\parallel})}{\chi_{\parallel}^2}\int \frac{d^2 \vec{l}}{(2\pi)^2} e^{i \vec{l}.\vec{\theta}} \int \frac{dk_\parallel}{2\pi} e^{ik_{\parallel}\chi_\parallel}D(\chi_{\parallel})\delta_{m}(\vec{k_\bot},k_\parallel,z=0)
+\end{equation}
+
+\noindent where D is the growth function that determines the evolution of matter perturbations as a function of redshift, z. Now, using the fact that $\vec{l}$ is the fourier conjugate of $\vec{\theta}$, $\kappa(\vec{\theta})$ can be written as 
+
+\begin{equation}\label{FT of kappa of theta}
+\kappa(\vec{\theta})=\int \frac{d^2 \vec{l}}{(2\pi)^2} e^{i\vec{l}.\vec{\theta}}\kappa(\vec{l})
+\end{equation}   
+By comparing equations \ref{kappa of theta with l} and \ref{FT of kappa of theta}, the equation for $\kappa(\vec{l})$ is given by
+
+\begin{equation}\label{final kappa equation}
+\kappa(\vec{l})=\int d\chi_\parallel \widetilde{W_\kappa}(\chi_{\parallel}) \int \frac{dk_\parallel}{2\pi} e^{ik_{\parallel}\chi_\parallel} D(\chi_{\parallel})\delta_{m}(\vec{k_\bot},k_\parallel)
+\end{equation}
+where $\widetilde{W_\kappa}=\frac{W_\kappa(\chi_{\parallel})}{\chi_{\parallel}^2}$.
+
+The angular power spectrum for the lensing signal, $C_l^\kappa$ can be computed using equation \ref{final kappa equation} as follows
+
+\begin{equation}\label{angular power spec Cl}
+<\kappa(\vec{l})\kappa(\vec{l^{'*}})>=(2\pi)^2 \delta^2(\vec{l}-\vec{l'})C_l^\kappa \Rightarrow C_l^\kappa=\int \frac{d^2\vec{l'}}{(2\pi)^2}<\kappa(\vec{l})\kappa(\vec{l^{'*}})>
+\end{equation}
+where the second part of the equation is obtained using the definition of the $\delta$ function, $f(x')=\int f(x)\delta(x-x')$.
+
+Substituting equation \ref{final kappa equation} into equation \ref{angular power spec Cl} gives 
+
+\begin{equation}\label{Cl with delta}
+\begin{aligned}
+C_l^\kappa & =\int \frac{d^2\vec{l'}}{(2\pi)^2}\int \frac{dk_\parallel}{(2\pi)}e^{ik_\parallel \chi_{\parallel}} \int d\chi_{\parallel}\widetilde{W_\kappa}(\chi_{\parallel})D(\chi_{\parallel})\delta_{m}(\vec{k})\int \frac{dk'_\parallel}{(2\pi)}e^{-ik'_\parallel \chi'_{\parallel}}\int d\chi'_{\parallel}\widetilde{W_\kappa}(\chi'_{\parallel})D(\chi'_{\parallel})\delta_{m}^*(\vec{k'})>\\
+& =\int \frac{d^2\vec{l'}}{(2\pi)^2}\int \frac{dk_\parallel}{(2\pi)}e^{ik_\parallel \chi_{\parallel}} \int d\chi_{\parallel}\widetilde{W_\kappa}(\chi_{\parallel})D(\chi_{\parallel})\int \frac{dk'_\parallel}{(2\pi)}e^{-ik'_\parallel \chi'_{\parallel}}\int d\chi'_{\parallel}\widetilde{W_\kappa}(\chi'_{\parallel})D(\chi'_{\parallel})<\delta_{m}(\vec{k})\delta_{m}^*(\vec{k'})>
+\end{aligned}
+\end{equation}
+where $<\delta_{m}(\vec{k})\delta_{m}^*(\vec{k'})>$ can be expressed in terms of the matter density power spectrum, $P_m(\vec{k})$, analogous to equation \ref{angular power spec Cl}. Thus, equation \ref{Cl with delta} becomes 
+
+\begin{equation}\label{Cl with Pm(k)}
+\begin{aligned}
+C_l^\kappa&=\int \frac{d^2\vec{l'}}{(2\pi)^2}\int \frac{dk_\parallel}{(2\pi)}e^{ik_\parallel \chi_{\parallel}} \int d\chi_{\parallel}\widetilde{W_\kappa}(\chi_{\parallel})D(\chi_{\parallel})\int \frac{dk'_\parallel}{(2\pi)}e^{-ik'_\parallel \chi'_{\parallel}}\int d\chi'_{\parallel}\widetilde{W_\kappa}(\chi'_{\parallel})D(\chi'_{\parallel})\\&(2\pi)^2 \delta^2(\vec{k_{\bot}}-\vec{k'_\bot})(2\pi)\delta(\vec{k_\parallel}-\vec{k'_\parallel})P_m(\vec{k})
+ \\& =\int \frac{d^2\vec{l'}}{(2\pi)^2} \int d\chi_{\parallel}\widetilde{W_\kappa}(\chi_{\parallel})D(\chi_{\parallel})\int \frac{dk_\parallel}{(2\pi)}e^{-ik_\parallel (\chi'_{\parallel}-\chi_{\parallel})}\int d\chi'_{\parallel}\widetilde{W_\kappa}(\chi'_{\parallel})D(\chi'_{\parallel})\\&(2\pi)^2
+ \delta^2(\vec{k_{\bot}}-\vec{k'_\bot})P_m(\vec{k})
+\\&=\int \frac{dk_\parallel}{(2\pi)}\int d\chi'_{\parallel}W_\kappa(\chi'_{\parallel})D(\chi'_{\parallel})e^{-ik_\parallel \chi'_{\parallel}}\int d\chi_{\parallel} W_\kappa(\chi_{\parallel})D(\chi_{\parallel})e^{ik_\parallel \chi_{\parallel}}\frac{P_m(\vec{k})}{\chi^2_{\parallel}}
+\end{aligned}
+\end{equation}
+where the third equality comes from using equation \ref{k perp equals l divided by chi parallel} and applying the definition of the $\delta$ function. The following expressions can then be introduced.
+
+\begin{subequations}
+\begin{equation}\label{K eqn}
+K(k_\parallel)=\int d\chi_\parallel W_\kappa(\chi_\parallel) D(\chi_\parallel) e^{ik_\parallel \chi_\parallel}
+\end{equation}
+\text{and}
+\begin{equation}\label{Pm parallel eqn}
+P_m^\parallel (k_\parallel,\vec{l})|=\int d\chi_\parallel \frac{P_m(\vec{l}/\chi_\parallel,k_\parallel)}{\chi_\parallel^2}
+\end{equation}
+\end{subequations}
+where the expression for $P_m^\parallel$ is explicitly written as a function of the parallel components of $\vec{k}$ and $\vec{\chi}$ using equation \ref{k perp equals l divided by chi parallel}. Using these expressions, the third integral in the last line of equation \ref{Cl with Pm(k)} is clearly a product of equations \ref{K eqn} and \ref{Pm parallel eqn} in $\chi_\parallel$ space. Therefore, these equations can be expressed as a convolution in $k_\parallel$ space. Therefore, the expression for angular power spectrum for the convergence field is given by
+
+\begin{equation}
+C_l^\kappa=\int \frac{dk_\parallel}{2\pi}K^*(k_\parallel)[K(k_\parallel) \star P_m^\parallel (k_\parallel,l)]
+\end{equation}
+
+\section{21 cm Intensity signal}
+
+%\subsection{Peculiar velocities}
+
+%The peculiar velocity is the motion of a galaxy due to gravitational attraction to regions of overdensity. The equation relating the two quantities is given by \cite{bibid}
+
+%\begin{equation}\label{delta relates to v}
+%\dot{\delta}+ikv=0
+%\end{equation}
+%for scales well within the horizon. Removing the redshift dependance on $
+
+%\begin{equation}
+%v(k,\eta)=\frac{i}{k}\frac{d}{d\eta}\delta=\frac{i}{k}\frac{d}{d\eta}\left[\frac{\delta}{D}D\right]
+%\end{equation}
+  
+\subsection{Redshift space distortions}
+
+The motion of galaxies with respect to us is due to the expansion of the universe as well as the the motion of a galaxy due to gravitational attraction to regions of overdensity, known as peculiar velocity. Thus, the redshift is expressed as 
+
+\begin{equation}\label{redshift in real space}
+z=H_0x+\vec{v}.\hat{x}
+\end{equation} 
+where the first term comes from Hubble's law and the second term is the velocity of galaxies along the line of sight.\\
+Consider 4 galaxies on the edge of an overdense region in real space. The galaxy that is furthest from us will move towards the centre of the overdense region and hence will appear closer to us. The galaxy closest to us will also be attracted towards the centre of the overdense region, and will therefore appear to be further away from us. Thus, the real space arrangement of galaxies becomes distorted so that a circular overdensity in real space becomes asymmetric in redshift space. Note that galaxies that are not in our line of sight will not be affected by redshift space distortions. Thus, in redshift space, the redshift is due to the effect of the expansion of the universe on galaxies at distance, $x_s$. As a result, after dividing throughout by $H_0$, equation \ref{redshift in real space} can be written as
+
+\begin{equation}\label{real space distance related to redshift space distance}
+x_s=x+\frac{\vec{v}.\hat{x}}{H_0}
+\end{equation}
+
+Now, to relate the overdensity in real space to the overdensity in redshift space, we start with the realisation that the number of galaxies is the same in both real and redshift space, so that
+
+\begin{equation}
+n_s(\vec{x_s})d^3x_s=n(\vec{x})d^3x
+\end{equation}
+where $n$ is the number of galaxies at $\vec{x}$ in real space and $_s$ denotes redshift space. This can be rewritten as 
+
+\begin{equation}\label{n_s=nJ}
+n_s(\vec{x_s})=n(\vec{x})\textbf{J}
+\end{equation}
+where the Jacobian, \textbf{J}, is 
+
+\begin{equation}
+\textbf{J}=\frac{d^3x}{d^3x_s}=\frac{x^2dx}{x_s^2dx_s}=\left(1+\frac{\partial}{\partial x}\left[\frac{\vec{v}.\hat{x}}{H_0}\right]\right)^{-1}\left(1+\frac{\vec{v}.\hat{x}}{H_0x}\right)^{-2}
+\end{equation}  
+where the third equality comes from using equation \ref{real space distance related to redshift space distance}. This can be simplified as follows. Consider the first set of parantheses. The expression $\frac{\partial}{\partial x}\left[\frac{\vec{v}.\hat{x}}{H_0}\right] \sim \frac{kv}{H_0}$ for a plane wave perturbation, while the expression in the second set of parantheses is of order $\frac{v}{H_0x}$. Thus, the first expression is $kx$ times the second expression and since there are more modes with small wavelengths, these large k modes are more easily measured in surveys. As a result, $kx\gg1$, and the second parantheses is negligible. Taylor expanding the resulting expression gives the simplified expression
+
+\begin{equation}\label{simplified J ito v}
+J \approx \left(1-\frac{\partial}{\partial x}\left[\frac{\vec{v}.\hat{x}}{H_0}\right]\right)
+\end{equation}
+The number densities in real and redshift space are written as,
+
+\begin{subequations}
+\begin{equation}\label{n equation}
+n=\overline{n}(1+\delta)
+\end{equation}
+\begin{equation}\label{n_s equation}
+n_s=\overline{n}(1+\delta_s)
+\end{equation}
+\end{subequations}
+respectively, where $\overline{n}$ is the average number of galaxies. Substituting equations \ref{simplified J ito v}, \ref{n equation} and \ref{n_s equation} into equation \ref{n_s=nJ} gives
+
+\begin{equation}
+1+\delta_s=[1+\delta]\left(1-\frac{\partial}{\partial x}\left[\frac{\vec{v}.\hat{x}}{H_0}\right]\right)
+\end{equation}
+Expanding this to first order gives
+\begin{equation}\label{delta s relates to delta at first order}
+\delta_s(\vec{x})=\delta(\vec{x})-\frac{\partial}{\partial x}\left[\frac{\vec{v}.\hat{x}}{H_0}\right]
+\end{equation}
+
+The distant observer approximation states that, since galaxies are very far away, the direction vector, $\vec{x}$, is roughly constant for different galaxies and thus the dot product $\vec{v}.\hat{x}$ becomes $\vec{v}.\hat{z}$ where $\hat{z}$ points to the centre of the galaxies of interest. Now, taking the fourier transform of equation \ref{delta s relates to delta at first order} and applying the distant observer approximation gives
+
+\begin{equation}\label{delta s in k space}
+\delta_s(\vec{k})=\int d^3x e^{-i\vec{k}.\vec{x}}\left[\delta(\vec{x})-\left[\frac{\partial}{\partial x}\frac{\vec{v}({\vec{x}}).\hat{z}}{H_0}\right]\right]
+\end{equation}
+Also, the equation relating peculiar velocity to nearby overdensities in $\vec{k}$ space is given by
+
+\begin{equation}\label{peculiar velocity related to overdensity}
+\vec{v}(\vec{k})=ifH_0\delta(\vec{k})\frac{\vec{k}}{k^2}
+\end{equation}
+Taking the inverse fourier transform and substituting this into equation \ref{delta s relates to delta at first order} gives
+
+\begin{equation}
+\delta_s(\vec{k})=\delta(\vec{k})-if\int d^3x e^{-i\vec{k}.\vec{x}}\frac{\partial}{\partial x}\left[\int \frac{d^3k'}{(2\pi)^3}e^{i\vec{k'}.\vec{x}}\delta(k')\frac{\vec{k'}}{k'^2}.\hat{z}\right]
+\end{equation}
+where $f \equiv \frac{a}{D}\frac{dD}{da}$ is the dimensionless linear growth rate %\cite{bibid}.
+Taking the  derivative with respect to x gives an extra factor of $i\vec{k'}.\vec{\hat{x}}$ applied to the second term. Using the distant observer approximation again  gives
+
+\begin{equation}
+\delta_s(\vec{k})=\delta(\vec{k})+\int d^3x e^{i(\vec{k'}-\vec{k}).\vec{x}} \int \frac{d^3k'}{(2\pi)^3} [f(\hat{k'}.\hat{z})^2]\delta(k')
+\end{equation}
+Applying the Dirac delta property $\int e^{ik(x-x') }dk=\delta(x-x')$ and defining $\hat{k'}.\hat{z}=\mu_k$ gives the equation 
+
+\begin{equation}\label{delta s to delta final eqn}
+\delta_s(\vec{k})=\delta(\vec{k})[1+f\mu_k^2]
+\end{equation}
+Since $f\mu_k^2 \geq 0$, the overdensity in redshift space is larger than in real space, as expected. 
+
+\subsection{Measuring the HI signal}
+
+Structures such as galaxies contain large amounts of neutral hydrogen, the gas which is commonly known as star forming gas. Because of this, measuring 21 cm signals gives an indication of the LSS in the universe. We say that neutral hydrogen is a biased tracer of matter densities. The HI signal is measured using radio telescopes and due to redshift space distortions, the signal measured on Earth has been redshifted. Therefore, equation \ref{delta s to delta final eqn} can be written as
+
+\begin{equation}\label{delta HI to delta m}
+\delta_{HI}(\vec{k})=\delta_m(\vec{k})[b_{HI}+f\mu_k^2]
+\end{equation}
+where $b_{HI}$ is the HI bias and $\delta_{HI}$ is the density contrast of the HI signal intensity. Now, the signal intensity measured from radio telescopes is related to temperature via Rayleigh-Jean's apprximation, $I_\nu=2k_BT\frac{\nu^2}{c^2}$, for long wavelengths such as 21 cm. Since this approximation shows that the signal intensity is proportional to temperature, we have 
+
+\begin{equation}\label{delta 21 ito k}
+\begin{aligned}
+\delta T_{21}(\vec{k};z_i)&=\overline{T}(z_i)\delta_{HI}(\vec{k};z_i)
+\\&=\overline{T}(z_i)\delta_m(\vec{k};z_i)[b_{HI}+f\mu_k^2]
+\\&=\overline{T}(z_i)D(z_i)\delta_m(\vec{k};z=0)[b_{HI}+f\mu_k^2]
+\end{aligned}
+\end{equation}
+where the second equality comes from substituting equation \ref{delta HI to delta m} and the third comes from removing redshift dependance from $\delta_m$, as was done in equation \ref{kappa of theta with l}. Expressing this in observational-space Fourier variables gives %\cite{bibid}
+
+\begin{equation}\label{delta 21 ito y and l final eqn}
+\delta T_{21}(\vec{l},y;z_i)=\frac{\delta T_{21}(\vec{k}_\bot,k_\parallel;z_i)}{(\chi_{\parallel})^2r_{\nu(z_i)}}
+\end{equation}
+where the equation for $\vec{l}$ was given in equation \ref{k perp equals l divided by chi parallel} and the expression for $y$ is given as
+\begin{equation}\label{y eqn}
+y=k_\parallel r_\nu
+\end{equation}
+with $r_\nu=\frac{c(1+z_i)^2}{H(z_i)}$. Using the relation $1+z=\frac{1420 MHz}{\nu}$ for observing frequency, $\nu$, we see that $y$ is the inverse of $\nu$. Note that in the equation, $z_i$ is used to denote a particular redshift bin. 
+
+Analogous to equation \ref{angular power spec Cl}, the angular power spectrum for 21 cm temperature fluctuations is given by 
+
+\begin{equation}\label{Cl 21 relation to autocorrelation}
+\begin{aligned}
+&<\delta T_{21}(\vec{l},y;z_i) \delta T_{21}^*(\vec{l'},y';z_i)>=(2 \pi)^3\delta^2(\vec{l}-\vec{l'})\delta(y-y')C_l^{21}(y;z_i)
+\\&
+\Rightarrow C_l^{21}(y;z_i)=\int \frac{d^2\vec{l'}}{(2\pi)^2} \int \frac{dy'}{2\pi}<\delta T_{21}(\vec{l},y;z_i) \delta T_{21}^*(\vec{l'},y';z_i)>
+\end{aligned}
+\end{equation}
+
+Substituting equation \ref{delta 21 ito y and l final eqn} into equation \ref{Cl 21 relation to autocorrelation} gives
+
+\begin{equation}
+\Rightarrow C_l^{21}(y;z_i)=\int \frac{d^2\vec{l'}}{(2\pi)^2}\int \frac{dy'}{2\pi}\frac{(\overline{T}(z_i)D(z_i)[b_{HI}+f\mu_k^2])^2}{(\chi_{\parallel})^2 (\chi'_{\parallel})^2 r_{\nu}(z_i) r'_{\nu}(z_i)}<\delta_m(\vec{k};z=0)\delta_m^*(\vec{k};z=0)>
+\end{equation}
+Expressing $<\delta_m(\vec{k};z=0)\delta_m^*(\vec{k};z=0)>$ in terms of the matter power spectrum, as was done in equation \ref{Cl with Pm(k)}, we have
+ 
+\begin{equation}
+ C_l^{21}(y;z_i)=\int \frac{d^2\vec{l'}}{(2\pi)^2}\int \frac{dy'}{2\pi}\frac{(\overline{T}(z_i)D(z_i)[b_{HI}+f\mu_k^2])^2}{(\chi_{\parallel})^2 (\chi'_{\parallel})^2 r_{\nu}(z_i) r'_{\nu}(z_i)}(2\pi)^3
+\delta^2(\vec{k_{\bot}}-\vec{k'_\bot})\delta(k_{\parallel}-k'_\parallel)P_m(\vec{k})
+\end{equation}
+Substituting equations \ref{y eqn} and \ref{k perp equals l divided by chi parallel} and applying the Dirac delta functions gives
+
+\begin{equation}
+ C_l^{21}(y;z_i)\frac{(\overline{T}(z_i)D(z_i)[b_{HI}+f\mu_k^2])^2}{(\chi_{\parallel})^2 r_{\nu}(z_i)}P_m(\vec{k})
+\end{equation}
+
+We can express the angular power spectrum as a function of frequency as well using the fourier relation
+
+\begin{equation}\label{nu fourier of l}
+\delta T_{21}(\vec{l},\tilde{\nu};z_i)=\int \frac{dy}{2\pi}e^{iy\tilde{\nu}}\delta T_{21}(\vec{l},y;z_i)
+\end{equation}
+where $\tilde{\nu}=\frac{\nu}{1420 MHz}$ is the dimensionless frequency. Equation \ref{Cl 21 relation to autocorrelation} is expressed in terms of $\tilde{\nu}$ as
+
+\begin{equation}\label{Cl 21 cm ito nu}
+\begin{aligned}
+&<\delta T_{21}(\vec{l},\tilde{\nu};z_i) \delta T_{21}^*(\vec{l'},\tilde{\nu}';z_i)>=(2 \pi)^2\delta^2(\vec{l}-\vec{l'})C_l^{21}(y;z_i)
+\\&
+\Rightarrow C_l^{21}(\tilde{\nu},\tilde{\nu}';z_i)=\int \frac{d^2\vec{l'}}{(2\pi)^2} <\delta T_{21}(\vec{l},\tilde{\nu};z_i) \delta T_{21}^*(\vec{l'},\tilde{\nu}';z_i)>
+\end{aligned}
+\end{equation}
+
+Substituting equations \ref{nu fourier of l} and \ref{Cl 21 relation to autocorrelation} into equation \ref{Cl 21 cm ito nu} gives
+
+\begin{equation}
+\begin{aligned}
+C_l^{21}(\tilde{\nu},\tilde{\nu}';z_i)&=\int \frac{d^2\vec{l'}}{(2\pi)^2} \int \frac{dy}{2\pi}e^{iy\tilde{\nu}}\int \frac{dy'}{2\pi}e^{iy'\tilde{\nu}'}<\delta T_{21}(\vec{l},y;z_i)\delta T_{21}(\vec{l'},y';z_i)>
+\\&=\int \frac{d^2\vec{l'}}{(2\pi)^2} \int \frac{dy}{2\pi}e^{iy\tilde{\nu}}\int \frac{dy'}{2\pi}e^{iy'\tilde{\nu}'}(2 \pi)^3\delta_D^2(\vec{l}-\vec{l'})\delta_D(y-y')C_l^{21}(y;z_i)
+\\&=\int \frac{dy}{2\pi}e^{iy(\tilde{\nu}-\tilde{\nu}')}C_l^{21}(y;z_i)
+\end{aligned}
+\end{equation}
+
+\subsection{Cross correlation calculation}
+As discussed earlier, both CMB lensing and neutral hydrogen distributions serve as tracers of matter density distributions in the universe. Thus, it may be useful to compute the cross correlations of these two fields. 
+
+The calculation is as follows
+\begin{equation}
+\begin{aligned}
+&<\delta T_{21}(\vec{l},y;z_i) \kappa^*(\vec{l'})>=(2 \pi)^3\delta^2(\vec{l}-\vec{l'})C_l^{21-\kappa}(y;z_i)
+\\&
+\Rightarrow C_l^{21-\kappa}(y;z_i)=\int \frac{d^2\vec{l'}}{(2\pi)^2} <\delta T_{21}(\vec{l},y;z_i) \kappa^*(\vec{l'})>
+\end{aligned}
+\end{equation}
+Using equations \ref{delta 21 ito y and l final eqn} and \ref{final kappa equation} we have
+
+\begin{equation}
+\begin{aligned}
+C_l^{21-\kappa}(y;z_i)&=\int \frac{d^2\vec{l'}}{(2\pi)^2}\frac{\overline{T}(z_i)D(z_i)[b_{HI}+f\mu_k^2]}{(\chi_{\parallel}^2)r_\nu(z_i)} \int \frac{dk'_\parallel}{2\pi}
+\\& \int d\chi'_\parallel \widetilde{W_\kappa}(\chi'_{\parallel}) e^{-ik_{\parallel}\chi'_\parallel} D(\chi'_{\parallel})<\delta_m(\vec{k'_\bot},k'_\parallel;z=0)\delta(k_{\parallel}-k'_\parallel) \delta_{m}^*(\vec{k'_\bot},k'_\parallel,z=0)>
+\\&=\int \frac{d^2\vec{l'}}{(2\pi)^2}\frac{\overline{T}(z_i)D(z_i)[b_{HI}+f\mu_k^2]}{(\chi_{\parallel}^2)r_\nu(z_i)} \int \frac{dk'_\parallel}{2\pi} e^{-ik_{\parallel}\chi'_\parallel}\delta(k_{\parallel}-k'_\parallel)
+\\& \int d\chi'_\parallel \widetilde{W_\kappa}(\chi'_{\parallel}) D(\chi'_{\parallel})(2\pi)^3
+\delta^2(\vec{k_{\bot}}-\vec{k'_\bot})P_m(\vec{k})
+\end{aligned}
+\end{equation}
+Substituting equation \ref{k perp equals l divided by chi parallel} and using the definition of the Dirac delta function twice gives
+
+\begin{equation}
+C_l^{21-\kappa}(y;z_i)=\int d\chi'_\parallel \frac{\overline{T}(z_i)D(z_i)[b_{HI}+f\mu_k^2]}{(\chi_{\parallel}^2)r_\nu(z_i)} e^{-ik_{\parallel}\chi'_\parallel}
+  W_\kappa(\chi'_{\parallel}) D(\chi'_{\parallel})P_m\left(\frac{\vec{l}}{\chi_\parallel},\frac{y}{r_\nu}\right)
+\end{equation}
+
+Using fourier conventions, the cross correlation angular power spectrum is expressed as
+
+\begin{equation}
+C_l^{21-\kappa}(y;z_i)=\frac{\overline{T}(z_i)D(z_i)[b_{HI}+f\mu_k^2]}{(\chi_{\parallel}^2)r_\nu(z_i)}  [W_\kappa(k_{\parallel}) \star D(k_{\parallel})]P_m\left(\frac{\vec{l}}{\chi_\parallel},k_\parallel\right)
+\end{equation}
+
+\newpage
+\section{CMB Anisotropies}
+
+\subsection{Primary Anisotropies}
+
+Primary anisotropies occurred at the time of last scattering and include Sachs-Wolfe (SW) and the early integrated Sachs-Wolfe effects (ISW). SW is the result of photons in gravitational potentials at the time of last scattering. These photons are gravitationally redshifted as they climb out of the potential well which leads to the interesting result that the hot spots in the sky today were cold spots at last scattering. This is because denser regions at recombination contained more photons and were therefore hotter than underdense regions. Yet, the photons lost more energy climbing out of the gravitational well such that their resultant energy was less than the energy of the photons that were originally in cold regions. The SW effect is therefore due to the difference between the potential at the surface of last scattering and the potential today which we compute as follows.\\
+The Boltzmann equation can be simplified for the first two photon moments as
+%\begin{equation}
+%\dot{\Phi}+ik\mu\Theta=-\dot{\Theta}-ik\mu \Psi-\dot{\tau}\left[\Theta_0-\Theta+\mu \nu_b -\frac{P_2(\mu)\prod}{2}\right]
+%\end{equation}
+
+\begin{equation}
+\dot{\Theta}_0+k\Theta_1=-\dot{\Phi}
+\end{equation}
+Since the SW effect is large-scale, we have $k \gg 1$ which simplifies the equation to
+
+\begin{equation}
+{\Theta_0}=-{\Phi}+constant
+\end{equation}
+Using the initial conditions $\Theta_0=\Phi/2$ we have $constant=\frac{3\Phi_p}{2}$ where $\Phi_p$ represents the initial gravitational potential during inflation. Large scale perturbations exhibit only a small decrease in gravitational potential of $10 \%$ for $\frac{a}{a_{eq}} \gg 1$ so, assuming recombination occurred after the epoch of matter-radiation equality, $\Phi=\frac{9\Phi_p}{10}$. Therefore, at recombination we have the relation
+
+\begin{equation}
+\Theta_0(k,\eta_*)=\frac{2\Phi(k,\eta_*)}{3}
+\end{equation}
+where $\eta_*$ is the comoving horizon at recombination. Using $\Psi=-\Phi$ this can be rewritten as 
+
+\begin{equation}
+(\Theta_0+\Psi)(k,\eta_*)=\frac{1}{3}\Psi(k,\eta_*)
+\end{equation}
+where $\Theta_0+\Psi$ is the observed anisotropy since the photon perturbation is affected by the gravitational potential wells in which the photons are contained. 
+This can be rewritten in terms of the comoving horizon today, $\eta_0$.
+
+\begin{equation}\label{SW  anisotropy recomb related to potential today}
+(\Theta_0+\Psi)(k,\eta_*) \approx \frac{1}{3D(a_0=1)}\Psi(k,\eta_0)
+\end{equation}
+Now, the dark matter density can be expressed in terms of gravitational potential using the Poissons equation, 
+\begin{equation}
+k^2\Phi=4\pi G\rho_m a^2\delta
+\end{equation}
+and substituting the equations for critical density, $\rho_{cr}=\frac{3H_0^2}{8\pi G}$ and energy density for matter, $\Omega_m=\frac{\rho_m}{\rho_{cr}}a^3$, we have for $a=1$
+
+\begin{equation}
+\Phi=\frac{3\Omega_m H_0^2 \delta}{2k^2}
+\end{equation}
+Substituting this into equation \ref{SW  anisotropy recomb related to potential today} with $\Psi=-\Theta$ gives
+
+\begin{equation}\label{SW relating potential at recomb to density today}
+(\Theta_0+\Psi)(k,\eta_*) \approx -\frac{\Omega_m H_0^2}{2k^2D(a_0=1)}\delta(k,\eta_0)
+\end{equation}
+Now, the CMB anisotropies today can be determined using the equation
+
+\begin{equation}\label{anisotropies at recomb related to anisotropies today}
+\begin{aligned}
+\Theta_l(k,\eta_0)&=[\Theta_0(k,\eta_*)+\Psi(k,\eta_*)]j_l[k(\eta_0-\eta_*)] \\ &+3\Theta_1(k,\eta_*)\left(j_{l-1}[k(\eta_0-\eta_*)]-\frac{(l+1)j_l[k(\eta_0-\eta_*)]}{k(\eta_0-\eta_*)}\right) \\
+&+\int_{0}^{\eta_0}e^{-\tau}[\dot{\Psi}(k,\eta)-\dot{\Phi}(k,\eta)]j_l[k(\eta_0-\eta_*)]
+\end{aligned}
+\end{equation}
+where $j_l$ is the spherical bessel function. \\
+The first two lines show that the anisotropies today require knowledge of the monopole ($\Theta_0$), dipole ($\Theta_1$) and potential ($\Psi$) at the time of recombination. The last line signifies the smaller changes to the anisotropy due to changing potentials and is known as the integrated Sachs-Wolfe (ISW) effect. Photons gain energy when entering a gravitational well and lose energy when leaving. Thus, a photon that enters and leaves a gravitational well of constant density will have no net change in energy. If there is a change in density before the photon escapes the well, the photons will have a net change in energy which will contribute to anisotropies. This change in density occurs between the radiation-matter eras (giving rise to the early ISW effect) and the matter-$\Lambda$ eras (known as the late ISW effect). Note that the monopole term contributes the most to the observed anisotropies in equation \ref{anisotropies at recomb related to anisotropies today} while the ISW effects contribute the least. We also notice that the ISW effect is in phase with the monopole term in equation due to the two terms having the same Bessel functions. 
+
+Using equation \ref{SW relating potential at recomb to density today} as the monopole term of equation \ref{anisotropies at recomb related to anisotropies today} and ignoring the dipole and ISW effects gives
+
+\begin{equation}\label{photon anisotropies related to density}
+\Theta_l(k,\eta_0)=-\frac{\Omega_m H_0^2}{2k^2D(a_0=1)}\delta(k,\eta_0)j_l[k(\eta_0-\eta_*)]
+\end{equation}
+Also, the angular power spectrum, $C_l$, is an integral over all Fourier modes of the variance of $\Theta_l$ via the equation
+
+\begin{equation}\label{Cl related to fourier of Theta l}
+C_l=\frac{2}{\pi}\int_{0}^{\infty}dk k^2 P(k)\left|\frac{\Theta_l(k)}{\delta(k)}\right|^2
+\end{equation}
+where the power spectrum of matter at late times
+
+\begin{equation}
+P(k)=2 \pi^2 \delta_H^2 \frac{k^n}{H_0^{n+3}}T^2(k)\left(\frac{D(a)}{D(a_0=1)} \right)^2
+\end{equation}
+where $n$ is a spectral index with $n=1$ representing the Harrison-Zel'dovich spectrum, and $\delta_H$ is the matter density at the horizon crossing of the mode, $k$.\\
+This equation simplifies for large scale anisotropies since transfer function, $T$, is approximately 1. Combining previous expressions we can obtain an expression for $C_l^{SW}$ which is given by
+
+\begin{equation}
+C_l^{SW} \approx \frac{\pi \Omega_m^2 \delta_H^2}{ D^2(a_0=1)H_0^{n-1}}\int_{0}^{\infty}dk k^{n-2} j_l^2[k(\eta_0-\eta_*)]
+\end{equation}
+Since $\eta_0 \gg \eta_*$, we can make the approximation, $\eta_0-\eta_* \approx \eta_0$ and make the substitution $x=k\eta_0$ which allows us to use the property of spherical bessel functions (refer to Appendix equation \ref{spherical bessel func property}).
+
+\begin{equation}
+C_l^{SW} \approx \frac{2^{n-4}\pi^2 \Omega_m^2 \delta_H^2}{ D^2(a_0=1)(\eta_0 H_0)^{n-1}}\frac{\Gamma(l+\frac{n}{2}-\frac{1}{2})\Gamma(3-n)}{\Gamma(l+\frac{5}{2}-\frac{n}{2})\Gamma(2-\frac{n}{2})}  
+\end{equation}
+Now, assume the spectrum is Harrison-Zel'dovich so that $n=1$. Substituting this into the equation and using properties of gamma functions we get $\frac{\Gamma(l)}{\Gamma(l+2)}=[l(l+1)]^{-1}$ and $\frac{\Gamma(2)}{\Gamma^2(3/2)}=\frac{4}{\pi}$ this simplifies to
+
+\begin{equation}
+l(l+1)C_l^{SW}=\frac{\pi}{2}\left(\frac{\Omega_m}{D(a_0=1)}\right)^2\delta_H^2
+\end{equation}
+
+Now, going back to equation \ref{anisotropies at recomb related to anisotropies today}, the integral in the last line accounts for ISW effects,as mentioned previously. The early ISW effect occurs due to the change in potential at recombination, $\eta_*$. Therefore, this effect is simply obtained by computing the integral which gives
+
+\begin{equation}\label{early ISW}
+\Theta_l(k,n_0)^{\text{early ISW}}=[\Psi(k,\eta_0)-\Psi(k,\eta_*)]-\Theta(k,\eta_0)+\Theta(k,\eta_*)] j_l[k(\eta_0-\eta_*)]
+\end{equation}
+Note that all sub-horizon scales, $k\eta_* > 1$, are affected, with the largest effect typically at the horizon. Also, the ISW effect is proportional to the Bessel function which peaks at $l \sim k(\eta_0-\eta_*) \sim (\eta_0-\eta_*)/n_* $ at the horizon, so that the highest contribution to the anisotropy results from small l on these scales. 
+
+\subsection{Secondary Anisotropies}
+
+Secondary anisotropies occurred between the surface of last scattering and the present time and are small scale anisotropies that have a smaller effect on the CMB spectrum than that of the primary anisotropies. The secondary anisotropies can be divided into gravitational and scattering effects. The gravitational include the late ISW (mentioned previously) as well as Reese-Sciama and gravitational lensing. The CMB spectrum can also become distorted due to photons scattering off electrons. Scattering occurs in regions such as clusters where the temperature is hot enough and electrons are ionised and also occurs at the Epoch of Reionisation (EoR). The distortion of the CMB spectrum as photons pass through the hot intra-cluster medium is known as the Sunyaev-Zel'dovich effect, of which there are two types-thermal (TSZ) and kinetic (KSZ). Thermal is the result of photons scattered off electrons through inverse compton scattering. Average photon temperature increases and the spectrum shifts to the right. 
+
+\subsubsection{Gravitational effects}
+
+The late ISW effect is expressed similarly to equation \ref{early ISW} for the early ISW except that this effect occurs at the onset of dark energy domination.
+
+\subsubsection{Scattering effects}
+
+The derivation of TSZ is as follows. 
+
+The intensity of a single photon is given by the Planck's radiation formula. 
+
+\begin{equation}\label{plancks radiation one photon}
+I_0(\nu_0)=\frac{2h\nu_0^3}{c^2}n_0
+\end{equation}
+where $I_0$ is the intensity and the quantity, $n_0=(e^{h\nu_0/k_BT_{rad}}-1)^{-1}$, is the Bose-Einstein distribution of photons. The scattering of photons will cause a change in the photon distribution, thereby causing a change in the observed CMB spectrum. This change can be written analogous to equation \ref{plancks radiation one photon} as
+
+\begin{equation}\label{delta I eqn}
+\Delta I(x)=\frac{2hx^3}{c^2}\left(\frac{k_BT_{rad}}{h}\right)^3\Delta n
+\end{equation}
+where $x=\frac{h\nu}{k_BT_{rad}}$ and $\Delta n$ is the spectral change caused by scattering. \\
+Now, the Kompaneets equation describes the rate of change of photon number assuming that the electrons are non-relativistic and that energy transfer between scattering photons and electrons is small. The Kompaneets equation is given by
+
+\begin{equation}\label{kompaneets eqn}
+\begin{aligned}
+&\frac{\partial n}{\partial t}=n_e \sigma_T c \frac{k_BT_e}{mc^2}\frac{1}{x_e^2}\frac{\partial}{\partial x_e}\left[x_e^4\left(\frac{\partial n}{\partial x_e}+n+n^2\right)\right]\Rightarrow\\
+ &\frac{\partial n}{\partial y}=\frac{1}{x_e^2}\frac{\partial}{\partial x_e}\left[x_e^4\left(\frac{\partial n}{\partial x_e}+n+n^2\right)\right]
+\end{aligned}
+\end{equation}
+
+\noindent where $x_e=\frac{h\nu}{k_BT_e}$ and $\sigma_T$ is the Thomson cross section and the Compton y parameter is given as
+
+\begin{equation}
+y=\int n_e \sigma_T dl \frac{k_BT_e}{m_ec^2}
+\end{equation}
+
+\noindent This parameter describes the fractional change in energy of a photon as it passes through a region of matter of cross section, $\sigma_T$ and electron number density, $n_e$, and integrated over distance , $dl=cdt$, along the line of sight. \\
+Electron temperatures in the intracluster medium are typically very high, so we have $x_e=\frac{h\nu}{k_BT_e} \ll 1$ which gives $\frac{\partial n}{\partial x} \gg n,n^2$. Thus, equation \ref{kompaneets eqn} becomes
+
+\begin{equation}
+\frac{\partial n}{\partial y}=\frac{1}{x_e^2}\frac{\partial}{\partial x_e}\left[x_e^4\frac{\partial n}{\partial x_e}\right]
+\end{equation}
+Typically we have $T_e \gg T_{rad}$. As scattering occurs, the temperature of the electrons decrease leads to the increase in photon temperature, thereby giving rise to the TSZ spectrum distortion. Thus, the change in electron temperature is equal to the change in photon temperature, allowing us to make the replacement, $x_e=x$. Using $n=(e^{x}-1)^{-1}$ we can carry out the derivative. With small y approximations, for regions with lower temperature and optical depth, we have the non-relativistic spectral change, $\Delta n_{NR}$
+
+\begin{equation}
+\Delta n_{NR}=xy\frac{e^x}{(e^x-1)^2}\left(x\frac{e^x+1}{e^x-1}-4\right)
+\end{equation}
+This expression expanded to first order perturbations to account for relativistic effects is given by 
+
+\begin{equation}
+\Delta n=xy\frac{e^x}{(e^x-1)^2}\left(x\frac{e^x+1}{e^x-1}-4\right)(1+\delta_{SZE}(x,T_e))
+\end{equation}
+where $\delta_{SZE}(x,T_e)$ is the relativistic correction. Substituting this into equation \ref{delta I eqn} gives the final expression for the TSZ effect.
+
+
+\begin{equation}
+\frac{\Delta I_{TSZ}}{I}= x^4y\frac{e^x}{(e^x-1)^2}\left(x\frac{e^x+1}{e^x-1}-4\right)(1+\delta_{SZE}(x,T_e))
+\end{equation}
+for $I=\frac{2h}{c^2}\left(\frac{k_BT_{rad}}{h}\right)^3$. In the Rayleigh-Jeans limit, i.e. $x \ll 1$ for small frequencies, we use Taylor expansions $e^x \approx 1+x$ to give
+
+\begin{equation}
+\frac{\Delta I_{TSZ}}{I}=2y
+\end{equation}
+
+
+
+So far we have considered the effect of CMB photons scattered off electrons in the intracluster medium. Now, an additional effect arises from the motion of the cluster relative to the CMB. This is the KSZ effect which is simply an expression of the resulting Doppler shift. In the non-relativistic limit, the CMB spectral distortion is given as
+
+\begin{equation}\label{temp distortion due to ksz}
+\frac{\Delta T_{KSZ}}{T_{rad}}=\tau \frac{\nu_r}{c}cos\theta
+\end{equation}
+where $\theta$ is the angle between the observer and the direction of motion of the cluster, and $\nu_r$ is the radial component of the peculiar velocity of the cluster. We can write this in terms of intensity using Planck's radiation formula to obtain 
+
+\begin{equation}
+\frac{\Delta I_{KSZ}}{I}=-x^4 \frac{e^x}{(e^x-1)^2}\tau \frac{\nu_r}{c}cos\theta
+\end{equation}
+
+Using equation \ref{temp distortion due to ksz} and substituting the expression for optical depth, $\tau$, we have 
+
+\begin{equation}\label{p(theta) temp distortion ksz}
+p(\theta)\equiv \frac{\Delta T_{KSZ}}{T_{rad}}=\int_{0}^{\eta_0}n_e\sigma_Te^{-\tau}\left[\hat{\theta}.\frac{\vec{v}(\chi\hat{\theta})}{c}\right]a(\chi)d\chi
+\end{equation}
+
+where $\vec{v}$ is the bulk velocity at distance $\vec{x}=\chi\vec{\theta}$ and the extra factor of $a(\chi)$ comes from the relation $dt=ad\chi$. 
+The visibility function is the probability of photons scattering off ionised electrons and is given by
+
+\begin{equation}
+g(\eta)=-\dot{\tau}e^{-\tau} \Rightarrow g(\chi)= n_e \sigma_T a(\chi)e^{-\tau}
+\end{equation} 
+Substituting this into the equation \ref{p(theta) temp distortion ksz} gives
+
+\begin{equation}
+p(\theta)=-\int_{0}^{\eta_0} d\chi g(\chi)\hat{\theta}.\vec{q}(\chi \hat{\theta})
+\end{equation}
+where $\vec{q}(\vec{x})=(1+\delta(\vec{x}))\vec{v}(\vec{x})$. 
+Now, the velocity in fourier space is derived from the Boltzmann equations and Einstein equations expressed as
+
+\begin{subequations}
+\begin{equation}
+\dot{\delta}+ikv=0
+\end{equation}
+\begin{equation}
+\dot{v} +aHv=ik62\Phi
+\end{equation}
+\begin{equation}
+k^2\Phi=\frac{3}{2}a^2H^2\left[\delta+\frac{3aHiv}{k}\right]
+\end{equation}
+\end{subequations} 
+
+Using these 3 equations we find the expression relating velocity to matter density.
+
+\begin{equation}
+\begin{aligned}
+v(\vec{k})=&\frac{a}{ik^2}\frac{\dot{a}}{a}\vec{k}\delta(\vec{k})\\
+&=\frac{a}{ik^2}\frac{\dot{D}}{D}\vec{k}\delta(\vec{k})\\
+&=\frac{a}{ik^2}\frac{\dot{D}}{D_0}\vec{k}\delta_0(\vec{k})
+\end{aligned}
+\end{equation}
+where the second equality comes from the fact that the growth factor, $D(a) \propto a$ for a flat, matter dominated universe.
+This equation clearly shows that $v(\vec{k}) \propto \vec{k}$. 
+
+Now, from equation \ref{p(theta) temp distortion ksz} the velocity components parallel to the line of sight will contribute the most to anisotropies, i.e. $v(\chi) \parallel \hat{\theta} \Rightarrow v(\vec{k}) \perp \hat{\theta}$ so that we are looking at k modes perpendicular to the line of sight. This makes sense as k modes parallel to the line of sight will experience cancellations of crests and troughs resulting in negligible contribution to the anisotropies whereas in the small angle approximation the perpendicular k modes have a maximum contribution. This is called the Limber approximation.  
+
+\section{Appendix}
+\begin{equation}\label{spherical bessel func property}
+\int_{0}^{\infty} dx x^{n-2} j_l^2(x)=2^{n-4} \pi \frac{\Gamma(l+\frac{n}{2}-\frac{1}{2})\Gamma(3-n)}{\Gamma(l+\frac{5}{2}-\frac{n}{2})\Gamma(2-\frac{n}{2})} 
+\end{equation}
+
+
+\end{document}

@@ -1,0 +1,320 @@
+\documentclass[12pt]{article}
+\usepackage{tgtermes}
+%\usepackage[english]{babel}
+%\usepackage[utf8]{inputenc}
+\linespread{1.3}
+\usepackage[a4paper,top=3cm,bottom=2.54cm,left=2.54cm,right=2.54cm,marginparwidth=1.75cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[normalem]{ulem}
+
+%opening
+\title{Cross correlation linear ksz and 21 cm signal}
+\author{Zahra Kader}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+\section{Cross correlation of KSZ and 21 cm HI signal}
+
+\subsection{Measuring the HI signal}
+
+Structures such as galaxies contain large amounts of neutral hydrogen, the gas which is commonly known as star forming gas. Because of this, measuring 21 cm signals gives an indication of the LSS in the universe. We say that neutral hydrogen is a biased tracer of matter densities. The HI signal is measured using radio telescopes and due to redshift space distortions, the signal measured on Earth has been redshifted. Therefore, we have
+
+\begin{equation}\label{delta HI to delta m}
+\delta_{HI}(\vec{k})=\delta_m(\vec{k})[b_{HI}+f\mu_k^2]
+\end{equation}
+where $b_{HI}$ is the HI bias and $\delta_{HI}$ is the density contrast of the HI signal intensity. Now, the signal intensity measured from radio telescopes is related to temperature via Rayleigh-Jean's apprximation, $I_\nu=2k_BT\frac{\nu^2}{c^2}$, for long wavelengths such as 21 cm. Since this approximation shows that the signal intensity is proportional to temperature, we have 
+
+\begin{equation}\label{delta 21 ito k}
+\begin{aligned}
+\delta T_{21}(\vec{k};z_i)&=\overline{T}(z_i)\delta_{HI}(\vec{k};z_i)
+\\&=\overline{T}(z_i)\delta_m(\vec{k};z_i)[b_{HI}+f\mu_k^2]
+\\&=\overline{T}(z_i)D(z_i)\delta_m(\vec{k};z=0)[b_{HI}+f\mu_k^2]
+\end{aligned}
+\end{equation}
+where the second equality comes from substituting equation \ref{delta HI to delta m} and the third comes from removing redshift dependance from $\delta_m$. Expressing this in observational-space Fourier variables gives %\cite{bibid}
+
+\begin{equation}\label{delta 21 ito y and l final eqn}
+\delta T_{21}(\vec{l},y;z_i)=\frac{\delta T_{21}(\vec{k}_\bot,k_\parallel;z_i)}{(\chi )^2r_{\nu(z_i)}}
+\end{equation}
+where the expression for $y$ is given as
+\begin{equation}\label{y eqn}
+y=k_\parallel r_\nu
+\end{equation}
+with $r_\nu=\frac{c(1+z_i)^2}{H(z_i)}$. Using the relation $1+z=\frac{1420 MHz}{\nu}$ for observing frequency, $\nu$, we see that $y$ is the inverse of $\nu$. Note that in the equation, $z_i$ is used to denote a particular redshift bin. 
+
+The angular power spectrum for 21 cm temperature fluctuations is given by 
+
+\begin{equation}\label{Cl 21 relation to autocorrelation}
+\begin{aligned}
+&\langle  \delta T_{21}(\vec{l},y;z_i) \delta T_{21}^*(\vec{l'},y';z_i)\rangle  =(2 \pi)^3\delta^2(\vec{l}-\vec{l'})\delta(y-y')C_l^{21}(y;z_i)
+\\&
+\Rightarrow C_l^{21}(y;z_i)=\int \frac{d^2\vec{l'}}{(2\pi)^2} \int \frac{dy'}{2\pi}\langle  \delta T_{21}(\vec{l},y;z_i) \delta T_{21}^*(\vec{l'},y';z_i)\rangle  
+\end{aligned}
+\end{equation}
+
+Substituting equation \ref{delta 21 ito y and l final eqn} into equation \ref{Cl 21 relation to autocorrelation} gives
+
+\begin{equation}
+\Rightarrow C_l^{21}(y;z_i)=\int \frac{d^2\vec{l'}}{(2\pi)^2}\int \frac{dy'}{2\pi}\frac{(\overline{T}(z_i)D(z_i)[b_{HI}+f\mu_k^2])^2}{(\chi )^2 (\chi' )^2 r_{\nu}(z_i) r'_{\nu}(z_i)}\langle  \delta_m(\vec{k};z=0)\delta_m^*(\vec{k};z=0)\rangle  
+\end{equation}
+Expressing $\langle  \delta_m(\vec{k};z=0)\delta_m^*(\vec{k};z=0)\rangle  $ in terms of the matter power spectrum, we have
+
+\begin{equation}
+C_l^{21}(y;z_i)=\int \frac{d^2\vec{l'}}{(2\pi)^2}\int \frac{dy'}{2\pi}\frac{(\overline{T}(z_i)D(z_i)[b_{HI}+f\mu_k^2])^2}{(\chi )^2 (\chi' )^2 r_{\nu}(z_i) r'_{\nu}(z_i)}(2\pi)^3
+\delta^2(\vec{k_{\bot}}-\vec{k'_\bot})\delta(k_{\parallel}-k'_\parallel)P_m(\vec{k})
+\end{equation}
+Substituting equations and applying the Dirac delta functions gives
+
+\begin{equation}
+C_l^{21}(y;z_i)\frac{(\overline{T}(z_i)D(z_i)[b_{HI}+f\mu_k^2])^2}{(\chi )^2 r_{\nu}(z_i)}P_m(\vec{k})
+\end{equation}
+
+We can express the angular power spectrum as a function of frequency as well using the fourier relation
+
+\begin{equation}\label{nu fourier of l}
+\delta T_{21}(\vec{l},\tilde{\nu};z_i)=\int \frac{dy}{2\pi}e^{iy\tilde{\nu}}\delta T_{21}(\vec{l},y;z_i)
+\end{equation}
+where $\tilde{\nu}=\frac{\nu}{1420 MHz}$ is the dimensionless frequency. Equation \ref{Cl 21 relation to autocorrelation} is expressed in terms of $\tilde{\nu}$ as
+
+\begin{equation}\label{Cl 21 cm ito nu}
+\begin{aligned}
+&\langle  \delta T_{21}(\vec{l},\tilde{\nu};z_i) \delta T_{21}^*(\vec{l'},\tilde{\nu}';z_i)\rangle  =(2 \pi)^2\delta^2(\vec{l}-\vec{l'})C_l^{21}(y;z_i)
+\\&
+\Rightarrow C_l^{21}(\tilde{\nu},\tilde{\nu}';z_i)=\int \frac{d^2\vec{l'}}{(2\pi)^2} \langle  \delta T_{21}(\vec{l},\tilde{\nu};z_i) \delta T_{21}^*(\vec{l'},\tilde{\nu}';z_i)\rangle  
+\end{aligned}
+\end{equation}
+
+This becomes
+
+\begin{equation}
+\begin{aligned}
+C_l^{21}(\tilde{\nu},\tilde{\nu}';z_i)&=\int \frac{d^2\vec{l'}}{(2\pi)^2} \int \frac{dy}{2\pi}e^{iy\tilde{\nu}}\int \frac{dy'}{2\pi}e^{iy'\tilde{\nu}'}\langle  \delta T_{21}(\vec{l},y;z_i)\delta T_{21}(\vec{l'},y';z_i)\rangle  
+\\&=\int \frac{d^2\vec{l'}}{(2\pi)^2} \int \frac{dy}{2\pi}e^{iy\tilde{\nu}}\int \frac{dy'}{2\pi}e^{iy'\tilde{\nu}'}(2 \pi)^3\delta_D^2(\vec{l}-\vec{l'})\delta_D(y-y')C_l^{21}(y;z_i)
+\\&=\int \frac{dy}{2\pi}e^{iy(\tilde{\nu}-\tilde{\nu}')}C_l^{21}(y;z_i)
+\end{aligned}
+\end{equation}
+
+\subsection{KSZ effect}
+So far we have considered the effect of CMB photons scattered off electrons in the intracluster medium. Now, an additional effect arises from the motion of the cluster relative to the CMB. This is the KSZ effect which is simply an expression of the resulting Doppler shift. In the non-relativistic limit, the CMB spectral distortion is given as
+
+\begin{equation}\label{temp distortion due to ksz}
+\frac{\Delta T_{KSZ}}{T_{rad}}=\tau \frac{\nu_r}{c}cos\theta
+\end{equation}
+where $\theta$ is the angle between the observer and the direction of motion of the cluster, and $\nu_r$ is the radial component of the peculiar velocity of the cluster. We can write this in terms of intensity using Planck's radiation formula to obtain 
+
+\begin{equation}
+\frac{\Delta I_{KSZ}}{I}=-x^4 \frac{e^x}{(e^x-1)^2}\tau \frac{\nu_r}{c}cos\theta
+\end{equation}
+
+Using equation \ref{temp distortion due to ksz} and substituting the expression for optical depth, $\tau$, we have 
+
+\begin{equation}\label{p(theta) temp distortion ksz}
+p(\vec{\theta})\equiv \frac{\Delta T_{KSZ}}{T_{rad}}=\int_{0}^{\eta_0}n_e\sigma_Te^{-\tau}\left[\hat{\theta}.\frac{\vec{v}(\vec{\theta},\chi)}{c}\right]a(\chi)d\chi
+\end{equation}
+
+where $\vec{v}$ is the bulk velocity at distance $\vec{x}=\chi\vec{\theta}$ and the extra factor of $a(\chi)$ comes from the relation $dt=ad\chi$. 
+The visibility function is the probability of photons scattering off ionised electrons and is given by
+
+\begin{equation}
+g(\eta)=-\dot{\tau}e^{-\tau} \Rightarrow g(\chi)= \overline{n_e}(\chi) \sigma_T a(\chi)e^{-\tau}
+\end{equation} 
+where $\overline{n}_e(\chi)=\Omega_b\rho_c x_e(\chi)(1+z)^3/m_p$ where $\Omega_b$ is the baryon density today, $x_e(\chi)$ is the ionisation fraction and $m_p$ is the proton mass. Substituting this into the equation \ref{p(theta) temp distortion ksz} gives
+
+\begin{equation}
+p(\vec{\theta})=-\int_{0}^{\eta_0} d\chi g(\chi)\hat{\theta}.\vec{q}(\vec{x}(\vec{\theta},\chi))
+\end{equation}
+where $\vec{q}(\vec{x})=(1+\delta(\vec{x}))\vec{v}(\vec{x})$. 
+
+
+\noindent We can use Fourier conventions to find $q(\vec{k})$
+
+\begin{equation}\label{IFT of delta m ito chi perp}
+q(\chi\vec{\theta},\chi)=\int \frac{d^3 \vec{k}}{(2 \pi)^3} e^{i\vec{k}.\chi_{\bot}}q(\vec{k},\chi )=\int \frac{d^2 \vec{k_\bot}}{(2\pi)^2} e^{i\vec{k_\bot}.\chi_\bot} \int \frac{dk_\parallel}{2\pi} e^{ik_{\parallel}\chi } q(\vec{k_\bot},k_\parallel,\chi )
+\end{equation}
+
+\noindent where the second equality was obtained by separating $\vec{k}$ into its components, $k_\parallel$ and $\vec{k_\bot}$. In equation \ref{IFT of delta m ito chi perp}, $\theta$ is replaced with the vector 
+\begin{subequations}
+	\begin{equation}\label{chi perp equals theta times chi parallel}
+	\vec{\chi_{\bot}}=\vec{\theta}\chi 
+	\end{equation}
+	\text{Since $\vec{l}$ is the fourier conjugate of $\vec{\theta}$ and $\vec{k_{\bot}}$ is the fourier conjugate of $\vec{\chi_{\bot}}$, the expression for $\vec{\chi_{\bot}}$ becomes}
+	\begin{equation}\label{k perp equals l divided by chi parallel}
+	\vec{k_{\bot}}=\frac{\vec{l}}{\chi }
+	\end{equation}
+\end{subequations}
+
+By combining equations \ref{chi perp equals theta times chi parallel} and \ref{k perp equals l divided by chi parallel}, equation \ref{IFT of delta m ito chi perp} can be expressed as 
+
+\begin{equation}\label{IFT of delta m ito l}
+\vec{q}(\chi\vec{\theta},\chi )=\int \frac{d^2 \vec{l}}{(2\pi)^2} e^{i\vec{l}.\vec{\theta}} \int \frac{dk_\parallel}{2\pi} e^{ik_{\parallel}\chi }\frac{\vec{q}(\vec{k_\bot},k_\parallel,\chi )}{\chi ^2}
+\end{equation}
+
+Substituting equation \ref{IFT of delta m ito l} we have
+
+\begin{equation}\label{kappa of theta with l}
+p(\vec{\theta})=-\int d\chi \frac{g(\chi )}{\chi ^2}\int \frac{d^2 \vec{l}}{(2\pi)^2} e^{i \vec{l}.\vec{\theta}} \int \frac{dk_\parallel}{2\pi} e^{ik_{\parallel}\chi }\hat{\theta}.\vec{q}(\vec{k_\bot},k_\parallel,\chi )
+\end{equation}
+
+\noindent Now, using the fact that $\vec{l}$ is the fourier conjugate of $\vec{\theta}$, $p(\vec{\theta})$ can be written as 
+
+\begin{equation}\label{FT of kappa of theta}
+p(\vec{\theta})=\int \frac{d^2 \vec{l}}{(2\pi)^2} e^{i\vec{l}.\vec{\theta}}p(\vec{l})
+\end{equation}   
+By comparing equations \ref{kappa of theta with l} and \ref{FT of kappa of theta}, the equation for $p(\vec{l})$ is given by
+
+\begin{equation}\label{final p(l) equation}
+p(\vec{l})=-\int d\chi  \widetilde{g}(\chi ) \int \frac{dk_\parallel}{2\pi} e^{ik_{\parallel}\chi } \hat{\theta}.\vec{q}(\vec{k_\bot},k_\parallel,\chi )
+\end{equation}
+where $\widetilde{g}(\chi)=\frac{g(\chi )}{\chi ^2}$.
+
+
+The expression for $\vec{q}(\vec{k})$ can be found using the fact that in the linear regime, $\delta <<  1$ so that $q(\vec{x})=v(\vec{x})\Rightarrow \vec{q}(\vec{k})=\vec{v}(\vec{k})$
+\begin{subequations}
+	\begin{equation}
+	\dot{\delta}+ikv=0
+	\end{equation}
+	\begin{equation}
+	\dot{v} +aHv=ik^2\Phi
+	\end{equation}
+	\begin{equation}
+	k^2\Phi=\frac{3}{2}a^2H^2\left[\delta+\frac{3aHiv}{k}\right]
+	\end{equation}
+\end{subequations} 
+
+Using these 3 equations we find the expression relating velocity to matter density.
+
+\begin{equation}\label{v(k)}
+\begin{aligned}
+v(\vec{k},t)=&\frac{ia}{k^2}\frac{\dot{a}}{a}\vec{k}\delta(\vec{k},t)\\
+&=\frac{ia}{k^2}\frac{\dot{D}}{D}\vec{k}\delta(\vec{k},t)\\
+&=\frac{ia}{k^2}\frac{\dot{D}}{D_0}\vec{k}\delta_0(\vec{k})
+\end{aligned}
+\end{equation}
+where the second equality comes from the fact that the growth factor, $D(a) \propto a$ for a flat, matter dominated universe.
+This equation clearly shows that $v(\vec{k}) \propto \vec{k}$. Expressing this in terms of the growth factor and removing any dependance on redshift by explicitly looking at low redshift gives
+
+\begin{equation}
+\begin{aligned}
+q(\vec{k})&= v(\vec{k})\\
+&=\frac{ifH_0\delta_0(\vec{k})}{k^2}\vec{k}
+\end{aligned}
+\end{equation}
+where the linear growth factor is given as $f\equiv\frac{a}{D}\frac{dD}{da}$.
+
+%We have also used the fact that k modes parallel to the line of sight do not contribute significantly to anisotropies. This is due to the cancellations of crests and troughs along the line of sight. In the small angle approximation the perpendicular k modes have a maximum contribution. %refer to fig 9.3 in dodelson. possibly put this in paper. 
+%This is called the Limber approximation. As a result of the suppression of Fourier modes parallel to the line of sight, we have $k_\parallel \approx 0$ .
+
+Now, substituting this into equation \ref{final p(l) equation} gives
+
+\begin{equation}\label{final p(l) eqn in terms of f}
+p(\vec{l})=-ifH_0\int d\chi  \widetilde{g}(\chi ) \int \frac{dk_\parallel}{2\pi} e^{ik_{\parallel}\chi } \frac{\mu_k}{k} \delta_0(\vec{k})
+\end{equation}
+
+%where $\mu_k$ was defined earlier. 
+where $\mu_k$is the angle between the line of sight and $\vec{k}$. The angular power spectrum, $C_l^{pp}$, can be computed using equation \ref{final p(l) equation} as follows
+
+\begin{equation}\label{angular power spec Cl}
+\langle p(\vec{l})p(\vec{l^{'*}})\rangle =(2\pi)^2 \delta^2(\vec{l}-\vec{l'})C_l^{pp} \Rightarrow C_l^{pp}=\int \frac{d^2\vec{l'}}{(2\pi)^2}\langle p(\vec{l})p(\vec{l^{'*}})\rangle 
+\end{equation}
+where the second part of the equation is obtained using the definition of the $\delta$ function, $f(x')=\int f(x)\delta(x-x')$.
+
+Substituting equation \ref{final p(l) equation} into equation \ref{angular power spec Cl} gives 
+
+\begin{equation}\label{Cl with delta}
+\begin{aligned}
+C_l^{pp}& =(fH_0)^2\int \frac{d^2\vec{l'}}{(2\pi)^2}\int \frac{dk_\parallel}{(2\pi)}e^{ik_\parallel \chi } \int d\chi \widetilde{g}(\chi ) \int \frac{dk'_\parallel}{(2\pi)}e^{-ik'_\parallel \chi' }\\&
+\int d\chi' \widetilde{g}(\chi' )  \frac{\mu_k}{k}  \frac{\mu'_k}{k'}\langle  \delta_0(\vec{k})\delta_0^*(\vec{k}') \rangle\\
+\end{aligned}
+\end{equation}
+Expressing $\langle  \delta_0(\vec{k})\delta_0^*(\vec{k}') \rangle$ in terms of the power spectrum gives
+
+\begin{equation}\label{Cl with Pm(k)}
+\begin{aligned}
+C_l^{pp}&=(fH_0)^2\int \frac{d^2\vec{l'}}{(2\pi)^2}\int \frac{dk_\parallel}{(2\pi)}e^{ik_\parallel \chi } \int d\chi \widetilde{g}(\chi ) \int \frac{dk'_\parallel}{(2\pi)}e^{-ik'_\parallel \chi' }\frac{k_\parallel}{\left|k^2_\parallel+\vec{k}^2_\perp\right|} \frac{k'_\parallel}{\left|k'^2_\parallel+\vec{k'}^2_\perp\right|}\\
+&\int d\chi' \widetilde{g}(\chi' ) (2\pi)^2 \delta^2(\vec{k_{\bot}}-\vec{k'_\bot})(2\pi)\delta(\vec{k_\parallel}-\vec{k'_\parallel})P(\vec{l}/\chi,k_\parallel)
+\\& =(fH_0)^2\int \frac{d^2\vec{k'}_\perp^2}{(2\pi)^2}\int \frac{dk_\parallel}{(2\pi)}e^{ik_\parallel (\chi -\chi')} \frac{k^2_\parallel}{\left|k^2_\parallel+\vec{k}^2_\perp\right|} \frac{1}{\left|k^2_\parallel+\vec{k'}^2_\perp\right|}\int d\chi \widetilde{g}(\chi )\\
+&\int d\chi' \widetilde{g}(\chi' ) (2\pi)^2 \delta^2(\vec{k_{\bot}}-\vec{k'_\bot})(2\pi)\frac{P(\vec{l}/\chi,k_\parallel)}{\chi^2}
+\\&=(fH_0)^2 \int d\chi \widetilde{g}(\chi ) \int \frac{dk_\parallel}{(2\pi)}e^{ik_\parallel (\chi -\chi')} \left(\frac{\mu_k}{k}\right)^2 \int d\chi' \widetilde{g}(\chi' ) (2\pi)^3 \frac{P(\vec{l}/\chi,k_\parallel)}{\chi^2}\\
+&=(fH_0)^2 (2\pi)^2 \int d\chi \frac{\widetilde{g}(\chi )}{\chi^2} \int d\chi' \widetilde{g}(\chi' )\int dk_\parallel e^{ik_\parallel (\chi -\chi')}\mu^2_k\left(\frac{1}{\left|k^2_\parallel+\vec{l}^2/\chi^2\right|}\right) P(\vec{l}/\chi,k_\parallel)
+\end{aligned}
+\end{equation}
+where in line 2 we use $\mu_k=cos\theta=\frac{k_\parallel}{k}$ in order to apply the $k_\perp$ and $k_\parallel$ Dirac delta functions. 
+%\begin{equation}\label{p(kappa) temp distortion in fourier space}
+%p(\vec{l})=-\int_{0}^{\eta_0} d\chi g(\chi)\int d^2\theta \int \frac{d^3k}{(2\pi)^3} \hat{\theta}.\vec{q}(\vec{k})e^{-i\vec{l}.\vec{\theta}+i\vec{k}.\vec{x}}
+%\end{equation}
+%refer to eqns 9.4 and 9.7 in dodelson if this eqn is unclear to you
+
+\noindent Now, we can evaluate this expression in the limits of low and high $\vec{l}$. \\
+\begin{itemize}
+
+
+\item At low $l$, we can Taylor expand about $l=0$ to give $\left(\frac{1}{k^2_\parallel+l^2/\chi^2}\right) \approx \frac{1}{k^2_\parallel}+\frac{l^2}{k^4_\parallel \chi^2}$.
+%refer to derivation in dodelson, from 9.3 to 9.10. Maybe put this in the paper, maybe appendix.
+Therefore in the low $l$ approximation we have
+
+\begin{equation}
+\begin{aligned}
+C_l^{pp}&=(fH_0)^2 (2\pi)^2 \int d\chi \frac{\widetilde{g}(\chi )}{\chi^2} \int d\chi' \widetilde{g}(\chi' )\int dk_\parallel e^{ik_\parallel (\chi -\chi')}k^2_\parallel\left(\frac{1}{k^2_\parallel+l^2/\chi^2}\right)^2 P(l/\chi,k^2_\parallel)\\&
+\approx(fH_0)^2 (2\pi)^2 \int d\chi \frac{\widetilde{g}(\chi )}{\chi^2} \int d\chi' \widetilde{g}(\chi' )\int dk_\parallel e^{ik_\parallel (\chi -\chi')} \left(\frac{1}{k^2_\parallel}+\frac{2l^2}{k^4_\parallel \chi^2} + \frac{l^4}{k^6_\parallel \chi^4}\right) P\left(k_\parallel+\frac{l}{\chi^2 k_\parallel}\right)\\&
+\approx(fH_0)^2 (2\pi)^2 \int d\chi \frac{\widetilde{g}(\chi )}{\chi^2} \int d\chi' \widetilde{g}(\chi' )\int dk_\parallel e^{ik_\parallel (\chi -\chi')} \frac{1}{k^2_\parallel} P(k_\parallel)
+\end{aligned}
+\end{equation}
+
+\item At high $l$, the large $k_\parallel$ modes will cancel under integration.
+To see this, consider the integrand 
+
+\begin{equation}
+I_1=\lim_{k_\parallel \to \infty, l \to \infty} e^{ik_\parallel (\chi -\chi')}k^2_\parallel\left(\frac{1}{k^2_\parallel+l^2/\chi^2}\right)^2
+\end{equation}
+Substituting so that $x=k_\parallel$ and $y=l/\chi$ gives 
+
+\begin{equation}
+I_1=\lim_{x \to \infty, y \to \infty} e^{iax} \frac{x^2}{(x^2+y^2)^2}
+\end{equation}
+where $a=\chi-\chi'$. Now, $0\leq e^{iax} \frac{x^2}{(x^2+y^2)^2} \leq e^{iax} \frac{x^2}{x^4}\leq\frac{1}{x^2} \rightarrow 0$ since the exponential\\ $0\leq e^{iax}\leq 1$.
+
+Thus the signal vanishes at high $l$ for small wavelength perturbations.
+
+We can also determine what will happen for small $k_\parallel$ modes at high $l$, i.e. compute the limit of the integrand given by
+
+\begin{equation}
+\begin{aligned}
+I_2&=\lim_{x \to 0, y \to \infty} e^{iax} \frac{x^2}{(x^2+y^2)^2}\\ &\Rightarrow \lim_{x \to 0, \alpha \to 0} e^{iax} \frac{x^2\alpha ^4}{(x^2\alpha ^2+1)^2}
+\end{aligned}
+\end{equation}
+ where $y=1/\alpha$. Now, $x^2\alpha ^2+1\geq 1$ for small $x,\alpha $. Therefore, $\frac{1}{(x^2\alpha ^2+1)^2} \leq 1 \Rightarrow \frac{x^2\alpha ^4e^{iax}}{(x^2\alpha ^2+1)^2} \leq x^2\alpha ^4e^{iax}\rightarrow 0$, since $e^{iax}\rightarrow 1$ for small $x$.
+ Thus, the signal disappears for both long and short wavelength modes along the line of sight at small angles.
+\end{itemize}
+\subsection{Cross correlation calculation}
+
+The cross correlation angular power spectrum between 21 cm emission and KSZ effect is computed as follows
+
+\begin{equation}
+\begin{aligned}
+&\langle  \delta T_{21}(\vec{l},y;z_i)p^*(\vec{l}')\rangle  =(2\pi)^2\delta^2(\vec{l}-\vec{l}')C_l^{21-p}(y;z_i)\\&
+\Rightarrow C_l^{21-p}(y;z_i)=\int \frac{d^2\vec{l'}}{(2\pi)^2} \langle  \delta T_{21}(\vec{l},y;z_i) p^*(\vec{l'})\rangle  
+\end{aligned}
+\end{equation}
+
+Substituting equations \ref{delta 21 ito y and l final eqn} and \ref{final p(l) eqn in terms of f} gives
+\begin{equation}
+\begin{aligned}
+C_l^{21-p}(y;z_i)&=-ifH_0 \int \frac{d^2\vec{l'}}{(2\pi)^2}\frac{\overline{T}(z_i)D(z_i)[b_{HI}+f\mu_k^2]}{\chi ^2r_\nu(z_i)}\int d\chi  \widetilde{g}(\chi ) \\&\int \frac{dk_\parallel}{2\pi} e^{ik_{\parallel}\chi } \frac{\mu_k}{k} \langle \delta_0(\vec{k})\delta_0^*(\vec{k}')\rangle P(\vec{l}/\chi,k_\parallel)\\&
+=-ifH_0 \int \frac{d^2\vec{k}'_\bot}{(2\pi)^2}\frac{\overline{T}(z_i)D(z_i)[b_{HI}+f\mu_k^2]}{\chi ^2r_\nu(z_i)}\int d\chi'  \widetilde{g}(\chi' )\\& \int \frac{dk'_\parallel}{2\pi} e^{ik'_{\parallel}\chi' } \frac{k'_\parallel}{(k'^2_\parallel+\vec{k}'^2_\perp)^{1/2}}(2 \pi)^3 \delta^2(\vec{k}_{\bot}-\vec{k}'_\bot)\delta(\vec{k_\parallel}-\vec{k'_\parallel})P(\vec{l}/\chi,k_\parallel)\\&
+=-ifH_0 \frac{\overline{T}(z_i)D(z_i)[b_{HI}+f\mu_k^2]}{\chi ^2r_\nu(z_i)}\int d\chi  \widetilde{g}(\chi )\\& \int \frac{dk_\parallel}{2\pi} e^{ik_{\parallel}\chi } \frac{k_\parallel}{(|k^2_\parallel+\vec{l}^2/\chi^2|)^{1/2}}P(\vec{l}/\chi,k_\parallel)\\&
+\end{aligned}
+\end{equation}
+In the second equality we introduced the three dimensional density power spectrum and used equation \ref{k perp equals l divided by chi parallel}. 
+
+%Need to change eqn 24. This v eqn is actually from the peculiar velocity eqn in dodelson.
+%Eqn 28, maybe rewrite k in terms of k perp and k parallel and then apply dirac delta functions and then re express ito k thereafter, just to explain why k'=k, which we just sort of assume in equality 2 of eqn 28.
+%messed up which variables had primes in eqn 31
+\end{document}

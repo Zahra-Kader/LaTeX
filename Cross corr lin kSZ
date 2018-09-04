@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage{tgtermes}
+%\usepackage[english]{babel}
+%\usepackage[utf8]{inputenc}
+\linespread{1.3}
+\usepackage[a4paper,top=3cm,bottom=2.54cm,left=2.54cm,right=2.54cm,marginparwidth=1.75cm]{geometry}
+\usepackage{graphicx}
+
+\usepackage[svgnames]{xcolor} % Specify colors by their 'svgnames', for a full list of all colors available see here: http://www.latextemplates.com/svgnames-colors
+
+\usepackage{times} % Use the times font
+%\usepackage{palatino} % Uncomment to use the Palatino font
+
+
+\graphicspath{{figures/}} % Location of the graphics files
+\usepackage{booktabs} % Top and bottom rules for table
+\usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures
+\usepackage{amsfonts, amsmath, amsthm, amssymb} % For math fonts, symbols and environments
+\usepackage{wrapfig} % Allows wrapping text around tables and figures
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[normalem]{ulem}
+
+%opening
+\title{Cross correlation of the kSZ and 21 cm signal}
+\author{Zahra Kader}
+
+\begin{document}
+	
+	\maketitle
+	
+\section{Cross correlation calculation}
+The cross correlation between 21 cm emission and kSZ effect is computed as follows. The 21 cm momentum field is given by
+
+\begin{equation}
+\begin{aligned}
+p_{21}(z_i)&=
+\bar{T}(z_i)D(z_i)(b_{HI}+f\mu_k^2)\int\frac{d^3k'}{(2\pi)^3}\hat{\theta}_1.[\delta_m(\vec{k}')v(\vec{k}_1-\vec{k}')]e^{i\vec{k}_1.\vec{x}}\\w
+&=\bar{T}(z_i)D(z_i)(b_{HI}+f\mu_k^2)\int\frac{d^2l'}{(2\pi)^2}e^{i\vec{l}.\vec{\theta}}\int \frac{dk'_\parallel}{2\pi}\frac{e^{ik_{1\parallel} \chi}}{\chi'^2}\hat{\theta}_1.[\delta_m(\vec{k}')v(\vec{k}_1-\vec{k}')]
+\end{aligned}
+\end{equation}
+
+
+%\begin{equation}
+%\delta T_{21}(l,y,z)=\frac{if(z)H(z)\bar{T}(z)D(z)(b_{HI}+f\mu_k^2)}{2\chi^2 r_\nu(z)(1+z)}\int \frac{dk'_\parallel}{2\pi}\frac{e^{ik_\parallel \chi}}{\chi'^2}\delta_m(\vec{k}')\delta_m(\vec{k}-\vec{k}')\left[\frac{\vec{k_1}-\vec{k}'}{|\vec{k_1}-\vec{k}'|^2}+\frac{\vec{k}'}{|\vec{k}'|^2}\right]
+%\end{equation}
+
+
+The kSZ signal can likewise be written as 
+
+\begin{equation}
+\begin{aligned}
+\delta T_{kSZ}(l)&=\frac{-T_{rad}}{c}\int d\chi'' g(\chi'')\hat{\theta}''.q(\vec{x}'')\\
+%&=\frac{-iT_{rad}}{c}\int d\chi g(\chi)\int \frac{d^3k}{(2\pi)^3}\frac{fH(z)}{1+z}\frac{\hat{\theta}.\hat{k}}{k}\delta(\vec{k})e^{i\vec{k}.\vec{x}}\\
+%&=\frac{-iT_{rad}}{c}\int d\chi u(\chi)\int \frac{d^3k}{(2\pi)^3}\frac{\hat{\theta}.\hat{k}}{k}\delta_m(\vec{k})e^{i\vec{k}.\vec{x}}\\
+%&=\frac{-T_{rad}}{c}\int d\chi u(\chi)\int \frac{d^3k}{(2\pi)^3}\frac{1}{k^2}\delta_m(\vec{k})\frac{\partial e^{i\vec{k}.\vec{x}}}{\partial\chi}
+&=-\frac{iT_{rad}}{2c}\int d\chi''\frac{ g(\chi'')f(z'')H(z'')}{\chi''^2(1+z'')}\int \frac{dk''_\parallel}{2\pi}e^{ik_\parallel \chi}\delta_m({\vec{k'}})\delta_m({\vec{k}-\vec{k}'})\hat{\theta}.\left[\frac{\vec{k_2}-\vec{k}''}{|\vec{k_2}-\vec{k}''|^2}+\frac{\vec{k}''}{|\vec{k}''|^2}\right]
+\end{aligned}
+\end{equation}
+
+The cross correlation is then
+
+\begin{equation}
+\begin{aligned}
+C_l^{21-kSZ}(l)=&\frac{T_{rad}}{2c}\int\frac{d^2l''}{(2\pi)^2}\frac{f(z')H(z')\bar{T}(z')D(z')(b_{HI}+f\mu_k^2)}{\chi'^2 r_\nu(z')(1+z')}\int \frac{dk'_\parallel}{2\pi}e^{ik'_\parallel \chi'}\\
+&\int d\chi''\frac{ g(\chi'')f(z'')H(z'')}{\chi''^2(1+z'')}\int \frac{dk''_\parallel}{2\pi}e^{-ik''_\parallel \chi''}\left[\frac{\vec{k_1}-\vec{k}'}{|\vec{k_1}-\vec{k}'|^2}+\frac{\vec{k}'}{|\vec{k}'|^2}\right]\hat{\theta}.\left[\frac{\vec{k_2}-\vec{k}''}{|\vec{k_2}-\vec{k}''|^2}+\frac{\vec{k}''}{|\vec{k}''|^2}\right]\\
+&<\delta_m(\vec{k}')\delta_m(\vec{k}_1-\vec{k}')\delta_m^*({\vec{k''}})\delta_m^*({\vec{k}_2-\vec{k}''})>
+\end{aligned}
+\end{equation}
+
+Now, using Wick's Theorem, expressed in equation \ref{Wicks thm for density field}, we have the simplified expression
+
+\begin{equation}
+\begin{aligned}
+C_l^{21-kSZ}(l)&=\frac{\pi^2T_{rad}}{c}\frac{f(z)H(z)\bar{T}(z)D(z)(b_{HI}+f\mu_k^2)}{\chi'^2 r_\nu(z)(1+z)}\int d\chi'\frac{ g(\chi')f(z')H(z')}{1+z'}\\
+&\int dk'_\parallel e^{ik'_\parallel(\chi- \chi')}\left[\frac{\vec{k}-\vec{k}'}{|\vec{k}-\vec{k}'|^2}+\frac{\vec{k}'}{|\vec{k}'|^2}\right]\hat{\theta}.\left[\frac{\vec{k}-\vec{k}'}{|\vec{k}-\vec{k}'|^2}+\frac{\vec{k}'}{|\vec{k}'|^2}\right]P(\vec{k}')P(\vec{k}-\vec{k}')
+\end{aligned}
+\end{equation}
+Using the Limber's approximation, $k=l/\chi$ and $k'=l/\chi'$. Applying the $\delta$ function gives
+
+\begin{equation}
+\begin{aligned}
+C_l^{21-kSZ}(l)&=\pi^2T_{rad}\frac{f(z)H(z)\bar{T}(z)D(z)(b_{HI}+f\mu_k^2)}{\chi^2 r_\nu(z)(1+z)}\int dz\frac{ g(\chi(z))f(z)}{1+z}\\
+&\left[\frac{\vec{k}'}{|\vec{k}'|^2}\right]\hat{\theta}.\left[\frac{\vec{k}'}{|\vec{k}'|^2}\right]P(\vec{k})
+\end{aligned}
+\end{equation}
+\end{document}
+

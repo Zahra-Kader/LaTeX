@@ -1,0 +1,41 @@
+\documentclass[]{article}
+\usepackage{amsfonts, amsmath, amsthm, amssymb} % For math fonts, symbols and environments
+\usepackage[utf8]{inputenc}
+%\usepackage[colorlinks,allcolors=red]{hyperref}
+\usepackage{graphicx}
+\DeclareUnicodeCharacter{FB00}{ff}
+%opening
+
+\title{Literature review}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+
+\section{Simulation papers}
+\begin{enumerate}
+\item\textit{ Kinetic Sunyaev–Zel’dovich eﬀect in rotating galaxy clusters from MUSIC simulations}: Update of the study of gas rotation in clusters through the maps of the kSZ, using a large sample of massive synthetic galaxy clusters from MUSIC high-resolution simulations. In the paper, the bulk velocity projected on the line of sight is recovered with the simulation true value \cite{2018MNRAS.479.4028B}.
+\item \textit{Cosmology with the pairwise kinematic SZ effect: calibration and validation using hydrodynamical simulations}: A study of the potential of the kSZ effect as a probe for cosmology, focusing on the pairwise method, using the Magneticum cosmological hydrodynamical simulations \cite{2018MNRAS.478.5320S}.
+\item \textit{Simulated reconstruction of the remote dipole field using the kinetic Sunyaev Zel'dovich effect}: Measurements of small-scale CMB anisotropies are combined with large-scale structure (LSS) surveys, a technique known as kSZ tomography. This paper investigate how well the remote dipole field (CMB dipole field at different locations) can be reconstructed using simulations \cite{2018arXiv180601290C}.
+\end{enumerate}
+
+\section{Observations papers}
+\begin{enumerate}
+\item \textit{Evidence of Galaxy Cluster Motions with the Kinematic Sunyaev-Zel’dovich Eﬀect}: Pairwise estimation of the kinetic Sunyaev-Zel’dovich Eﬀect (kSZ) using ACT and BOSS provides the first direct evidence for the kSZ effect \cite{2012PhRvL.109d1101H}. 
+%The sky positions and momenta of thousands of clusters were used to determine the peculiar velocities of the clusters and compared with CMB temperatures from ACT maps  
+\item \textit{An SZ-Selected Sample of the Most Massive Galaxy Clusters in the 2500-Square-Degree South Pole Telescope Survey}: This paper presents a catalog of the 26 most signiﬁcant SZ cluster detections in a full SPT survey of 2500 square degrees of the southern sky. Clusters were selected based on their SZ signal-to-noise (S/N) \cite{2011ApJ...738..139W}.
+\item  \textit{A direct measure of free electron gas via the kinematic Sunyaev-Zel'dovich effect in Fourier-space analysis}: Measurement of the kinematic Sunyaev-Zel'dovich (kSZ) effect in Fourier space. The density-weighted pairwise kSZ power spectrum is measured by cross-correlating a CMB temperature map, which jointly uses both Planck Release 2 and Wilkinson Microwave Anisotropy Probe nine-year data, with the two galaxy samples, CMASS and LOWZ, derived from BOSS \cite{2018MNRAS.475.3764S}.
+\item \textit{Constraining the optical depth of galaxies and velocity bias with cross-correlation between the kinetic Sunyaev-Zeldovich effect and the peculiar velocity field}: Cross correlation between the kSZ effect and the reconstructed peculiar velocity field using linear perturbation theory, with the aim of constraining the optical depth $\tau$ and peculiar velocity bias of central galaxies with Planck data \cite{2018MNRAS.475..379M}.
+\end{enumerate}
+\section{Theory papers}
+\begin{enumerate}
+\item \textit{The Observations of Relic Radiation as a Test of the Nature of X-Ray Radiation from the Clusters of Galaxies}: First paper to explain the theory of the kSZ by relating the decrease in brightness of the CMB radiation to the intracluster medium (ICM) \cite{1972CoASP...4..173S}.
+\item \textit{The velocity of clusters of galaxies relative to the microwave background - The possibility of its measurement}: Investigates possibility of measuring the peculiar velocities of clusters relative to the CMB radiation \cite{1980MNRAS.190..413S}.
+\item\textit{ Cosmology with the Sunyaev-Zel'dovich Effect}: A discussion of both the thermal and kinetic SZ effects and the cosmology that can be extracted from SZ surveys. Also discussed are observational and theoretical challenges, with single dish and interferometer radio telescopes, etc. 
+\end{enumerate}
+
+\bibliography{biblitrev}
+\bibliographystyle{plain}
+\end{document}

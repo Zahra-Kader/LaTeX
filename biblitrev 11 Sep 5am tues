@@ -1,0 +1,2409 @@
+@ARTICLE{1972CoASP...4..173S,
+
+   author = {{Sunyaev}, R.~A. and {Zeldovich}, Y.~B.},
+
+    title = "{The Observations of Relic Radiation as a Test of the Nature of X-Ray Radiation from the Clusters of Galaxies}",
+
+  journal = {Comments on Astrophysics and Space Physics},
+
+ keywords = {Cosmology, Microwave Background Radiation, Clusters of Galaxies, X-Ray Astronomy, Intergalactic Gas},
+
+     year = 1972,
+
+    month = nov,
+
+   volume = 4,
+
+    pages = {173},
+
+   adsurl = {http://adsabs.harvard.edu/abs/1972CoASP...4..173S},
+
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+
+}
+
+@ARTICLE{2011ApJ...738..139W,
+
+   author = {{Williamson}, R. and {Benson}, B.~A. and {High}, F.~W. and {Vanderlinde}, K. and 
+
+	{Ade}, P.~A.~R. and {Aird}, K.~A. and {Andersson}, K. and {Armstrong}, R. and 
+
+	{Ashby}, M.~L.~N. and {Bautz}, M. and {Bazin}, G. and {Bertin}, E. and 
+
+	{Bleem}, L.~E. and {Bonamente}, M. and {Brodwin}, M. and {Carlstrom}, J.~E. and 
+
+	{Chang}, C.~L. and {Chapman}, S.~C. and {Clocchiatti}, A. and 
+
+	{Crawford}, T.~M. and {Crites}, A.~T. and {de Haan}, T. and 
+
+	{Desai}, S. and {Dobbs}, M.~A. and {Dudley}, J.~P. and {Fazio}, G.~G. and 
+
+	{Foley}, R.~J. and {Forman}, W.~R. and {Garmire}, G. and {George}, E.~M. and 
+
+	{Gladders}, M.~D. and {Gonzalez}, A.~H. and {Halverson}, N.~W. and 
+
+	{Holder}, G.~P. and {Holzapfel}, W.~L. and {Hoover}, S. and 
+
+	{Hrubes}, J.~D. and {Jones}, C. and {Joy}, M. and {Keisler}, R. and 
+
+	{Knox}, L. and {Lee}, A.~T. and {Leitch}, E.~M. and {Lueker}, M. and 
+
+	{Luong-Van}, D. and {Marrone}, D.~P. and {McMahon}, J.~J. and 
+
+	{Mehl}, J. and {Meyer}, S.~S. and {Mohr}, J.~J. and {Montroy}, T.~E. and 
+
+	{Murray}, S.~S. and {Padin}, S. and {Plagge}, T. and {Pryke}, C. and 
+
+	{Reichardt}, C.~L. and {Rest}, A. and {Ruel}, J. and {Ruhl}, J.~E. and 
+
+	{Saliwanchik}, B.~R. and {Saro}, A. and {Schaffer}, K.~K. and 
+
+	{Shaw}, L. and {Shirokoff}, E. and {Song}, J. and {Spieler}, H.~G. and 
+
+	{Stalder}, B. and {Stanford}, S.~A. and {Staniszewski}, Z. and 
+
+	{Stark}, A.~A. and {Story}, K. and {Stubbs}, C.~W. and {Vieira}, J.~D. and 
+
+	{Vikhlinin}, A. and {Zenteno}, A.},
+
+    title = "{A Sunyaev-Zel'dovich-selected Sample of the Most Massive Galaxy Clusters in the 2500 deg$^{2}$ South Pole Telescope Survey}",
+
+  journal = {Astrophysical Journal},
+
+archivePrefix = "arXiv",
+
+   eprint = {1101.1290},
+
+ keywords = {cosmic background radiation, cosmology: observations, galaxies: clusters: general},
+
+     year = 2011,
+
+    month = sep,
+
+   volume = 738,
+
+      eid = {139},
+
+    pages = {139},
+
+      doi = {10.1088/0004-637X/738/2/139},
+
+   adsurl = {http://adsabs.harvard.edu/abs/2011ApJ...738..139W},
+
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+
+}
+
+@ARTICLE{2018MNRAS.479.4028B,
+
+   author = {{Baldi}, A.~S. and {De Petris}, M. and {Sembolini}, F. and {Yepes}, G. and 
+
+	{Cui}, W. and {Lamagna}, L.},
+
+    title = "{Kinetic Sunyaev-Zel'dovich effect in rotating galaxy clusters from MUSIC simulations}",
+
+  journal = {Monthly Notices of the Royal Astronomical Society},
+
+archivePrefix = "arXiv",
+
+   eprint = {1805.07142},
+
+ keywords = {methods: numerical, galaxies: clusters, cosmology: miscellaneous, cosmology: cosmic background radiation},
+
+     year = 2018,
+
+    month = sep,
+
+   volume = 479,
+
+    pages = {4028-4040},
+
+      doi = {10.1093/mnras/sty1722},
+
+   adsurl = {http://adsabs.harvard.edu/abs/2018MNRAS.479.4028B},
+
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+
+}
+
+@ARTICLE{2018MNRAS.478.5320S,
+
+   author = {{Soergel}, B. and {Saro}, A. and {Giannantonio}, T. and {Efstathiou}, G. and 
+
+	{Dolag}, K.},
+
+    title = "{Cosmology with the pairwise kinematic SZ effect: calibration and validation using hydrodynamical simulations}",
+
+  journal = {Monthly Notices of the Royal Astronomical Society},
+
+archivePrefix = "arXiv",
+
+   eprint = {1712.05714},
+
+ keywords = {galaxies: clusters: general, cosmic background radiation, large-scale structure of Universe},
+
+     year = 2018,
+
+    month = aug,
+
+   volume = 478,
+
+    pages = {5320-5335},
+
+      doi = {10.1093/mnras/sty1324},
+
+   adsurl = {http://adsabs.harvard.edu/abs/2018MNRAS.478.5320S},
+
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+
+}
+
+@ARTICLE{2012PhRvL.109d1101H,
+
+   author = {{Hand}, N. and {Addison}, G.~E. and {Aubourg}, E. and {Battaglia}, N. and 
+
+	{Battistelli}, E.~S. and {Bizyaev}, D. and {Bond}, J.~R. and 
+
+	{Brewington}, H. and {Brinkmann}, J. and {Brown}, B.~R. and 
+
+	{Das}, S. and {Dawson}, K.~S. and {Devlin}, M.~J. and {Dunkley}, J. and 
+
+	{Dunner}, R. and {Eisenstein}, D.~J. and {Fowler}, J.~W. and 
+
+	{Gralla}, M.~B. and {Hajian}, A. and {Halpern}, M. and {Hilton}, M. and 
+
+	{Hincks}, A.~D. and {Hlozek}, R. and {Hughes}, J.~P. and {Infante}, L. and 
+
+	{Irwin}, K.~D. and {Kosowsky}, A. and {Lin}, Y.-T. and {Malanushenko}, E. and 
+
+	{Malanushenko}, V. and {Marriage}, T.~A. and {Marsden}, D. and 
+
+	{Menanteau}, F. and {Moodley}, K. and {Niemack}, M.~D. and {Nolta}, M.~R. and 
+
+	{Oravetz}, D. and {Page}, L.~A. and {Palanque-Delabrouille}, N. and 
+
+	{Pan}, K. and {Reese}, E.~D. and {Schlegel}, D.~J. and {Schneider}, D.~P. and 
+
+	{Sehgal}, N. and {Shelden}, A. and {Sievers}, J. and {Sif{\'o}n}, C. and 
+
+	{Simmons}, A. and {Snedden}, S. and {Spergel}, D.~N. and {Staggs}, S.~T. and 
+
+	{Swetz}, D.~S. and {Switzer}, E.~R. and {Trac}, H. and {Weaver}, B.~A. and 
+
+	{Wollack}, E.~J. and {Yeche}, C. and {Zunckel}, C.},
+
+    title = "{Evidence of Galaxy Cluster Motions with the Kinematic Sunyaev-Zel'dovich Effect}",
+
+  journal = {Physical Review Letters},
+
+archivePrefix = "arXiv",
+
+   eprint = {1203.4219},
+
+ keywords = {Observational cosmology, Distances redshifts radial velocities, spatial distribution of galaxies, Galaxy clusters, Background radiations},
+
+     year = 2012,
+
+    month = jul,
+
+   volume = 109,
+
+   number = 4,
+
+      eid = {041101},
+
+pages = {041101},
+
+      doi = {10.1103/PhysRevLett.109.041101},
+
+   url = {http://adsabs.harvard.edu/abs/2012PhRvL.109d1101H},
+
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+
+}
+
+@ARTICLE{1972CoASP...4..173S,
+
+   author = {{Sunyaev}, R.~A. and {Zeldovich}, Y.~B.},
+
+    title = "{The Observations of Relic Radiation as a Test of the Nature of X-Ray Radiation from the Clusters of Galaxies}",
+
+  journal = {Comments on Astrophysics and Space Physics},
+
+ keywords = {Cosmology, Microwave Background Radiation, Clusters of Galaxies, X-Ray Astronomy, Intergalactic Gas},
+
+     year = 1972,
+
+    month = nov,
+
+   volume = 4,
+
+    pages = {173},
+
+   adsurl = {http://adsabs.harvard.edu/abs/1972CoASP...4..173S},
+
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+
+}
+
+@ARTICLE{1980MNRAS.190..413S,
+
+   author = {{Sunyaev}, R.~A. and {Zeldovich}, I.~B.},
+
+    title = "{The velocity of clusters of galaxies relative to the microwave background - The possibility of its measurement}",
+
+  journal = {Monthly Notices of the Royal Astronomical Society},
+
+ keywords = {Background Radiation, Galactic Clusters, Microwave Emission, Polarized Radiation, Velocity Measurement, Background Noise, Cosmic Gases, Cosmology},
+
+     year = 1980,
+
+    month = feb,
+
+   volume = 190,
+
+    pages = {413-420},
+
+      doi = {10.1093/mnras/190.3.413},
+
+   adsurl = {http://adsabs.harvard.edu/abs/1980MNRAS.190..413S},
+
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+
+}
+
+@ARTICLE{2011ApJ...738..139W,
+
+   author = {{Williamson}, R. and {Benson}, B.~A. and {High}, F.~W. and {Vanderlinde}, K. and 
+
+	{Ade}, P.~A.~R. and {Aird}, K.~A. and {Andersson}, K. and {Armstrong}, R. and 
+
+	{Ashby}, M.~L.~N. and {Bautz}, M. and {Bazin}, G. and {Bertin}, E. and 
+
+	{Bleem}, L.~E. and {Bonamente}, M. and {Brodwin}, M. and {Carlstrom}, J.~E. and 
+
+	{Chang}, C.~L. and {Chapman}, S.~C. and {Clocchiatti}, A. and 
+
+	{Crawford}, T.~M. and {Crites}, A.~T. and {de Haan}, T. and 
+
+	{Desai}, S. and {Dobbs}, M.~A. and {Dudley}, J.~P. and {Fazio}, G.~G. and 
+
+	{Foley}, R.~J. and {Forman}, W.~R. and {Garmire}, G. and {George}, E.~M. and 
+
+	{Gladders}, M.~D. and {Gonzalez}, A.~H. and {Halverson}, N.~W. and 
+
+	{Holder}, G.~P. and {Holzapfel}, W.~L. and {Hoover}, S. and 
+
+	{Hrubes}, J.~D. and {Jones}, C. and {Joy}, M. and {Keisler}, R. and 
+
+	{Knox}, L. and {Lee}, A.~T. and {Leitch}, E.~M. and {Lueker}, M. and 
+
+	{Luong-Van}, D. and {Marrone}, D.~P. and {McMahon}, J.~J. and 
+
+	{Mehl}, J. and {Meyer}, S.~S. and {Mohr}, J.~J. and {Montroy}, T.~E. and 
+
+	{Murray}, S.~S. and {Padin}, S. and {Plagge}, T. and {Pryke}, C. and 
+
+	{Reichardt}, C.~L. and {Rest}, A. and {Ruel}, J. and {Ruhl}, J.~E. and 
+
+	{Saliwanchik}, B.~R. and {Saro}, A. and {Schaffer}, K.~K. and 
+
+	{Shaw}, L. and {Shirokoff}, E. and {Song}, J. and {Spieler}, H.~G. and 
+
+	{Stalder}, B. and {Stanford}, S.~A. and {Staniszewski}, Z. and 
+
+	{Stark}, A.~A. and {Story}, K. and {Stubbs}, C.~W. and {Vieira}, J.~D. and 
+
+	{Vikhlinin}, A. and {Zenteno}, A.},
+
+    title = "{A Sunyaev-Zel'dovich-selected Sample of the Most Massive Galaxy Clusters in the 2500 deg$^{2}$ South Pole Telescope Survey}",
+
+  journal = {Astrophysical Journal},
+
+archivePrefix = "arXiv",
+
+   eprint = {1101.1290},
+
+ keywords = {cosmic background radiation, cosmology: observations, galaxies: clusters: general},
+
+     year = 2011,
+
+    month = sep,
+
+   volume = 738,
+
+      eid = {139},
+
+    pages = {139},
+
+      doi = {10.1088/0004-637X/738/2/139},
+
+   adsurl = {http://adsabs.harvard.edu/abs/2011ApJ...738..139W},
+
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+
+}
+
+@ARTICLE{2018MNRAS.479.4028B,
+
+   author = {{Baldi}, A.~S. and {De Petris}, M. and {Sembolini}, F. and {Yepes}, G. and 
+
+	{Cui}, W. and {Lamagna}, L.},
+
+    title = "{Kinetic Sunyaev-Zel'dovich effect in rotating galaxy clusters from MUSIC simulations}",
+
+  journal = {Monthly Notices of the Royal Astronomical Society},
+
+archivePrefix = "arXiv",
+
+   eprint = {1805.07142},
+
+ keywords = {methods: numerical, galaxies: clusters, cosmology: miscellaneous, cosmology: cosmic background radiation},
+
+     year = 2018,
+
+    month = sep,
+
+   volume = 479,
+
+    pages = {4028-4040},
+
+      doi = {10.1093/mnras/sty1722},
+
+   adsurl = {http://adsabs.harvard.edu/abs/2018MNRAS.479.4028B},
+
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+
+}
+
+@ARTICLE{2018MNRAS.478.5320S,
+
+   author = {{Soergel}, B. and {Saro}, A. and {Giannantonio}, T. and {Efstathiou}, G. and 
+
+	{Dolag}, K.},
+
+    title = "{Cosmology with the pairwise kinematic SZ effect: calibration and validation using hydrodynamical simulations}",
+
+  journal = {Monthly Notices of the Royal Astronomical Society},
+
+archivePrefix = "arXiv",
+
+   eprint = {1712.05714},
+
+ keywords = {galaxies: clusters: general, cosmic background radiation, large-scale structure of Universe},
+
+     year = 2018,
+
+    month = aug,
+
+   volume = 478,S
+
+    pages = {5320-5335},
+
+      doi = {10.1093/mnras/sty1324},S
+
+   adsurl = {http://adsabs.harvard.edu/abs/2018MNRAS.478.5320S},
+
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+
+}
+
+@ARTICLE{2018arXiv180601290C,
+
+   author = {{Cayuso}, J.~I. and {Johnson}, M.~C. and {Mertens}, J.~B.},
+
+    title = "{Simulated reconstruction of the remote dipole field using the kinetic Sunyaev Zel'dovich effect}",
+
+  journal = {ArXiv e-prints},
+
+archivePrefix = "arXiv",
+
+   eprint = {1806.01290},
+
+ keywords = {Astrophysics - Cosmology and Nongalactic Astrophysics},
+
+     year = 2018,
+
+    month = jun,
+
+   adsurl = {http://adsabs.harvard.edu/abs/2018arXiv180601290C},
+
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+
+}
+
+@ARTICLE{1980MNRAS.190..413S,
+
+   author = {{Sunyaev}, R.~A. and {Zeldovich}, I.~B.},
+
+    title = "{The velocity of clusters of galaxies relative to the microwave background - The possibility of its measurement}",
+
+  journal = {Monthly Notices of the Royal Astronomical Society},
+
+ keywords = {Background Radiation, Galactic Clusters, Microwave Emission, Polarized Radiation, Velocity Measurement, Background Noise, Cosmic Gases, Cosmology},
+
+     year = 1980,
+
+    month = feb,
+
+   volume = 190,
+
+    pages = {413-420},
+
+      doi = {10.1093/mnras/190.3.413},
+
+   adsurl = {http://adsabs.harvard.edu/abs/1980MNRAS.190..413S},
+
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+
+}
+
+@ARTICLE{2012PhRvL.109d1101H,
+
+   author = {{Hand}, N. and {Addison}, G.~E. and {Aubourg}, E. and {Battaglia}, N. and 
+
+	{Battistelli}, E.~S. and {Bizyaev}, D. and {Bond}, J.~R. and 
+
+	{Brewington}, H. and {Brinkmann}, J. and {Brown}, B.~R. and 
+
+	{Das}, S. and {Dawson}, K.~S. and {Devlin}, M.~J. and {Dunkley}, J. and 
+
+	{Dunner}, R. and {Eisenstein}, D.~J. and {Fowler}, J.~W. and 
+
+	{Gralla}, M.~B. and {Hajian}, A. and {Halpern}, M. and {Hilton}, M. and 
+
+	{Hincks}, A.~D. and {Hlozek}, R. and {Hughes}, J.~P. and {Infante}, L. and 
+
+	{Irwin}, K.~D. and {Kosowsky}, A. and {Lin}, Y.-T. and {Malanushenko}, E. and 
+
+	{Malanushenko}, V. and {Marriage}, T.~A. and {Marsden}, D. and 
+
+	{Menanteau}, F. and {Moodley}, K. and {Niemack}, M.~D. and {Nolta}, M.~R. and 
+
+	{Oravetz}, D. and {Page}, L.~A. and {Palanque-Delabrouille}, N. and 
+
+	{Pan}, K. and {Reese}, E.~D. and {Schlegel}, D.~J. and {Schneider}, D.~P. and 
+
+	{Sehgal}, N. and {Shelden}, A. and {Sievers}, J. and {Sif{\'o}n}, C. and 
+
+	{Simmons}, A. and {Snedden}, S. and {Spergel}, D.~N. and {Staggs}, S.~T. and 
+
+	{Swetz}, D.~S. and {Switzer}, E.~R. and {Trac}, H. and {Weaver}, B.~A. and 
+
+	{Wollack}, E.~J. and {Yeche}, C. and {Zunckel}, C.},
+
+    title = "{Evidence of Galaxy Cluster Motions with the Kinematic Sunyaev-Zel'dovich Effect}",
+
+  journal = {Physical Review Letters},
+
+archivePrefix = "arXiv",
+
+   eprint = {1203.4219},
+
+ keywords = {Observational cosmology, Distances redshifts radial velocities, spatial distribution of galaxies, Galaxy clusters, Background radiations},
+
+     year = 2012,
+
+    month = jul,
+
+   volume = 109,
+
+   number = 4,
+
+      eid = {041101},
+
+pages = {041101},
+
+      doi = {10.1103/PhysRevLett.109.041101},
+
+   url = {http://adsabs.harvard.edu/abs/2012PhRvL.109d1101H},
+
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+
+}
+
+@ARTICLE{2018MNRAS.475.3764S,
+   author = {{Sugiyama}, N.~S. and {Okumura}, T. and {Spergel}, D.~N.},
+    title = "{A direct measure of free electron gas via the kinematic Sunyaev-Zel'dovich effect in Fourier-space analysis}",
+  journal = {Monthly Notices of the Royal Astronomical Society},
+archivePrefix = "arXiv",
+   eprint = {1705.07449},
+ keywords = {intergalactic medium, cosmic background radiation, large-scale structure of Universe, cosmology: observations, cosmology: theory},
+     year = 2018,
+    month = apr,
+   volume = 475,
+    pages = {3764-3785},
+      doi = {10.1093/mnras/stx3362},
+   adsurl = {http://adsabs.harvard.edu/abs/2018MNRAS.475.3764S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2018MNRAS.475..379M,
+
+   author = {{Ma}, Y.-Z. and {Gong}, G.-D. and {Sui}, N. and {He}, P.},
+
+    title = "{Constraining the optical depth of galaxies and velocity bias with cross-correlation between the kinetic Sunyaev-Zeldovich effect and the peculiar velocity field}",
+
+  journal = {Monthly Notices of the Royal Astronomical Society},
+
+archivePrefix = "arXiv",
+
+   eprint = {1711.08756},
+
+ keywords = {methods: statistical, galaxies: kinematics and dynamics, large-scale structure of Universe},
+
+     year = 2018,
+
+    month = mar,
+
+   volume = 475,
+
+    pages = {379-390},
+
+      doi = {10.1093/mnras/stx3063},
+
+   adsurl = {http://adsabs.harvard.edu/abs/2018MNRAS.475..379M},
+
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+
+}
+@ARTICLE{2017arXiv170700132P,
+author = {{Planck Collaboration} and {Aghanim}, N. and {Akrami}, Y. and
+{Ashdown}, M. and {Aumont}, J. and {Baccigalupi}, C. and
+{Ballardini}, M. and
+{Banday}, A.~J. and {Barreiro}, R.~B. and {Bartolo}, N. and
+{Basak}, S. and {Battye}, R. and {Benabed}, K. and {Bernard}, J.-P.
+and
+{Bersanelli}, M. and {Bielewicz}, P. and {Bond}, J.~R. and
+{Borrill}, J. and
+{Bouchet}, F.~R. and {Burigana}, C. and {Calabrese}, E. and
+{Carron}, J. and {Chiang}, H.~C. and {Comis}, B. and {Contreras},
+D. and
+{Crill}, B.~P. and {Curto}, A. and {Cuttaia}, F. and {de
+Bernardis}, P. and
+{de Rosa}, A. and {de Zotti}, G. and {Delabrouille}, J. and
+{Di Valentino}, E. and {Dickinson}, C. and {Diego}, J.~M. and
+{Dor\'e}, O. and {Ducout}, A. and {Dupac}, X. and {Elsner}, F.
+and
+{En{\ss}lin}, T.~A. and {Eriksen}, H.~K. and {Falgarone}, E. and
+{Fantaye}, Y. and {Finelli}, F. and {Forastieri}, F. and {Frailis},
+M. and
+{Fraisse}, A.~A. and {Franceschi}, E. and {Frolov}, A. and
+{Galeotta}, S. and
+{Galli}, S. and {Ganga}, K. and {Gerbino}, M. and {G\'orski},
+K.~M. and
+{Gruppuso}, A. and {Gudmundsson}, J.~E. and {Handley}, W. and
+{Hansen}, F.~K. and {Herranz}, D. and {Hivon}, E. and {Huang}, Z.
+and
+{Jaffe}, A.~H. and {Keih{\&quot;a}nen}, E. and {Keskitalo}, R. and
+{Kiiveri}, K. and {Kim}, J. and {Kisner}, T.~S. and
+{Krachmalnicoff}, N. and
+{Kunz}, M. and {Kurki-Suonio}, H. and {Lamarre}, J.-M. and
+{Lasenby}, A. and
+{Lattanzi}, M. and {Lawrence}, C.~R. and {Le Jeune}, M. and
+{Levrier}, F. and {Liguori}, M. and {Lilje}, P.~B. and {Lindholm},
+V. and
+{L\'opez-Caniego}, M. and {Lubin}, P.~M. and {Ma}, Y.-Z. and
+{Mac\'ias-P\'erez}, J.~F. and {Maggio}, G. and {Maino}, D.
+and
+{Mandolesi}, N. and {Mangilli}, A. and {Martin}, P.~G. and
+{Mart\'inez-Gonz\'alez}, E. and
+{Matarrese}, S. and {Mauri}, N. and {McEwen}, J.~D. and
+{Melchiorri}, A. and
+{Mennella}, A. and {Migliaccio}, M. and {Miville-Desch{\^e}nes},
+M.-A. and
+{Molinari}, D. and {Moneti}, A. and {Montier}, L. and {Morgante},
+G. and
+{Natoli}, P. and {Oxborrow}, C.~A. and {Pagano}, L. and {Paoletti},
+D. and
+{Partridge}, B. and {Perdereau}, O. and {Perotto}, L. and
+{Pettorino}, V. and
+{Piacentini}, F. and {Plaszczynski}, S. and {Polastri}, L. and
+{Polenta}, G. and {Rachen}, J.~P. and {Racine}, B. and {Reinecke},
+M. and
+{Remazeilles}, M. and {Renzi}, A. and {Rocha}, G. and {Roudier}, G.
+and
+{Ruiz-Granados}, B. and {Sandri}, M. and {Savelainen}, M. and
+{Scott}, D. and {Sirignano}, C. and {Sirri}, G. and {Spencer},
+L.~D. and
+
+{Stanco}, L. and {Sunyaev}, R. and {Tauber}, J.~A. and
+{Tavagnacco}, D. and
+{Tenti}, M. and {Toffolatti}, L. and {Tomasi}, M. and {Tristram},
+M. and
+{Trombetti}, T. and {Valiviita}, J. and {Van Tent}, F. and
+{Vielva}, P. and
+{Villa}, F. and {Vittorio}, N. and {Wandelt}, B.~D. and {Wehus},
+I.~K. and
+{Zacchei}, A. and {Zonca}, A.},
+title = &quot;{Planck intermediate results. LIII. Detection of velocity
+dispersion from the kinetic Sunyaev-Zeldovich effect}&quot;,
+journal = {ArXiv e-prints},
+archivePrefix = &quot;arXiv&quot;,
+eprint = {1707.00132},
+keywords = {Astrophysics - Cosmology and Nongalactic Astrophysics},
+year = 2017,
+month = jul,
+adsurl = {http://cdsads.u-strasbg.fr/abs/2017arXiv170700132P},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2017MNRAS.467..985R,
+author = {{Roncarelli}, M. and {Villaescusa-Navarro}, F. and {Baldi}, M.
+},
+title = &quot;{The kinematic Sunyaev-Zel'dovich effect of the large-scale
+structure (I): dependence on neutrino mass}&quot;,
+journal = {Monthly Notices of the Royal Astronomical Society},
+archivePrefix = &quot;arXiv&quot;,
+eprint = {1702.00676},
+keywords = {cosmology: theory, large-scale structure of Universe, cosmic
+background radiation, methods: numerical, neutrinos},
+year = 2017,
+month = may,
+volume = 467,
+pages = {985-995},
+doi = {10.1093/mnras/stx170},
+adsurl = {http://cdsads.u-strasbg.fr/abs/2017MNRAS.467..985R},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2017JCAP...03..008D,
+author = {{De Bernardis}, F. and {Aiola}, S. and {Vavagiakis}, E.~M. and
+{Battaglia}, N. and {Niemack}, M.~D. and {Beall}, J. and {Becker},
+D.~T. and
+{Bond}, J.~R. and {Calabrese}, E. and {Cho}, H. and {Coughlin}, K.
+and
+{Datta}, R. and {Devlin}, M. and {Dunkley}, J. and {Dunner}, R. and
+{Ferraro}, S. and {Fox}, A. and {Gallardo}, P.~A. and {Halpern}, M.
+and
+{Hand}, N. and {Hasselfield}, M. and {Henderson}, S.~W. and
+{Hill}, J.~C. and {Hilton}, G.~C. and {Hilton}, M. and {Hincks},
+A.~D. and
+{Hlozek}, R. and {Hubmayr}, J. and {Huffenberger}, K. and {Hughes},
+J.~P. and
+{Irwin}, K.~D. and {Koopman}, B.~J. and {Kosowsky}, A. and {Li}, D.
+and
+{Louis}, T. and {Lungu}, M. and {Madhavacheril}, M.~S. and
+{Maurin}, L. and
+{McMahon}, J. and {Moodley}, K. and {Naess}, S. and {Nati}, F. and
+{Newburgh}, L. and {Nibarger}, J.~P. and {Page}, L.~A. and
+{Partridge}, B. and
+{Schaan}, E. and {Schmitt}, B.~L. and {Sehgal}, N. and {Sievers},
+J. and
+
+{Simon}, S.~M. and {Spergel}, D.~N. and {Staggs}, S.~T. and
+{Stevens}, J.~R. and {Thornton}, R.~J. and {van Engelen}, A. and
+{Van Lanen}, J. and {Wollack}, E.~J.},
+title = &quot;{Detection of the pairwise kinematic Sunyaev-Zel'dovich effect
+with BOSS DR11 and the Atacama Cosmology Telescope}&quot;,
+journal = {
+
+Journal of Cosmology and Astroparticle Physics},
+archivePrefix = &quot;arXiv&quot;,
+eprint = {1607.02139},
+year = 2017,
+month = mar,
+volume = 3,
+eid = {008},
+pages = {008},
+doi = {10.1088/1475-7516/2017/03/008},
+adsurl = {http://cdsads.u-strasbg.fr/abs/2017JCAP...03..008D},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2017arXiv170302021B,
+author = {{Baghram}, S.},
+title = &quot;{Measuring the baryon fraction in cluster of galaxies with
+Kinematic Sunyeav Zeldovich and a Standard Candle}&quot;,
+journal = {ArXiv e-prints},
+archivePrefix = &quot;arXiv&quot;,
+eprint = {1703.02021},
+keywords = {Astrophysics - Cosmology and Nongalactic Astrophysics},
+year = 2017,
+month = mar,
+adsurl = {http://cdsads.u-strasbg.fr/abs/2017arXiv170302021B},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2017A&amp;A...598A.115A,
+author = {{Adam}, R. and {Bartalucci}, I. and {Pratt}, G.~W. and {Ade},
+P. and
+{Andr\'e}, P. and {Arnaud}, M. and {Beelen}, A. and {Beno{\^i}t},
+A. and
+{Bideaud}, A. and {Billot}, N. and {Bourdin}, H. and {Bourrion}, O.
+and
+{Calvo}, M. and {Catalano}, A. and {Coiffard}, G. and {Comis}, B.
+and
+{D\'Addabbo}, A. and {De Petris}, M. and {D\'emocl{\`e}s}, J. and
+{D\'esert}, F.-X. and {Doyle}, S. and {Egami}, E. and {Ferrari},
+C. and
+{Goupy}, J. and {Kramer}, C. and {Lagache}, G. and {Leclercq}, S.
+and
+{Mac\'ias-P\'erez}, J.-F. and {Maurogordato}, S. and
+{Mauskopf}, P. and {Mayet}, F. and {Monfardini}, A. and
+{Mroczkowski}, T. and
+{Pajot}, F. and {Pascale}, E. and {Perotto}, L. and {Pisano}, G.
+and
+{Pointecouteau}, E. and {Ponthieu}, N. and {Rev\'eret}, V. and
+{Ritacco}, A. and {Rodriguez}, L. and {Romero}, C. and {Ruppin}, F.
+and
+{Schuster}, K. and {Sievers}, A. and {Triqueneaux}, S. and
+{Tucker}, C. and
+{Zemcov}, M. and {Zylka}, R.},
+title = &quot;{Mapping the kinetic Sunyaev-Zel'dovich effect toward MACS
+J0717.5+3745 with NIKA}&quot;,
+journal = {Astronomy \& Astrophysics},
+archivePrefix = &quot;arXiv&quot;,
+eprint = {1606.07721},
+
+keywords = {techniques: high angular resolution, galaxies: clusters:
+individual: MACS J0717.5+3745, galaxies: clusters: intracluster medium},
+year = 2017,
+month = feb,
+volume = 598,
+eid = {A115},
+pages = {A115},
+doi = {10.1051/0004-6361/201629182},
+adsurl = {http://cdsads.u-strasbg.fr/abs/2017A%26A...598A.115A},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2017JCAP...01..057S,
+author = {{Sugiyama}, N.~S. and {Okumura}, T. and {Spergel}, D.~N.},
+title = &quot;{Will kinematic Sunyaev-Zel'dovich measurements enhance the
+science return from galaxy redshift surveys?}&quot;,
+journal = {Journal of Cosmology and Astroparticle Physics},
+archivePrefix = &quot;arXiv&quot;,
+eprint = {1606.06367},
+year = 2017,
+month = jan,
+volume = 1,
+eid = {057},
+pages = {057},
+doi = {10.1088/1475-7516/2017/01/057},
+adsurl = {http://cdsads.u-strasbg.fr/abs/2017JCAP...01..057S},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2016MNRAS.463.2425M,
+author = {{Munshi}, D. and {Iliev}, I.~T. and {Dixon}, K.~L. and
+{Coles}, P.
+},
+title = &quot;{Extracting the late-time kinetic Sunyaev-Zel'dovich effect}&quot;,
+journal = {Monthly Notices of the Royal Astronomical Society},
+archivePrefix = &quot;arXiv&quot;,
+eprint = {1511.03449},
+keywords = {methods: analytical, methods: numerical, methods:
+statistical},
+year = 2016,
+month = dec,
+volume = 463,
+pages = {2425-2442},
+doi = {10.1093/mnras/stw2067},
+adsurl = {http://cdsads.u-strasbg.fr/abs/2016MNRAS.463.2425M},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2016MNRAS.463.1797D,
+author = {{Dolag}, K. and {Komatsu}, E. and {Sunyaev}, R.},
+title = &quot;{SZ effects in the Magneticum Pathfinder simulation:
+comparison with the Planck, SPT, and ACT results}&quot;,
+journal = {Monthly Notices of the Royal Astronomical Society},
+archivePrefix = &quot;arXiv&quot;,
+eprint = {1509.05134},
+keywords = {hydrodynamics, methods: numerical, galaxies: clusters:
+general, cosmic background radiation, cosmology: theory},
+year = 2016,
+month = dec,
+volume = 463,
+pages = {1797-1811},
+doi = {10.1093/mnras/stw2035},
+adsurl = {http://cdsads.u-strasbg.fr/abs/2016MNRAS.463.1797D},
+
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2016MNRAS.461.3172S,
+author = {{Soergel}, B. and {Flender}, S. and {Story}, K.~T. and
+{Bleem}, L. and
+{Giannantonio}, T. and {Efstathiou}, G. and {Rykoff}, E. and
+{Benson}, B.~A. and {Crawford}, T. and {Dodelson}, S. and {Habib},
+S. and
+{Heitmann}, K. and {Holder}, G. and {Jain}, B. and {Rozo}, E. and
+{Saro}, A. and {Weller}, J. and {Abdalla}, F.~B. and {Allam}, S.
+and
+{Annis}, J. and {Armstrong}, R. and {Benoit-L\'evy}, A. and
+{Bernstein}, G.~M. and {Carlstrom}, J.~E. and {Carnero Rosell}, A.
+and
+{Carrasco Kind}, M. and {Castander}, F.~J. and {Chiu}, I. and
+{Chown}, R. and {Crocce}, M. and {Cunha}, C.~E. and {D\'Andrea},
+C.~B. and
+{da Costa}, L.~N. and {de Haan}, T. and {Desai}, S. and {Diehl},
+H.~T. and
+{Dietrich}, J.~P. and {Doel}, P. and {Estrada}, J. and {Evrard},
+A.~E. and
+{Flaugher}, B. and {Fosalba}, P. and {Frieman}, J. and {Gaztanaga},
+E. and
+{Gruen}, D. and {Gruendl}, R.~A. and {Holzapfel}, W.~L. and
+{Honscheid}, K. and {James}, D.~J. and {Keisler}, R. and {Kuehn},
+K. and
+{Kuropatkin}, N. and {Lahav}, O. and {Lima}, M. and {Marshall},
+J.~L. and
+{McDonald}, M. and {Melchior}, P. and {Miller}, C.~J. and {Miquel},
+R. and
+{Nord}, B. and {Ogando}, R. and {Omori}, Y. and {Plazas}, A.~A. and
+{Rapetti}, D. and {Reichardt}, C.~L. and {Romer}, A.~K. and
+{Roodman}, A. and {Saliwanchik}, B.~R. and {Sanchez}, E. and
+{Schubnell}, M. and {Sevilla-Noarbe}, I. and {Sheldon}, E. and
+{Smith}, R.~C. and {Soares-Santos}, M. and {Sobreira}, F. and
+{Stark}, A. and {Suchyta}, E. and {Swanson}, M.~E.~C. and {Tarle},
+G. and
+{Thomas}, D. and {Vieira}, J.~D. and {Walker}, A.~R. and
+{Whitehorn}, N. and
+{DES Collaboration} and {SPT Collaboration}},
+title = &quot;{Detection of the kinematic Sunyaev-Zel'dovich effect with DES
+Year 1 and SPT}&quot;,
+journal = {Monthly Notices of the Royal Astronomical Society},
+archivePrefix = &quot;arXiv&quot;,
+eprint = {1603.03904},
+keywords = {galaxies: clusters: general, cosmic background radiation,
+large-scale structure of Universe},
+year = 2016,
+month = sep,
+volume = 461,
+pages = {3172-3193},
+doi = {10.1093/mnras/stw1455},
+adsurl = {http://cdsads.u-strasbg.fr/abs/2016MNRAS.461.3172S},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2016PhRvD..94d3522A,
+author = {{Alonso}, D. and {Louis}, T. and {Bull}, P. and {Ferreira},
+P.~G.
+},
+
+title = &quot;{Reconstructing cosmic growth with kinetic Sunyaev-Zel'dovich
+observations in the era of stage IV experiments}&quot;,
+journal = {Physical Review D},
+archivePrefix = &quot;arXiv&quot;,
+eprint = {1604.01382},
+year = 2016,
+month = aug,
+volume = 94,
+number = 4,
+eid = {043522},
+pages = {043522},
+doi = {10.1103/PhysRevD.94.043522},
+adsurl = {http://cdsads.u-strasbg.fr/abs/2016PhRvD..94d3522A},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2016PhRvL.117e1301H,
+author = {{Hill}, J.~C. and {Ferraro}, S. and {Battaglia}, N. and {Liu},
+J. and
+{Spergel}, D.~N.},
+title = &quot;{Kinematic Sunyaev-Zel'dovich Effect with Projected Fields: A
+Novel Probe of the Baryon Distribution with Planck, WMAP, and WISE Data}&quot;,
+journal = {Physical Review Letters},
+archivePrefix = &quot;arXiv&quot;,
+eprint = {1603.01608},
+year = 2016,
+month = jul,
+volume = 117,
+number = 5,
+eid = {051301},
+pages = {051301},
+doi = {10.1103/PhysRevLett.117.051301},
+adsurl = {http://cdsads.u-strasbg.fr/abs/2016PhRvL.117e1301H},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2016MNRAS.458.3773S,
+author = {{Shao}, J. and {Fang}, T.},
+title = &quot;{The kinetic Sunyaev-Zel'dovich tomography - II. Probing the
+circumgalactic medium}&quot;,
+journal = {Monthly Notices of the Royal Astronomical Society},
+archivePrefix = &quot;arXiv&quot;,
+eprint = {1602.08932},
+keywords = {methods: statistical, intergalactic medium, cosmic background
+background, cosmology: theory},
+year = 2016,
+month = jun,
+volume = 458,
+pages = {3773-3785},
+doi = {10.1093/mnras/stw501},
+adsurl = {http://cdsads.u-strasbg.fr/abs/2016MNRAS.458.3773S},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2016RAA....16...67M,
+author = {{Miao}, H. and {Lin}, W.-P. and {Zhang}, P.-J.},
+title = &quot;{Probing the Missing Baryons via kSZ Stacking}&quot;,
+journal = {Research in Astronomy and Astrophysics},
+year = 2016,
+month = apr,
+volume = 16,
+eid = {67},
+
+pages = {67},
+doi = {10.1088/1674-4527/16/4/067},
+adsurl = {http://cdsads.u-strasbg.fr/abs/2016RAA....16...67M},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2016PhRvD..93h2002S,
+author = {{Schaan}, E. and {Ferraro}, S. and {Vargas-Maga{\~n}a}, M. and
+{Smith}, K.~M. and {Ho}, S. and {Aiola}, S. and {Battaglia}, N. and
+{Bond}, J.~R. and {De Bernardis}, F. and {Calabrese}, E. and
+{Cho}, H.-M. and {Devlin}, M.~J. and {Dunkley}, J. and {Gallardo},
+P.~A. and
+{Hasselfield}, M. and {Henderson}, S. and {Hill}, J.~C. and
+{Hincks}, A.~D. and {Hlozek}, R. and {Hubmayr}, J. and {Hughes},
+J.~P. and
+{Irwin}, K.~D. and {Koopman}, B. and {Kosowsky}, A. and {Li}, D.
+and
+{Louis}, T. and {Lungu}, M. and {Madhavacheril}, M. and {Maurin},
+L. and
+{McMahon}, J.~J. and {Moodley}, K. and {Naess}, S. and {Nati}, F.
+and
+{Newburgh}, L. and {Niemack}, M.~D. and {Page}, L.~A. and {Pappas},
+C.~G. and
+{Partridge}, B. and {Schmitt}, B.~L. and {Sehgal}, N. and
+{Sherwin}, B.~D. and
+{Sievers}, J.~L. and {Spergel}, D.~N. and {Staggs}, S.~T. and
+{van Engelen}, A. and {Wollack}, E.~J. and {ACTPol Collaboration}
+},
+title = &quot;{Evidence for the kinematic Sunyaev-Zel'dovich effect with the
+Atacama Cosmology Telescope and velocity reconstruction from the Baryon
+Oscillation Spectroscopic Survey}&quot;,
+journal = {Physical Review D},
+archivePrefix = &quot;arXiv&quot;,
+eprint = {1510.06442},
+year = 2016,
+month = apr,
+volume = 93,
+number = 8,
+eid = {082002},
+pages = {082002},
+doi = {10.1103/PhysRevD.93.082002},
+adsurl = {http://cdsads.u-strasbg.fr/abs/2016PhRvD..93h2002S},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2016PhRvD..93f4026B,
+author = {{Bianchini}, F. and {Silvestri}, A.},
+title = &quot;{Kinetic Sunyaev-Zel'dovich effect in modified gravity}&quot;,
+journal = {Physical Review D},
+archivePrefix = &quot;arXiv&quot;,
+eprint = {1510.08844},
+year = 2016,
+month = mar,
+volume = 93,
+number = 6,
+eid = {064026},
+pages = {064026},
+doi = {10.1103/PhysRevD.93.064026},
+adsurl = {http://cdsads.u-strasbg.fr/abs/2016PhRvD..93f4026B},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2016A&amp;A...586A.140P,
+
+author = {{Planck Collaboration} and {Ade}, P.~A.~R. and {Aghanim}, N.
+and
+{Arnaud}, M. and {Ashdown}, M. and {Aubourg}, E. and {Aumont}, J.
+and
+{Baccigalupi}, C. and {Banday}, A.~J. and {Barreiro}, R.~B. and
+{Bartolo}, N. and {Battaner}, E. and {Benabed}, K. and {Benoit-
+L\'evy}, A. and
+{Bersanelli}, M. and {Bielewicz}, P. and {Bock}, J.~J. and
+{Bonaldi}, A. and
+{Bonavera}, L. and {Bond}, J.~R. and {Borrill}, J. and {Bouchet},
+F.~R. and
+{Burigana}, C. and {Calabrese}, E. and {Cardoso}, J.-F. and
+{Catalano}, A. and {Chamballu}, A. and {Chiang}, H.~C. and
+{Christensen}, P.~R. and
+{Clements}, D.~L. and {Colombo}, L.~P.~L. and {Combet}, C. and
+{Crill}, B.~P. and {Curto}, A. and {Cuttaia}, F. and {Danese}, L.
+and
+{Davies}, R.~D. and {Davis}, R.~J. and {de Bernardis}, P. and
+{de Zotti}, G. and {Delabrouille}, J. and {Dickinson}, C. and
+{Diego}, J.~M. and {Dolag}, K. and {Donzelli}, S. and {Dor\'e},
+O. and
+{Douspis}, M. and {Ducout}, A. and {Dupac}, X. and {Efstathiou}, G.
+and
+{Elsner}, F. and {En{\ss}lin}, T.~A. and {Eriksen}, H.~K. and
+{Finelli}, F. and {Forni}, O. and {Frailis}, M. and {Fraisse},
+A.~A. and
+{Franceschi}, E. and {Frejsel}, A. and {Galeotta}, S. and {Galli},
+S. and
+{Ganga}, K. and {G\'enova-Santos}, R.~T. and {Giard}, M. and
+{Gjerl{\o}w}, E. and {Gonz\'alez-Nuevo}, J. and {G\'orski},
+K.~M. and
+{Gregorio}, A. and {Gruppuso}, A. and {Hansen}, F.~K. and
+{Harrison}, D.~L. and
+{Henrot-Versill\'e}, S. and {Hern\'andez-Monteagudo}, C. and
+{Herranz}, D. and {Hildebrandt}, S.~R. and {Hivon}, E. and
+{Hobson}, M. and
+{Hornstrup}, A. and {Huffenberger}, K.~M. and {Hurier}, G. and
+{Jaffe}, A.~H. and {Jaffe}, T.~R. and {Jones}, W.~C. and {Juvela},
+M. and
+{Keih{\&quot;a}nen}, E. and {Keskitalo}, R. and {Kitaura}, F. and
+{Kneissl}, R. and {Knoche}, J. and {Kunz}, M. and {Kurki-Suonio},
+H. and
+{Lagache}, G. and {Lamarre}, J.-M. and {Lasenby}, A. and
+{Lattanzi}, M. and
+{Lawrence}, C.~R. and {Leonardi}, R. and {Le\'on-Tavares}, J. and
+{Levrier}, F. and {Liguori}, M. and {Lilje}, P.~B. and {Linden-
+V{\o}rnle}, M. and
+{L\'opez-Caniego}, M. and {Lubin}, P.~M. and {Ma}, Y.-Z. and
+{Mac\'ias-P\'erez}, J.~F. and {Maffei}, B. and {Maino}, D.
+and
+{Mak}, D.~S.~Y. and {Mandolesi}, N. and {Mangilli}, A. and {Maris},
+M. and
+{Martin}, P.~G. and {Mart\'inez-Gonz\'alez}, E. and {Masi},
+S. and
+{Matarrese}, S. and {McGehee}, P. and {Melchiorri}, A. and
+{Mennella}, A. and
+{Migliaccio}, M. and {Miville-Desch{\^e}nes}, M.-A. and {Moneti},
+A. and
+{Montier}, L. and {Morgante}, G. and {Mortlock}, D. and {Munshi},
+D. and
+
+{Murphy}, J.~A. and {Naselsky}, P. and {Nati}, F. and {Natoli}, P.
+and
+{Noviello}, F. and {Novikov}, D. and {Novikov}, I. and {Oxborrow},
+C.~A. and
+{Pagano}, L. and {Pajot}, F. and {Paoletti}, D. and {Perdereau}, O.
+and
+{Perotto}, L. and {Pettorino}, V. and {Piacentini}, F. and {Piat},
+M. and
+{Pierpaoli}, E. and {Pointecouteau}, E. and {Polenta}, G. and
+{Ponthieu}, N. and {Pratt}, G.~W. and {Puget}, J.-L. and
+{Puisieux}, S. and
+{Rachen}, J.~P. and {Racine}, B. and {Reach}, W.~T. and {Reinecke},
+M. and
+{Remazeilles}, M. and {Renault}, C. and {Renzi}, A. and
+{Ristorcelli}, I. and
+{Rocha}, G. and {Rosset}, C. and {Rossetti}, M. and {Roudier}, G.
+and
+{Rubi{\~n}o-Mart\'in}, J.~A. and {Rusholme}, B. and {Sandri},
+M. and
+{Santos}, D. and {Savelainen}, M. and {Savini}, G. and {Scott}, D.
+and
+{Spencer}, L.~D. and {Stolyarov}, V. and {Sudiwala}, R. and
+{Sunyaev}, R. and {Sutton}, D. and {Suur-Uski}, A.-S. and {Sygnet},
+J.-F. and
+{Tauber}, J.~A. and {Terenzi}, L. and {Toffolatti}, L. and
+{Tomasi}, M. and
+{Tucci}, M. and {Valenziano}, L. and {Valiviita}, J. and {Van
+Tent}, B. and
+{Vielva}, P. and {Villa}, F. and {Wade}, L.~A. and {Wandelt}, B.~D.
+and
+{Wang}, W. and {Wehus}, I.~K. and {Yvon}, D. and {Zacchei}, A. and
+{Zonca}, A.},
+title = &quot;{Planck intermediate results. XXXVII. Evidence of unbound gas
+from the kinetic Sunyaev-Zeldovich effect}&quot;,
+journal = {Astronomy \& Astrophysics},
+archivePrefix = &quot;arXiv&quot;,
+eprint = {1504.03339},
+keywords = {cosmic background radiation, cosmology: observations, large-
+scale structure of Universe, galaxies: clusters: intracluster medium},
+year = 2016,
+month = feb,
+volume = 586,
+eid = {A140},
+pages = {A140},
+doi = {10.1051/0004-6361/201526328},
+adsurl = {http://cdsads.u-strasbg.fr/abs/2016A%26A...586A.140P},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2015PhRvL.115s1301H,
+author = {{Hern\'andez-Monteagudo}, C. and {Ma}, Y.-Z. and {Kitaura},
+F.~S. and
+{Wang}, W. and {G\'enova-Santos}, R. and {Mac\'ias-
+P\'erez}, J. and
+{Herranz}, D.},
+title = &quot;{Evidence of the Missing Baryons from the Kinematic Sunyaev-
+Zeldovich Effect in Planck Data}&quot;,
+journal = {Physical Review Letters},
+archivePrefix = &quot;arXiv&quot;,
+eprint = {1504.04011},
+
+keywords = {Background radiations, Elliptical galaxies, Distances
+redshifts radial velocities, spatial distribution of galaxies, Intracluster
+matter, cooling flows},
+year = 2015,
+month = nov,
+volume = 115,
+number = 19,
+eid = {191301},
+pages = {191301},
+doi = {10.1103/PhysRevLett.115.191301},
+adsurl = {http://cdsads.u-strasbg.fr/abs/2015PhRvL.115s1301H},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2015PhRvD..92f3501M,
+author = {{Mueller}, E.-M. and {de Bernardis}, F. and {Bean}, R. and
+{Niemack}, M.~D.
+},
+title = &quot;{Constraints on massive neutrinos from the pairwise kinematic
+Sunyaev-Zel'dovich effect}&quot;,
+journal = {Physical Review D},
+archivePrefix = &quot;arXiv&quot;,
+eprint = {1412.0592},
+keywords = {Cosmology, Observational cosmology},
+year = 2015,
+month = sep,
+volume = 92,
+number = 6,
+eid = {063501},
+pages = {063501},
+doi = {10.1103/PhysRevD.92.063501},
+adsurl = {http://cdsads.u-strasbg.fr/abs/2015PhRvD..92f3501M},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2015ApJ...808...47M,
+author = {{Mueller}, E.-M. and {de Bernardis}, F. and {Bean}, R. and
+{Niemack}, M.~D.
+},
+title = &quot;{Constraints on Gravity and Dark Energy from the Pairwise
+Kinematic Sunyaev-Zel'dovich Effect}&quot;,
+journal = {Astrophysical Journal},
+archivePrefix = &quot;arXiv&quot;,
+eprint = {1408.6248},
+keywords = {cosmological parameters, dark energy, large-scale structure of
+universe},
+year = 2015,
+month = jul,
+volume = 808,
+eid = {47},
+pages = {47},
+doi = {10.1088/0004-637X/808/1/47},
+adsurl = {http://cdsads.u-strasbg.fr/abs/2015ApJ...808...47M},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2015JCAP...06..046Z,
+author = {{Zhang}, P. and {Johnson}, M.~C.},
+title = &quot;{Testing eternal inflation with the kinetic Sunyaev Zel'dovich
+effect}&quot;,
+journal = {Journal of Cosmology and Astroparticle Physics},
+archivePrefix = &quot;arXiv&quot;,
+eprint = {1501.00511},
+year = 2015,
+
+month = jun,
+volume = 6,
+eid = {046},
+pages = {046},
+doi = {10.1088/1475-7516/2015/06/046},
+adsurl = {http://cdsads.u-strasbg.fr/abs/2015JCAP...06..046Z},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2015arXiv150505952K,
+author = {{Kirillov}, A.~A. and {Savelova}, E.~P.},
+title = &quot;{On scattering of CMB radiation on wormholes: kinetic SZ-
+effect}&quot;,
+journal = {ArXiv e-prints},
+archivePrefix = &quot;arXiv&quot;,
+eprint = {1505.05952},
+primaryClass = &quot;gr-qc&quot;,
+keywords = {General Relativity and Quantum Cosmology, Astrophysics -
+Cosmology and Nongalactic Astrophysics},
+year = 2015,
+month = may,
+adsurl = {http://cdsads.u-strasbg.fr/abs/2015arXiv150505952K},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2018ApJ...855...36Z,
+   author = {{Zhang}, C. and {Yu}, Q. and {Lu}, Y.},
+    title = "{Simulating the Galaxy Cluster "El Gordo": Gas Motion, Kinetic Sunyaev-Zel'dovich Signal, and X-Ray Line Features}",
+  journal = {Astrophysical Journal},
+archivePrefix = "arXiv",
+   eprint = {1711.08438},
+ keywords = {galaxies: clusters: general, galaxies: clusters: individual: ACT-CL J0102{\ndash}4915, large-scale structure of universe, methods: numerical, X-rays: galaxies: clusters},
+     year = 2018,
+    month = mar,
+   volume = 855,
+      eid = {36},
+    pages = {36},
+      doi = {10.3847/1538-4357/aaab4c},
+   adsurl = {http://adsabs.harvard.edu/abs/2018ApJ...855...36Z},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2017arXiv171208619L,
+   author = {{Lim}, S. and {Mo}, H. and {Wang}, H. and {Yang}, X.},
+    title = "{The detection of missing baryons in galaxy halos with kinetic Sunyaev-Zel'dovich effect}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1712.08619},
+ keywords = {Astrophysics - Astrophysics of Galaxies},
+     year = 2017,
+    month = dec,
+   adsurl = {http://adsabs.harvard.edu/abs/2017arXiv171208619L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2002ARA&A..40..643C,
+   author = {{Carlstrom}, J.~E. and {Holder}, G.~P. and {Reese}, E.~D.},
+    title = "{Cosmology with the Sunyaev-Zel'dovich Effect}",
+  journal = {Annual Review of Astronomy and Astrophysic},
+   eprint = {astro-ph/0208192},
+ keywords = {galaxy clusters, cosmic microwave background, structure formation, surveys},
+     year = 2002,
+   volume = 40,
+    pages = {643-680},
+      doi = {10.1146/annurev.astro.40.060401.093803},
+   adsurl = {http://adsabs.harvard.edu/abs/2002ARA%26A..40..643C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2017A&A...604A..93H,
+   author = {{Hurier}, G.},
+    title = "{Constraining galaxy cluster velocity field with the thermal Sunyaev-Zel'dovich and kinematic Sunyaev-Zel'dovich cross-bispectrum}",
+  journal = {Astronomy \& Astrophysics},
+ keywords = {large-scale structure of Universe, cosmic background radiation, cosmological parameters, galaxies: clusters: intracluster medium, galaxies: clusters: general},
+     year = 2017,
+    month = aug,
+   volume = 604,
+      eid = {A93},
+    pages = {A93},
+      doi = {10.1051/0004-6361/201629687},
+   adsurl = {http://adsabs.harvard.edu/abs/2017A%26A...604A..93H},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2017arXiv170708129D,
+   author = {{Deutsch}, A.-S. and {Dimastrogiovanni}, E. and {Johnson}, M.~C. and 
+	{M{\"u}nchmeyer}, M. and {Terrana}, A.},
+    title = "{Reconstruction of the remote dipole and quadrupole fields from the kinetic Sunyaev Zel'dovich and polarized Sunyaev Zel'dovich effects}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1707.08129},
+ keywords = {Astrophysics - Cosmology and Nongalactic Astrophysics, General Relativity and Quantum Cosmology, High Energy Physics - Phenomenology, High Energy Physics - Theory},
+     year = 2017,
+    month = jul,
+   adsurl = {http://adsabs.harvard.edu/abs/2017arXiv170708129D},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2017PhRvD..96l3529C,
+   author = {{Calafut}, V. and {Bean}, R. and {Yu}, B.},
+    title = "{Cluster mislocation in kinematic Sunyaev-Zel'dovich effect extraction}",
+  journal = {
+Physical Review D},
+archivePrefix = "arXiv",
+   eprint = {1710.01755},
+     year = 2017,
+    month = dec,
+   volume = 96,
+   number = 12,
+      eid = {123529},
+    pages = {123529},
+      doi = {10.1103/PhysRevD.96.123529},
+   adsurl = {http://adsabs.harvard.edu/abs/2017PhRvD..96l3529C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2018PhRvD..97b3512F,
+   author = {{Ferraro}, S. and {Hill}, J.~C.},
+    title = "{Bias to CMB lensing reconstruction from temperature anisotropies due to large-scale galaxy motions}",
+  journal = {Physical Review D},
+archivePrefix = "arXiv",
+   eprint = {1705.06751},
+     year = 2018,
+    month = jan,
+   volume = 97,
+   number = 2,
+      eid = {023512},
+    pages = {023512},
+      doi = {10.1103/PhysRevD.97.023512},
+   adsurl = {http://adsabs.harvard.edu/abs/2018PhRvD..97b3512F},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2013ApJ...765L..32K,
+   author = {{Keisler}, R. and {Schmidt}, F.},
+    title = "{Prospects for Measuring the Relative Velocities of Galaxy Clusters in Photometric Surveys Using the Kinetic Sunyaev-Zel'dovich Effect}",
+  journal = {Astrophysical Journall},
+archivePrefix = "arXiv",
+   eprint = {1211.0668},
+ keywords = {cosmic background radiation, cosmology: observations, galaxies: clusters: general, gravitation },
+     year = 2013,
+    month = mar,
+   volume = 765,
+      eid = {L32},
+    pages = {L32},
+      doi = {10.1088/2041-8205/765/2/L32},
+   adsurl = {http://adsabs.harvard.edu/abs/2013ApJ...765L..32K},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2013MNRAS.432.3508R,
+   author = {{Ruan}, J.~J. and {Quinn}, T.~R. and {Babul}, A.},
+    title = "{The observable thermal and kinetic Sunyaev-Zel'dovich effect in merging galaxy clusters}",
+  journal = {Monthly Notices of the Royal Astronomical Society},
+archivePrefix = "arXiv",
+   eprint = {1304.6088},
+ keywords = {galaxies: clusters: general},
+     year = 2013,
+    month = jul,
+   volume = 432,
+    pages = {3508-3519},
+      doi = {10.1093/mnras/stt701},
+   adsurl = {http://adsabs.harvard.edu/abs/2013MNRAS.432.3508R},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2013ApJ...778...52S,
+   author = {{Sayers}, J. and {Mroczkowski}, T. and {Zemcov}, M. and {Korngut}, P.~M. and 
+	{Bock}, J. and {Bulbul}, E. and {Czakon}, N.~G. and {Egami}, E. and 
+	{Golwala}, S.~R. and {Koch}, P.~M. and {Lin}, K.-Y. and {Mantz}, A. and 
+	{Molnar}, S.~M. and {Moustakas}, L. and {Pierpaoli}, E. and 
+	{Rawle}, T.~D. and {Reese}, E.~D. and {Rex}, M. and {Shitanishi}, J.~A. and 
+	{Siegel}, S. and {Umetsu}, K.},
+    title = "{A Measurement of the Kinetic Sunyaev-Zel'dovich Signal Toward MACS J0717.5+3745}",
+  journal = {Astrophysical Journal},
+archivePrefix = "arXiv",
+   eprint = {1312.3680},
+ primaryClass = "astro-ph.CO",
+ keywords = {galaxies: clusters: individual: MACS J0717.5+3745, galaxies: clusters: intracluster medium},
+     year = 2013,
+    month = nov,
+   volume = 778,
+      eid = {52},
+    pages = {52},
+      doi = {10.1088/0004-637X/778/1/52},
+   adsurl = {http://adsabs.harvard.edu/abs/2013ApJ...778...52S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2013JCAP...12..001X,
+   author = {{Xu}, X.-D. and {Wang}, B. and {Zhang}, P. and {Atrio-Barandela}, F.
+	},
+    title = "{The effect of dark matter and dark energy interactions on the peculiar velocity field and the kinetic Sunyaev-Zel'dovich effect}",
+  journal = {
+
+Journal of Cosmology and Astroparticle Physics},
+archivePrefix = "arXiv",
+   eprint = {1308.1475},
+     year = 2013,
+    month = dec,
+   volume = 12,
+      eid = {001},
+    pages = {001},
+      doi = {10.1088/1475-7516/2013/12/001},
+   adsurl = {http://adsabs.harvard.edu/abs/2013JCAP...12..001X},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2014MNRAS.443.2311L,
+   author = {{Li}, M. and {Angulo}, R.~E. and {White}, S.~D.~M. and {Jasche}, J.
+	},
+    title = "{Matched filter optimization of kSZ measurements with a reconstructed cosmological flow field}",
+  journal = {Monthly Notices of the Royal Astronomical Society},
+archivePrefix = "arXiv",
+   eprint = {1404.0007},
+ keywords = {methods: statistical, cosmic background radiation, cosmology: theory, large-scale structure of Universe},
+     year = 2014,
+    month = sep,
+   volume = 443,
+    pages = {2311-2326},
+      doi = {10.1093/mnras/stu1224},
+   adsurl = {http://adsabs.harvard.edu/abs/2014MNRAS.443.2311L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2012AfrSk..16..147Z,
+   author = {{Zunckel}, C.},
+    title = "{Using the kSZ Effect to Measure the Galaxy Velocity Field}",
+  journal = {African Skies},
+     year = 2012,
+    month = mar,
+   volume = 16,
+    pages = {147-149},
+   adsurl = {http://adsabs.harvard.edu/abs/2012AfrSk..16..147Z},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@INPROCEEDINGS{2013nha..confE..25P,
+   author = {{Park}, H. and {Shapiro}, P.~R. and {Komatsu}, E. and {Iliev}, I.~T. and 
+	{Ahn}, K. and {Mellema}, G.},
+    title = "{The Kinetic Sunyaev-Zel'dovich Effect as a Probe of the Physics of Cosmic Reionization: The Effect of Self-regulated Reionization}",
+booktitle = {New Horizons in Astronomy (BASH 2013)},
+     year = 2013,
+    month = oct,
+      eid = {25},
+    pages = {25},
+   adsurl = {http://adsabs.harvard.edu/abs/2013nha..confE..25P},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@MISC{2014adap.prop...19G,
+   author = {{Golwala}, S.},
+    title = "{Galaxy Cluster Train Wreck Forensics: Using the Kinetic Sunyaev-Zeldovich Effect to Measure the Velocity of the Intracluster Medium in Extreme Galaxy Cluster Mergers}",
+howpublished = {NASA ADAP Proposal},
+     year = 2014,
+      eid = {14-ADAP14-19},
+    pages = {14-ADAP14-19},
+   adsurl = {http://adsabs.harvard.edu/abs/2014adap.prop...19G},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2002A&A...395..747S,
+   author = {{Sorel}, M. and {Aghanim}, N. and {Forni}, O.},
+    title = "{Blind statistical indicators of the kinetic Sunyaev-Zel'dovich anisotropies}",
+  journal = {Astronomy \& Astrophysics},
+ keywords = {cosmology: cosmic microwave background, methods: statistical},
+     year = 2002,
+    month = dec,
+   volume = 395,
+    pages = {747-751},
+      doi = {10.1051/0004-6361:20021275},
+   adsurl = {http://adsabs.harvard.edu/abs/2002A%26A...395..747S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2005ApJ...630..643M,
+   author = {{McQuinn}, M. and {Furlanetto}, S.~R. and {Hernquist}, L. and 
+	{Zahn}, O. and {Zaldarriaga}, M.},
+    title = "{The Kinetic Sunyaev-Zel'dovich Effect from Reionization}",
+  journal = {Astrophysical Journal},
+   eprint = {astro-ph/0504189},
+ keywords = {Cosmology: Cosmic Microwave Background, Cosmology: Theory, Galaxies: Intergalactic Medium},
+     year = 2005,
+    month = sep,
+   volume = 630,
+    pages = {643-656},
+      doi = {10.1086/432049},
+   adsurl = {http://adsabs.harvard.edu/abs/2005ApJ...630..643M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2012MNRAS.422.1403M,
+   author = {{Mesinger}, A. and {McQuinn}, M. and {Spergel}, D.~N.},
+    title = "{The kinetic Sunyaev-Zel'dovich signal from inhomogeneous reionization: a parameter space study}",
+  journal = {Monthly Notices of the Royal Astronomical Society},
+archivePrefix = "arXiv",
+   eprint = {1112.1820},
+ keywords = {galaxies: high-redshift, cosmic background radiation, dark ages, reionization, first stars, diffuse radiation, early Universe, large-scale structure of Universe},
+     year = 2012,
+    month = may,
+   volume = 422,
+    pages = {1403-1417},
+      doi = {10.1111/j.1365-2966.2012.20713.x},
+   adsurl = {http://adsabs.harvard.edu/abs/2012MNRAS.422.1403M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2011CQGra..28p4005Z,
+   author = {{Zibin}, J.~P. and {Moss}, A.},
+    title = "{Linear kinetic Sunyaev-Zel'dovich effect and void models for acceleration}",
+  journal = {Classical and Quantum Gravity},
+archivePrefix = "arXiv",
+   eprint = {1105.0909},
+ primaryClass = "astro-ph.CO",
+     year = 2011,
+    month = aug,
+   volume = 28,
+   number = 16,
+      eid = {164005},
+    pages = {164005},
+      doi = {10.1088/0264-9381/28/16/164005},
+   adsurl = {http://adsabs.harvard.edu/abs/2011CQGra..28p4005Z},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2012ApJ...756...15S,
+   author = {{Shaw}, L.~D. and {Rudd}, D.~H. and {Nagai}, D.},
+    title = "{Deconstructing the Kinetic SZ Power Spectrum}",
+  journal = {Astrophysical Journal},
+archivePrefix = "arXiv",
+   eprint = {1109.0553},
+ primaryClass = "astro-ph.CO",
+ keywords = {cosmic background radiation, cosmology: theory, large-scale structure of universe},
+     year = 2012,
+    month = sep,
+   volume = 756,
+      eid = {15},
+    pages = {15},
+      doi = {10.1088/0004-637X/756/1/15},
+   adsurl = {http://adsabs.harvard.edu/abs/2012ApJ...756...15S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2013ApJ...776...83B,
+   author = {{Battaglia}, N. and {Natarajan}, A. and {Trac}, H. and {Cen}, R. and 
+	{Loeb}, A.},
+    title = "{Reionization on Large Scales. III. Predictions for Low-l Cosmic Microwave Background Polarization and High-l Kinetic Sunyaev-Zel'dovich Observables}",
+  journal = {Astrophysical Journal},
+archivePrefix = "arXiv",
+   eprint = {1211.2832},
+ keywords = {cosmic background radiation, cosmology: theory, intergalactic medium, large-scale structure of universe, methods: numerical},
+     year = 2013,
+    month = oct,
+   volume = 776,
+      eid = {83},
+    pages = {83},
+      doi = {10.1088/0004-637X/776/2/83},
+   adsurl = {http://adsabs.harvard.edu/abs/2013ApJ...776...83B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2007ApJ...660..933I,
+   author = {{Iliev}, I.~T. and {Pen}, U.-L. and {Bond}, J.~R. and {Mellema}, G. and 
+	{Shapiro}, P.~R.},
+    title = "{The Kinetic Sunyaev-Zel'dovich Effect from Radiative Transfer Simulations of Patchy Reionization}",
+  journal = {Astrophysical Journal},
+   eprint = {astro-ph/0609592},
+ keywords = {Cosmology: Cosmic Microwave Background, Cosmology: Theory, Galaxies: Intergalactic Medium, Cosmology: Large-Scale Structure of Universe, Radiative Transfer, Radio Lines: General},
+     year = 2007,
+    month = may,
+   volume = 660,
+    pages = {933-944},
+      doi = {10.1086/513687},
+   adsurl = {http://adsabs.harvard.edu/abs/2007ApJ...660..933I},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2016ApJ...824..118A,
+   author = {{Alvarez}, M.~A.},
+    title = "{The Kinetic Sunyaev-Zel'dovich Effect from Reionization: Simulated Full-sky Maps at Arcminute Resolution}",
+  journal = {Astrophysical Journal},
+archivePrefix = "arXiv",
+   eprint = {1511.02846},
+ keywords = {cosmic background radiation, cosmology: theory, dark ages, reionization, first stars, intergalactic medium, large-scale structure of universe, methods: numerical},
+     year = 2016,
+    month = jun,
+   volume = 824,
+      eid = {118},
+    pages = {118},
+      doi = {10.3847/0004-637X/824/2/118},
+   adsurl = {http://adsabs.harvard.edu/abs/2016ApJ...824..118A},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2018PhRvD..97b3514L,
+   author = {{Li}, Y.-C. and {Ma}, Y.-Z. and {Remazeilles}, M. and {Moodley}, K.
+	},
+    title = "{Measurement of the pairwise kinematic Sunyaev-Zeldovich effect with Planck and BOSS data}",
+  journal = {Physical Review D},
+archivePrefix = "arXiv",
+   eprint = {1710.10876},
+     year = 2018,
+    month = jan,
+   volume = 97,
+   number = 2,
+      eid = {023514},
+    pages = {023514},
+      doi = {10.1103/PhysRevD.97.023514},
+   adsurl = {http://adsabs.harvard.edu/abs/2018PhRvD..97b3514L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2018MNRAS.476.4025M,
+   author = {{Ma}, Q. and {Helgason}, K. and {Komatsu}, E. and {Ciardi}, B. and 
+	{Ferrara}, A.},
+    title = "{Measuring patchy reionization with kSZ$^{2}$-21 cm correlations}",
+  journal = {Monthly Notices of the Royal Astronomical Society},
+archivePrefix = "arXiv",
+   eprint = {1712.05305},
+ keywords = {cosmic background radiation, dark ages, reionization, first stars, early Universe},
+     year = 2018,
+    month = may,
+   volume = 476,
+    pages = {4025-4031},
+      doi = {10.1093/mnras/sty543},
+   adsurl = {http://adsabs.harvard.edu/abs/2018MNRAS.476.4025M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2018arXiv180307036F,
+   author = {{Ferraro}, S. and {Smith}, K.~M.},
+    title = "{Characterizing the Epoch of Reionization with the small-scale CMB: constraints on the optical depth and physical parameters}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1803.07036},
+ keywords = {Astrophysics - Cosmology and Nongalactic Astrophysics},
+     year = 2018,
+    month = mar,
+   adsurl = {http://adsabs.harvard.edu/abs/2018arXiv180307036F},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2018ApJ...854...46H,
+   author = {{Hoscheit}, B.~L. and {Barger}, A.~J.},
+    title = "{The KBC Void: Consistency with Supernovae Type Ia and the Kinematic SZ Effect in a {$\Lambda$}LTB Model}",
+  journal = {Astrophysical Journal},
+archivePrefix = "arXiv",
+   eprint = {1801.01890},
+ keywords = {cosmology: miscellaneous, methods: numerical, supernovae: general},
+     year = 2018,
+    month = feb,
+   volume = 854,
+      eid = {46},
+    pages = {46},
+      doi = {10.3847/1538-4357/aaa59b},
+   adsurl = {http://adsabs.harvard.edu/abs/2018ApJ...854...46H},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2018ApJ...853..121P,
+   author = {{Park}, H. and {Alvarez}, M.~A. and {Bond}, J.~R.},
+    title = "{The Impact of Baryonic Physics on the Kinetic Sunyaev-Zel'dovich Effect}",
+  journal = {Astrophysical Journal},
+archivePrefix = "arXiv",
+   eprint = {1710.02792},
+ keywords = {cosmic background radiation, galaxies: clusters: intracluster medium, galaxies: star formation, hydrodynamics, large-scale structure of universe, methods: numerical},
+     year = 2018,
+    month = feb,
+   volume = 853,
+      eid = {121},
+    pages = {121},
+      doi = {10.3847/1538-4357/aaa0da},
+   adsurl = {http://adsabs.harvard.edu/abs/2018ApJ...853..121P},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2017JCAP...11..040B,
+   author = {{Battaglia}, N. and {Ferraro}, S. and {Schaan}, E. and {Spergel}, D.~N.
+	},
+    title = "{Future constraints on halo thermodynamics from combined Sunyaev-Zel'dovich measurements}",
+  journal = {Journal of Cosmology and Astroparticle Physics},
+archivePrefix = "arXiv",
+   eprint = {1705.05881},
+     year = 2017,
+    month = nov,
+   volume = 11,
+      eid = {040},
+    pages = {040},
+      doi = {10.1088/1475-7516/2017/11/040},
+   adsurl = {http://adsabs.harvard.edu/abs/2017JCAP...11..040B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2017PhRvL.119b1301S,
+   author = {{Smith}, K.~M. and {Ferraro}, S.},
+    title = "{Detecting Patchy Reionization in the Cosmic Microwave Background}",
+  journal = {Physical Review Letters},
+     year = 2017,
+    month = jul,
+   volume = 119,
+   number = 2,
+      eid = {021301},
+    pages = {021301},
+      doi = {10.1103/PhysRevLett.119.021301},
+   adsurl = {http://adsabs.harvard.edu/abs/2017PhRvL.119b1301S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2017NuPhB.920..402M,
+   author = {{Ma}, Y.-Z.},
+    title = "{Constraining the ionized gas evolution with CMB-spectroscopic survey cross-correlation}",
+  journal = {Nuclear Physics B},
+archivePrefix = "arXiv",
+   eprint = {1707.03348},
+     year = 2017,
+    month = jul,
+   volume = 920,
+    pages = {402-418},
+      doi = {10.1016/j.nuclphysb.2017.04.022},
+   adsurl = {http://adsabs.harvard.edu/abs/2017NuPhB.920..402M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2017JCAP...02..040T,
+   author = {{Terrana}, A. and {Harris}, M.-J. and {Johnson}, M.~C.},
+    title = "{Analyzing the cosmic variance limit of remote dipole measurements of the cosmic microwave background using the large-scale kinetic Sunyaev Zel'dovich effect}",
+  journal = {Journal of Cosmology and Astroparticle Physics},
+archivePrefix = "arXiv",
+   eprint = {1610.06919},
+     year = 2017,
+    month = feb,
+   volume = 2,
+      eid = {040},
+    pages = {040},
+      doi = {10.1088/1475-7516/2017/02/040},
+   adsurl = {http://adsabs.harvard.edu/abs/2017JCAP...02..040T},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2017AAS...22934211H,
+   author = {{Hoscheit}, B.~L. and {Barger}, A.~J.},
+    title = "{Improved linear kinetic Sunyaev-Zel'dovich effect constraints on the observed Local Void}",
+booktitle = {American Astronomical Society Meeting Abstracts \#229},
+     year = 2017,
+   series = {American Astronomical Society Meeting Abstracts},
+   volume = 229,
+    month = jan,
+      eid = {342.11},
+    pages = {342.11},
+   adsurl = {http://adsabs.harvard.edu/abs/2017AAS...22934211H},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2016ApJ...823...98F,
+   author = {{Flender}, S. and {Bleem}, L. and {Finkel}, H. and {Habib}, S. and 
+	{Heitmann}, K. and {Holder}, G.},
+    title = "{Simulations of the Pairwise Kinematic Sunyaev-Zel'dovich Signal}",
+  journal = {Astrophysical Journal},
+archivePrefix = "arXiv",
+   eprint = {1511.02843},
+ keywords = {cosmic background radiation, cosmology: theory, galaxies: clusters: intracluster medium},
+     year = 2016,
+    month = jun,
+   volume = 823,
+      eid = {98},
+    pages = {98},
+      doi = {10.3847/0004-637X/823/2/98},
+   adsurl = {http://adsabs.harvard.edu/abs/2016ApJ...823...98F},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2016APS..APRS12001D,
+   author = {{de Bernardis}, F.},
+    title = "{Cosmology with kinematic Sunyaev-Zel'dovich effect measurements from ACTPol and future surveys}",
+booktitle = {APS Meeting Abstracts},
+     year = 2016,
+    month = mar,
+      eid = {S12.001},
+    pages = {S12.001},
+   adsurl = {http://adsabs.harvard.edu/abs/2016APS..APRS12001D},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@INPROCEEDINGS{2016APS..APR.X4002S,
+   author = {{Story}, K.},
+    title = "{Measuring the kinematic Sunyaev-Zel'dovich effect with the South Pole Telescope and the Dark Energy Survey}",
+booktitle = {APS April Meeting Abstracts},
+     year = 2016,
+    month = mar,
+      eid = {X4.002},
+    pages = {X4.002},
+   adsurl = {http://adsabs.harvard.edu/abs/2016APS..APR.X4002S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2016ApJ...818...37P,
+   author = {{Park}, H. and {Komatsu}, E. and {Shapiro}, P.~R. and {Koda}, J. and 
+	{Mao}, Y.},
+    title = "{The Impact of Nonlinear Structure Formation on the Power Spectrum of Transverse Momentum Fluctuations and the Kinetic Sunyaev-Zel'dovich Effect}",
+  journal = {Astrophysical Journal},
+archivePrefix = "arXiv",
+   eprint = {1506.05177},
+ keywords = {cosmic background radiation, cosmology: theory, large-scale structure of universe},
+     year = 2016,
+    month = feb,
+   volume = 818,
+      eid = {37},
+    pages = {37},
+      doi = {10.3847/0004-637X/818/1/37},
+   adsurl = {http://adsabs.harvard.edu/abs/2016ApJ...818...37P},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2015IAUGA..2254744L,
+   author = {{Lavaux}, G.},
+    title = "{Observing the Dark Baryons with Planck}",
+  journal = {IAU General Assembly},
+     year = 2015,
+    month = aug,
+   volume = 22,
+      eid = {2254744},
+    pages = {2254744},
+   adsurl = {http://adsabs.harvard.edu/abs/2015IAUGA..2254744L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2015IAUGA..2181727T,
+   author = {{Tristram}, M.},
+    title = "{Planck 2015 constraints on reionization history}",
+  journal = {IAU General Assembly},
+     year = 2015,
+    month = aug,
+   volume = 21,
+      eid = {2181727},
+    pages = {2181727},
+   adsurl = {http://adsabs.harvard.edu/abs/2015IAUGA..2181727T},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2015ApJS..219...10B,
+   author = {{Bull}, P. and {Wehus}, I.~K. and {Eriksen}, H.~K. and {Ferreira}, P.~G. and 
+	{Fuskeland}, U. and {G{\'o}rski}, K.~M. and {Jewell}, J.~B.},
+    title = "{A CMB Gibbs Sampler for Localized Secondary Anisotropies}",
+  journal = {Astrophysical Journals},
+archivePrefix = "arXiv",
+   eprint = {1410.2544},
+ keywords = {cosmic background radiation, galaxies: clusters: general, large-scale structure of universe},
+     year = 2015,
+    month = jul,
+   volume = 219,
+      eid = {10},
+    pages = {10},
+      doi = {10.1088/0067-0049/219/1/10},
+   adsurl = {http://adsabs.harvard.edu/abs/2015ApJS..219...10B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2015aska.confE...8J,
+   author = {{Jelic}, V. and {Ciardi}, B. and {Fernandez}, E. and {Tashiro}, H. and 
+	{Vrbanec}, D.},
+    title = "{SKA - EoR correlations and cross-correlations: kSZ, radio galaxies, and NIR background}",
+  journal = {Advancing Astrophysics with the Square Kilometre Array (AASKA14)},
+archivePrefix = "arXiv",
+   eprint = {1501.04247},
+     year = 2015,
+    month = apr,
+      eid = {8},
+    pages = {8},
+   adsurl = {http://adsabs.harvard.edu/abs/2015aska.confE...8J},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2015ApJ...799..177G,
+   author = {{George}, E.~M. and {Reichardt}, C.~L. and {Aird}, K.~A. and 
+	{Benson}, B.~A. and {Bleem}, L.~E. and {Carlstrom}, J.~E. and 
+	{Chang}, C.~L. and {Cho}, H.-M. and {Crawford}, T.~M. and {Crites}, A.~T. and 
+	{de Haan}, T. and {Dobbs}, M.~A. and {Dudley}, J. and {Halverson}, N.~W. and 
+	{Harrington}, N.~L. and {Holder}, G.~P. and {Holzapfel}, W.~L. and 
+	{Hou}, Z. and {Hrubes}, J.~D. and {Keisler}, R. and {Knox}, L. and 
+	{Lee}, A.~T. and {Leitch}, E.~M. and {Lueker}, M. and {Luong-Van}, D. and 
+	{McMahon}, J.~J. and {Mehl}, J. and {Meyer}, S.~S. and {Millea}, M. and 
+	{Mocanu}, L.~M. and {Mohr}, J.~J. and {Montroy}, T.~E. and {Padin}, S. and 
+	{Plagge}, T. and {Pryke}, C. and {Ruhl}, J.~E. and {Schaffer}, K.~K. and 
+	{Shaw}, L. and {Shirokoff}, E. and {Spieler}, H.~G. and {Staniszewski}, Z. and 
+	{Stark}, A.~A. and {Story}, K.~T. and {van Engelen}, A. and 
+	{Vanderlinde}, K. and {Vieira}, J.~D. and {Williamson}, R. and 
+	{Zahn}, O.},
+    title = "{A Measurement of Secondary Cosmic Microwave Background Anisotropies from the 2500 Square-degree SPT-SZ Survey}",
+  journal = {Astrophysical Journal},
+archivePrefix = "arXiv",
+   eprint = {1408.3161},
+ keywords = {cosmic background radiation, cosmology: observations, dark ages, reionization, first stars, diffuse radiation, large-scale structure of universe},
+     year = 2015,
+    month = feb,
+   volume = 799,
+      eid = {177},
+    pages = {177},
+      doi = {10.1088/0004-637X/799/2/177},
+   adsurl = {http://adsabs.harvard.edu/abs/2015ApJ...799..177G},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2014JCAP...08..010C,
+   author = {{Calabrese}, E. and {Hlo{\v z}ek}, R. and {Battaglia}, N. and 
+	{Bond}, J.~R. and {de Bernardis}, F. and {Devlin}, M.~J. and 
+	{Hajian}, A. and {Henderson}, S. and {Hil}, J.~C. and {Kosowsky}, A. and 
+	{Louis}, T. and {McMahon}, J. and {Moodley}, K. and {Newburgh}, L. and 
+	{Niemack}, M.~D. and {Page}, L.~A. and {Partridge}, B. and {Sehgal}, N. and 
+	{Sievers}, J.~L. and {Spergel}, D.~N. and {Staggs}, S.~T. and 
+	{Switzer}, E.~R. and {Trac}, H. and {Wollack}, E.~J.},
+    title = "{Precision epoch of reionization studies with next-generation CMB experiments}",
+  journal = {Journal of Cosmology and Astroparticle Physics},
+archivePrefix = "arXiv",
+   eprint = {1406.4794},
+     year = 2014,
+    month = aug,
+   volume = 8,
+      eid = {010},
+    pages = {010},
+      doi = {10.1088/1475-7516/2014/08/010},
+   adsurl = {http://adsabs.harvard.edu/abs/2014JCAP...08..010C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2014PhLB..735..402M,
+   author = {{Ma}, Y.-Z. and {Zhao}, G.-B.},
+    title = "{Dark energy imprints on the kinematic Sunyaev-Zel'dovich signal}",
+  journal = {Physics Letters B},
+archivePrefix = "arXiv",
+   eprint = {1309.1163},
+     year = 2014,
+    month = jul,
+   volume = 735,
+    pages = {402-411},
+      doi = {10.1016/j.physletb.2014.06.066},
+   adsurl = {http://adsabs.harvard.edu/abs/2014PhLB..735..402M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2014JCAP...01..051R,
+   author = {{Rubin}, D. and {Loeb}, A.},
+    title = "{The kinetic Sunyaev-Zel'dovich effect from the diffuse gas in the Local Group}",
+  journal = {Journal of Cosmology and Astroparticle Physics},
+archivePrefix = "arXiv",
+   eprint = {1311.5255},
+     year = 2014,
+    month = jan,
+   volume = 1,
+      eid = {051},
+    pages = {051},
+      doi = {10.1088/1475-7516/2014/01/051},
+   adsurl = {http://adsabs.harvard.edu/abs/2014JCAP...01..051R},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2014AAS...22343503S,
+   author = {{Spergel}, D.~N.},
+    title = "{Cosmic Microwave Background as a Probe of the Low Redshift Universe}",
+booktitle = {American Astronomical Society Meeting Abstracts \#223},
+     year = 2014,
+   series = {American Astronomical Society Meeting Abstracts},
+   volume = 223,
+    month = jan,
+      eid = {435.03},
+    pages = {435.03},
+   adsurl = {http://adsabs.harvard.edu/abs/2014AAS...22343503S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2014A&A...561A..97P,
+   author = {{Planck Collaboration} and {Ade}, P.~A.~R. and {Aghanim}, N. and 
+	{Arnaud}, M. and {Ashdown}, M. and {Aumont}, J. and {Baccigalupi}, C. and 
+	{Balbi}, A. and {Banday}, A.~J. and {Barreiro}, R.~B. and {Battaner}, E. and 
+	{Benabed}, K. and {Benoit-L{\'e}vy}, A. and {Bernard}, J.-P. and 
+	{Bersanelli}, M. and {Bielewicz}, P. and {Bikmaev}, I. and {Bobin}, J. and 
+	{Bock}, J.~J. and {Bonaldi}, A. and {Bond}, J.~R. and {Borrill}, J. and 
+	{Bouchet}, F.~R. and {Burigana}, C. and {Butler}, R.~C. and 
+	{Cabella}, P. and {Cardoso}, J.-F. and {Catalano}, A. and {Chamballu}, A. and 
+	{Chiang}, L.-Y. and {Chon}, G. and {Christensen}, P.~R. and 
+	{Clements}, D.~L. and {Colombi}, S. and {Colombo}, L.~P.~L. and 
+	{Crill}, B.~P. and {Cuttaia}, F. and {Da Silva}, A. and {Dahle}, H. and 
+	{Davies}, R.~D. and {Davis}, R.~J. and {de Bernardis}, P. and 
+	{de Gasperis}, G. and {de Zotti}, G. and {Delabrouille}, J. and 
+	{D{\'e}mocl{\`e}s}, J. and {Diego}, J.~M. and {Dolag}, K. and 
+	{Dole}, H. and {Donzelli}, S. and {Dor{\'e}}, O. and {D{\"o}rl}, U. and 
+	{Douspis}, M. and {Dupac}, X. and {En{\ss}lin}, T.~A. and {Finelli}, F. and 
+	{Flores-Cacho}, I. and {Forni}, O. and {Frailis}, M. and {Frommert}, M. and 
+	{Galeotta}, S. and {Ganga}, K. and {G{\'e}nova-Santos}, R.~T. and 
+	{Giard}, M. and {Giardino}, G. and {Gonz{\'a}alez-Nuevo}, J. and 
+	{Gregorio}, A. and {Gruppuso}, A. and {Hansen}, F.~K. and {Harrison}, D. and 
+	{Hern{\'a}ndez-Monteagudo}, C. and {Herranz}, D. and {Hildebrandt}, S.~R. and 
+	{Hivon}, E. and {Holmes}, W.~A. and {Hovest}, W. and {Huffenberger}, K.~M. and 
+	{Hurier}, G. and {Jaffe}, T.~R. and {Jaffe}, A.~H. and {Jasche}, J. and 
+	{Jones}, W.~C. and {Juvela}, M. and {Keih{\'a}nen}, E. and {Keskitalo}, R. and 
+	{Khamitov}, I. and {Kisner}, T.~S. and {Knoche}, J. and {Kunz}, M. and 
+	{Kurki-Suonio}, H. and {Lagache}, G. and {L{\"a}hteenm{\"a}ki}, A. and 
+	{Lamarre}, J.-M. and {Lasenby}, A. and {Lawrence}, C.~R. and 
+	{Le Jeune}, M. and {Leonardi}, R. and {Lilje}, P.~B. and {Linden-V{\o}rnle}, M. and 
+	{L{\'o}pez-Caniego}, M. and {Mac{\'{\i}}as-P{\'e}rez}, J.~F. and 
+	{Maino}, D. and {Mak}, D.~S.~Y. and {Mandolesi}, N. and {Maris}, M. and 
+	{Marleau}, F. and {Mart{\'{\i}}nez-Gonz{\'a}lez}, E. and {Masi}, S. and 
+	{Matarrese}, S. and {Mazzotta}, P. and {Melchiorri}, A. and 
+	{Melin}, J.-B. and {Mendes}, L. and {Mennella}, A. and {Migliaccio}, M. and 
+	{Mitra}, S. and {Miville-Desch{\^e}nes}, M.-A. and {Moneti}, A. and 
+	{Montier}, L. and {Morgante}, G. and {Mortlock}, D. and {Moss}, A. and 
+	{Munshi}, D. and {Murphy}, J.~A. and {Naselsky}, P. and {Nati}, F. and 
+	{Natoli}, P. and {Netterfield}, C.~B. and {N{\o}rgaard-Nielsen}, H.~U. and 
+	{Noviello}, F. and {Novikov}, D. and {Novikov}, I. and {Osborne}, S. and 
+	{Pagano}, L. and {Paoletti}, D. and {Perdereau}, O. and {Perrotta}, F. and 
+	{Piacentini}, F. and {Piat}, M. and {Pierpaoli}, E. and {Pietrobon}, D. and 
+	{Plaszczynski}, S. and {Pointecouteau}, E. and {Polenta}, G. and 
+	{Popa}, L. and {Poutanen}, T. and {Pratt}, G.~W. and {Prunet}, S. and 
+	{Puget}, J.-L. and {Puisieux}, S. and {Rachen}, J.~P. and {Rebolo}, R. and 
+	{Reinecke}, M. and {Remazeilles}, M. and {Renault}, C. and {Ricciardi}, S. and 
+	{Roman}, M. and {Rubi{\~n}o-Mart{\'{\i}}n}, J.~A. and {Rusholme}, B. and 
+	{Sandri}, M. and {Savini}, G. and {Scott}, D. and {Spencer}, L. and 
+	{Sunyaev}, R. and {Sutton}, D. and {Suur-Uski}, A.-S. and {Sygnet}, J.-F. and 
+	{Tauber}, J.~A. and {Terenzi}, L. and {Toffolatti}, L. and {Tomasi}, M. and 
+	{Tristram}, M. and {Tucci}, M. and {Valenziano}, L. and {Valiviita}, J. and 
+	{Van Tent}, B. and {Vielva}, P. and {Villa}, F. and {Vittorio}, N. and 
+	{Wade}, L.~A. and {Welikala}, N. and {Yvon}, D. and {Zacchei}, A. and 
+	{Zibin}, J.~P. and {Zonca}, A.},
+    title = "{Planck intermediate results. XIII. Constraints on peculiar velocities}",
+  journal = {Astronomy \& Astrophysics},
+archivePrefix = "arXiv",
+   eprint = {1303.5090},
+ keywords = {cosmology: observations, cosmic background radiation, large-scale structure of Universe, galaxies: clusters: general},
+     year = 2014,
+    month = jan,
+   volume = 561,
+      eid = {A97},
+    pages = {A97},
+      doi = {10.1051/0004-6361/201321299},
+   adsurl = {http://adsabs.harvard.edu/abs/2014A%26A...561A..97P},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2013ApJ...776...82N,
+   author = {{Natarajan}, A. and {Battaglia}, N. and {Trac}, H. and {Pen}, U.-L. and 
+	{Loeb}, A.},
+    title = "{Reionization on Large Scales. II. Detecting Patchy Reionization through Cross-correlation of the Cosmic Microwave Background}",
+  journal = {Astrophysical Journal},
+archivePrefix = "arXiv",
+   eprint = {1211.2822},
+ keywords = {cosmic background radiation, cosmology: theory },
+     year = 2013,
+    month = oct,
+   volume = 776,
+      eid = {82},
+    pages = {82},
+      doi = {10.1088/0004-637X/776/2/82},
+   adsurl = {http://adsabs.harvard.edu/abs/2013ApJ...776...82N},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2013AcASn..54..401Z,
+   author = {{Zhu}, W.~S.},
+    title = "{Turbulence Effect of the Intergalactic Medium}",
+  journal = {Acta Astronomica Sinica},
+ keywords = {turbulence, galaxies: IGM, hydrodynamics, methods: numerical},
+     year = 2013,
+    month = jul,
+   volume = 54,
+    pages = {401-402},
+   adsurl = {http://adsabs.harvard.edu/abs/2013AcASn..54..401Z},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2013MNRAS.430.1617L,
+   author = {{Lavaux}, G. and {Afshordi}, N. and {Hudson}, M.~J.},
+    title = "{First measurement of the bulk flow of nearby galaxies using the cosmic microwave background}",
+  journal = {Monthly Notices of the Royal Astronomical Society},
+archivePrefix = "arXiv",
+   eprint = {1207.1721},
+ keywords = {methods: observational, methods: statistical, intergalactic medium, cosmology: cosmic background radiation, cosmology: observations, large-scale structure of Universe},
+     year = 2013,
+    month = apr,
+   volume = 430,
+    pages = {1617-1635},
+      doi = {10.1093/mnras/sts698},
+   adsurl = {http://adsabs.harvard.edu/abs/2013MNRAS.430.1617L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2011MNRAS.414.3424T,
+   author = {{Tashiro}, H. and {Aghanim}, N. and {Langer}, M. and {Douspis}, M. and 
+	{Zaroubi}, S. and {Jeli{\'c}}, V.},
+    title = "{Second order cross-correlation between kinetic Sunyaev-Zel'dovich effect and 21-cm fluctuations from the epoch of reionization}",
+  journal = {Monthly Notices of the Royal Astronomical Society},
+ keywords = {cosmology: theory, large-scale structure of Universe},
+     year = 2011,
+    month = jul,
+   volume = 414,
+    pages = {3424-3433},
+      doi = {10.1111/j.1365-2966.2011.18644.x},
+   adsurl = {http://adsabs.harvard.edu/abs/2011MNRAS.414.3424T},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2011ApJ...736..116M,
+   author = {{Mak}, D.~S.~Y. and {Pierpaoli}, E. and {Osborne}, S.~J.},
+    title = "{Measuring Bulk Flow of Galaxy Clusters Using Kinematic Sunyaev-Zeldovich Effect: Prediction for Planck}",
+  journal = {Astrophysical Journal},
+archivePrefix = "arXiv",
+   eprint = {1101.1581},
+ keywords = {cosmic background radiation, cosmology: observations, diffuse radiation},
+     year = 2011,
+    month = aug,
+   volume = 736,
+      eid = {116},
+    pages = {116},
+      doi = {10.1088/0004-637X/736/2/116},
+   adsurl = {http://adsabs.harvard.edu/abs/2011ApJ...736..116M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2012arXiv1202.0717K,
+   author = {{Kashlinsky}, A. and {Atrio-Barandela}, F. and {Ebeling}, H.
+	},
+    title = "{Measuring bulk motion of X-ray clusters via the kinematic Sunyaev-Zeldovich effect: summarizing the ``dark flow'' evidence and its implications}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1202.0717},
+ primaryClass = "astro-ph.CO",
+ keywords = {Astrophysics - Cosmology and Extragalactic Astrophysics, General Relativity and Quantum Cosmology},
+     year = 2012,
+    month = feb,
+   adsurl = {http://adsabs.harvard.edu/abs/2012arXiv1202.0717K},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2011ApJ...727...94T,
+   author = {{Trac}, H. and {Bode}, P. and {Ostriker}, J.~P.},
+    title = "{Templates for the Sunyaev-Zel'dovich Angular Power Spectrum}",
+  journal = {Astrophysical Journal},
+archivePrefix = "arXiv",
+   eprint = {1006.2828},
+ keywords = {cosmic background radiation, cosmology: theory, galaxies: clusters: general, intergalactic medium, large-scale structure of universe, methods: numerical},
+     year = 2011,
+    month = feb,
+   volume = 727,
+      eid = {94},
+    pages = {94},
+      doi = {10.1088/0004-637X/727/2/94},
+   adsurl = {http://adsabs.harvard.edu/abs/2011ApJ...727...94T},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2010JCAP...10..011Y,
+   author = {{Yoo}, C.-M. and {Nakao}, K.-i. and {Sasaki}, M.},
+    title = "{CMB observations in LTB universes. Part II: the kSZ effect in an LTB universe}",
+  journal = {Journal of Cosmology and Astroparticle Physics},
+archivePrefix = "arXiv",
+   eprint = {1008.0469},
+     year = 2010,
+    month = oct,
+   volume = 10,
+      eid = {011},
+    pages = {011},
+      doi = {10.1088/1475-7516/2010/10/011},
+   adsurl = {http://adsabs.harvard.edu/abs/2010JCAP...10..011Y},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2005astro.ph.11060D,
+   author = {{DeDeo}, S. and {Spergel}, D.~N. and {Trac}, H.},
+    title = "{The kinetic Sunyaev-Zel'dovitch effect as a dark energy probe}",
+  journal = {ArXiv Astrophysics e-prints},
+   eprint = {astro-ph/0511060},
+ keywords = {Astrophysics},
+     year = 2005,
+    month = nov,
+   adsurl = {http://adsabs.harvard.edu/abs/2005astro.ph.11060D},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2006ApJ...643..598H,
+   author = {{Hern{\'a}ndez-Monteagudo}, C. and {Verde}, L. and {Jimenez}, R. and 
+	{Spergel}, D.~N.},
+    title = "{Correlation Properties of the Kinematic Sunyaev-Zel'dovich Effect and Implications for Dark Energy}",
+  journal = {Astrophysical Journal},
+   eprint = {astro-ph/0511061},
+ keywords = {Cosmology: Cosmic Microwave Background, Cosmology: Large-Scale Structure of Universe},
+     year = 2006,
+    month = jun,
+   volume = 643,
+    pages = {598-615},
+      doi = {10.1086/503190},
+   adsurl = {http://adsabs.harvard.edu/abs/2006ApJ...643..598H},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2006NewAR..50..909I,
+   author = {{Iliev}, I.~T. and {Pen}, U.-L. and {Richard Bond}, J. and {Mellema}, G. and 
+	{Shapiro}, P.~R.},
+    title = "{kSZ from patchy reionization: The view from the simulations}",
+  journal = {New Astronomy Reviews},
+   eprint = {astro-ph/0607209},
+ keywords = {Radiative transfer, Cosmology, Theory, Cosmic microwave background, Diffuse radiation, Intergalactic medium, Large-scale, Structure of universe, Radio lines},
+     year = 2006,
+    month = dec,
+   volume = 50,
+    pages = {909-917},
+      doi = {10.1016/j.newar.2006.09.012},
+   adsurl = {http://adsabs.harvard.edu/abs/2006NewAR..50..909I},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2007ApJ...661..672R,
+   author = {{Riquelme}, M.~A. and {Spergel}, D.~N.},
+    title = "{Separating the Weak Lensing and Kinetic Sunyaev-Zeldovich Effects from Cosmic Microwave Background Temperature Maps}",
+  journal = {Astrophysical Journal},
+   eprint = {astro-ph/0610007},
+ keywords = {Cosmology: Cosmic Microwave Background, Cosmology: Gravitational Lensing},
+     year = 2007,
+    month = jun,
+   volume = 661,
+    pages = {672-677},
+      doi = {10.1086/516774},
+   adsurl = {http://adsabs.harvard.edu/abs/2007ApJ...661..672R},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2008JCAP...09..016G,
+   author = {{Garc{\'{\i}}a-Bellido}, J. and {Haugb{\o}lle}, T.},
+    title = "{Looking the void in the eyes-the kinematic Sunyaev Zeldovich effect in Lema{\^i}tre Tolman Bondi models}",
+  journal = {Journal of Cosmology and Astroparticle Physics},
+archivePrefix = "arXiv",
+   eprint = {0807.1326},
+     year = 2008,
+    month = sep,
+   volume = 9,
+      eid = {016},
+    pages = {016},
+      doi = {10.1088/1475-7516/2008/09/016},
+   adsurl = {http://adsabs.harvard.edu/abs/2008JCAP...09..016G},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2008ApJ...674L..61A,
+   author = {{Atrio-Barandela}, F. and {M{\"u}cket}, J.~P. and {G{\'e}nova-Santos}, R.
+	},
+    title = "{Kinematic Sunyaev-Zel'dovich Cosmic Microwave Background Temperature Anisotropies Generated by Gas in Cosmic Structures}",
+  journal = {Astrophysical Journall},
+archivePrefix = "arXiv",
+   eprint = {0801.1198},
+ keywords = {cosmic microwave background, cosmology: observations, cosmology: theory},
+     year = 2008,
+    month = feb,
+   volume = 674,
+    pages = {L61},
+      doi = {10.1086/529139},
+   adsurl = {http://adsabs.harvard.edu/abs/2008ApJ...674L..61A},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2009JCAP...06..008B,
+   author = {{Birnboim}, Y. and {Loeb}, A.},
+    title = "{The kinetic Sunyaev-Zel'dovich effect of the milky way halo}",
+  journal = {Journal of Cosmology and Astroparticle Physics},
+archivePrefix = "arXiv",
+   eprint = {0903.3943},
+     year = 2009,
+    month = jun,
+   volume = 6,
+      eid = {008},
+    pages = {008},
+      doi = {10.1088/1475-7516/2009/06/008},
+   adsurl = {http://adsabs.harvard.edu/abs/2009JCAP...06..008B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2009ApJ...700..447G,
+   author = {{G{\'e}nova-Santos}, R. and {Atrio-Barandela}, F. and {M{\"u}cket}, J.~P. and 
+	{Klar}, J.~S.},
+    title = "{The Contribution of the Kinematic Sunyaev-Zel'dovich Effect from the Warm-Hot Intergalactic Medium to the Five-Year Wilkinson Microwave Anisotropy Probe Data}",
+  journal = {Astrophysical Journal},
+archivePrefix = "arXiv",
+   eprint = {0905.2582},
+ primaryClass = "astro-ph.CO",
+ keywords = {cosmic microwave background, cosmology: observations, cosmology: theory},
+     year = 2009,
+    month = jul,
+   volume = 700,
+    pages = {447-453},
+      doi = {10.1088/0004-637X/700/1/447},
+   adsurl = {http://adsabs.harvard.edu/abs/2009ApJ...700..447G},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2009MNRAS.397L..41C,
+   author = {{Cunnama}, D. and {Faltenbacher}, A. and {Cress}, C. and {Passmoor}, S.
+	},
+    title = "{The velocity-shape alignment of clusters and the kinetic Sunyaev-Zeldovich effect}",
+  journal = {Monthly Notices of the Royal Astronomical Society},
+archivePrefix = "arXiv",
+   eprint = {0904.4765},
+ keywords = {methods: numerical, galaxies: kinematics and dynamics},
+     year = 2009,
+    month = jul,
+   volume = 397,
+    pages = {L41-L45},
+      doi = {10.1111/j.1745-3933.2009.00680.x},
+   adsurl = {http://adsabs.harvard.edu/abs/2009MNRAS.397L..41C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2009MNRAS.398..790H,
+   author = {{Hern{\'a}ndez-Monteagudo}, C. and {Ho}, S.},
+    title = "{On the peculiar momentum of baryons after reionization}",
+  journal = {Monthly Notices of the Royal Astronomical Society},
+archivePrefix = "arXiv",
+   eprint = {0903.2814},
+ keywords = {galaxies: clusters: general , cosmic microwave background , cosmology: observations , cosmology: theory},
+     year = 2009,
+    month = sep,
+   volume = 398,
+    pages = {790-806},
+      doi = {10.1111/j.1365-2966.2009.14946.x},
+   adsurl = {http://adsabs.harvard.edu/abs/2009MNRAS.398..790H},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2010A&A...509A..82H,
+   author = {{Hern{\'a}ndez-Monteagudo}, C. and {Sunyaev}, R.~A.},
+    title = "{Galaxy clusters as mirrors of the distant Universe. Implications of the blurring term for the kSZ and ISW effects}",
+  journal = {Astronomy \& Astrophysics},
+archivePrefix = "arXiv",
+   eprint = {0905.3001},
+ keywords = {cosmic microwave background, large-scale structure of Universe},
+     year = 2010,
+    month = jan,
+   volume = 509,
+      eid = {A82},
+    pages = {A82},
+      doi = {10.1051/0004-6361/200912525},
+   adsurl = {http://adsabs.harvard.edu/abs/2010A%26A...509A..82H},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{1998PhRvD..58d3001J,
+   author = {{Jaffe}, A.~H. and {Kamionkowski}, M.},
+    title = "{Calculation of the Ostriker-Vishniac effect in cold dark matter models}",
+  journal = {Physical Review D},
+   eprint = {astro-ph/9801022},
+ keywords = {Background radiations, Particle-theory and field-theory models of the early Universe},
+     year = 1998,
+    month = aug,
+   volume = 58,
+   number = 4,
+      eid = {043001},
+    pages = {043001},
+      doi = {10.1103/PhysRevD.58.043001},
+   adsurl = {http://adsabs.harvard.edu/abs/1998PhRvD..58d3001J},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2003PhRvD..67l3001C,
+   author = {{Castro}, P.~G.},
+    title = "{Bispectrum and the trispectrum of the Ostriker-Vishniac effect}",
+  journal = {Physical Review D},
+ keywords = {Background radiations},
+     year = 2003,
+    month = jun,
+   volume = 67,
+   number = 12,
+      eid = {123001},
+    pages = {123001},
+      doi = {10.1103/PhysRevD.67.123001},
+   adsurl = {http://adsabs.harvard.edu/abs/2003PhRvD..67l3001C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2000ApJ...540...20S,
+   author = {{Scannapieco}, E.},
+    title = "{Is There a Detectable Vishniac Effect?}",
+  journal = {Astrophysical Journal},
+   eprint = {astro-ph/0002164},
+ keywords = {Cosmology: Cosmic Microwave Background, Cosmology: Theory},
+     year = 2000,
+    month = sep,
+   volume = 540,
+    pages = {20-31},
+      doi = {10.1086/309288},
+   adsurl = {http://adsabs.harvard.edu/abs/2000ApJ...540...20S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2010AAS...21540702L,
+   author = {{Lee}, K.-G.},
+    title = "{The Effect Of Extended Reionization On The Ostriker-Vishniac Effect In The Small-Scale C.M.B.}",
+booktitle = {American Astronomical Society Meeting Abstracts \#215},
+     year = 2010,
+   series = {Bulletin of the American Astronomical Society},
+   volume = 42,
+    month = jan,
+      eid = {407.02},
+    pages = {231},
+   adsurl = {http://adsabs.harvard.edu/abs/2010AAS...21540702L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2008MNRAS.383..791D,
+   author = {{Diego}, J.~M. and {Herranz}, D.},
+    title = "{Observing high-redshift galaxy clusters through lensing of the Ostriker-Vishniac effect}",
+  journal = {Monthly Notices of the Royal Astronomical Society},
+archivePrefix = "arXiv",
+   eprint = {0704.3131},
+ keywords = {methods: data analysis , galaxies: clusters: general , dark matter},
+     year = 2008,
+    month = jan,
+   volume = 383,
+    pages = {791-802},
+      doi = {10.1111/j.1365-2966.2007.12593.x},
+   adsurl = {http://adsabs.harvard.edu/abs/2008MNRAS.383..791D},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2002PhRvL..88u1301M,
+   author = {{Ma}, C.-P. and {Fry}, J.~N.},
+    title = "{Nonlinear Kinetic Sunyaev-Zeldovich Effect}",
+  journal = {Physical Review Letters},
+   eprint = {astro-ph/0106342},
+     year = 2002,
+    month = may,
+   volume = 88,
+   number = 21,
+      eid = {211301},
+    pages = {211301},
+      doi = {10.1103/PhysRevLett.88.211301},
+   adsurl = {http://adsabs.harvard.edu/abs/2002PhRvL..88u1301M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2000ApJ...534..533C,
+   author = {{Cooray}, A. and {Hu}, W.},
+    title = "{Imprint of Reionization on the Cosmic Microwave Background Bispectrum}",
+  journal = {Astrophysical Journal},
+   eprint = {astro-ph/9910397},
+ keywords = {Cosmology: Cosmic Microwave Background, Cosmology: Theory, Cosmology: Large-Scale Structure of Universe, Cosmology: Gravitational Lensing},
+     year = 2000,
+    month = may,
+   volume = 534,
+    pages = {533-550},
+      doi = {10.1086/308799},
+   adsurl = {http://adsabs.harvard.edu/abs/2000ApJ...534..533C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2001PhRvD..64f3514C,
+   author = {{Cooray}, A.},
+    title = "{Non-Gaussian aspects of thermal and kinetic Sunyaev-Zel'dovich effects}",
+  journal = {Physical Review D},
+   eprint = {astro-ph/0105063},
+ keywords = {Observational cosmology, X-ray},
+     year = 2001,
+    month = aug,
+   volume = 64,
+   number = 6,
+      eid = {063514},
+    pages = {063514},
+      doi = {10.1103/PhysRevD.64.063514},
+   adsurl = {http://adsabs.harvard.edu/abs/2001PhRvD..64f3514C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2006ApJ...647..840A,
+   author = {{Alvarez}, M.~A. and {Komatsu}, E. and {Dor{\'e}}, O. and {Shapiro}, P.~R.
+	},
+    title = "{The Cosmic Reionization History as Revealed by the Cosmic Microwave Background Doppler-21 cm Correlation}",
+  journal = {Astrophysical Journal},
+   eprint = {astro-ph/0512010},
+ keywords = {Cosmology: Cosmic Microwave Background, Cosmology: Theory, Cosmology: Diffuse Radiation, Galaxies: Formation, Galaxies: Intergalactic Medium},
+     year = 2006,
+    month = aug,
+   volume = 647,
+    pages = {840-852},
+      doi = {10.1086/504888},
+   adsurl = {http://adsabs.harvard.edu/abs/2006ApJ...647..840A},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}

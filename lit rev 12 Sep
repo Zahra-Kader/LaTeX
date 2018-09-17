@@ -1,0 +1,276 @@
+\documentclass[]{article}
+
+\usepackage{amsfonts, amsmath, amsthm, amssymb} % For math fonts, symbols and environments
+
+\usepackage[utf8]{inputenc}
+
+%\usepackage[colorlinks,allcolors=red]{hyperref}
+
+\usepackage{graphicx}
+\usepackage{tgtermes}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=cyan,
+	filecolor=magenta,      
+	urlcolor=blue,
+}
+
+\usepackage{url}
+%\usepackage[english]{babel}
+
+%\usepackage[utf8]{inputenc}
+
+\linespread{1.3}
+
+\usepackage[a4paper,top=3cm,bottom=2.54cm,left=2.54cm,right=2.54cm,marginparwidth=1.75cm]{geometry}
+
+\usepackage{amsmath}
+
+\usepackage[normalem]{ulem}
+\DeclareUnicodeCharacter{FB00}{ff}
+
+%opening
+
+
+
+\title{Literature review on the kinetic Sunyaev-Zel'dovich effect}
+
+\author{}
+\begin{document}	
+	\maketitle	
+	
+	%\begin{abstract}
+		%\noindent This is a literature review outlining the work that has been done in the kSZ field. I have separated this into three different sections, viz. Simulations, Observations and Theory. This review covers the more exotic areas of wormholes and multiverse theories with the kSZ effect, as well as the more common work on pairwise velocity estimators and projected fields. The most promising applications of this effect are modified gravity, probing dark energy, studying the problem of missing baryons and learning more about large scale structures. The kSZ effect certainly has a lot of exciting applications in cosmology. 
+	%\end{abstract}
+	
+	\section{Simulation papers}
+	
+	\begin{enumerate}
+		\item \textit{Kinetic Sunyaev–Zel’dovich eﬀect in rotating galaxy clusters from MUSIC simulations}: Update of the study of gas rotation in clusters through the maps of the kSZ, using a large sample of massive synthetic galaxy clusters from MUSIC high-resolution simulations. In the paper, the bulk velocity projected on the line of sight is recovered with the simulation true value \cite{2018MNRAS.479.4028B}.
+		\item \textit{Cosmology with the pairwise kinematic SZ effect: calibration and validation using hydrodynamical simulations}: A study of the potential of the kSZ effect as a probe for cosmology, focusing on the pairwise method, using the Magneticum cosmological hydrodynamical simulations \cite{2018MNRAS.478.5320S}.
+		\item \textit{Simulated reconstruction of the remote dipole field using the kinetic Sunyaev Zel'dovich effect}: Measurements of small-scale CMB anisotropies are combined with large-scale structure (LSS) surveys, a technique known as kSZ tomography. This paper investigate how well the remote dipole field (CMB dipole field at different locations) can be reconstructed using simulations \cite{2018arXiv180601290C}.
+		\item \textit{Simulating the Galaxy Cluster "El Gordo": Gas Motion, Kinetic Sunyaev-Zel'dovich Signal, and X-Ray Line Features}: There are two proposed theories for the merging system of massive galaxy cluster "El Gordo" which results in different gas motions in the simulated clusters. This paper predicts kSZ signal in both models \cite{2018ApJ...855...36Z}.
+		\item \textit{The kinematic Sunyaev-Zel'dovich effect of the large-scale structure (I)
+		dependence on neutrino mass}: Presents a set of cosmological hydrodynamical
+		simulations that include a treatment of the neutrino component. Modelled the kSZ
+		effect due to LSS’s after reionization and studied effect of reionisation redshift and
+		neutrino mass on kSZ spectrum \cite{2017MNRAS.467..985R}
+		\item \textit{SZ effects in the Magneticum Pathfinder simulation}: comparison with the Planck,
+		SPT, and ACT results: calculate the one-point probability density distribution functions
+		(PDF) and the power spectra of the tSZ and kSZ effects and the mean Compton Y parameter
+		using the Magneticum Pathfinder simulations. Results agree with Planck \cite{2016MNRAS.463.1797D}.
+		\item \textit{Probing the Missing Baryons via kSZ-Stacking}: This paper studies kSZ stacking in
+		hydrodynamic simulations with different gastrophysics and measures the contribution from
+		warm-hot intergalactic medium (WHIM), which is believed to be the reservoir for most, if
+		not all, missing baryons \cite{2016RAA....16...67M}.
+		
+		\item \textit{
+			The observable thermal and kinetic Sunyaev-Zel'dovich effect in merging galaxy clusters}: Investigates the effects of cluster mergers on resolved SZE image using simulations. The paper shows that along certain projections the kSZ effect can dominate over the tSZ due to the large line-of-sight velocities \cite{2013MNRAS.432.3508R}. 
+		\item \textit{Matched filter optimization of kSZ measurements with a reconstructed cosmological flow field}: Paper presents a new statistical method for measuring the kSZ effect using N-body simulations. Paper shows that available data (Planck maps and the MaxBCG catalogue) should deliver a $7.7 \sigma$ detection of the kSZ \cite{2014MNRAS.443.2311L}. 
+		\item \textit{The Kinetic Sunyaev-Zel'dovich Effect as a Probe of the Physics of Cosmic Reionization: The Effect of Self-regulated Reionization}: Calculates the angular power spectrum of the kSZ signal at the epoch of reionization (EoR) using N-body simulations \cite{2013nha..confE..25P}.
+		\item \textit{Blind statistical indicators of the kinetic Sunyaev-Zel'dovich anisotropies}: Report on a study aiming at characterising the kSZ effect through statistical criteria that can blindly indicate the presence of secondary anisotropies due to kSZ effect buried in the CMB anisotropies. Simulated maps show that some properties of the covariance coefficient between thermal Sunyaev-Zel'dovich (TSZ) and the temperature fluctuation map can be used in that purpose \cite{2002A&A...395..747S}. 
+		\item \textit{Deconstructing the Kinetic SZ Power Spectrum}: Investigation of the impact of astrophysical processes on the shape and amplitude of the kSZ power spectrum from the post-reionization epoch and is achieved by constructing a new model of the kSZ power spectrum and by running simulations \cite{2012ApJ...756...15S}.
+		\item \textit{Reionization on Large Scales. III. Predictions for Low-l Cosmic Microwave Background Polarization and High-l Kinetic Sunyaev-Zel'dovich Observables}: Predictions for kSZ signal at EoR using radiation-hydrodyamic simulations. The patchy kSZ spectrum is computed for each model \cite{2013ApJ...776...83B}. 
+		\item \textit{The Kinetic Sunyaev-Zel'dovich Effect from Radiative Transfer Simulations of Patchy Reionization}: Presents the first calculation of the kinetic Sunyaev-Zel'dovich (kSZ) effect due to the inhomogeneous reionization of the universe based on detailed large-scale radiative transfer simulations of reionization \cite{2007ApJ...660..933I}.
+		\item \textit{The Kinetic Sunyaev-Zel’dovich Effect from Reionization: Simulated Full-sky Maps at Arcminute Resolution}: A full sky kSZ map is simulated by ray-tracing a 10 Gpc scale simulation at 2-3 Mpc scale resolution. The kSZ map is separated into Doppler, Ostriker-Vishniac, patchy and third-order and compute explicitly all the auto and cross correlations using simulations \cite{2016ApJ...824..118A}.
+		\item \textit{The Impact of Baryonic Physics on the Kinetic Sunyaev-Zel’dovich Effect}: Baryonic physics impacts our ability to predict the power spectrum of the kinetic Sunyaev-Zel'dovich (kSZ) effect. This paper studies a one sample high resolution simulation of galaxy formation and feedback, Illustris \cite{2018ApJ...853..121P}. 
+		\item \textit{Simulations of the Pairwise Kinematic Sunyaev-Zel’dovich Signal}: Simulate the pairwise kSZ signal of clusters, using the output from a cosmological N-body simulation and including model properties of the intracluster gas. Forecast that future experiments such as Advanced ACTPol in conjunction with data from the Dark Energy Spectroscopic Instrument will yield detection significances of at least $20 \sigma$ \cite{2016ApJ...823...98F}. 
+		\item \textit{The Impact of Nonlinear Structure Formation on the Power Spectrum of Transverse Momentum Fluctuations and the Kinetic Sunyaev-Zel'dovich Effect}: In the post-reionization epoch, nonlinear effects dominate in the power spectrum. Uses perturbation theory and cosmological 
+		N
+		-body simulations to calculate this nonlinearity. The paper also derives the next-to-leading order expression for the power spectrum with a particular emphasis on the connected term that has been ignored in the literature \cite{2016ApJ...818...37P}.
+		\item \textit{Precision epoch of reionization studies with next-generation CMB experiments}: Combining measurements from ACTPol and using simulations of full Planck mission, the paper estimates a $15 \sigma$ detection of the diffuse homogeneous kSZ while also providing constraints on the time and duration of reionization \cite{2014JCAP...08..010C}. 
+		\item The latter part of this book discusses how the intergalactic medium (IGM) turbulence may introduce uncertainties to the kSZ effect and the Lyman alpha forest, and in turn could be constrained by future observations. The kSZ effect is sensitive to the curl component of the motions of the IGM. The results are obtained using 2D simulated kSZ maps \cite{2013AcASn..54..401Z}.  
+		\item \textit{Measuring Bulk Flow of Galaxy Clusters Using Kinematic Sunyaev-Zeldovich Effect: Prediction for Planck}: Predicts the performance of the Planck satellite in determining the bulk flow through kSZ measurements. Uses ROSAT All-Sky Survey (RASS) clusters as well as expected cluster catalogs from the upcoming missions Planck and eRosita (All-Sky Survey: EASS) with simulations of realistic Planck maps and cluster catalogs \cite{2011ApJ...736..116M}. 
+		\item \textit{Templates for the Sunyaev-Zel'dovich Angular Power Spectrum}: Templates for the SZ angular power spectrum based on four models for the nonlinear gas distribution, calculated by tracing through a dark matter simulation, processed to include gas in dark matter halos and in the filamentary intergalactic medium \cite{2011ApJ...727...94T}. 
+		\item \textit{kSZ from patchy reionization: The view from the simulations}: Presents the first calculation of the kSZ effect due to the inhomogeneus reionization of the universe based on detailed large-scale radiative transfer simulations of reionization \cite{2006NewAR..50..909I}.
+		\item \textit{The velocity-shape alignment of clusters and the kinetic Sunyaev-Zeldovich effect}: Use of the Millennium simulation to probe the correlation between cluster velocities and their shapes and the consequences for measurements of the kSZ \cite{2009MNRAS.397L..41C}.
+	\end{enumerate}
+	
+	\section{Observations papers}
+	
+	\begin{enumerate}
+		
+		\item \textit{Evidence of Galaxy Cluster Motions with the Kinematic Sunyaev-Zel’dovich Eﬀect}: Pairwise estimation of the kinetic Sunyaev-Zel’dovich Eﬀect (kSZ) using ACT and BOSS provides the first direct evidence for the kSZ effect \cite{2012PhRvL.109d1101H}. 	
+		%The sky positions and momenta of thousands of clusters were used to determine the peculiar velocities of the clusters and compared with CMB temperatures from ACT maps  
+		\item  \textit{A direct measure of free electron gas via the kinematic Sunyaev-Zel'dovich effect in Fourier-space analysis}: Measurement of the kinematic Sunyaev-Zel'dovich (kSZ) effect in Fourier space. The density-weighted pairwise kSZ power spectrum is measured by cross-correlating a CMB temperature map, which jointly uses both Planck Release 2 and Wilkinson Microwave Anisotropy Probe nine-year data, with the two galaxy samples, CMASS and LOWZ, derived from BOSS \cite{2018MNRAS.475.3764S}.
+		
+		\item \textit{Constraining the optical depth of galaxies and velocity bias with cross-correlation between the kinetic Sunyaev-Zeldovich effect and the peculiar velocity field}: Cross correlation between the kSZ effect and the reconstructed peculiar velocity field using linear perturbation theory, with the aim of constraining the optical depth $\tau$ and peculiar velocity bias of central galaxies with Planck data \cite{2018MNRAS.475..379M}.
+		
+		\item \textit{Cluster mislocation in kinematic Sunyaev-Zel'dovich effect extraction}: Investigates the impact of a variety of analysis assumptions that influence cluster identification and location on the kSZ pairwise combination with CMB data from Planck and WMAP \cite{2017PhRvD..96l3529C}.
+		
+		\item \textit{Bias to CMB lensing reconstruction from temperature anisotropies due to large-scale galaxy motions}: Investigates the bias to CMB lensing reconstruction due to the kSZ effect. Failure to account for it can lead to large biases in constraints on neutrino masses or the detection of dark energy \cite{2018PhRvD..97b3512F}.
+		
+		\item \textit{The detection of missing baryons in galaxy halos with kinetic Sunyaev-Zel'dovich effect}: Presents kSZ signals from groups of galaxies as a function of halo mass using Planck CMB maps. The total kSZ flux within halos suggests that gas fraction in halos is about the universal baryon fraction, even in low-mass halos, indicating that the 'missing baryons' are found \cite{2017arXiv171208619L}.
+		
+		\item \textit{Planck intermediate results. LIII. Detection of velocity dispersion from the
+		kinetic Sunyaev-Zeldovich effect}: Detection of velocity dispersion due to kSZ effect
+		from clusters. Meta Catalogue of X-ray detected Clusters of galaxies (MCXC) was
+		used to determine the normalized rms dispersion of the temperature fluctuations at
+		the positions of clusters. The study shows that cross-correlations of the kSZ effect
+		with LSS’s can be used in order to constrain the growth of structure \cite{2017arXiv170700132P}.
+		\item \textit{Detection of the pairwise kinematic Sunyaev-Zel'dovich effect with BOSS DR11 and the
+		Atacama Cosmology Telescope}: New measurement of the kSZ effect using data from
+		ACT and BOSS. Evaluates the mean pairwise baryon momentum associated with
+		the positions of 50,000 bright galaxies in the BOSS DR11 LSS catalog \cite{2017JCAP...03..008D}
+		\item \textit{Mapping the kinetic Sunyaev-Zel'dovich effect toward MACS J0717.5+3745 with NIKA}: The
+		SZ effect can be used to measure gas velocity distributions which provides insight into
+		physics of mergers. This paper uses data obtained with the NIKA camera at the IRAM 30 m
+		telescope on the triple merger MACS J0717.5+3745, as well as X-ray data from XMM-
+		Newton and Chandra \cite{2017A&amp;A...598A.115A}.
+		\item \textit{Detection of the kinematic Sunyaev-Zel'dovich effect with DES Year 1 and SPT}:
+		Combination of a cluster catalogue derived from the first year data of the Dark Energy
+		Survey with CMB temperature maps from the South Pole Telescope Sunyaev-Zel'dovich
+		Survey. This measurement isolates the pairwise kSZ signal, providing the first detection of
+		the large-scale, pairwise motion of clusters using redshifts derived from photometric data \cite{2016MNRAS.461.3172S}.
+		\item \textit{Kinematic Sunyaev-Zel'dovich Effect with Projected Fields: A Novel Probe of the
+		Baryon Distribution with Planck, WMAP, and WISE Data}: Novel estimator for the
+		KSZ—large-scale structure cross-correlation based on projected fields using Planck and
+		WMAP, as well as a galaxy sample from the Wide-field Infrared Survey Explorer (WISE). The
+		consistency between the f b value found verifies that baryons approximately trace dark
+		matter on Mpc scales \cite{2016PhRvL.117e1301H}.
+		
+		\item \textit{The kinetic Sunyaev-Zel'dovich tomography - II. Probing the circumgalactic
+		medium}: Proposes the use of the kSZ effect to probe the circumgalactic medium (CGM)
+		with the aid of a spectroscopic survey covering the same area of a SZ survey. The cross-
+		correlation is constructed between the estimator of the kSZ using the CGM, and the
+		peculiar velocity recovered from the galaxy survey \cite{2016MNRAS.458.3773S}.
+		\item \textit{Evidence for the kinematic Sunyaev-Zel'dovich effect with the Atacama Cosmology
+		Telescope and velocity reconstruction from the Baryon Oscillation Spectroscopic
+		Survey}: Uses ACT and CMASS galaxy sample from BOSS to measure the kSZ effect. Used
+		galaxy positions and the continuity equation to obtain a reconstruction of the line-of-sight
+		velocity field. Techniques in the paper may be useful for the missing baryon problem and the
+		role of feedback in galaxy groups and clusters \cite{2016PhRvD..93h2002S}.
+		\item \textit{Planck intermediate results. XXXVII. Evidence of unbound gas from the kinetic
+		Sunyaev-Zeldovich effect}: Estimate of the pairwise momentum of the kSZ temperature
+		fluctuations at the positions of the Central Galaxy Catalogue (CGC) samples extracted from
+		SDSS. Reconstructed the peculiar velocity field from the CG density field and computed the
+		cross-correlation function between kSZ signal and CG estimates of radial peculiar velocities \cite{2016A&amp;A...586A.140P}
+		\item \textit{Evidence of the Missing Baryons from the Kinematic Sunyaev-Zeldovich Effect in
+		Planck Data}: Estimates the amount of the missing baryons detected by the Planck
+		measurements of the cosmic microwave background in the direction of central galaxies
+		(CGs) identified in the Sloan galaxy survey \cite{2015PhRvL.115s1301H} 
+		\item \textit{A Measurement of the Kinetic Sunyaev-Zel'dovich Signal Toward MACS J0717.5+3745}: Analysis of MACS J0717.5+3745 using 140 and 268 GHz Bolocam data collected at the Caltech Submillimeter Observatory. The paper looks at two subclusters of MACS J0717.5+3745, viz. B and C. The results show no kSZ signal towards the latter but a signal is detected towards subcluster B \cite{2013ApJ...778...52S}.
+		\item \textit{The effect of dark matter and dark energy interactions on the peculiar velocity field and the kinetic Sunyaev-Zel'dovich effect}: The interaction between Dark Matter and Dark Energy has been proposed as a mechanism to alleviate the coincidence problem. This paper analyzes its effects on gravitational and peculiar velocity fields. ACT and SPT data is used to solve the coincidence problem \cite{2013JCAP...12..001X}. 
+		\item \textit{Galaxy Cluster Train Wreck Forensics: Using the Kinetic Sunyaev-Zeldovich Effect to Measure the Velocity of the Intracluster Medium in Extreme Galaxy Cluster Mergers}:
+		Detection and measurement of large line-of-sight intracluster medium velocities in galaxy clusters undergoing extreme mergers via the kSZ effect by combining Herschel/SPIRE submillimeter, Chandra X-ray, and ground-based mm-wave observations \cite{2014adap.prop...19G}. 
+		\item \textit{Measurement of the pairwise kinematic Sunyaev-Zeldovich effect with Planck and BOSS data}: Presents new measurement using Planck CMB and BOSS data. Evaluates the mean pairwise kSZ temperature associated with BOSS galaxies \cite{2018PhRvD..97b3514L}.
+		\item \textit{Constraining the ionized gas evolution with CMB-spectroscopic survey cross-correlation}: Forecast constraints on the ionized gas model $f_gas (z)$ at different evolutionary epochs via the tomographic cross-correlation between kinetic Sunyaev-Zeldovich (kSZ) effect and the reconstructed momentum field. Experiments considered are the Planck and CMB Stage-4 survey for CMB and the SDSS-III for the galaxy spectroscopic survey \cite{2017NuPhB.920..402M}. 
+		\item \textit{Improved linear kinetic Sunyaev-Zel'dovich effect constraints on the observed Local Void}: Test on whether a small void described by a parameterization of the observational data could be ruled out by the latest linear kSZ constraints. Instead, it is found that the previous linear kSZ constraints as well as new ones from SPT are fully compatible with the existence of a small void \cite{2017AAS...22934211H}.  
+		\item \textit{Cosmology with kinematic Sunyaev-Zel'dovich effect measurements from ACTPol and future surveys}: Reports the latest kSZ results from ACTPol and BOSS and describe the potential strong constraints on cosmological parameters and practical challenges in the extraction and maximization of the signal-to-noise ratio \cite{2016APS..APRS12001D}. 
+		\item \textit{Measuring the kinematic Sunyaev-Zel'dovich effect with the South Pole Telescope and the Dark Energy Survey}: Presents a significant $4 \sigma$ detection of the pairwise kSZ signal using a cluster catalog from the first year of data from DES in combination with CMB temperature maps from SPT. This represents the first detection of the kSZ effect from a cluster catalog with photometric redshifts \cite{2016APS..APR.X4002S}. 
+		\item \textit{Observing the Dark Baryons with Planck}: Using the peculiar velocity field, the temperature anisotropy can be related to baryon distribution. This paper discusses the detectability prospects, the challenges and the current state of the kSZ analysis using Planck data and futuristic surveys \cite{2015IAUGA..2254744L}.
+		\item \textit{Planck 2015 constraints on reionization history}: This paper shows the tightest constraints on cosmic reionization extracted from the CMB polarization at low multipole by Planck. One of the results is to show how the amplitude of the kSZ is used to derive the time and duration of reionization \cite{2015IAUGA..2181727T}. 
+		\item \textit{A Measurement of Secondary Cosmic Microwave Background Anisotropies from the 2500 Square-degree SPT-SZ Survey}: Presents measurements of secondary cosmic microwave background (CMB) anisotropies and cosmic infrared background (CIB) fluctuations using data from SPT. One of the anisotropies considered in this paper is the kSZ effect. The constraint on kSZ power can be interpreted as an upper limit on the duration of reionization \cite{2015ApJ...799..177G}. 
+		\item \textit{Dark energy imprints on the kinematic Sunyaev-Zel'dovich signal}: Investigate the imprint of dark energy on the kinetic Sunyaev-Zel'dovich (kSZ) angular power spectrum on scales of $l = 1000$ to 10 000, and find that the kSZ signal is sensitive to the dark energy parameter. Also discusses how the precise modeling of the post-reionization signal would help the constraints on patchy reionization signal \cite{2014PhLB..735..402M}.
+		\item \textit{The kinetic Sunyaev-Zel'dovich effect from the diffuse gas in the Local Group}: The Local Group (LG) of galaxies moves with a bulk velocity. By modeling the distribution of gas in the LG halo and using its inferred velocity with respect to the CMB, the paper calculates the resulting kSZ signal from the diffuse LG medium \cite{2014JCAP...01..051R}. 
+		\item \textit{Planck intermediate results. XIII. Constraints on peculiar velocities} Using Planck data and MCXC, the study of peculiar motions is addressed by searching for evidence of the kSZ. The paper obtains consistent constraints on the radial peculiar velocity average, root mean square (rms), and local bulk flow amplitude at different depths \cite{2014A&A...561A..97P}. 
+		\item \textit{First measurement of the bulk flow of nearby galaxies using the cosmic microwave background}: Using a statistical method based on an optimized cross-correlation with nearby galaxies, the kSZ signal, generated by plasma halo of galaxies from the WMAP CMB temperature anisotropies, is extracted \cite{2013MNRAS.430.1617L}. 
+		\item \textit{CMB observations in LTB universes. Part II: the kSZ effect in an LTB universe}: Study kSZ effect in a Lemaître-Tolman-Bondi (LTB) universe model and compare with observational data \cite{2010JCAP...10..011Y}. 
+		\item \textit{The kinetic Sunyaev-Zel'dovitch effect as a dark energy probe}: Considers how well a tomographic galaxy-count cross-correlation experiment, using data from WMAP, ACT and SALT, can significantly constrain the properties of dark energy \cite{2005astro.ph.11060D}.
+		\item \textit{Planck intermediate results. XLVII. Planck constraints on reionization history
+		}: Investigates constraints on cosmic reionization extracted from the Planck CMB maps. ALso makes use of measurements of the amplitude of the kSZ effect using additional information from the high-resolution ACT and SPT. The reionization redshift and duration is invesigated using kSZ constraints \cite{2016A&A...596A.108P}. 
+	\end{enumerate}
+
+	\section{Theory papers}
+	
+	\begin{enumerate}
+		
+		\item \textit{The Observations of Relic Radiation as a Test of the Nature of X-Ray Radiation from the Clusters of Galaxies}: First paper to explain the theory of the kSZ by relating the decrease in brightness of the CMB radiation to the intracluster medium (ICM) \cite{1972CoASP...4..173S}.
+		\item \textit{The velocity of clusters of galaxies relative to the microwave background - The possibility of its measurement}: Investigates possibility of measuring the peculiar velocities of clusters relative to the CMB radiation \cite{1980MNRAS.190..413S}.
+		\item \textit{ Cosmology with the Sunyaev-Zel'dovich Effect}: A discussion of both the thermal and kinetic SZ effects and the cosmology that can be extracted from SZ surveys. Also discussed are observational and theoretical challenges, with single dish and interferometer radio telescopes, etc \cite{2002ARA&A..40..643C}.
+		\item \textit{Constraining galaxy cluster velocity field with the thermal Sunyaev-Zel'dovich and kinematic Sunyaev-Zel'dovich cross bispectrum}: Explores the feasibility of detecting the kSZ through the computation of the tSZ-CMB-CMB cross correlation bispectrum for current and future CMB experiments. The paper concludes that the next generation of CMB experiments will offer the possibility to detect the tSZ-kSZ-kSZ bispectrum at high S/N \cite{2017A&A...604A..93H}.
+		\item \textit{Reconstruction of the remote dipole and quadrupole fields from the kinetic Sunyaev-Zel'dovich and polarized Sunyaev-Zel'dovich effects}: This paper presents a set of unbiased minimum variance quadratic estimators for the reconstruction of the dipole and quadrupole fields, and forecast the ability of future CMB experiments and LSS surveys to perform this reconstruction in the cosmic variance limit \cite{2017arXiv170708129D}. 
+		\item \textit{An SZ-Selected Sample of the Most Massive Galaxy Clusters in the 2500-Square-Degree South Pole Telescope Survey}: This paper presents a catalog of the 26 most significant SZ cluster detections in a full SPT survey of 2500 square degrees of the southern sky. Clusters were selected based on their SZ signal-to-noise (S/N) \cite{2011ApJ...738..139W}
+		\item \textit{Measuring the baryon fraction in cluster of galaxies with Kinematic
+		Sunyeav Zeldovich and a Standard Candle}: Measures the baryon fraction in
+		cluster of galaxies using Type Ia supernovae that reside in a brightest cluster galaxy of
+		low redshift clusters. In low redshifts the supernovae can be used to measure the bulk
+		velocity of a galaxy cluster. This paper shows the bulk flow of the cluster and CMB
+		distortion due to kSZ can constrain the clusters baryon fraction \cite{2017arXiv170302021B}.
+
+		\item \textit{Will kinematic Sunyaev-Zel'dovich measurements enhance the science return
+		from galaxy redshift surveys?} Yes. Future CMB experiments will provide
+		measurements of the linear growth rate and universe expansion rate. This paper
+		emphasizes that there is significant information in the anisotropy of the relative pairwise
+		kSZ measurements \cite{2017JCAP...01..057S}.
+		\item \textit{Extracting late-time kinetic Sunyaev-Zel’dovich effect}: Novel technique to separate the
+		late-time, post-reionization component of the kSZ effect from the contribution to it from
+		reionization by reconstructing 3D maps from future spectroscopic surveys and cross
+		correlating with CMB maps \cite{2016MNRAS.463.2425M}.
+		
+		\item \textit{Reconstructing cosmic growth with kinetic Sunyaev-Zel'dovich
+		observations in the era of stage IV experiments}: Method for constraining the
+		growth rate of structure to sub-1% precision out to z ≈1 , using a combination of galaxy
+		cluster peculiar velocities measured using the kSZ effect, and the velocity field
+		reconstructed from galaxy redshift surveys \cite{2016PhRvD..94d3522A}.
+		\item \textit{Kinetic Sunyaev-Zel'dovich effect in modified gravity}: Investigates the impact of
+		modified theories of gravity on the kinetic Sunyaev-Zel'dovich (kSZ) effect of the cosmic
+		microwave background. A specific class of f (R ) models of gravity is focussed on and
+		their predictions for the kSZ power spectrum are compared to that of the $\Gamma$ CDM model \cite{2016PhRvD..93f4026B}.
+		\item \textit{Constraints on massive neutrinos from the pairwise kinematic Sunyaev-Zel'dovich
+		effect}: Mean pairwise momentum of clusters, as observed through the kSZ effect, as a
+		novel probe of massive neutrinos. Forecasts give estimate of neutrino constraints using
+		cross-correlations of CMB measurements and spectroscopic galaxy survey \cite{2015PhRvD..92f3501M}.
+		\item \textit{Constraints on Gravity and Dark Energy from the Pairwise Kinematic Sunyaev-
+		Zel'dovich Effect}: Calculates constraints on dark energy and cosmic modifications to gravity
+		achievable with CMB surveys sensitive to SZ effects. Results suggest that kSZ measurements
+		of mean pairwise velocity of clusters could provide robust tests of dark energy and theories
+		of gravity on cosmic scales \cite{2015ApJ...808...47M}.
+		\item \textit{Testing eternal inflation with the kinetic Sunyaev Zel'dovich effect}: The multiverse
+		theory is that our universe is contained in a bubble surrounded by others. This theory is
+		tested by looking for evidence of the relic inhomogeneities left by the collisions between
+		other bubbles and our own. Such relic inhomogeneities will induce a coherent bulk flow over
+		Gpc scales. Bubble collisions leave unique imprints in the CMB through the kSZ effect \cite{2015JCAP...06..046Z}.
+
+		\item \textit{On scattering of CMB radiation on wormholes: kinetic SZ effect}: It is shown that a
+		static gas of wormholes does not perturb the spectrum of CMB. In the first order by $v/c$
+		the presence of peculiar velocities gives rise to the dipole contribution in $\Delta T/T$,
+		which corresponds to the well-known kSZ effect \cite{2015arXiv150505952K}. 
+		\item \textit{Prospects for Measuring the Relative Velocities of Galaxy Clusters in Photometric Surveys Using the Kinetic Sunyaev-Zel'dovich Effect}: Considers the prospects for measuring the pairwise kSZ signal from clusters in large photometric surveys such as the Dark Energy Survey (DES) and projects a detection of the pairwise kSZ signal. Also considers consider using the measurements for constraining theories of modified gravity \cite{2013ApJ...765L..32K}.
+		\item \textit{Using the kSZ effect to measure the galaxy velocity field}: Procedure to measure the kSZ signal as a function of redshift from ACT maps weighted by maps from Blanco Cosmology Survey (BCS) \cite{2012AfrSk..16..147Z}.
+		\item \textit{The Kinetic Sunyaev-Zel'dovich Effect from Reionization}: Discusses the kSZ anisotropy from patchy reionization and shows that the angular power spectrum of the kSZ anisotropies depends strongly on the size distribution of the H II bubbles and on the duration of reionization \cite{2005ApJ...630..643M}.
+		
+		\item \textit{The kinetic Sunyaev-Zel'dovich signal from inhomogeneous reionization: a parameter space study}: Computes the kSZ signal at reionization from 100 reionization models using the publicly available code 21CMFAST and predicts kSZ shape and amplitude is affected by the astrophysics of the early universe. 
+		\item \textit{Linear kinetic Sunyaev-Zel'dovich effect and void models for acceleration}: There is a theory that the acceleration of the universe is due to a very large local underdensity, or void, instead of dark energy. This paper examines a new proposal to constrain such models using the linear kSZ effect due to the structure within the void \cite{2011CQGra..28p4005Z}.
+		
+		\item \textit{Measuring patchy reionization with kSZ squared-21 cm correlations}: Study of cross-correlations between kSZ and 21-cm at EoR to measure the effects of patchy reionization. The kSZ-21 cm cross correlation suffers from cancellation at small angular scales. Paper thus focuses on the correlation between the kSZ-squared field and 21 cm signals \cite{2018MNRAS.476.4025M}.
+		
+		\item \textit{Characterizing the Epoch of Reionization with the small-scale CMB: constraints on the optical depth and physical parameters}: The CMB power spectrum is largely degenerate with the kSZ signal produced by late-time galaxies and clusters, limiting our ability to constrain reionization. This paper extends the formalism in \cite{2017PhRvL.119b1301S} which addressed this problem \cite{2018arXiv180307036F}.
+		\item \textit{The KBC Void: Consistency with Supernovae Type Ia and the Kinematic SZ Effect in a $\Gamma$ LTB Model}: There is evidence that the local universe is underdense on scales of several hundred megaparsecs. This paper tests whether such a “void” is compatible with the latest supernovae type Ia data and with constraints from linear kSZ measurements \cite{2018ApJ...854...46H}. 
+		\item \textit{Future constraints on halo thermodynamics from combined Sunyaev-Zel'dovich measurements}: The kSZ effect opens a new window into the thermodynamic properties of the baryons in halos. This paper proposes a methodology to constrain these thermodynamic properties by combining the kSZ and tSZ to probe pressure and ionized electron density \cite{2017JCAP...11..040B}. 
+		\item \textit{Detecting Patchy Reionization in the Cosmic Microwave Background}: Small-scale CMB fluctuations are a mixture of late-time effects: gravitational lensing, Doppler kSZ and residual foregrounds. Proposes a new statistic which separates the KSZ signal from the others, and also allows the KSZ signal to be decomposed in redshift bins \cite{2017PhRvL.119b1301S}.
+		\item \textit{Analyzing the cosmic variance limit of remote dipole measurements of the cosmic microwave background using the large-scale kinetic Sunyaev Zel'dovich effect}: This paper computes the large angular scale power asymmetry, constructing the appropriate transfer functions, and estimate the cosmic variance limited signal to noise for different redshift bin configurations. The paper investigates how close to the cosmic variance limit it will be possible to get \cite{2017JCAP...02..040T}. 
+		\item \textit{A CMB Gibbs Sampler for Localized Secondary Anisotropies}: This paper uses Bayesian formalism to rigorously characterize anisotropies that are localized on the sky, taking the TSZ and KSZ effects as an example. This is an attempt to eliminate the problem of foreground contamination in CMB maps when studying secondary ansisotropies \cite{2015ApJS..219...10B}. 
+		\item \textit{SKA - EoR correlations and cross-correlations: kSZ, radio galaxies, and NIR background}: This paper discusses a potential of cross-correlations between the SKA cosmological 21 cm data with: (i) the kinetic Sunyaev- Zel'dovich (kSZ) effect in the CMB data; (ii) the galaxy surveys; and (iii) near infrared (NIR) backgrounds \cite{2015aska.confE...8J}. 
+		\item \textit{Cosmological observations as a probe of fundamental physics and astrophysics}: The second part of this dissertation focuses on two secondary anisotropies, including the kSZ effect with the last chapter focusing on prospects of detecting the kSZ signal from sources for which accurate redshift information is not available (such as the WISE catalog). 
+		\item \textit{Cosmic Microwave Background as a Probe of the Low Redshift Universe}:  Over the past few years, ACT, SPT and Planck have detected effects such as lensing and SZ through cross-correlations. This paper reviews how these observations measure the density, pressure and momentum in the intervening material and looks at upcoming observations \cite{2014AAS...22343503S}. 
+		\item \textit{Reionization on Large Scales. II. Detecting Patchy Reionization through Cross-correlation of the Cosmic Microwave Background}: Investigates the effect of patchy reionization on the CMB. The kSZ is introduced in this paper and is used to show that patchy $\tau$ can still be detected at high significance \cite{2013ApJ...776...82N}.
+		\item \textit{Second order cross-correlation between kinetic Sunyaev-Zel'dovich effect and 21-cm fluctuations from the epoch of reionization}: Second order calculations of the angular power spectrum of the cross-correlation between 21-cm fluctuations and the CMB kSZ from the EoR, using an analytical reionization model \cite{2011MNRAS.414.3424T}. 
+		\item \textit{Measuring bulk motion of X-ray clusters via the kinematic Sunyaev-Zeldovich effect: summarizing the "dark flow" evidence and its implications}: Review presents a  discussion of peculiar velocity field measured recently on very large scales with a novel method using X-ray galaxy clusters as tracers. The measurement is based on the kSZ effect \cite{2012arXiv1202.0717K}. 
+		\item \textit{Correlation Properties of the Kinematic Sunyaev-Zel'dovich Effect and Implications for Dark Energy}: Paper presents detailed study of the statistical properties of the kSZ effect. Also conducts an analysis of the prospects of future high-resolution CMB experiments (such as ACT and SPT) for detecting the kSZ signal to extract cosmological information and dark energy constraints from it \cite{2006ApJ...643..598H}.
+		\item \textit{Separating the Weak Lensing and Kinetic Sunyaev-Zeldovich Effects from Cosmic Microwave Background Temperature Maps}: The spectral form of anisotropies generated by the gravitational lensing and the kSZ effect are identical but have different statistical properties. Measuring this statistic can help us learn more about the EoR \cite{2007ApJ...661..672R}. 
+		\item \textit{Looking the void in the eyes—the kinematic Sunyaev Zeldovich effect in Lemaître Tolman Bondi models}. This paper looks at kSZ observations in the LTB model as it gives far stronger constraints on the LTB model compared to other observational effects. If the LTB model is confirmed by observations, a kSZ survey gives a unique possibility of directly reconstructing the expansion rate and underdensity profile of the void \cite{2008JCAP...09..016G}. 
+		\item \textit{Kinematic Sunyaev-Zel'dovich Cosmic Microwave Background Temperature Anisotropies Generated by Gas in Cosmic Structures}. If the gas in filaments and halos shares the same velocity field as the luminous matter, it will generate measurable temperature anisotropies due to the kSZ. Paper computes the distribution function of the KSZ signal produced by a typical filament \cite{2008ApJ...674L..61A}.
+		\item \textit{The kinetic Sunyaev-Zel'dovich effect of the milky way halo}: Calculates the expected imprint of the ionized gas in the Milky-Way halo on the CMB through the kSZ effect. Unlike other Galactic foregrounds, the halo kSZ signature covers the full sky and cannot be confused with primordial CMB anisotropies \cite{2009JCAP...06..008B}.
+		\item \textit{The Contribution of the Kinematic Sunyaev-Zel'dovich Effect from the Warm-Hot Intergalactic Medium to the Five-Year Wilkinson Microwave Anisotropy Probe Data}: Studies contribution of kSZ to CMB anisotropies in five years of WMAP data and explores the concordance $\Gamma$ CDM cosmological model, with and without this kSZ contribution, using a Markov chain Monte Carlo algorithm \cite{2009ApJ...700..447G}. 
+		\item \textit{On the peculiar momentum of baryons after reionization}: Present an all-sky computation of angular power spectrum of the temperature anisotropies introduced by kSZ momentum of all baryons in the Universe during and after reionization, separately addressing the baryon contribution from the IGM and from clusters \cite{2009MNRAS.398..790H}. 
+		\item \textit{Galaxy clusters as mirrors of the distant Universe. Implications of the blurring term for the kSZ and ISW effects}: CMB photons that are scattered off the line of sight cause a slight blurring of the CMB anisotropies present at the moment of scattering. This paper studies the blurring effect and finds that it can provide an independent measurement of the cluster's gas mass and also impacts estimations of the kSZ effect \cite{2010A&A...509A..82H}.
+		\item \textit{Calculation of the Ostriker-Vishniac effect in cold dark matter models}: Presents a new derivation of the CMB anisotropy spectrum from the Ostriker-Vishniac (OV) effect for an open, flat, or closed universe, and calculate the anisotropy expected in cold dark matter (CDM) models \cite{1998PhRvD..58d3001J}. 
+		\item Bispectrum and the trispectrum of the Ostriker-Vishniac effect: Presents analytical expressions for the Fourier analogue of the cosmic microwave background three-point and four-point correlation functions, the spatial bispectrum and trispectrum, of the Ostriker-Vishniac effect in the linear and mildly nonlinear regime \cite{2003PhRvD..67l3001C}
+		\item \textit{Is There a Detectable Vishniac Effect?}: The OV effect is a dominant linear contribution to the CMB anisotropies at small scales. The paper points out that all odd higher order moments from Vishniac fluctuations are zero, while even moments are nonzero, regardless of the Gaussianity of the density perturbations \cite{2000ApJ...540...20S}. 
+		\item  \textit{The Effect Of Extended Reionization On The Ostriker-Vishniac Effect In The Small-Scale C.M.B.}: Investigates the variation of this signal with changes in the duration of the reionization process at constant optical depth \cite{2010AAS...21540702L}.
+		\item \textit{Observing high-redshift galaxy clusters through lensing of the Ostriker-Vishniac effect}: The OV signal can be used as a background for lensing studies potentially allowing the detection of high-redshift clusters with small SZ effect signal.This paper studies the possibility of the detection of the lensing signatures by high-redshift clusters using the OV effect \cite{2008MNRAS.383..791D}.
+		\item \textit{Nonlinear Kinetic Sunyaev-Zeldovich Effect}: Derivation of nonlinear expressions for temperature fluctuations from the kSZ effect. Our result reproduces the OV effect to second order in perturbation theory \cite{2002PhRvL..88u1301M}.
+		\item \textit{Imprint of Reionization on the Cosmic Microwave Background Bispectrum}: Study of the contributions to the cosmic microwave background (CMB) bispectrum by secondary anisotropies. The second-order Ostriker-Vishniac effect couples to a variety of linear secondary effects to produce a bispectrum \cite{2000ApJ...534..533C}. 
+		\item \textit{Non-Gaussian aspects of thermal and kinetic Sunyaev-Zel'dovich effects}: Suggests an additional statistic that can be used to study the correlation between pressure traced by the SZ thermal effect and the baryons traced by the SZ kinetic effect involving the cross-power spectrum constructed through squared temperatures instead of the usual temperature itself \cite{2001PhRvD..64f3514C}. 
+		\item \textit{Cross-correlation studies between CMB temperature anisotropies and 21cm fluctuations}: Computes the cross correlation between ionized and neutral regions using a bispectrum involving large-scale velocity field of ionized regions from the Doppler effect, arcminute-scale CMB anisotropies during reionization, and the 21cm background.
+		\item \textit{The Cosmic Reionization History as Revealed by the Cosmic Microwave Background Doppler-21 cm Correlation}: Argues that the Doppler-21 cm correlation provides a robust measurement of the 21 cm anisotropy, which can also be used as a diagnostic tool for detected signals in the 21 cm data. Detection of the cross-correlation provides the strongest confirmation that the detected signal is of cosmological origin. Paper forecasts SKA detection of the kSZ effect after 1 year of observations \cite{2006ApJ...647..840A}.   
+		\item \textit{Detecting Patchy Reionization in the Cosmic Microwave Background
+		}: Proposes a new statistic which separates the kSZ signal from the others, and also allows the kSZ signal to be decomposed in redshift bins. The decomposition extends to high redshift and does not require external data sets such as galaxy surveys.
+	\end{enumerate}
+	
+	\bibliography{litreviewbib}
+	\bibliographystyle{plain}
+	
+\end{document}

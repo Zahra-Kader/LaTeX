@@ -1,0 +1,1712 @@
+\documentclass[12pt]{article}
+\usepackage{tgtermes}
+%\usepackage[english]{babel}
+%\usepackage[utf8]{inputenc}
+\linespread{1.5}
+%\usepackage[backend=bibtex]{biblatex}
+%\addbibresource{bib_thesis.bib}
+\usepackage{multirow}
+\usepackage{subcaption}
+\usepackage[a4paper,top=3cm,bottom=2.54cm,left=2.cm,right=2.54cm,marginparwidth=1.75cm]{geometry}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[normalem]{ulem}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=cyan,      
+	urlcolor=blue,
+}
+
+
+\usepackage{url}
+%opening
+
+\title{Cross correlation kSZ and 21 cm signal}
+\author{Zahra Kader}
+
+\begin{document}
+	\maketitle
+	\begin{abstract}
+	\end{abstract}
+	
+	\section{Introduction}
+
+(Find updated data on missing baryon fraction). It is currently assumed that the missing baryons are found in the IGM, largely comprised of warm-hot intergalactic medium (WHIM). The temperatures in these regions is typically about $10^5 K< T<10^7 K$. The problem with the IGM is that it is hard to trace by the $Ly \alpha$ forest and the emission strength in the UV and X-ray bands is too weak to be detected. A promising probe is the SZ effect. The complete ionization of the universe after reionization completed at a redshift of about $z=6$, means that free electrons are dominating the ICM and the less overdense filamentary structures of the IGM. Inverse compton scattering of CMB photons with ionized electrons gives rise to the SZ effect. Due to the electric neutrality of the universe and the coulombic forces of attraction between protons and electrons, the electrons in the IGM will trace the missing baryons thought to reside in the same region. The SZ consists of thermal and kinetic. The thermal arises from the thermal motion of electrons and is proportional to the electron temperature while the kSZ is the result of bulk motions of electrons and is thus proportional to bulk peculiar velocity. Now, the thermal SZ is strongly dependent on the electron density and thus the tSZ dominates in high density and temperature regions such as the ICM. We have already said that the missing baryons are more likely to reside in the warm-hot regions in less overdense filaments of the IGM, so the use of the tSZ is not ideal. A more promising avenue is the kSZ since the velocity considered is a large scale field, determined by the large scale gravitational potential, and is thus less biased by the local environment. Now that we have established that the kSZ is an unbiased prove for missing baryons, let us actually discuss the possibility of detecting this signal. (dusty star forming galaxies are a contamination, even planck with multiple bands has limited angular resolution and suffers-can discuss this further if you choose to discuss Hand). A severe problem which greatly reduces our chances of using the kSZ effect for the missing baryons is the projection effect. The signal is a measure of electron momentum from today until the EoR, which means redshift information of the missing baryons cannot be isolated and is instead accumulated together. We are also introducing a bias since reionization could contribute a lot to the kSZ effect and if we are more interested in detecting missing baryons at late times using the kSZ signal, it would be preferable to isolate the correct redshift period so we do not misinterpret reionization as our missing baryon signal. 
+
+In this thesis we propose a method to 
+
+\clearpage	
+\section{Cosmology and Radio Telescopes}
+	
+\subsection{Standard Model}
+
+\subsubsection{Cosmological principle}
+
+The cosmological principle strictly assumes that the universe is homogeneous and isotropic on large scales, meaning that the universe looks the same at any point in the universe, and in any direction. Thus, the earth and Milky way galaxy do not exist in any special place in the universe. This is a principle which is fundamental to cosmology as it asserts that observations carried out on earth (to which we are currently restricted) are representative of the laws governing the whole universe, and thus our results ought to be comparable to those measured by alien life forms situated in galaxies light years away. Observational evidence for the cosmological principle has been found with the homogeneity of galaxy surveys on large scales and near-isotropy of the CMB. 
+
+
+\subsubsection{The Expanding Universe}
+
+The concept of a static universe was debunked when Edwin Hubble provided observational evidence for the expansion of the universe, with the recession of distant galaxies from us. This effect of galaxies moving away from each other and from us is conveniently described with the scale factor, $a$, which is set to the maximum value $a=1$ at present time. We can quantify the rate at which the scale factor changes, by introducing the Hubble rate given by 
+
+\begin{equation} \label{Hubbles rate}
+H(t)=\frac{da/dt}{a}
+\end{equation}
+
+Hubble's findings showed that there was a linear relation between velocity and distance, which is given by aptly named 'Hubble's law': $v=H_0 D$, where $H_0= H(t=0)$ is the Hubble constant defined at present time.
+
+Now, if a galaxy is moving away from us, the observed wavelength will be larger than the wavelength emitted by the galaxy. We say that the galaxy has been redshifted and thus we can define the stretching factor, $z$, which gives the simple relation 
+
+\begin{equation} \label{redshift eqn}
+1+z=\frac{\lambda_{obs}}{\lambda_{emit}}=\frac{1}{a}
+\end{equation}
+
+
+
+\subsubsection{General relativity}
+
+In this section we will discuss the very necessary tool of general relativity, developed by Einstein, which has endured for more than a century and has been vital in defining our cosmology. General relativity is reliant on the distortion of space-time by massive objects, with more mass causing a greater distortion. In other words, Einstein was the first to describe gravity as a geometric effect. In this section I will discuss the FRW metric used, before continuing onto Einsteins field equations, which will regrettably be discussed at a length disproportionate to its importance in cosmology, and conclude with the equations used to define the evolution of energy and density parameters. \\
+
+
+
+\noindent \textbf{Friedmann-Robertson-Walker metric}
+
+The general form for the space-time interval in four dimensions is 
+
+\begin{equation}\label{space-time interval}
+ds^2 = g_{\mu \nu} dx^\mu dx^\nu 
+\end{equation} 
+
+with the first co-ordinate representing time and three spatial co-ordinates. The $g_{\mu \nu}$ is symmetric, and is expressed in the Minkowski space-time as
+
+\[
+g_{\mu \nu}= \eta_{\mu \nu}=
+\begin{pmatrix}
+-1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1 \\
+\end{pmatrix}
+\]
+
+For an expanding universe, the metric is altered to account spatial expansions by scale factor, $a(t)$, and no temporal expansion, giving us the metric for an expanding, flat universe
+
+\[
+g_{\mu \nu}= 
+\begin{pmatrix}
+-1 & 0 & 0 & 0 \\
+0 & a^2(t) & 0 & 0 \\
+0 & 0 & a^2(t) & 0 \\
+0 & 0 & 0 & a^2(t) \\
+\end{pmatrix}
+\]
+
+The zero contribution from off-diagonal terms is a result of the assumed isotropy of the universe, since there are no preferred directions, and likewise the homogeneity gives an assumed lack of spatial preference, which is also encoded in the metric.  
+ 
+Thus, our space-time interval in equation \ref{space-time interval} becomes
+
+\begin{equation}
+ds^2 = -dt^2 + a^2(t) \delta_{ij} dx^i dx^j
+\end{equation}
+
+with the diagonal Kronecker delta of $\delta_{ij} = (1,1,1)$ for $i,j=1,2,3$, as defined for a flat universe only. 
+
+Expressing the space-time metric in spherical co-ordinates for a closed, open or flat universe, gives the general expression
+
+\begin{equation}
+ds^2 = -dt^2 + a^2(t) \left[ \frac{dr^2}{1-kr^2} + r^2(d\theta^2 + sin^2\theta d\phi^2)\right]
+\end{equation}
+
+where $(r, \theta, \phi)$ are the spherical co-ordinates. The variable, $k$, describes the curvature of the universe, with $k=-1, 0, 1$ for an open, flat or closed universe, respectively. We assume a flat universe. 
+
+\textbf{Einstein's equation and the energy-momentum tensor}
+
+With the inclusion of dark energy, we have the equation
+
+\begin{equation}\label{Einsteins eqn with dark energy}
+G^\mu_\nu + \Lambda g^\mu_\nu = \frac{8 \pi G}{c^4} T^\mu_\nu
+\end{equation}
+
+ that relates the Einstein tensor, $G^\mu_\nu$, the cosmological constant, $\Lambda$ and energy-momentum tensor, $T^\mu_\nu$. For the case of a perfectly isotropic fluid, the tensor is expressed as a diagonal matrix with dependencies on fluid pressure, $P$ and energy density, $\rho$. 
+ 
+ \[
+ T^{\mu}_{\nu}= 
+ \begin{pmatrix}
+ -\rho c^2 & 0 & 0 & 0 \\
+ 0 & P & 0 & 0 \\
+ 0 & 0 & P & 0 \\
+ 0 & 0 & 0 & P \\
+ \end{pmatrix}
+ \]
+ 
+ 
+Substituting the tensor  $T^\mu_\nu$ into Einstein's equation, gives the equations commonly referred to as the Friedmann and acceleration equations, which are quoted here with their dependencies on curvature and the cosmological constant. 
+
+\begin{equation}\label{friedmann eqn}
+H^2 = \left( \frac{\dot{a}}{a}\right)^2 = \frac{8 \pi G }{3}\rho - \frac{kc^2}{a^2} + \frac{\Lambda c^2}{3}
+\end{equation}
+
+This equation can be simplified and rearranged to give us the expression for the critical density of a spatially flat universe ($k=0$) at present time, if the cosmological constant is negligible. 
+
+\begin{equation}
+\rho_c = \frac{3 H_0 ^2}{8 \pi G}
+\end{equation}
+
+
+
+The acceleration equation, expressed in full here with a non-negligible cosmological constant, is given as
+
+\begin{equation} \label{acceleration eqn}
+\dot{H} + H^2 = \frac{\ddot{a}}{a} = - \frac{4 \pi G }{3}\left(\rho + \frac{3P}{c^2}\right) + \frac{\Lambda c^2}{3}
+\end{equation}
+
+Notice that the acceleration equation does not have explicit dependence on the curvature of the universe. 
+
+\textbf{Conservation law and equation of state}
+
+We can combine equations \ref{friedmann eqn} and \ref{acceleration eqn} to obtain the conservation law
+
+\begin{equation} \label{conservation law}
+a^{-3} \frac{\partial [\rho c^2 a^3] }{\partial t} = -3 \frac{\dot{a}}{a} P
+\end{equation}
+
+Now, using the knowledge that matter has zero pressure, we can obtain the relation between the matter energy density with scaling factor. The simple expression is
+
+\begin{equation}
+\frac{\partial [\rho_m a^3]}{\partial t} = 0
+\end{equation}
+
+so that $\rho_m \propto a^{-3}$. This is expected since density is inversely proportional to volume.
+
+For radiation, we have $P=\rho/3$, which gives the expression
+
+\begin{equation}
+\frac{\partial \rho_r}{\partial t} + \frac{\dot{a}}{a} 4 \rho_r = a^{-4} \frac{\partial [\rho_r a^4]}{\partial t} = 0
+\end{equation}
+
+Hence,  $\rho_r \propto a^{-4}$. This is also expected, though it differs from the scaling relation of the matter density, due to the decrease in photon energy as the light is redshifted due to universe expansion. 
+
+The equation of state relates the pressure and energy density simply as 
+
+\begin{equation}\label{equation of state}
+P = w\rho c^2
+\end{equation}
+
+where $w$ is a constant of $w=0$ for dust (matter) particles, $w=1/3$ for radiation and $w=-1$ for the cosmological constant. Additionally, the spatial curvature can be treated as an additional fluid with $w=-1/3$. We can substitute equation \ref{equation of state} into equation \ref{conservation law} to obtain the evolution of energy density with time
+
+\begin{equation}\label{energy density evolution}
+\rho(t) = a^{-3(w+1)} (t) \rho_0
+\end{equation}
+
+We have already obtained scaling relations for matter and radiation, and these can be extended to expressions of the evolution of matter and radiation energy density as a function of time. Altogether, we write expressions for the energy density of radiation, matter, curvature and the cosmological constant. 
+
+\begin{subequations}
+\begin{equation}
+\rho_r(t) = a^{-4} (t) \rho_{r,0}
+\end{equation}
+\begin{equation}
+\rho_m(t) = a^{-3} (t) \rho_{m,0}
+\end{equation}
+\begin{equation}
+\rho_k(t) = a^{-2} (t) \rho_{k,0}
+\end{equation}
+\begin{equation}
+\rho_\Lambda(t) = \rho_{\Lambda,0}
+\end{equation}
+\end{subequations}
+
+where the quantities, $\rho_0$ are energy densities at present time. The cosmological constant does not evolve over time and instead remains constant throughout the universe expansion, as explicitly shown in the last equation. The order of the equations shows also the different eras of domination in the universe. The universe was initially radiation dominated, but as seen from the expressions, radiation energy density falls off faster than that of matter, resulting in a transition to matter domination. Matter-radiation equality occurred when $\rho_m = \rho_r$ so that the scale factor at the point when the universe had equal matter and radiation energy densities, is simply written as $a_{eq} = \frac{\rho_{r,0}}{\rho_{m,0}}$. Though the matter density succeeds the radiation domination for a time, both are eventually superseded by the dark energy whose domination is everlasting. 
+
+
+\textbf{Density parameters}
+
+Now that we have defined both the critical density and energy densities of individual energy densities, we can define density parameters as the ratio of the two
+
+\begin{equation}
+\Omega_i = \frac{\rho_i}{\rho_c}
+\end{equation}
+
+where $i=r,m,\Lambda,k$ for radiation, matter, dark energy and curvature, respectively. 
+
+Thus, the Friedmann equation, \ref{friedmann eqn}, can be rewritten as
+
+\begin{equation}
+H^2 (t) = H_0^2 (a^{-4}(t) \Omega_{r,0} +a^{-3}(t) \Omega_{m,0} + a^{-2}(t) \Omega_{k,0} + \Omega_{\Lambda})
+\end{equation}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Pictures/Screenshot from 2019-12-10 16-40-51"}
+	\caption{Energy density vs scale factor is expressed in units of present time critical density for a flat universe. Shown in the plot is the radiation domination at early times, and the matter domination which followed. The matter-radiation epoch of equality is marked as $a_{eq}$. The cosmological constant is plotted with constant energy density and it is seen to dominate both radiation and matter at late times [Dodelson].}
+	\label{fig:screenshot-from-2019-12-10-16-40-51}
+\end{figure}
+
+\newpage
+\textbf{Evolution of the scale factor}
+
+The evolution of the scale factor is obtained by substituting equation \ref{energy density evolution} into equation \ref{friedmann eqn}, with $\Lambda=0$ since the evolution of the scale factor is dependent on the energy density of the universe. Note that this expression is only applicable for the matter and radiation dominated eras of a flat universe. 
+
+\begin{equation}
+a(t) = a_0 \left( \frac{t}{t_0} \right)^{\frac{2}{3(w+1)}} 
+\end{equation}
+
+Therefore, we have the expressions $a(t) \propto t^{1/2}$ for radiation and $a(t) \propto t^{2/3}$ for matter. We have the universe expanding in both radiation and matter dominated eras, as expected. The evolution of the scale factor in the dark energy domination, in which the energy density is constant, is increasing exponentially, i.e. $a(t) \propto e^{Ht}$. 
+
+
+
+\subsubsection{Distances}
+
+Measuring distance in an expanding universe is deceptive in its simplicity. Though the distance distinctions are not too difficult to understand, failure to establish commonality of terms for these different distance measurements would lead to a tumult of confusions.  \\
+
+We have discussed the scale factor already. If we picture space as a grid with assigned coordinates, the physical distance between two points on the grid will change if the grid expands, while the coordinates will remain unchanged. Thus, the comoving distance remains unchanged while the physical distance is proportional to the scale factor by which the grid expanded. We define the proper distance and comoving distance first, before discussing the angular diameter distance and luminosity distance thereafter. \\
+
+\textbf{Proper distance}
+
+This equation describes the physical distance between an observer at present time and a distant object at redshift, $z$. It is described as the simple distance that light travels in a given time, with time thereafter re-expressed as a function of scale factor, $a$, and energy densities so that the dependencies of the proper distance on our cosmological assumption is made clear. 
+
+\begin{equation}
+\begin{aligned}
+D_{proper}(z) = c \int_{t(z)}^{t_0} dt =\frac{c}{H_0} \int_{a(z)}^{a(z_0)} \frac{da}{\sqrt{a^{-1}\Omega_{m,0} + (1-\Omega_{m,0} - \Omega_{\Lambda}) + a^2 \Omega_{\Lambda}}}
+\end{aligned}
+\end{equation} 
+
+
+\textbf{Comoving distance}
+
+Proper distances are not commonly used, replaced instead with comoving distance. The total comoving distance that light could have traveled is 
+
+\begin{equation}\label{comoving horizon}
+\eta = \int_0^t \frac{dt}{a(t)}
+\end{equation}
+
+This distance is so important since this is the furthest comoving distance that light could have traveled since the beginning of time and is therefore a measure of the maximum distance that regions can be separated if they are causally connected. We will return to the concept of causal connection in the next section when discussing inflation. The variable, $\eta$ can also be referred to as the comoving horizon; a term which we will make use of in the discussion of inflation and the matter power spectrum. If we are instead interested in the comoving distance between a distant galaxy and us, which is usually the case, we can express the comoving distance as follows
+
+\begin{equation}
+\chi (a) = \int_{t(a)}^{t_0} \frac{dt}{a(t)} = \int_a^1 \frac{da}{H(a)} = \int_0^z \frac{c dz}{H(z)} 
+\end{equation}
+
+The conversion from time, $t$, to scale factor, $a$, was obtained using the Hubble rate defined in equation \ref{Hubbles rate} and the conversion to redshift was then obtained using the equation \ref{redshift eqn}. 
+
+\textbf{Angular diameter distance}
+
+In astronomy it is common to define the angle, $\theta$, subtended by an object of known size, $l$. 
+
+\begin{equation}
+d_A = \frac{l}{\theta}
+\end{equation}
+
+In a flat universe the angular diameter distance is
+
+\begin{equation}
+d_A = a \chi(a) = \frac{\chi(z)}{1+z}
+\end{equation}
+
+\textbf{Luminosity distance}
+
+For a static universe, we have the familiar expression relating flux, $F$, and intrinsic brightness, $L$ as a function of the distance that the light travels, $d$. 
+
+\begin{equation}
+F=\frac{L}{4 \pi d^2}
+\end{equation}
+
+For an expanding universe, we consider a comoving shell that forms a sphere around the source situated at the centre. The luminosity is affected by the number density of photons passing through the comoving spherical shell per unit time, with more photons passing through at early times than at late times, due to reduced proper distance at early times. We therefore have a $1/a$ reduction in intrinsic brightness due to universe expansion. We also must factor in the reduced energy of photons as they are redshifted, giving a further reduction of $1/a$ in source brightness. Thus, the corrected flux equation is
+
+\begin{equation}
+F=\frac{L a^2}{4 \pi \chi (a)^2}
+\end{equation}
+
+Comparing these two equations gives the luminosity distance as
+
+\begin{equation}
+d_L=\frac{\chi}{a} = \chi (1+z)
+\end{equation}
+
+\subsection{Perturbations and Inflation}
+
+We have so far considered a smooth, isotropic and homogeneous universe. Of course, this assumption is valid on large scales. On small scales, since we observe galaxies and clusters of galaxies, we do have perturbations to the universe. These large scale structures are a result of matter accumulating in overdense regions due to gravity. In order to understand these perturbations in recent times, we have to delve into the theory of inflation which describes the initial 'seeds' of perturbation, and its growth into large scale structures (LSS's). 
+
+
+The theory of inflation is one that has gained credibility since it was first postulated in the late 20th century. The idea is that the universe underwent a process of rapid expansion after the Big Bang. Quantum fluctuations in the very early universe would have therefore been expanded during inflation, giving rise to overdense and underdense necessary for LSS's. Inflation also provided a solution to what is called the 'Horizon Problem'. The CMB appears to be isotropic and yet, at the time when the CMB was produced, regions of the photons would have been on opposite ends of the sky and therefore would not have been causally connected. In other words, the CMB ought not to have reached thermal equilibrium due to lack of contact between photons in regions that exceeded the comoving horizon.  
+
+To see how inflation solves the horizon problem, let us return to equation \ref{comoving horizon} and rewrite it so that we can define another useful quantity, which is called the comoving Hubble radius. 
+
+\begin{equation}
+\eta = \int_0^a \frac{da}{a} \frac{1}{aH(a)}
+\end{equation}
+
+where the Hubble radius is then $ \frac{1}{aH(a)}$. This is the distance that light can travel during the course of one expansion time, which can be considered to be the time taken for the scale factor to double [Dodelson, 2003]. Note that there is an important difference between the Hubble radius and the comoving horizon: If two regions are separated by a distance larger than the Hubble radius, that means that there is no causal contact now, but it does not negate the possibility that the regions could have been in causal contact at an earlier time. The same cannot be said for the comoving horizon. We now use the Hubble radius to explain the way in which the theory of inflation provides a solution to the horizon problem. The Hubble radius increases in radiation and matter domination and though we have so far discussed the radiation dominated era in the early universe, it is possible that there was a region prior to the radiation era that allowed for a decreasing Hubble radius. A rapid universe expansion would have achieved this, thereby allowing particles to be in causal contact in the early universe, before inflation. Inflation would have then caused a decrease in the Hubble radius, with the smallest scales remaining in causal contact the longest. The radiation and matter eras would then cause the Hubble radius to increase such that the scales that we see today are once more in causal contact, as they were prior to inflation. 
+
+The biggest contribution to the comoving horizon therefore came from the period of inflation, with little contribution from the radiation and matter eras thereafter. Thus, it is useful to redefine the comoving horizon, $\eta$ as the comoving horizon from the end of inflation till a time, $t$. This gives a modified version of equation \ref{comoving horizon}, 
+
+\begin{equation}
+\eta = \int_{t_{e}}^t \frac{dt}{a(t)}
+\end{equation} 
+
+where $t_e$ is the time after inflation ended. Thus, we can describe the scales as being within the horizon before inflation ($\lambda<\eta$) and then leaving the horizon during inflation, before once more entering the horizon during the radiation or matter eras. In the next section we will elaborate on the perturbations of different scales entering the horizon so as to better understand their evolution, and their effect on the matter power spectrum. 
+
+\subsection{Matter Power Spectrum}
+
+\textbf{Statistics of the density field}
+
+Consider two galaxies at spatial positions, \textbf{x} and \textbf{y}. We can define a statistical function, called the correlation function, which gives the excess probability of finding two overdense regions separated by the distance $|\textbf{x} - \textbf{y}|$. This function is computed by taking the expectation value of the product of the two density fields $\delta(\textbf{x})$ and $\delta(\textbf{y})$, where quantity $ \delta(\textbf{x})$ represents the dimensionless matter overdensity by computing the density at a region, $\rho(\textbf{x})$,  relative to the density over all space, $\bar{\rho}$
+
+\begin{equation}
+\delta(\textbf{x}) = \frac{\rho(\textbf{x}) - \bar{\rho}}{\bar{\rho}}
+\end{equation}
+
+The correlation function is then written as
+
+\begin{equation}\label{correlation function}
+\epsilon(\textbf{x}, \textbf{y})  = \epsilon(|\textbf{x}- \textbf{y}|) = \left<\delta(\textbf{x}) \delta(\textbf{y}) \right>
+\end{equation}
+
+Note that in the second equality we have used the assumption of homogeneity and isotropy to write the argument of the correlation function as the distance between the two points only.
+
+Now, let us take the overdensity, $\delta(\textbf{x})$ and write its fourier transform so that we can obtain the matter density as a function of the wavevector, \textbf{k}.  
+
+\begin{equation}
+\delta(\textbf{k}) = \int d^3 \textbf{x} e^{-i \textbf{k}. \textbf{x}} \delta (\textbf{x})
+\end{equation}
+
+We can then take the expectation value of the density field in \textbf{k} space, analogous to equation \ref{correlation function}
+
+\begin{equation}\label{expec value of delta delta for Pmm}
+\left< \delta_m (\textbf{k}) \delta_m (\textbf{k}') \right> = (2\pi)^3 \delta^3_D(\textbf{k} - \textbf{k}') P_{mm}(k)
+\end{equation}
+
+where we have defined the dark matter density power spectrum, $	P_{mm}(k)$ which is dependent on the scalar k mode due to isotropy. It is clear from the above 3 equations that the power spectrum is the Fourier transform of the correlation function. 
+
+We can also define the power spectrum of the gravitational potential, $\Phi$, which is related to the matter density through the Poisson's equation, 
+
+\begin{equation}
+\Phi = \frac{4 \pi G \bar{\rho}_m a^2 \delta_m}{k^2}
+\end{equation} 
+
+\textbf{Evolution of the gravitational potential}
+
+We wish to understand how the distribution of matter which we observe today evolved between now and inflation. We therefore set up a simple equation to explain this process.
+
+\begin{equation}
+\Phi (\textbf{k}, a) = \Phi_p (\textbf{k}) T(k) D(a)
+\end{equation}
+
+with the scale factor dependent potential, $\Phi (\textbf{k}, a)$ equal to the primordial potential set up by inflation, $\Phi_p (\textbf{k})$ multiplied by the evolution of the perturbations through the radiation and matter eras and then multiplied by the growth function, $D(a)$, which defines the evolution at late times (during dark energy domination). 
+
+We will give analytic expressions for the transfer function after briefly describing the evolution of large and small scale modes during the radiation and matter eras. %Just to quickly iterate over what has been mentioned already regarding the expanding universe, we can consider the universe to be an expanding box and within the box we have a range of perturbations of different wavelengths. The size of the box is referred to as the horizon, $\eta$, which is the longest distance that light could have traveled since the beginning of time. 
+The large wavelength modes have $\lambda>>\eta$ and hence these modes enter the horizon ($\lambda = \eta$) much later in the universe's evolution, i.e. after matter domination has occurred. Therefore, the evolution of large scale modes is broken up into two sections: (i) how the modes evolve as they pass through the epoch of equality ($a=a_{eq}$) and (ii) how the modes evolve as they enter the horizon in the matter era. 
+The converse is true for the small scale modes. In this instance, we have (i) modes entering the horizon during the radiation era and (ii) evolution of the small scale modes during the epoch of equality. We notice that the large scale modes are not very affected and we have an almost constant gravitational potential, with only a $10\%$ drop in $\Phi$ during the radiation-matter era transition. Because of this, we can approximate the transfer function to be 1 for large scale modes. Small scale modes have a very different evolution. Before discussing this, it is important to appreciate the dependence that matter growth has on gravity and pressure, with pressure suppressing the growth and gravity of course allowing accumulation of matter thereby creating more and more overdense regions. Since the pressure is higher in the radiation era, we would expect a reduced growth of matter perturbations, resulting in a logarithmic increase in $\delta$ for large k for $a<a_{eq}$ and corresponding oscillations in $\phi$ with a large decay due to universe expansion. Notice that, although dark matter does not interact with radiation (hence the reason we can't see it), the growth of dark matter is affected by the gravitational potential during the radiation era. The gravitational potential is constant for both large scale and small scale modes during the matter era with the density perturbations scaling as $\delta \propto a$. 
+
+The transfer function is then set to 1 for $k<<k_{eq}$, where $k_{eq}$ is defined as the k modes entering the horizon at $a=a_{eq}$. For $k>>k_{eq}$, the transfer function is
+
+\begin{equation}\label{transfer func small scale}
+T(k) = 12 \left( \frac{k}{k_{eq}} \right)^{-2} In\frac{k}{8 k_{eq}}
+\end{equation}
+
+Now that we have discussed the radiation and matter eras, let us move on to the late times in which the growth function plays a role. We have stated already that there is little matter growth in the radiation era while in the matter era, growth scales as $\delta \propto a$. This is true for a flat universe. If we were to introduce curvature and dark energy, the growth of matter is suppressed. Therefore, we expect the structures observed today to have evolved the most during the matter era with little change in recent times. The growth function is expressed as
+
+\begin{equation}
+D(a) = \frac{5 \Omega_m H(a)}{2 H_0} \int_0^a \frac{da}{(a H(a)/H_0)^2}
+\end{equation}
+
+Now that we have all the separate components contributing to the gravitational potential evolution, we can put it all together to obtain the following expression at late times  
+
+\begin{equation}
+\Phi(\textbf{k}, a) = \frac{9}{10} \Phi_p (\textbf{k}) T(k) \frac{D(a)}{a}
+\end{equation}
+
+\textbf{Final power spectrum}
+
+Now that we have an expression for $\Phi$, we can substitute this into the Poisson's equation above which then gives the relation between overdensity at late times and the primordial gravitational potential
+
+\begin{equation}
+\delta_m(\textbf{k}, a) = \frac{3k^2}{\Omega_m H_0^2} \Phi_p (\textbf{k}) T(k) D(a)
+\end{equation}
+
+The matter power spectrum at late times is then 
+
+\begin{equation}
+P(k,a) = 2\pi^2 \delta_H^2 \frac{k^{n_s}}{H_0^{n_s+3}} T^2(k) \left(\frac{D(a)}{D(a=1)}\right)^2
+\end{equation}
+
+where we have used the equation for the power spectrum describing primordial potential fluctuations, [Dodelson]
+
+\begin{equation}
+P_\Phi (k) = \frac{50 \pi^2}{9 k^3} \left(\frac{k}{H_0}\right)^{n_s - 1} \delta_H^2 \left(\frac{\Omega_m}{D(a=1)}\right)^2
+\end{equation}
+
+We use $n_s=1$, which we can assume for a scale-invariant universe; an assumption further suggested by Planck results which set $n_s= 0.9655 \pm 0.0062$ (Planck 2018),  we find $P \propto k$ for large scales and substituting equation \ref{transfer func small scale} which gives $T(k) \propto k^{-2}$ for small scales, we obtain the relation, $P \propto k ^{-3}$ for small scales. This explains the shape of the power spectrum, which increases linearly at $k<k_{eq}$ with a peak at $k=k_{eq}$, and a decreasing spectrum for $k>k_{eq}$. 
+
+
+
+\subsection{Cosmic Microwave Background}
+
+In the early universe, baryons, photons and all other particles existed in a hot and dense 'cosmic soup'. The baryons and photons were coupled through Compton scattering, while Coulombic forces kept the protons and electrons coupled as well. As the universe expanded, it cooled, eventually reaching temperatures low enough for neutral atoms to form. This is referred to as recombination and it during this era that the photons decoupled from the baryon-photon fluid. Thus, approximately 380 000 years after the Big Bang, the universe was neutralized and newly decoupled photons were released, thereby resulting in radiation that free-streamed until today from the 'surface of last scattering'. This radiation is measured at micro wavelengths due to its stretching during the universe's expansion. The CMB has a temperature of 2.73 K and, as mentioned before, is nearly isotropic, with anisotropic fluctuations on the order of $10^{-5}$ (Smoot et al, 1992). It is these small anisotropies that we will discuss in more detail now, and which have provided us with very useful information about our cosmology.
+
+\textbf{CMB Anisotropies}
+
+
+
+The CMB temperature fluctuations, expressed in terms of spherical harmonics, $Y_{lm}$ is given as
+
+\begin{equation}
+\Theta(\theta, \phi) = \frac{\Delta T(\theta, \phi)}{T} = \sum_{l,m} a_{lm} Y_{l,m}(\theta, \phi)
+\end{equation}
+
+where $\theta, \phi$ are the regular polar coordinates which we have chosen to use in labeling the cold and hot 'spots' in CMB temperature maps. Analogous to the density perturbations (refer to equation \ref{expec value of delta delta for Pmm}) we define the expectation value of the $a_{lm}$'s as 
+
+\begin{equation}
+\left< a_{lm} a_{l'm'}^* \right> = \delta_{ll'} \delta_{mm'} C_l
+\end{equation}
+
+where the $C_l$ is the angular power spectrum. Notice that we are defining a 2D angular power spectrum here, because the CMB is a projected field, in contrast to the 3D matter power spectrum defined earlier. Although we have defined the angular power spectrum using spherical harmonic decomposition, we will later on define our $C_l$'s in the flat sky approximation such that 2D Fourier transforms will suffice. 
+ It is important to touch upon the issue of 'cosmic variance' which arises due to the fact that at low $l$, we do not obtain much information about the variance, $C_l$. Thus, the angular power spectrum has a large uncertainty at low $l$, but is well sampled for higher multipoles, $l$. This uncertainty is expressed as
+
+\begin{equation}
+\left( \frac{\Delta C_l}{C_l}\right) = \sqrt{\frac{2}{2l+1}}
+\end{equation}
+
+It is for this reason that $l(l+1) C_l/2\pi$ is often plotted. 
+
+\subsubsection{Analysis of the CMB spectrum}
+
+The angle subtended by the Hubble radius at the surface of last scattering corresponds to the multipole, $l \sim 100$. At large angular scales (corresponding to low $l\leq 100$), the CMB does not evolve much due to the perturbation wavelength being larger than the Hubble radius at that time. Thus, large scale anisotropies seen today are very similar to what would have been observed at very early times. 
+
+An interesting phenomenon present at large scales is the Sachs-Wolfe (SW) effect which is the gravitational redshifting of CMB photons as they climb out of gravitational potential wells at the time of recombination. This is interesting because it means that the cold regions which we observe today were in fact overdense at recombination, but they lost a lot of energy in escaping the well that they are now colder than the regions that were underdense at recombination. 
+
+Another effect is the integrated Sachs-Wolfe (ISW) effect which is shown at very low $l$. This is the result of a change in gravitational potential due to the universe undergoing a transition from radiation to matter domination (known as ISW$^{early}$) or from matter to dark energy domination (ISW$^{late}$). Photons that fall into a gravitational well in the radiation era will then have to escape the well in the matter dominated era. %the well is deeper in the matter era because there is no longer radiation pressure opposing gravity
+
+The Acoustic peaks that follow occur at multipoles of around $100 \leq l \leq 1000$, which are a direct representation of the baryon acoustic oscillations (BAO's). Now, at the time of recombination, gravity and radiation pressure were acting in opposing directions, causing oscillations in the baryon-photon fluid. When the photons decoupled from the fluid, the oscillatory motion was imprinted in the CMB spectrum. The modes which entered the horizon at a time that allowed for the fluctuation to reach a maximum at recombination, are represented as the first of the acoustic peaks. This peak is followed by a trough, corresponding to modes which entered the horizon at a time which resulted in their reaching a minimum (amplitude of zero) when decoupling occurred. The second peak is due to modes which entered the horizon and underwent a full oscillation such that they were once more at a peak during recombination. The cycle continues in this manner. There are two further complications. The first is that the odd peaks appear to be taller than the even peaks. This can be explained by regarding the photon-baryon fluid as a forced harmonic oscillator [Dodelson], 
+
+\begin{equation}
+\ddot{\Theta}_0 + k^2 c_s^2 \Theta_0 = F
+\end{equation} 
+
+where F is the force due to gravity and $c_s$ is the sound speed of the fluid. 
+The other effect is the damping tail which is seen on small scales ($l \ge 1000$). This can be understood by relaxing the assumption which we have iterated a few times, which is that the baryon-photon fluid consists of particles moving together perfectly as a single fluid. In reality, the photons scatter off electrons and move a distance away, and we can quantify this distance using the mean distance that the photon moves in Hubble time, $H^{-1}$ [Dodelson], 
+
+\begin{equation}
+\lambda_D = \frac{1}{\sqrt{n_e \sigma_T H}}
+\end{equation}
+
+where $n_e$ is the electron number density and $\sigma_T$ is the Thomson cross-section.
+Given this distance, it is clear that perturbations with wavelength $\lambda <\lambda_D$ will get damped by the motion of the photons as they scatter. This translates to damping at high $l$ in the CMB spectrum. 
+
+Now, everything that was discussed so far focused on the CMB anisotropies at the surface of last scattering. We refer to these as primary anisotropies. There also exist secondary anisotropies which occur between the last scattering surface and today due to gravitational and scattering effects. The SW and ISW$^{early}$ are primary gravitational anisotropies, while the ISW$^{late}$ is classified as secondary. The ISW is a linear effect, with the non-linear analogue referred to as the Rees-Sciama effect (Rees \& Sciama 1968). Gravitational lensing is another effect in which LSS's cause deflections of CMB photons. 
+
+
+ Scattering occurs in regions such as clusters where the temperature is hot enough and electrons are ionised and also occurs at the Epoch of Reionisation (EoR). The distortion of the CMB spectrum as photons pass through the hot intra-cluster medium is known as the Sunyaev-Zel'dovich effect, of which there are two types-thermal (tSZ) and kinetic (kSZ). Thermal is the result of photons scattered off electrons through inverse compton scattering. Average photon temperature increases and the spectrum shifts to the right. 
+
+
+\subsubsection{Scattering effects}
+
+The derivation of tSZ is as follows. 
+
+The intensity of a single photon is given by the Planck's radiation formula. 
+
+\begin{equation}\label{plancks radiation one photon}
+I_0(\nu_0)=\frac{2h\nu_0^3}{c^2}n_0
+\end{equation}
+where $I_0$ is the intensity and the quantity, $n_0=(e^{h\nu_0/k_BT_{rad}}-1)^{-1}$, is the Bose-Einstein distribution of photons. The scattering of photons will cause a change in the photon distribution, thereby causing a change in the observed CMB spectrum. This change can be written analogous to equation \ref{plancks radiation one photon} as
+
+\begin{equation}\label{delta I eqn}
+\Delta I(x)=\frac{2hx^3}{c^2}\left(\frac{k_BT_{rad}}{h}\right)^3\Delta n
+\end{equation}
+where $x=\frac{h\nu}{k_BT_{rad}}$ and $\Delta n$ is the spectral change caused by scattering. \\
+Now, the Kompaneets equation describes the rate of change of photon number assuming that the electrons are non-relativistic and that energy transfer between scattering photons and electrons is small. The Kompaneets equation is given by
+
+\begin{equation}\label{kompaneets eqn}
+\begin{aligned}
+&\frac{\partial n}{\partial t}=n_e \sigma_T c \frac{k_BT_e}{mc^2}\frac{1}{x_e^2}\frac{\partial}{\partial x_e}\left[x_e^4\left(\frac{\partial n}{\partial x_e}+n+n^2\right)\right]\Rightarrow\\
+&\frac{\partial n}{\partial y}=\frac{1}{x_e^2}\frac{\partial}{\partial x_e}\left[x_e^4\left(\frac{\partial n}{\partial x_e}+n+n^2\right)\right]
+\end{aligned}
+\end{equation}
+
+\noindent where $x_e=\frac{h\nu}{k_BT_e}$ and $\sigma_T$ is the Thomson cross section and the Compton y parameter is given as
+
+\begin{equation}
+y=\int n_e \sigma_T dl \frac{k_BT_e}{m_ec^2}
+\end{equation}
+
+\noindent This parameter describes the fractional change in energy of a photon as it passes through a region of matter of cross section, $\sigma_T$ and electron number density, $n_e$, and integrated over distance , $dl=cdt$, along the line of sight. \\
+Electron temperatures in the intracluster medium are typically very high, so we have $x_e=\frac{h\nu}{k_BT_e} \ll 1$ which gives $\frac{\partial n}{\partial x} \gg n,n^2$. Thus, equation \ref{kompaneets eqn} becomes
+
+\begin{equation}
+\frac{\partial n}{\partial y}=\frac{1}{x_e^2}\frac{\partial}{\partial x_e}\left[x_e^4\frac{\partial n}{\partial x_e}\right]
+\end{equation}
+Typically we have $T_e \gg T_{rad}$. As scattering occurs, the temperature of the electrons decrease leads to the increase in photon temperature, thereby giving rise to the TSZ spectrum distortion. Thus, the change in electron temperature is equal to the change in photon temperature, allowing us to make the replacement, $x_e=x$. Using $n=(e^{x}-1)^{-1}$ we can carry out the derivative. With small y approximations, for regions with lower temperature and optical depth, we have the non-relativistic spectral change, $\Delta n_{NR}$
+
+\begin{equation}
+\Delta n_{NR}=xy\frac{e^x}{(e^x-1)^2}\left(x\frac{e^x+1}{e^x-1}-4\right)
+\end{equation}
+This expression expanded to first order perturbations to account for relativistic effects is given by 
+
+\begin{equation}
+\Delta n=xy\frac{e^x}{(e^x-1)^2}\left(x\frac{e^x+1}{e^x-1}-4\right)(1+\delta_{SZE}(x,T_e))
+\end{equation}
+where $\delta_{SZE}(x,T_e)$ is the relativistic correction. Substituting this into equation \ref{delta I eqn} gives the final expression for the TSZ effect.
+
+
+\begin{equation}
+\frac{\Delta I_{TSZ}}{I}= x^4y\frac{e^x}{(e^x-1)^2}\left(x\frac{e^x+1}{e^x-1}-4\right)(1+\delta_{SZE}(x,T_e))
+\end{equation}
+for $I=\frac{2h}{c^2}\left(\frac{k_BT_{rad}}{h}\right)^3$. In the Rayleigh-Jeans limit, i.e. $x \ll 1$ for small frequencies, we use Taylor expansions $e^x \approx 1+x$ to give
+
+\begin{equation}
+\frac{\Delta I_{TSZ}}{I}=2y
+\end{equation}
+
+
+
+\subsubsection{Kinetic Sunyaev-Zel'dovich effect}
+
+So far we have considered the effect of CMB photons scattered off electrons in the intracluster medium. Now, an additional effect arises from the motion of the cluster relative to the CMB. This is the kSZ effect which is simply an expression of the resulting Doppler shift. In the non-relativistic limit, the CMB spectral distortion is given as
+\begin{equation}\label{temp distortion due to ksz}
+\frac{\delta T_{KSZ}}{T_{rad}}=\tau \frac{\nu_r}{c}cos\theta
+\end{equation}
+where $\theta$ is the angle between the observer and the direction of motion of the cluster, and $\nu_r$ is the radial component of the peculiar velocity of the cluster. We can write this in terms of intensity using Planck's radiation formula to obtain 
+\begin{equation}
+\frac{\delta I_{KSZ}}{I}=-x^4 \frac{e^x}{(e^x-1)^2}\tau \frac{\nu_r}{c}cos\theta
+\end{equation}
+Using equation \ref{temp distortion due to ksz} and substituting the expression for optical depth, $\tau$, we have 
+\begin{equation}\label{p(theta) temp distortion ksz}
+p(\vec{\theta})\equiv \frac{\delta T_{KSZ}}{T_{rad}}=\int_{0}^{\eta_0}n_e\sigma_Te^{-\tau}\left[\hat{\theta}.\frac{\vec{v}(\vec{\theta},\chi)}{c}\right]a(\chi)d\chi
+\end{equation}
+where $\vec{v}$ is the bulk velocity at distance $\vec{x}=\chi\vec{\theta}$ and the extra factor of $a(\chi)$ comes from the relation $dt=ad\chi$. 
+The visibility function is the probability of photons scattering off ionised electrons and is given by
+\begin{equation}
+g(\eta)=-\dot{\tau}e^{-\tau} \Rightarrow g(\chi)= \overline{n_e}(\chi) \sigma_Ta(\chi)
+\end{equation} 
+where we have made the approximation that $e^{-\tau} \simeq 1$. The mean electron number density, $\overline{n}_e(z)=(1-(4-N_{He})Y/4)\Omega_{b0}\rho_{c0} x(z)(1+z)^3/m_p$ where $\Omega_{b0}$ is the baryon density today, $m_p$ is the proton mass and $x(z) \approx 1$ is the ionization fraction, which we assume for instantaneous reionization and for the ionization fraction today. 
+Substituting this into equation \ref{p(theta) temp distortion ksz} gives
+\begin{equation}\label{p as a function of theta}
+p(\vec{\theta})=-\frac{1}{c}\int_{0}^{\eta_0} d\chi g(\chi)\hat{\theta}.\vec{q}(\vec{x}(\vec{\theta},\chi))
+\end{equation}
+where $\vec{q}(\vec{x})=(1+\delta_e(\vec{x}))\vec{v}_e(\vec{x})$, the product of the electron and density fields in real space. 
+\noindent We can use Fourier conventions to find $q(\vec{k})$
+
+Substituting equation \ref{IFT of delta m ito l} we have
+\begin{equation}\label{p_kSZ of theta with l}
+p(\vec{\theta})=-\frac{1}{c}\int d\chi \frac{g(\chi )}{\chi ^2}\int \frac{d^2 \vec{l}}{(2\pi)^2} e^{i \vec{l}.\vec{\theta}} \int \frac{dk_\parallel}{2\pi} e^{ik_{\parallel}\chi }\hat{\theta}.\vec{q}(\vec{k_\bot},k_\parallel,\chi )
+\end{equation}
+
+By comparing equations \ref{p_kSZ of theta with l} and \ref{FT of kappa of theta}, the equation for $p(\vec{l})$ is given by
+\begin{equation}\label{final p(l) kSZ equation}
+p(\vec{l})=-\frac{1}{c}\int d\chi  \widetilde{g}(\chi ) \int \frac{dk_\parallel}{2\pi} e^{ik_{\parallel}\chi } \hat{\theta}.\vec{q}(\vec{k_\bot},k_\parallel,\chi )
+\end{equation}
+where $\widetilde{g}(\chi)=\frac{g(\chi )}{\chi ^2}$.
+
+
+\subsection{Neutral Hydrogen}
+
+Hydrogen is the most abundant element in the universe, making up 75\% of the total baryonic matter. As discussed already, hydrogen was the first neutral atom to form in the recombination era, due to it simply consisting of a proton and electron. Hydrogen remained mostly neutral until the epoch of reionization (EoR), when the first stars began to form, causing UV radiation to be emitted and reionize the universe. At this time, structures that contained a large amount of matter were able to shield the inner regions from the UV radiation, thereby maintaining the neutrality of Hydrogen in the larger structures. It is because of this that LSS's such as galaxies and clusters contain large amounts of neutral hydrogen, the gas which is commonly known as star forming gas. Because of this, measuring 21 cm signals gives an indication of the LSS in the universe. We say that neutral hydrogen is a biased tracer of matter densities (Bharadwaj et al., 2001; Wyithe and Loeb, 2008). HI can be used to probe different stages in the evolution of the universe, including dark ages and the EoR (Datta, 2012). 
+A few papers have looked at cross-correlating HI with the kSZ signal at high redshifts in an attempt to better understand the process of reionization (Cooray, 2004; Alvarez, 2006). Although we are focused on low redshift cross-correlations of these two signals with HIRAX and SKA, it is useful to look at the broader applications of these cross-correlation studies. 
+
+\subsubsection{HI Lines}
+
+One way of observing the HI signal is through the transition of the electron between the n=2 state and the ground state (n=1), which is referred to as the Lyman-alpha transition. If an HI region absorbs radiation emitted by a quasar, for example, the electrons may absorb the photons and thereby get excited to a higher energy state. This will be featured as an absorption line, which we can then measure.
+An alternative is one that has resulted in the subfield of '21 cm cosmology' and that is the measurement of the 21 cm line that results from the spin flip transition of the electron in the Hydrogen atom. Because Hydrogen in its ground state has a higher energy if its spin is aligned with the proton, rather than misaligned, the electron undergoes a forbidden transition. Although this transition is rare, the abundance of HI still allows for enough 21 cm radiation to be produced that will allow for the probing of the HI signal. This 21 cm signal was first detected in 1951 (Ewen and Purcell, 1951).
+
+\subsubsection{Intensity Mapping}
+
+
+Mapping the HI emission from individual galaxies requires very sensitive radio telescopes with high angular resolution. Although galaxy redshift surveys, such as DES and Euclid, have provided stringent constraints on cosmological parameters, we discuss an alternative that is more cost and time efficient. As a result, the sky coverage is limited which could lead to large shot noise at low redshifts. An alternative is intensity mapping (IM) which covers large sky areas in a reduced time by integrating all photons detected, thereby eliminating the problems which arise from resolving individual galaxies(Chang et al., 2008; Loeb and
+Wyithe, 2008). We obtain three dimensional information of power spectra by measuring a range of angular fluctuations at different frequencies, which correspond to different redshifts. Although IM provides us with numerous advantages, there are shortcomings as well, one of which is foreground contaminations. Foregrounds are long wavelength, smoothly varying galactic signals that propagate in the line-of-sight (los) and which are orders of magnitude larger than the 21 cm signal. These cause contamination of the signal which we are trying to measure. A further limitation of IM experiments is that the angular fluctuations that can be probed using the radio interferometer are limited by the longest and shortest baselines while the radial fluctuations are limited by the bandwidth and frequency channel (the angular scale limitations differ for single-dish experiments but there are to-date no IM experiments carried out with single dish radio telescopes).
+This technique is employed by many experiments currently, such as the Canadian Hydrogen
+Intensity Mapping Experiment (CHIME) (Vanderlinde and Chime Collaboration, 2014)),
+the Baryon acoustic oscillations In Neutral Gas Observations experiment (BINGO) (Battye et al.,
+2012) and Tianlai (Chen, 2015) as well as multi-purpose radio telescopes like MeerKAT (Booth and Jonas, 2012) and
+the Square Kilometer Array (Santos et al., 2015). Upcoming experiments such as the Hydrogen Intensity and Real-time Analysis eXperiment
+(HIRAX) will also make use of IM. Large volume intensity mapping surveys
+are expected to result in cosmological constraints competitive with those from galaxy redshift
+surveys (Bull et al., 2015).
+We will focus on the use of HIRAX which will be operational in the Karoo in the next few years. HIRAX will consist
+of 1024 dishes that are 6 m in diameter, which will be arranged in a close-packed structure that
+makes use of redundant baselines.
+
+
+\subsubsection{HI signal}
+
+Let us consider the density field of neutral Hydrogen. We mentioned already that the HI signal is a biased tracer of dark matter density. This HI bias factor is called $b_{HI}$. Also, another contribution to the HI density comes from the fact that the HI signal is measured using radio telescopes and due to redshift space distortions (RSD's), the signal measured on Earth has been redshifted. The RSD factor can be understood by considering an overdense region with a galaxy closest to us in our line-of-sight (los), and a galaxy furthest away also in the los. Both galaxies will be moving towards the centre of the overdense region. However, prior to the collapse of this structure, the real space arrangement of these galaxies is circular. In redshift space, we will observe the galaxy closest to us as further away than it is in real space, and likewise the galaxy furthest from us will be blueshifted so that it appears closer. Thus, the circular arrangement in real space becomes a distorted ellipse in redshift space. This RSD factor together with the HI bias results in the following expression. 
+
+ Therefore, we have
+\begin{equation}\label{delta HI to delta m}
+\delta_{HI}(\vec{k})=\delta_m(\vec{k})[b_{HI}+f\mu_k^2]
+\end{equation}
+where $\delta_{HI}$ is the density contrast of the HI signal intensity. Now, the signal intensity measured from radio telescopes is related to temperature via Rayleigh-Jean's approximation, $I_\nu=2k_BT\frac{\nu^2}{c^2}$, for long wavelengths such as 21 cm. Since this approximation shows that the signal intensity is proportional to temperature, we have 
+\begin{equation}\label{delta 21 ito k}
+\begin{aligned}
+\delta T_{21}(\vec{k};z_i)&=\overline{T}(z_i)\delta_{HI}(\vec{k};z_i)
+\\&=\overline{T}(z_i)\delta_m(\vec{k};z_i)[b_{HI}+f\mu_k^2]
+\\&=\overline{T}(z_i)D(z_i)\delta_m(\vec{k};z=0)[b_{HI}+f\mu_k^2]
+\end{aligned}
+\end{equation}
+where the third equality comes from removing redshift dependance from $\delta_m$ and the mean temperature given by 
+\begin{equation}\label{mean 21 cm temp}
+\bar{T} \approx 566h \left(\frac{H_0}{H(z)}\right)\left(\frac{\Omega_{HI}}{0.003}\right)(1+z)^2 \mu K
+\end{equation}
+Expressing this in observational-space Fourier variables gives %\cite{bibid}
+\begin{equation}\label{delta 21 ito y and l final eqn}
+\delta T_{21}(\vec{l},y;z_i)=\frac{\delta T_{21}(\vec{k}_\bot,k_\parallel;z_i)}{(\chi )^2r_{\nu(z_i)}}
+\end{equation}
+where the expression for $y$ is given as
+\begin{equation}\label{y eqn}
+y=k_\parallel r_\nu
+\end{equation}
+with $r_\nu=\frac{c(1+z_i)^2}{H(z_i)}$. Using the relation $1+z=\frac{1420 MHz}{\nu}$ for observing frequency, $\nu$, we see that $y$ is the inverse of $\nu$. Note that in the equation, $z_i$ is used to denote a particular redshift bin. 
+
+
+\subsection{Basics of Radio Interferometry}
+
+\subsection{Summary chapter}
+
+
+\clearpage
+\section{Cross correlation of the kSZ and 21 cm signals}
+
+
+\subsection{Kinetic Sunyaev-Zel'dovich effect}
+
+\subsubsection{Signal}
+
+\begin{equation}\label{q(k)}
+\vec{q}_e(\vec{k},z_1)= \int \frac{d^3\vec{k}'}{(2\pi^3)}\delta_e(\vec{k}-\vec{k'},z_1)\vec{v_e}(\vec{k}',z_1)
+\end{equation}
+%where the different arguments account for the different possible modes of the velocity and density perturbations 
+Using the expression for $p(\vec{l})$ from equation we have
+
+\begin{equation}
+\begin{aligned}
+p(\vec{l})=&-\frac{1}{2c}\int d\chi_1 \widetilde {g}(\chi_1) \int \frac{dk_{\parallel}}{2\pi}e^{ik_{\parallel} \chi_1}\hat{\theta}.\int \frac{d^3k'}{(2\pi)^3}[\delta_e(\vec{k}',z_1)\vec{v}_e(\vec{k}-\vec{k}',z_1)+\delta_e(\vec{k}-\vec{k}',z_1)\vec{v}_e(\vec{k}',z_1)]\\
+=&-\frac{if\dot{a}}{2c}\int d\chi_1 \widetilde {g}(\chi_1) \int \frac{dk_{\parallel}}{2\pi}e^{ik_{\parallel} \chi_1}\hat{\theta}.\int \frac{d^3k'}{(2\pi)^3}\delta_e(\vec{k}',z_1)\delta_e(\vec{k}-\vec{k}',z_1)\left(\frac{\vec{k}-\vec{k}'}{|\vec{k}-\vec{k}'|^2} +\frac{\vec{k}'}{k'^2}\right)
+\end{aligned}
+\end{equation}
+
+
+
+
+%Need to change eqn 24. This v eqn is actually from the peculiar velocity eqn in dodelson.
+%Eqn 28, maybe rewrite k in terms of k perp and k parallel and then apply dirac delta functions and then re express ito k thereafter, just to explain why k'=k, which we just sort of assume in equality 2 of eqn 28.
+%messed up which variables had primes in eqn 31
+
+
+
+
+
+Computing the four point correlation with 
+
+\begin{equation}\label{p kSZ of l2}
+p(\vec{l}_2)=-\frac{if\dot{a}}{2c}\int d\chi_1 \widetilde {g}(\chi_1) \int \frac{dk_{\parallel}}{2\pi}e^{ik_{\parallel} \chi_1}\hat{\theta}.\int \frac{d^3k'}{(2\pi)^3}\delta_e(\vec{k}'',z_2)\delta_e(\vec{k_2}-\vec{k}'',z_2)\left(\frac{\vec{k_2}-\vec{k}''}{|\vec{k_2}-\vec{k}''|^2} +\frac{\vec{k}''}{k''^2}\right)
+\end{equation}
+gives 
+
+\begin{equation}\label{Cl lin kSZ ito delta and v}
+\begin{aligned}
+C_l=&\int \frac{d^2 l_2}{(2\pi)^2}\left<p(\vec{l})p(\vec{l}_2)\right>\\
+&=\left(\frac{T_{rad}}{2c}\right)^2\int \frac{d^2l_2}{(2\pi)^2}\int d\chi_1 \widetilde {g}(\chi_1) \int d\chi_2 \widetilde {g}(\chi_2) \int \frac{dk_{\parallel}}{2\pi}e^{ik_{\parallel} \chi_1}\int \frac{dk_{2\parallel}}{2\pi}e^{-ik_{2\parallel} \chi_2}D(z_1)^2 D(z_2)^2\\ 
+&f(z_1)\dot{a}(z_1)f(z_2)\dot{a}(z_2)\hat{\theta}.\int \frac{d^2k'_\perp}{(2\pi)^2}\frac{dk'_\parallel}{2\pi}\hat{\theta}.\int\frac{d^2k''_\perp}{(2\pi)^2}\frac{dk''_\parallel}{2\pi}
+\left(\frac{\vec{k}-\vec{k}'}{|\vec{k}-\vec{k}'|^2} +\frac{\vec{k}'}{k'^2}\right) 
+\left(\frac{\vec{k_2}-\vec{k}''}{|\vec{k_2}-\vec{k}''|^2} +\frac{\vec{k}''}{k''^2}\right)\\
+&\left<\delta_e(\vec{k}')\delta_e(\vec{k}-\vec{k}')\delta_e(\vec{k_2}-\vec{k}'')\delta_e(\vec{k}'')\right>
+\end{aligned}
+\end{equation}
+
+
+
+Now, we apply Wick's theorem for gaussian fields.
+%The negative sign in the Cl expression below comes from replacing k_2 with -k_1 and k'' with -k' which only introduces a negative sign in the \left[\frac{\vec{k_2}-\vec{k}''}{|\vec{k_2}-\vec{k}''|^2}+\frac{\vec{k}''}{|\vec{k}''|^2}\right] term. This gives an overall negative to the equation which cancels with another negative due to the spherical coord transform, check eqn \ref{F spherical coord transform}
+\begin{equation}
+\begin{aligned}
+C_l=&\left(\frac{T_{rad}}{2c}\right)^2\int \frac{d^2k_{2\perp}}{(2\pi)^2}\int d\chi_1 \widetilde {g}(\chi_1) \int d\chi_2 \widetilde {g}(\chi_2) \chi_2^2\int \frac{dk_{\parallel}}{2\pi}e^{ik_{\parallel} \chi_1}\int \frac{dk_{2\parallel}}{2\pi}e^{-ik_{2\parallel} \chi_2}D(z_1)^2 D(z_2)^2\\ 
+&f(z_1)\dot{a}(z_1)f(z_2)\dot{a}(z_2)\hat{\theta}.\int \frac{d^2k'_\perp}{(2\pi)^2}\frac{dk'_\parallel}{2\pi}\hat{\theta}.\int\frac{d^2k''_\perp}{(2\pi)^2}\frac{dk''_\parallel}{2\pi}\left(\frac{\vec{k}-\vec{k}'}{|\vec{k}-\vec{k}'|^2} +\frac{\vec{k}'}{k'^2}\right) 
+\left(\frac{\vec{k_2}-\vec{k}''}{|\vec{k_2}-\vec{k}''|^2} +\frac{\vec{k}''}{k''^2}\right)\\
+&(2\pi)^6  P_{\delta_e \delta_e}(k') P_{\delta_e \delta_e}(|\vec{k}-\vec{k}'|)(\delta^3(\vec{k}'-\vec{k}_2+\vec{k}'')\delta^3(\vec{k}-\vec{k}'-\vec{k}'')+\delta^3(\vec{k}'-\vec{k}'')\delta^3(\vec{k}-\vec{k}'-\vec{k}_2+\vec{k}''))\\
+&=\left(\frac{T_{rad}}{2c}\right)^2\int d\chi_1 \widetilde {g}(\chi_1) \int d\chi_2 g(\chi_2) \int \frac{dk_{\parallel}}{2\pi}e^{ik_{\parallel} (\chi_1-\chi_2)}D(z_1)^2 D(z_2)^2\\ 
+&f(z_1)\dot{a}(z_1)f(z_2)\dot{a}(z_2)\int \frac{d^3k'}{(2\pi)^3}\left(\frac{\hat{\theta}.(\hat{k}-\hat{k}')}{|\vec{k}-\vec{k}'|} +\frac{\hat{\theta}.\hat{k}'}{k'}\right)^2 P_{\delta_e \delta_e}(k') P_{\delta_e \delta_e}(|\vec{k}-\vec{k}'|)\\
+\end{aligned}
+\end{equation}
+
+Expanding this equation gives
+
+\begin{equation}
+\begin{aligned}
+C_l=&\left(\frac{T_{rad}}{2c}\right)^2\int d\chi_1 \widetilde {g}(\chi_1) \int d\chi_2 g(\chi_2) \int \frac{dk_{\parallel}}{2\pi}e^{ik_{\parallel} (\chi_1-\chi_2)}D(z_1)^2 D(z_2)^2\\ 
+&f(z_1)\dot{a}(z_1)f(z_2)\dot{a}(z_2)\int \frac{d^3k'}{(2\pi)^3}\left(\frac{[\hat{\theta}.K]^2}{K^2} +\frac{[\hat{\theta}.\hat{k}']^2}{k'^2}+\frac{2[\hat{\theta}.\hat{K}][\hat{\theta}.\hat{k}']}{K k'}\right)\\
+& P_{\delta_e \delta_e}(k') P_{\delta_e \delta_e}(K)\\
+&=\left(\frac{T_{rad}}{2c}\right)^2\int d\chi_1 \widetilde {g}(\chi_1) \int d\chi_2 g(\chi_2) \int \frac{dk_{\parallel}}{2\pi}e^{ik_{\parallel} (\chi_1-\chi_2)}D(z_1)^2 D(z_2)^2\\ 
+&f(z_1)\dot{a}(z_1)f(z_2)\dot{a}(z_2)\int \frac{d^3k'}{(2\pi)^3}\left(\frac{[\hat{\theta}.\hat{k}']^2}{k'^2}+\frac{[\hat{\theta}.\hat{K}][\hat{\theta}.\hat{k}']}{K k'}+[k'\leftrightarrow K]\right) P_{\delta_e \delta_e}(k') P_{\delta_e \delta_e}(K)\\
+&=\frac{1}{2}\left(\frac{T_{rad}}{c}\right)^2\int d\chi_1 \widetilde {g}(\chi_1) \int d\chi_2 g(\chi_2) \int \frac{dk_{\parallel}}{2\pi}e^{ik_{\parallel} (\chi_1-\chi_2)}D(z_1)^2 D(z_2)^2\\ 
+&f(z_1)\dot{a}(z_1)f(z_2)\dot{a}(z_2)\int \frac{d^3k'}{(2\pi)^3}\left(\frac{[\hat{\theta}.\hat{k}']^2}{k'^2}+\frac{[\hat{\theta}.\hat{K}][\hat{\theta}.\hat{k}']}{K k'}\right) P_{\delta_e \delta_e}(k') P_{\delta_e \delta_e}(K)\\
+\end{aligned}
+\end{equation}
+
+where $\vec{K}=\vec{k}-\vec{k}'$. And finally, we can rewrite this in the preferred form
+
+\begin{equation}\label{Cl autocorr kSZ general expression}
+\begin{aligned}
+C_l=&\frac{1}{2}\left(\frac{T_{rad}}{c}\right)^2\int d\chi_1 \widetilde {g}(\chi_1) \int d\chi_2 g(\chi_2) \int \frac{dk_{\parallel}}{2\pi}e^{ik_{\parallel} (\chi_1-\chi_2)}D(z_1)^2 D(z_2)^2\\ 
+&f(z_1)\dot{a}(z_1)f(z_2)\dot{a}(z_2)\int \frac{d^3k'}{(2\pi)^3} ([\hat{\theta}.\hat{k}']^2 P_{v_e v_e}(k') P_{\delta_e \delta_e}(K) + [\hat{\theta}.\hat{K}][\hat{\theta}.\hat{k}'] P_{\delta_e v_e}(k') P_{\delta_e v_e}(K))
+\end{aligned}
+\end{equation}
+
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../python_scripts/kSZ_21cm_signal/Cl OV integral redshift bins"}
+	\caption{Linear kSZ power spectrum plotted for different redshift bins, with each bin integrated until $z=6$.}
+	\label{fig:cl-ov-integral-redshift-bins}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}[b]{0.48\linewidth}
+		\includegraphics[width=\linewidth]{../python_scripts/kSZ_21cm_signal/k_cubed_P_delta_2d_colorplot}
+		%\caption{With outliers (70 maps)}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.48\linewidth}
+		\includegraphics[width=\linewidth]{../python_scripts/kSZ_21cm_signal/k_cubed_P_delta_v_2d_colorplot}
+		%\caption{With outliers removed (66 maps)}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.48\linewidth}
+		\includegraphics[width=\linewidth]{../python_scripts/kSZ_21cm_signal/k_cubed_Pv_2d_colorplot}
+		%\caption{With outliers removed (66 maps)}
+	\end{subfigure}
+	\caption{Dimensionless $k^3 P(k)$ is plotted for the density, velocity and cross spectra.}
+	\label{fig:power spectra}
+\end{figure}
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../python_scripts/kSZ_21cm_signal/comparison of limber and non-limber OV"}
+	\caption{Comparison of limber and non-limber OV angular power spectra integrating up to $k'=10^{-2}$ Mpc$^{-1}$. The results are in close agreement for the \textit{k} modes considered.}
+	\label{fig:comparison-of-limber-and-non-limber-ov}
+\end{figure}
+
+\subsubsection{kSZ signal-to-noise}
+
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../python_scripts/CMB_noise/OV_and_CMB_noise_prelim}
+	\caption{The full OV signal is plotted with the CMB spectrum, $C_l^{TT}$ and the CMB noise, $N_l^{TT}$.}
+	\label{fig:ovandcmbnoiseprelim}
+\end{figure}
+
+In order to determine CMB noise, we look at the detector noise of CMB experiments. The experiment that I am looking at is AdvACT. The detector noise is given as
+
+\begin{equation}
+N_l^{TT}=\sigma_p^2 e^{l^2 \theta_{beam}^2}
+\end{equation}
+where $\theta_{beam}=\theta_{fwhm}/8ln2$ is the beam width and $\sigma_p$ is the detector noise in a pixel of side $\theta_{beam}$. The detector noise is calculated using the 150 GHz channel of AdvACT. The total CMB noise is equal to the sum of the CMB spectrum and the CMB noise. Thus, $N_l^{kSZ} \equiv N_l^{CMB}=C_l^{TT}+N_l^{TT}$. 
+Using the previously calculated kSZ variance, $(\sigma_l^{kSZ})^2$, the signal-to-noise can be calculated as $S/N=\sqrt{N_{modes}} \frac{C_l^{kSZ}}{\sigma_l^{kSZ}}$ where $N_{modes}=2l\Delta l f_{sky}$.
+
+The specifications of the AdvACT experiment are 
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{l|l}
+		\hline
+		{\textbf{AdvACT}} &{\textbf{Value}}\\
+		\hline
+		Frequency channel (GHz) & $150$ \\
+		\hline
+		Beam size, $\theta_{beam}$ (arcmin) & $1.5$  \\
+		\hline
+		Temperature sensitivity, $\sigma_p$ ($\mu K$-arcmin) & $1.5$   \\
+		\hline
+	\end{tabular}
+	\caption{\label{tab:AdvACT} AdvACT specifications}
+\end{table}
+
+The angular power spectrum of the kSZ signal can be expressed as
+
+\begin{equation}
+C_l^{kSZ}=\left< p^{kSZ}(\vec{l}) p^{kSZ}(\vec{l})\right>
+\end{equation}
+
+The variance of the kSZ signal is written as
+
+\begin{equation}\label{variance of kSZ}
+\begin{aligned}
+\delta^2(\vec{l}-\vec{l}')(\sigma_l^{kSZ})^2&=\left<C_l C_{l'}\right>-\left<C_l\right>\left<C_{l'}\right>\\
+&=\left< \hat{p}(\vec{l})\hat{p}(\vec{l})\hat{p}(\vec{l}')\hat{p}(\vec{l}')\right>-\left<\hat{p}(\vec{l})\hat{p}(\vec{l})\right> \left<\hat{p}(\vec{l}')\hat{p}(\vec{l}')\right>\\
+&=2\left<\hat{p}(\vec{l})\hat{p}(\vec{l}')\right>\left<\hat{p}(\vec{l})\hat{p}(\vec{l}')\right> +\left<\hat{p}(\vec{l})\hat{p}(\vec{l})\right>\left<\hat{p}(\vec{l}')\hat{p}(\vec{l}')\right>-\left<\hat{p}(\vec{l})\hat{p}(\vec{l})\right> \left<\hat{p}(\vec{l}')\hat{p}(\vec{l}')\right>
+\end{aligned}
+\end{equation}
+where the kSZ noise is given as
+
+\begin{equation}
+\left< \hat{p}(\vec{l})\hat{p}(\vec{l}')\right>=\delta^2(\vec{l}-\vec{l}')(C_l^{pp}+N_l^{pp})
+\end{equation}
+
+This gives the variance of
+
+\begin{equation}
+\sigma_{kSZ}^2= 2(C_l^{pp}+N_l^{pp})^2
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+\left(\frac{S}{N}\right)^2=&2 f_{sky}\int \frac{d^2l}{(2\pi)^2}\left(\frac{C_l^{kSZ}}{\sigma_l^{kSZ}}\right)^2 \\
+=&2 f_{sky}\int \frac{dl}{2\pi}l\left(\frac{C_l^{kSZ}}{\sqrt{2}(C_l^{kSZ}+N_l^{kSZ})}\right)^2 \\
+\end{aligned}
+\end{equation}
+
+The sky fraction, $f_{sky}$, is expressed as $f_{sky}=\frac{S_{area} (radians)}{2\pi}$. We plot the differential and cumulative signal-to-noise in Figures \ref{fig:snr-integrand} and \ref{fig:snr}.
+
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}[b]{0.45\linewidth}
+		\includegraphics[width=\linewidth]{"../python_scripts/CMB_noise/SNR integrand"}
+			\caption{Differential signal-to-noise.}
+		%\caption{With outliers (70 maps)}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.45\linewidth}
+		\includegraphics[width=\linewidth]{../python_scripts/CMB_noise/SNR}
+			\caption{Cumulative signal-to-noise.}
+		%\caption{With outliers removed (66 maps)}
+	\end{subfigure}
+	\caption{OV}
+	\label{fig:fit_residue}
+\end{figure}
+
+
+\subsection{Neutral Hydrogen}
+
+\subsubsection{21 cm density signal}
+
+	
+
+
+
+The angular power spectrum for 21 cm temperature fluctuations is given by 
+\begin{equation}\label{Cl 21 relation to autocorrelation}
+\begin{aligned}
+&\langle  \delta T_{21}(\vec{l},y;z_i) \delta T_{21}^*(\vec{l'},y';z_i)\rangle  =(2 \pi)^3\delta^2(\vec{l}-\vec{l'})\delta(y-y')C_l^{21}(y;z_i)
+\\&
+\Rightarrow C_l^{21}(y;z_i)=\int \frac{d^2\vec{l'}}{(2\pi)^2} \int \frac{dy'}{2\pi}\langle  \delta T_{21}(\vec{l},y;z_i) \delta T_{21}^*(\vec{l'},y';z_i)\rangle  
+\end{aligned}
+\end{equation}
+Substituting equation \ref{delta 21 ito y and l final eqn} into equation \ref{Cl 21 relation to autocorrelation} gives
+\begin{equation}
+\Rightarrow C_l^{21}(y;z_i)=\int \frac{d^2\vec{l'}}{(2\pi)^2}\int \frac{dy'}{2\pi}\frac{(\overline{T}(z_i)D(z_i)[b_{HI}+f\mu_k^2])^2}{(\chi )^2 (\chi' )^2 r_{\nu}(z_i) r'_{\nu}(z_i)}\langle  \delta_m(\vec{k};z=0)\delta_m^*(\vec{k};z=0)\rangle  
+\end{equation}
+Expressing $\langle  \delta_m(\vec{k};z=0)\delta_m^*(\vec{k};z=0)\rangle  $ in terms of the matter power spectrum, we have
+\begin{equation}
+C_l^{21}(y;z_i)=\int \frac{d^2\vec{l'}}{(2\pi)^2}\int \frac{dy'}{2\pi}\frac{(\overline{T}(z_i)D(z_i)[b_{HI}+f\mu_k^2])^2}{(\chi )^2 (\chi' )^2 r_{\nu}(z_i) r'_{\nu}(z_i)}(2\pi)^3
+\delta^2(\vec{k_{\bot}}-\vec{k'_\bot})\delta(k_{\parallel}-k'_\parallel)P_m(\vec{k})
+\end{equation}
+Substituting equations and applying the Dirac delta functions gives
+\begin{equation}
+C_l^{21}(y;z_i)=\frac{(\overline{T}(z_i)D(z_i)[b_{HI}+f\mu_k^2])^2}{(\chi )^2 r_{\nu}(z_i)}P_m(\vec{k})
+\end{equation}
+
+
+Integrating over all $y$ modes gives
+
+\begin{equation}
+C_l^{21}(y;z_i)=\int_{10^{-10}}^{10^{3}} \frac{dy}{2\pi}\frac{(\overline{T}(z_i)D(z_i)[b_{HI}+f\mu_k^2])^2}{(\chi )^2 r_{\nu}(z_i)}P_m(\vec{k})
+\end{equation}
+
+
+
+\subsubsection{Thermal noise}
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{l|l}
+		\hline
+		{\textbf{HIRAX}} &{\textbf{Value}}\\
+		\hline
+		System temperature, $T_{sys}$ (K) & $50$ \\
+		\hline
+		Number of dishes, $N_{dishes}$ & $1024$  \\
+		\hline
+		Dish diameter, $D_{dish}$ (m) & $6$   \\
+		\hline
+		Minimum frequency, $\nu_{min}$(MHz) & $400$ \\
+		\hline
+		Maximum frequency, $\nu_{max}$ (MHz)& $800$ \\
+		\hline
+		Channel width, $\delta_{\nu}$ (kHZ)& $390$\\
+		\hline
+		Survey area, $S_{area}$ (square degrees)& $15000$\\
+		\hline
+	\end{tabular}
+	\caption{\label{tab:HIRAX_specs} HIRAX specifications}
+\end{table}
+
+The HIRAX noise is given by the equation 
+
+\begin{equation}
+N_l^{HI}(z_i)=\frac{T_{sys}^2}{\nu_{21}n_{pol}t_{tot}}\frac{\lambda^4 S_{area}}{A_e^2 FOV}\frac{1}{N_b n(\vec{u})}
+\end{equation}
+
+
+
+The variance, $\sigma_l^{HI}$ is given by
+\begin{equation}
+\sigma_l^{HI}=\frac{C_l^{HI}+N_l^{HI}}{\sqrt{N_{modes}}}
+\end{equation}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../python_scripts/kSZ_21cm_signal/hiraxnoise_21cm_diff_y_z_1}
+	\caption{HIRAX noise plotted with the HI density angular power spectrum for different y modes at $z=1$.}
+	\label{fig:hiraxnoise21cmdiffyz1}
+\end{figure}
+
+\subsubsection{HI Signal-to-noise}
+
+The signal-to-noise is then given as
+
+\begin{equation}
+\left(\frac{S}{N}\right)^2=2f_{sky}\Delta \tilde{\nu}S_{area}\int \frac{dl}{2\pi} \int \frac{dy}{2\pi} \frac{l(C_l^{HI}(y,z=1))^2}{(C_l^{HI}(y,z=1)+N_l^{HI}(y,z=1))^2}
+\end{equation}
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../python_scripts/kSZ_21cm_signal/SNR_21cm_density}
+	\caption{S/N for the 21 cm density signal plotted for $k_\parallel$ and $k_\perp$ bins of width $0.01 Mpc^{-1}$ at $z=1$.}
+	\label{fig:snr21cmdensity}
+\end{figure}
+
+
+
+
+
+
+\subsubsection{21 cm momentum signal}
+
+The derivation for the $C_l^{p_{21}}(y,z)$ is given by 
+
+\begin{equation}
+\begin{aligned}
+C_l^{p_{21}}(y,z_{21},z'_{21})=&\int \frac{d l'_{q}}{(2\pi)^2} \int \frac{dy'_{q}}{2\pi} \left< p_{21}(l_{q},y_{q},z_{21}) p^*_{21}(l'_{q},y'_{q},z'_{21}\right>\\
+&=\frac{1}{c^2}\frac{D^2(z_{21})}{\chi^2(z_{21})r(z_{21})}\frac{D^2(z'_{21})}{\chi^2(z'_{21})r(z'_{21})}\int \frac{d l'_{q}}{(2\pi)^2} \int \frac{dy'_{q}}{2\pi}  \\
+&\int d^3k_v \int d^3k'_v\left<\delta_{21}(k_q-k_v) v^{\parallel}_{21}(k_v) \delta^*_{21}(k'_q-k'_v) v^{*\parallel}_{21} (k'_v)\right>\\
+&=\frac{1}{8\pi^3 c^2}\frac{D^2(z_{21})D^2(z'_{21})}{\chi^2(z_{21})r(z_{21})} F(k_q)
+\end{aligned}
+\end{equation}
+
+where $F(k_q)$ is given by
+
+\begin{equation}
+F(k_q)=\int d^3\textbf{k}_{v} P_{\delta_{21} \delta_{21}}(k_{\delta}) P_{v_{21} v_{21}}(k_{v})+P_{\delta_{21} v_{21}}(k_{\delta}) P_{v_{21} \delta_{21}}(k_{v})
+\end{equation}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../python_scripts/kSZ_21cm_signal/2D_Cl_p21_signal_z_1pt26_deltaz_pt2_full_kpperp_kppar_arrays}
+	\caption{$C_l^{p_{21}}$ signal computed after integrating over $z'_{21}$ without the integral over $z_{21}$ with integral limits for $k^\parallel_{v_{21}}$ of $10^{-6}$ to $0.15$ and $k^\perp_{v_{21}}$ limits of $10^{-4}$ to $1$.}
+	\label{fig:2dclp21signalz1pt26deltazpt2fullkpperpkppararrays}
+\end{figure}
+
+The equation for the $C_l^{p_{21},tot}$ is 
+
+
+\begin{equation}
+\begin{aligned}
+C_l^{p_{21},tot}(y,z_{21},z'_{21})&=\frac{1}{c^2}\frac{D^2(z_{21})}{\chi^2(z_{21})r(z_{21})}\frac{D^2(z'_{21})}{\chi^2(z'_{21})r(z'_{21})}\int \frac{d l'_{q}}{(2\pi)^2} \int \frac{dy'_{q}}{2\pi}  \\
+&\int d^3k_v \int d^3k'_v\left<\hat{\delta}_{21}(k_q-k_v) \hat{v}^{\parallel}_{21}(k_v) \hat{\delta}^*_{21}(k'_q-k'_v) \hat{v}^{*\parallel}_{21} (k'_v)\right>\\
+&=\frac{1}{8\pi^3 c^2}\frac{D^2(z_{21})D^2(z'_{21})}{\chi^2(z_{21})r(z_{21})} F^{tot}(k_q)\\
+%&=\frac{1}{c^2}\int d^3\vec{k}'\frac{1}{\chi_1^2 r_1} D_1^2 D_2^2\hat{\theta}.\hat{k'}\\
+%&[\hat{\theta}.\hat{k}'(P^{\delta_{21}\delta_{21}}(k_1-k')+N^{\delta_{21}\delta_{21}}(k_1-k'))(P^{v_{21}v_{21}}(k')+N^{v_{21}v_{21}}(k'))\\
+%&+\hat{\theta}.\hat{K}(P^{\delta_{21}v_{21}}(k_1-k')+N^{\delta_{21}v_{21}}(k_1-k'))(P^{\delta_{21}v_{21}}(k')+N^{\delta_{21}v_{21}}(k'))]\\
+\end{aligned}
+\end{equation}
+
+where $F^{tot}(\textbf{k}_{q_{21}})$ is given by
+
+\begin{equation}
+\begin{aligned}
+F^{tot}(\textbf{k}_{q_{21}})=&\int d^3\textbf{k}_{v} [P_{\delta_{21} \delta_{21}}(k_{\delta})+V_p(z_{21})N_{\delta_{21}\delta_{21}}(k_{\delta})
+] [P_{v_{21} v_{21}}(k_{v})+V_p(z_{21})N_{v_{21}v_{21}}(k_{v})]\\
+&+[P_{\delta_{21} v_{21}}(k_{\delta})+V_p(z_{21})N_{\delta_{21}v_{21}}(k_{\delta})]
+[P_{\delta_{21} v_{21}}(k_{v})+V_p(z_{21})N_{\delta_{21}v_{21}}(k_{v})]\\
+&=\int d^3\textbf{k}_{v} P_{\delta_{21} \delta_{21}}(k_{\delta})P_{v_{21} v_{21}}(k_{v})
++P_{\delta_{21} v_{21}}(k_{\delta})P_{\delta_{21} v_{21}}(k_{v})\\
+&+V_p^2(N_{\delta_{21}\delta_{21}}(k_\delta)N_{v_{21} v_{21}}(k_v)+
+N_{\delta_{21}v_{21}}(k_{\delta})N_{\delta_{21}v_{21}}(k_{v}))+V_p\\
+&(P_{v_{21}v_{21}}(k_v)N_{\delta_{21}\delta_{21}}(k_\delta) 
++ N_{v_{21} v_{21}}(k_v) P_{\delta_{21} \delta_{21}} (k_\delta)+ P_{\delta_{21} v_{21}}(k_{\delta}) N_{\delta_{21}v_{21}}(k_{v})+
+P_{\delta_{21} v_{21}}(k_{v}) N_{\delta_{21}v_{21}}(k_{\delta}))
+\end{aligned}
+\end{equation}
+
+where $V_p(z_{21})=\chi^2(z_{21})r(z_{21})$ and the vector $\textbf{k}_{q_{21}}=(k_{21}^{\parallel},k_{21}^{\perp})=\left(\frac{y}{r(z_{21})},\frac{l}{\chi(z_{21})}\right)$.
+
+
+
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}[b]{0.48\linewidth}
+		\includegraphics[width=\linewidth]{../python_scripts/kSZ_21cm_signal/Pdeldel_Nvv_colorplot_rect_coords}
+		%\caption{With outliers (70 maps)}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.48\linewidth}
+		\includegraphics[width=\linewidth]{../python_scripts/kSZ_21cm_signal/Pvv_Ndeldel_colorplot}
+		%\caption{With outliers removed (66 maps)}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.48\linewidth}
+		\includegraphics[width=\linewidth]{../python_scripts/kSZ_21cm_signal/NN_colorplot_rect_coords}
+		%\caption{With outliers removed (66 maps)}
+	\end{subfigure}
+	\caption{Different PN and NN integrands that show the k ranges in which the noise blows up the noise}
+	\label{fig:nncolorplotrectcoords}
+\end{figure}
+
+
+
+
+\subsection{21-21-kSZ Bispectrum}
+
+
+
+\subsubsection{Definitions and notations}
+We consider a single cube, centered at redshift, $z_*$, that is situated a comoving distance, $\chi_*$, away from us. We consider narrow redshift bins of $\Delta z \ll z_*$. The sides of the box correspond to the difference between the comoving distances set by the redshift bin, i.e. $L=\chi_{max} -\chi_{min}$, where $\chi_{max}=\chi(z_*+\Delta z)$ and $\chi_{min}=\chi(z_*-\Delta z)$. This setup is shown in Figure \ref{fig:diagram1stsep2019}, with $r$ representing the radial (line of sight) axis. The universe is approximated as a discrete set of these identical cubes, such that the total signal over a large redshift is computed by simply summing over the signals from each box. The redshift range which will be considered for HIRAX is $0.8-2.5$. We compute the cross-correlation of the kSZ and 21 cm fields by restricting the resulting signal to the limits set by the cube.\\
+The kSZ signal is obtained by integrating over the line of sight, resulting in a 2D projected momentum field. The 2D sky, in our cube approximation, is considered to be a sum of the xy faces of the discrete set of identical cube described earlier. The angular separation between the edges of the square are defined as the length of the side, $L$, divided by the comoving distance, $\chi_*$. Thus, the transverse comoving distance is written as $\chi_{\perp}=\vec{\theta} \chi_*$ with the 2D angular vector, $\vec{\theta}=(\theta_1,\theta_2)$. Defined as well is the 3D line of sight unit vector, $\hat{\theta}=(\theta_1,\theta_2,1)$. \\
+The kSZ momentum field is composed of the electron density and velocity fields. It is defined in $\theta$ space as 
+
+\begin{equation}
+p_{kSZ}(\vec{\theta})=-\frac{1}{c}\int_{\chi_{min}}^{\chi_{max}} d\chi g(\chi)\hat{\theta}.\vec{q}_e(\chi_* \vec{\theta},\chi)
+\end{equation}
+
+%WE DONT WRITE \VEC{P}_{KSZ} I THINK BECAUSE KSZ MOMENTUM IS ISOTROPIC SO NO DIRECTION SPECIFICATION REQUIRED, SO ITS A SCALAR
+
+with $\vec{q}_e(\vec{x})=\vec{v}_e(\vec{x}) \delta_e (\vec{x})$. 
+
+Using Fourier transforms, we can express $\vec{k}$ as
+
+\begin{equation}
+f(\vec{x})=\int \frac{d^3 \vec{k}}{(2 \pi)^3} e^{i\vec{k}.\vec{x}}f(\vec{k})
+\end{equation}
+
+
+The velocity in $k$ space is defined according to the continuity equation
+
+\begin{equation}
+\vec{v}(\vec{k})=\frac{ifaH\delta(\vec{k},z)}{k^2}\vec{k}\\
+\end{equation}
+
+We decompose $\vec{k}$ into components $k_{\parallel}$ and $\vec{k}_{\perp}$, which are parallel and perpendicular to the line of sight, respectively. In the flat sky approximation, we can assume $k_{\perp}=\frac{\vec{l}}{\chi_*}$, where $l$ is the fourier conjugate of $\theta$. The $k_\parallel$ modes to which we are sensitive in the box are set by the redshift range of a single cube.\\
+
+We consider now the 21 cm momentum field for which we have a similar expression.
+
+\begin{equation}
+p_{21}(\vec{\theta})=-\frac{1}{c}\hat{\theta}.\vec{q}_{21}(\chi_* \vec{\theta},\chi)
+\end{equation}
+
+with $\vec{q}_{21}(\vec{x})=\vec{v}_{21}(\vec{x}) \delta_{21} (\vec{x})$. Taking the Fourier transform gives
+
+\begin{equation}
+p_{21}(\vec{l},z)=\frac{-1}{c}\int \frac{dk_{\parallel}}{2\pi}\frac{e^{ik_{\parallel} \chi(z)}}{\chi(z)^2} \hat{\theta}.\vec{q}_{21}(k_\perp,k_\parallel,z)
+\end{equation}\\
+
+with $\vec{q}_{21}(k_\perp,k_\parallel,z)=\int \frac{d^3k'}{(2\pi)^3}\delta_{21}(\vec{k}-\vec{k}',z)\vec{v}_{21}(\vec{k}',z)$. A vector diagram of the momentum, density and velocity fields is shown in Figure \ref{fig:kvecdiagramnonlimber3d}.
+We compute a window function for the 21 cm signal over which the signal is integrated. The redshift limits for the window function are set by the width of the cube. This eiminates any signal contribution from outside the limits of the cube. When computing the bispectrum, we take the small sky approximation. This is valid as there is very low contribution to the signal at low $l$ and the bispectrum signal peaks at large $l \approx 2000$. Thus, we consider only the 21 cm and kSZ fields in the same line of sight, i.e. the fields have an angular separation in the transverse direction, with equal line of sight contributions. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{../Pictures/diagram_1stSep2019}
+	\caption{Illustration of the cube centred at redshift $z_*$, of width $\delta_z$, in which the kSZ and 21 cm momentum signals are contained. The box has a length $L$ which is determined by the difference between the maximum and minimum comoving distances, $\chi$. Also shown are the 2D projected momenta fields. The line of sight direction is taken to be $r$.}
+	\label{fig:diagram1stsep2019}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{../Pictures/kvec_diagram_nonlimber_3d}
+	\caption{A 3D representation of the $\vec{k}$, $\vec{k}'$ and $\vec{k}-\vec{k}'$ vectors for the momentum, velocity and density fields, respectively. Each field has equal contributions in the $k_\parallel$ direction. The vector $\vec{k}$ is an angle $\gamma$ elevated above the $k_\perp$ plane, with an angle, $\phi$ between the $\vec{k}$ and $\vec{k}'$ vectors.}
+	\label{fig:kvecdiagramnonlimber3d}
+\end{figure}
+
+\clearpage
+\subsubsection{Bispectrum signal}
+
+We then compute the bispectrum as follows.
+
+\begin{equation}
+\begin{aligned}
+B^{p_{21}p_{ksz}}(\textbf{l}_{21},y_{21},z_{21})&=\int \frac{d^2\textbf{l}_{ksz}}{(2\pi)^2}\left<p_{21}(\textbf{l}_{21},y_{21},z_{21})p^*_{ksz}(\textbf{l}_{ksz})\right>\\
+&=\frac{T_{rad}}{c^2}\frac{D^2(z_{21})}{\chi^2(z_{21}) r(z_{21})}\int \frac{d^2\textbf{l}_{ksz}}{(2\pi)^2} \int d\chi_{ksz}  {g}(\chi_{ksz})D^2(z_{ksz}) \int \frac{dk_{ksz}^{\parallel}}{2\pi}\frac{e^{-ik_{ksz}^{\parallel}} \chi_{ksz}}{\chi^2_{ksz}} \\ 
+& \int \frac{d^3\textbf{k}_{v_{21}}}{(2\pi)^3}\int\frac{d^3\textbf{k}_{v_{ksz}}}{(2\pi)^3} <\delta_{21}(\textbf{k}_{q_{21}}-\textbf{k}_{v_{21}}){v}_{21}^{\parallel}(\textbf{k}_{v_{21}}) \delta^*_{ksz}(\textbf{k}_{q_{ksz}}-\textbf{k}_{v_{ksz}}){v}^{*\parallel}_{ksz}(\textbf{k}_{v_{ksz}})> \\
+%=&\frac{T_{rad}}{c^2}\frac{D^2(z_{21})}{\chi^2(z_{21}) r(z_{21})}\int \frac{d^2\textbf{l}_{ksz}}{(2\pi)^2} \int d\chi_{ksz}  {g}(\chi_{ksz})D^2(z_{ksz}) \int \frac{dk_{ksz}^{\parallel}}{2\pi}\frac{e^{-ik_{ksz}^{\parallel}} \chi_{ksz}}{\chi^2_{ksz}} \\ 
+%& \int \frac{d^3\textbf{k}_{v_{21}}}{(2\pi)^3}\int\frac{d^3\textbf{k}_{v_{ksz}}}{(2\pi)^3} \\
+%&=-\frac{T_{rad}}{c^2}\frac{\bar{T}(z_i)D(z_i)(b+f\mu_k^2)}{\chi^2(z_i)r_\nu(z_i)}\left(\frac{a(z_i)\dot{D}(z_i)D(z_i)}{2{D_0}^2}\right)\int \frac{d^2k_{2\perp}}{(2\pi)^2} \int d\chi \chi^2 \widetilde {g}(\chi) \left(\frac{a(\chi)\dot{D}(\chi)D(\chi)}{2{D_0}^2}\right)\\ 
+%&\int \frac{dk_{\parallel}}{2\pi}\frac{e^{ik_{\parallel} \chi_i}}{\chi_i^2}\int \frac{dk_{2\parallel}}{2\pi}e^{-ik_{2\parallel} \chi}\int \frac{d^2k'_\perp}{(2\pi)^2}\frac{dk'_\parallel}{2\pi}
+%\int \frac{d^2k''_\perp}{(2\pi)^2}\frac{dk''_\parallel}{2\pi} \left<\delta_0(\vec{k}')\delta_0(\vec{k}-\vec{k}')  \delta_0^*(\vec{k}'')\delta_0^*(\vec{k_2}-\vec{k}'')\right>\\
+%&\hat{\theta}.\left[\frac{\vec{k}-\vec{k'}}{|\vec{k}-\vec{k}'|^2}+\frac{\vec{k}'}{|\vec{k}'|^2}\right]\hat{\theta}.\left[\frac{\vec{k_2}-\vec{k}''}{|\vec{k_2}-\vec{k}''|^2}+\frac{\vec{k}''}{|\vec{k}''|^2}\right]
+\end{aligned}
+\end{equation}
+
+Now, using Wick's theorem for gaussian fields gives us
+
+\begin{equation}
+\begin{aligned}
+&<\delta_{21}(\textbf{k}_{q_{21}}-\textbf{k}_{v_{21}}){v}_{21}^{\parallel}(\textbf{k}_{v_{21}}) \delta^*_{ksz}(\textbf{k}_{q_{ksz}}-\textbf{k}_{v_{ksz}}){v}^{*\parallel}_{ksz}(\textbf{k}_{v_{ksz}})>\\
+&=
+(2\pi)^6 (P_{\delta_{21} \delta_{ksz}}(|\textbf{k}_{q_{21}}-\textbf{k}_{v_{21}}|) P_{v_{21}^\parallel v_{ksz}^\parallel}(k_{v_{21}})\delta^3(\textbf{k}_{v_{21}}-\textbf{k}_{v_{ksz}})\delta^3(\textbf{k}_{q_{21}}-\textbf{k}_{v_{21}}-\textbf{k}_{q_{ksz}}+\textbf{k}_{v_{ksz}})\\
+&+P_{\delta_{21} v_{ksz}^\parallel}(|\textbf{k}_{q_{21}}-\textbf{k}_{v_{21}}|)P_{\delta_{ksz} v_{21}^\parallel}({v_{21}})\delta^3(\textbf{k}_{q_{21}}-\textbf{k}_{v_{21}}-\textbf{k}_{v_{ksz}})\delta^3(\textbf{k}_{q_{ksz}}-\textbf{k}_{v_{ksz}}-\textbf{k}_{v_{21}}))
+\end{aligned}
+\end{equation}
+
+We collapse the integrals. Looking at the first term, we set $\textbf{k}_{v_{21}}=\textbf{k}_{v_{ksz}}$ and $\textbf{k}_{{21}}=\textbf{k}_{q_{ksz}}$. The second term allows us to set $\textbf{k}_{v_{ksz}}=\textbf{k}_{{21}}-\textbf{k}_{v_{21}}$ and again that leaves $\textbf{k}_{{21}}=\textbf{k}_{q_{ksz}}$.
+
+This gives the simplified expression for the bispectrum
+
+\begin{equation}
+\begin{aligned}
+B^{p_{21}p_e}(\textbf{l}_{21},y_{21},z_{21})=&\frac{T_{rad}}{8\pi^3c^2}\frac{D^2(z_{21})}{\chi^2(z_{21}) r(z_{21})} F(\textbf{k}_{q_{21}})
+\int d\chi_{ksz} g(\chi_{ksz}) D^2(z_{ksz}) e^{-ik_{21}^\parallel \chi_{ksz}}\\
+\end{aligned}
+\end{equation}
+
+where we define 
+
+\begin{equation}
+F(\textbf{k}_{q_{21}})=\int d^3\textbf{k}_{v_{21}} P_{\delta_{21} \delta_{ksz}}(k_{\delta_{21}}) P_{v_{21} v_{ksz}}(k_{v_{21}})+P_{\delta_{21} v_{ksz}}(k_{\delta_{21}}) P_{v_{21} \delta_{ksz}}(k_{v_{21}})
+\end{equation}
+
+with the vector $\textbf{k}_{q_{21}}=(k_{21}^{\parallel},k_{21}^{\perp})=\left(\frac{y}{r(z_{21})},\frac{l}{\chi(z_{21})}\right)$.\\
+
+The full expression with the integral over redshift is then
+
+\begin{equation}
+\begin{aligned}
+B^{p_{21}p_e}(\vec{l},y_{21})&=\frac{T_{rad}x}{4\pi^2 c}\frac{\sigma_T \rho_{g0}}{\mu_e m_p}\int_{z_{min}}^{z_{max}} d z_{21}\frac{\bar{T}^2(z_{21})rsd^2f(z_{21})D(z_{21})^2 H(z_{21}) }{\chi^2(z_{21})r(z_{21})(1+z_{21})} G(k_{21}^\parallel,k_{21}^\perp)F(k_{21}^\parallel)\\
+%&=\frac{T_{rad}x}{4\pi^2 c^2}\frac{\sigma_T \rho_{g0}}{\mu_e m_p}\int d \chi_{21}\frac{\bar{T}^2(z_{21})rsd^2f(z_{21})D^2(z_{21}) H^2(z_{21}) }{\chi^2(z_{21})r(z_{21})(1+z_{21})} G(k_{21}^\parallel,k_{21}^\perp)F(k_{21}^\parallel)
+\end{aligned}
+\end{equation}
+
+where we define
+
+\begin{subequations}
+	\begin{equation}
+	F(k_{21}^\parallel)=\int_{\chi(z_{ksz}=0)}^{\chi(z_{ksz}=10)} d\chi_{kSZ} F(\chi_{kSZ}) e^{-ik_{21}^\parallel \chi_{kSZ}}
+	\end{equation}
+	\begin{equation}
+	F(\chi_{kSZ})=\frac{1}{c}f (z_{kSZ}) D^2(z_{kSZ})(1+z_{kSZ})H(z_{kSZ})e^{-\tau(z_{kSZ})}
+	\end{equation}
+\end{subequations}
+
+and 
+
+\begin{equation}
+G(k_{21}^\parallel,k_{21}^\perp)=\int d k_{v_{21}}^{\perp} \int dk_{v_{21}}^{\parallel} k_{v_{21}}^{\perp} P_{\delta_{m} \delta_m}(k_{v_{21}}) P_{\delta_{m} \delta_m}(k_{\delta_{21}})\left( \frac{\mu^2_{k_{v_{21}}}}{k^2_{v_{21}}}+\frac{\mu_{k_{v_{21}}} \mu_{k_{\delta_{21}}}}{k_{v_{21}} k_{\delta_{21}}} \right)
+\end{equation}
+
+
+which uses the dimensionless quantity $\mu_{k}=\frac{k^\parallel}{k}$.
+
+
+We plot $F(\chi_{kSZ})$ in Figure \ref{fig:fchikszfull} and the fourier transform, $F(k_{21}^\parallel)$ in Figure \ref{fig:fkparfullrelevantkparscales}. The bispectrum signal is plotted thereafter
+
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=0.7\linewidth]{../python_scripts/kSZ_21cm_signal/F_chi_ksz_full}
+%	\caption{$F(\chi_{ksz})$ plotted against $\chi_{ksz}$}
+%	\label{fig:fchikszfull}
+%\end{figure}
+
+
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=0.7\linewidth]{../python_scripts/kSZ_21cm_signal/F_kpar_full_relevant_kpar_scales}
+%	\caption{$F(k_{21}^\parallel)$ plotted against $k_{21}^\parallel$}
+%	\label{fig:fkparfullrelevantkparscales}
+%\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../python_scripts/kSZ_21cm_signal/2D_bispec_fourier_z_1_deltaz_pt2_with_z21_int_full_zksz_int}
+	\caption{Bispectrum using the fourier transform, with the full ksz redshift integral from now to reionization, and with integration over 21 cm redshift bins of 0.4, at $z=1.26$. We integrate $k^\perp_{v_{21}}$ from $10^{-4}$ to $1$ and integrate $k^\parallel_{v_{21}}$ from $10^{-6}$ to $0.15$.}
+	\label{fig:2dbispecfourierz1deltazpt2withz21intfullzkszint}
+\end{figure}
+
+\clearpage
+\subsection{Noise}
+
+
+We previously had the true integrated bispectrum signal written as 
+
+\begin{equation}
+\begin{aligned}
+B^{p_{21}p_e}(l_{q_{21}},y_{21})&=\int \frac{d^2\textbf{l}_{ksz}}{(2\pi)^2}\left<p_{21}(\textbf{l}_{21},y_{21}, z_{21})p^*_{ksz}(\textbf{l}_{ksz})\right>\\
+&=\frac{-T_{rad}}{c}\int \frac{d^2\textbf{l}_{ksz}}{(2\pi)^2}\int dz_{21} \frac{1}{\chi(z_{21})^2 r(z_{21})} D^2(z_{21})\int \frac{d^3\textbf{k}_{v_{21}}}{(2\pi)^3}\left< \delta_{21} (\textbf{k}_{\delta_{21}}) v^\parallel_{21} (\textbf{k}_{v_{21}}) p_{ksz}(\textbf{l}_{ksz})\right>\\
+&=\int \frac{d^2l_{ksz}}{(2\pi)^2} \int dz_{21} \int \frac{d^3\textbf{k}_{v_{21}}}{(2\pi)^3} C(z_{21}) \left< \delta_{21} (\textbf{k}_{\delta_{21}}) v^\parallel_{21} (\textbf{k}_{v_{21}}) p_{ksz}(\textbf{l}_{ksz})\right>
+\end{aligned}
+\end{equation}
+
+where we have defined $C(z_{21})=\frac{-T_{rad}}{c}\frac{1}{\chi(z_{21})^2 r(z_{21})} D^2(z_{21})$.
+
+We can also write the full bispectrum as 
+
+\begin{equation}
+B(l_{q_{21}},y_{q_{21}},z_{21},\textbf{k}_{v_{21}},\textbf{l}_{ksz})=C(z_{21}) \left< \delta_{21} (\textbf{k}_{\delta_{21}}) v^\parallel_{21} (\textbf{k}_{v_{21}}) p_{ksz}(\textbf{l}_{ksz})\right>
+\end{equation}
+
+We now define an optimal bispectrum estimator, 
+
+\begin{equation}
+\hat{B}_l(y)=B_l(y) \hat{\epsilon}(l_{q_{21}},y_{q_{21}})
+\end{equation}
+
+with
+
+\begin{equation}
+\hat{\epsilon}(l_{q_{21}},y_{q_{21}})=\frac{1}{N(l_{q_{21}},y_{q_{21}})}\int \frac{d^2\textbf{l}_{ksz}}{(2\pi)^2}\int d z_{21} \int \frac{d^3 \textbf{k}_{v_{21}}}{(2\pi)^3} C(z_{21}) \hat{f}(\textbf{k}_{q_{21}},\textbf{k}_{v_{21}},\textbf{l}_{ksz}) W(\textbf{k}_{q_{21}},\textbf{k}_{v_{21}},\textbf{l}_{ksz},z_{21})
+\end{equation}
+
+where $\hat{f}(\textbf{k}_{q_{21}},\textbf{k}_{v_{21}},\textbf{l}_{ksz})=\hat{\delta}(\textbf{k}_{\delta_{21}})\hat{v}^\parallel_{21} (\textbf{k}_{v_{21}}) \hat{p}_{ksz}(\textbf{l}_{ksz})$.
+
+The normalisation for the estimator is written such that $\left< \hat{\epsilon}(l_{q_{21}},y_{q_{21}})\right>=1$. This gives us the expression
+
+\begin{equation}
+N(l_{q_{21}},y_{q_{21}})=\int \frac{d^2 \textbf{l}_{ksz}}{(2\pi)^2}  \int d z_{21} \int \frac{d^3 \textbf{k}_{v_{21}}}{(2\pi)^3} B(l_{q_{21}},y_{q_{21}},z_{21},\textbf{k}_{v_{21}},\textbf{l}_{ksz}) W(\textbf{k}_{q_{21}},\textbf{k}_{v_{21}},\textbf{l}_{ksz},z_{21})
+\end{equation}
+
+The variance of the estimator is written with the assumption that the kSZ momentum field is gaussian, so as to simplify the expression. 
+
+\begin{equation}
+\begin{aligned}
+\sigma^2(\hat{\epsilon}(l_{q_{21}},y_{q_{21}})&=\left< \hat{\epsilon}(l_{q_{21}},y_{q_{21}})\hat{\epsilon}^*(l'_{q_{21}},y'_{q_{21}}) \right>\\
+&=\frac{1}{N(l_{q_{21}},y_{q_{21}})N(l'_{q_{21}},y'_{q_{21}})}\int \frac{d^2\textbf{l}_{ksz}}{(2\pi)^2} \int \frac{d^2\textbf{l}'_{ksz}}{(2\pi)^2} \int d z_{21} \int d z'_{21} C(z_{21}) C(z'_{21})\\
+& \int \frac{d^3 \textbf{k}_{v_{21}}}{(2\pi)^3}   \int \frac{d^3\textbf{k}'_{v_{21}}}{(2\pi)^3}W(\textbf{k}_{q_{21}},\textbf{k}_{v_{21}},\textbf{l}_{ksz},z_{21})W(\textbf{k}'_{q_{21}},\textbf{k}_{v_{21}}',\textbf{l}'_{ksz},z'_{21})\\
+& \left<\hat{\delta}_{21}(\textbf{k}_{\delta_{21}})\hat{v}^\parallel_{21} (\textbf{k}_{v_{21}}) \hat{p}_{ksz}(\textbf{l}_{ksz})  \hat{\delta}^*_{21}(\textbf{k}'_{\delta_{21}})\hat{v}^{*\parallel}_{21} (\textbf{k}'_{v_{21}}) \hat{p}_{ksz}(\textbf{l}'_{ksz}) \right>\\
+&=\frac{1}{N(l_{q_{21}},y_{q_{21}})N(l'_{q_{21}},y'_{q_{21}})}\int \frac{d^2\textbf{l}_{ksz}}{(2\pi)^2} \int \frac{d^2\textbf{l}'_{ksz}}{(2\pi)^2} \int d z_{21} \int d z'_{21} C(z_{21}) C(z'_{21})\\
+& \int \frac{d^3 \textbf{k}_{v_{21}}}{(2\pi)^3}   \int \frac{d^3\textbf{k}'_{v_{21}}}{(2\pi)^3}W(\textbf{k}_{q_{21}},\textbf{k}_{v_{21}},\textbf{l}_{ksz},z_{21})W(\textbf{k}'_{q_{21}},\textbf{k}_{v_{21}}',\textbf{l}'_{ksz},z'_{21})\delta^3(\textbf{k}_{\delta_{21}}-\textbf{k}'_{\delta_{21}})\\
+& \delta^3(\textbf{k}_{v_{21}}-\textbf{k}'_{v_{21}}) \delta^2(\textbf{l}_{ksz}-\textbf{l}'_{ksz}) [P^{tot}_{\delta_{21}\delta_{21}}(k_{\delta_{21}})P^{tot}_{v_{21}v_{21}}(k_{v_{21}})+P^{tot}_{\delta_{21}v_{21}}(k_{\delta_{21}})P^{tot}_{\delta_{21} v_{21}}(k_{v_{21}})] C^{p_{ksz}}_l
+\\
+&=\delta^2(\textbf{l}_{q_{21}}-\textbf{l}'_{q_{21}})\delta(y_{q_{21}}-y'_{q_{21}})\frac{1}{N^2(l_{q_{21}},y_{q_{21}})}\int \frac{d^2\textbf{l}_{ksz}}{(2\pi)^2}\int d z_{21}\int \frac{d^3 \textbf{k}_{v_{21}}}{(2\pi)^3} W^2(\textbf{k}_{q_{21}},\textbf{k}_{v_{21}},\textbf{l}_{ksz},z_{21}) \\
+&  C^{p_{21},tot}(k_{q_{21}},k_{v_{21}},z_{21}) C^{p_{ksz}}_l\\
+\end{aligned}
+\end{equation}
+
+where 
+$C^{p_{21},tot}(k_{q_{21}},k_{v_{21}},z_{21})= \int d z'_{21} C(z_{21}) C(z'_{21}) [P^{tot}_{\delta_{21}\delta_{21}}(k_{\delta_{21}})P^{tot}_{v_{21}v_{21}}(k_{v_{21}})+P^{tot}_{\delta_{21}v_{21}}(k_{\delta_{21}})P^{tot}_{\delta_{21} v_{21}}(k_{v_{21}})]$.
+
+Minimizing the variance gives the optimal weighting of 
+
+\begin{equation}
+W(\textbf{k}_{q_{21}},\textbf{k}_{v_{21}},\textbf{l}_{ksz},z_{21})=\frac{ B(l_{q_{21}},y_{q_{21}},z_{21},\textbf{k}_{v_{21}},\textbf{l}_{ksz})}{C^{p_{21},tot}(k_{q_{21}},k_{v_{21}},z_{21})C^{p_{ksz}}_l}
+\end{equation}
+Substituting this to get the expression for the normalization gives
+
+\begin{equation}
+N(l_{q_{21}},y_{q_{21}})=\int \frac{d^2 l_{ksz}}{(2\pi)^2}  \int d z_{21} \int \frac{d^3 \textbf{k}_{v_{21}}}{(2\pi)^3}  \frac{|B(l_{q_{21}},y_{q_{21}},z_{21},\textbf{k}_{v_{21}},\textbf{l}_{ksz})|^2}{C^{p_{21},tot}(k_{q_{21}},k_{v_{21}},z_{21})C^{p_{ksz}}_l}=Var[\hat{\epsilon}(l_{q_{21}},y_{q_{21}})]
+\end{equation}
+
+after which we can write
+
+\begin{equation}
+Var[\hat{B}(l_{q_{21}},y_{q_{21}})]=B_l(y) Var[\hat{\epsilon}(l_{q_{21}},y_{q_{21}})]
+\end{equation}
+
+The signal to noise ratio is then 
+
+
+
+
+\begin{equation}
+\left(\frac{S}{N}(l_{q_{21}},y_{q_{21}})\right)^2=\frac{V}{2}\int \frac{d^2 l_{ksz}}{(2\pi)^2} \int d z_{21} \int \frac{d^3 \textbf{k}_{v_{21}}}{(2\pi)^3}\frac{|B(l_{q_{21}},y_{q_{21}},z_{21},\textbf{k}_{v_{21}},\textbf{l}_{ksz})|^2}{C^{p_{21},tot}(k_{q_{21}},k_{v_{21}},z_{21})C^{p_{ksz},tot}(\textbf{l}_{ksz})}
+\end{equation}
+
+
+We use the triangle condition for the bispectrum, $\delta^3(\textbf{k}_{v_{21}}+\textbf{k}_{\delta_{21}}-\textbf{k}_{v_{21}}+\textbf{l}_{ksz}/\chi)=0$ to set $\textbf{l}_{21}=\textbf{l}_{ksz}$ which simplifies our expression to
+
+
+\begin{equation}
+\left(\frac{S}{N}(l_{q_{21}},y_{q_{21}})\right)^2= \frac{V}{2C_l^{p_{ksz},tot}}\int d z_{21} \int \frac{d^3 \textbf{k}_{v_{21}}}{(2\pi)^3}\frac{|B(l_{q_{21}},y_{q_{21}},z_{21},\textbf{k}_{v_{21}},\textbf{l}_{ksz})|^2}{C^{p_{21},tot}(k_{q_{21}},k_{v_{21}},z_{21})}
+\end{equation}
+
+where we substitute
+
+\begin{equation}
+\begin{aligned}
+B^{p_{21}p_e}(\textbf{l}_{21},y_{21},\textbf{k}_{v_{21}}, z_{21})=&\frac{T_{rad}}{8\pi^3c^2}\frac{D^2(z_{21})}{\chi^2(z_{21}) r(z_{21})} F(\textbf{k}_{q_{21}}, \textbf{k}_{v_{21}})
+\int d\chi_{ksz} g(\chi_{ksz}) D^2(z_{ksz}) e^{-ik_{21}^\parallel \chi_{ksz}}\\
+\end{aligned}
+\end{equation}
+
+where we define 
+
+\begin{equation}
+F(\textbf{k}_{q_{21}}, \textbf{k}_{v_{21}})= P_{\delta_{21} \delta_{ksz}}(k_{\delta_{21}}) P_{v_{21} v_{ksz}}(k_{v_{21}})+P_{\delta_{21} v_{ksz}}(k_{\delta_{21}}) P_{v_{21} \delta_{ksz}}(k_{v_{21}})
+\end{equation}
+
+We integrate the $\frac{S}{N}(l_{q_{21}},y_{q_{21}})$ over $l$ and $y$ as follows
+
+\begin{equation}
+\left(\frac{S}{N}\right)^2=\frac{V}{2}\int \frac{dl_{21}}{2\pi} \int \frac{dy_{21}}{2\pi} l_{21} \left(\frac{S}{N}(l_{q_{21}},y_{q_{21}})\right)^2
+\end{equation}
+
+We plot the signal to noise without integrating over the 21 cm redshift bin in Figure \ref{fig:optimalsn2dbispecz1pt26deltazpt003kpmax1}. We also plot the signal, $B(l_{q_{21}},y_{q_{21}})$ in figure \ref{fig:2dbispecz1pt26deltazpt003kpmax1} and standard deviation, $\sigma (\hat{B}(l_{q_{21}},y_{q_{21}}))$ in figure \ref{fig:2dinvvarz1pt26deltazpt003kpmax1}, in order to check the results obtained for the signal to noise, with the $\sigma (\hat{B}(l_{q_{21}},y_{q_{21}}))$ is expressed as 
+
+\begin{equation}
+\sigma (\hat{B}(l_{q_{21}},y_{q_{21}}))=Var(\hat{B}(l_{q_{21}},y_{q_{21}}))^{1/2}=\left[\int \frac{d^3k'}{(2\pi)^3} \frac{1}{C^{p_{21},tot}(l_{q_{21}},y_{q_{21}},k')C_l^{p_{ksz},tot}}\right]^{-1/2}
+\end{equation}
+
+$const=\frac{N_{patches} f_{sky} Volume}{(4\pi)^2}$. I use the following equations
+
+\begin{subequations}
+	\begin{equation}
+	N_{patches}=\frac{S_{area}}{FOV}
+	\end{equation}
+	\begin{equation}
+	Volume=S_{area} \Delta \tilde{\nu}
+	\end{equation}
+	\begin{equation}
+	f_{sky}=\frac{S_{area}}{2\pi}
+	\end{equation}
+\end{subequations}
+
+with $S_{area}=15000$ square degrees.
+
+\subsection{Comparison of HIRAX and SKA}
+
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{l|l}
+		\hline
+		{\textbf{SKA1-MID}} &{\textbf{Value}}\\
+		\hline
+		System temperature, $T_{sys}$ (K) & $50$ \\
+		\hline
+		Number of dishes, $N_{dishes}$ & $190$  \\
+		\hline
+		Dish diameter, $D_{dish}$ (m) & $15$   \\
+		\hline
+		Minimum frequency, $\nu_{min}$(MHz) & $580$ \\
+		\hline
+		Maximum frequency, $\nu_{max}$ (MHz)& $1015$ \\
+		\hline
+		Channel width, $\delta_{\nu}$ (kHZ)& $50$\\
+		\hline
+		Survey area, $S_{area}$ (square degrees) & $25000$\\
+		\hline
+	\end{tabular}
+	\caption{\label{tab:SKA_specs} SKA1-MID specifications}
+\end{table}
+
+The equations for the $k$ limits are given as
+
+\begin{subequations}
+\begin{equation}
+k^\parallel_{min}=\frac{2 \pi}{r_\nu \tilde{\nu}_{tot}}
+\end{equation}
+\begin{equation}
+k^\parallel_{max}=\frac{1}{\sigma_{NL}}
+\end{equation}
+\begin{equation}
+k^\perp_{min}=\frac{2 \pi D_{min}}{\chi \lambda}
+\end{equation}
+\begin{equation}
+k^\perp_{min}=\frac{2 \pi D_{min}}{\chi \lambda}
+\end{equation}
+\end{subequations}
+
+where $D_{min}$ is the length of the minimum baseline, which is equal to the dish diameter and $D_{max}$ is the length of the maximum baseline, which is calculated assuming a square array. The $D_{max}$ is rounded up for arrays that have $N_{dish}$ not equal to a perfect square. 
+
+\begin{table}[]
+	\centering
+	\begin{tabular}{l|l|l|l}
+		& \multirow{2}{*}{\textbf{Full k limits}} & \multicolumn{2}{c}{\textbf{Cut k limits} } \\
+			\multicolumn{2}{l}{}   &  \textbf{HIRAX}               &     \textbf{SKA1-MID}     \\
+	\hline
+	$k^\parallel_{min}$	& $10^{-6}$ & \multicolumn{2}{c}{$10^{-2}$}                  \\
+	\hline
+	$k^\parallel_{max}$	&1&  \multicolumn{2}{c}{0.15}                     \\
+\hline
+	$k^\perp_{min}$	&$5 \times 10^{-4}$  &     0.02             &         0.04         \\
+	\hline
+		$k^\perp_{max}$	&$20$  &     11.6             &         14.6         \\
+
+	\end{tabular}
+	\caption{The $k$ ranges considered for the $k_{q_{21}}$ and $k_{v_{21}}$ components at $z=1$. }
+\end{table}
+
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{../python_scripts/kSZ_21cm_signal/optimal_SN_ska_2D_bispec_z_1_deltaz_pt2_integrated_over_redshift_kpar_1e-6_1_kperp_5e-4_10_zksz_full}
+	\caption{Signal-to-noise using full $k$ limits with SKA1-MID.}
+	\label{fig:optimalsnska2dbispecz1deltazpt2integratedoverredshiftkpar1e-61kperp5e-410zkszfull}
+\end{figure}
+
+
+
+\subsection{Foregrounds and Instrumentation limits}
+
+
+
+\subsection{Summary}
+
+\clearpage
+\section{Calibration}
+
+\subsection{Redundant baseline calibration}
+
+In order to study the sky, we must build telescopes. Unfortunately, the telescopes used to measure the sky also introduce systematics that inhibit complete recovery of the sky signal. These effects of these systematics are determined by the telescope calibration. Let's consider a true sky signal which we hope to measure and which we will call $x_i$, where $i$ is the antenna index. The signal which we measure with the antenna is then written in terms of the complex gain factor, $g_i$, and the instrumental noise, $n_i$ [Liu, 2010]. 
+
+Thus, we have the equation 
+
+\begin{equation}\label{measured and true signal one antenna}
+s_i = g_i x_i + n_i
+\end{equation}
+
+For a radio interferometer, discussed earlier in Chapter 2, we of course have different baselines, each of which measures the correlation between two signals from the two respective antennae. This gives the relation between the visibilities which we measure with the radio interferometer, and the true visibilities.
+
+\begin{equation}\label{measured vis eqn}
+\begin{aligned}
+c_{ij} & = \left< s_i s_j \right>\\
+& = g^*_i g_j \left< x^*_i x_j \right> + g^*_i \left< x^*_i n_j \right> + g_j \left< x_j n^*_i \right> + \left< n^*_i n_j \right> \\
+& = g^*_i g_j y_{i-j} + n_{ij}
+\end{aligned}
+\end{equation}
+
+where we have combined the last three terms in the second line and set this equal to the noise level which we label as $n_{ij}$. The value for this noise is dependent on the instrument; more specifically on the system temperature, $T_{sys}$, integration time, $\tau$ and frequency bandwidth, $\Delta \nu$. Thus, the noise can be estimated as being on the order of $T_{sys}/\sqrt{\tau \Delta \nu}$. We have also expressed the correlation of two sky signals as $y_{i-j}$, which is the true visibilities. The notation for the true sky visibilities is chosen to signify that these visibilities depend only on the relative difference between two antenna positions. Hence, redundant baselines will measure the true visibility. This is the foundation on which redundant calibration is based, as we will see shortly. The measured visibilities, of course, will be different for each baseline, due to the different noise and complex antenna gains of each antenna. \\
+Now, the complex gains can be separated into a gain amplitude, $\eta_i$ and a gain phase, $\phi_i$ for a single antenna, thus giving two gain parameters for each antenna. We can write the gains as $g_i = e^{\eta_i + i \phi_i}$. \\
+If we were to attempt true visibilities from the measured visibilities without using the redundancy of baselines, we would have an unsolvable equation. This can be seen if we consider an N number of antennae, giving $N(N-1)/2$ measured visibilities, which we cannot use to solve for the same number of true visibilities plus the 2N gain parameters. The noise is not a quantity for which we solve, but is instead a systematic effect which we try to minimize. Note that we have excluded auto-correlations i.e. the correlation of a dish with itself. Including these would the number of visibilities to $N(N-1)/2 +N$. The reason that we choose to omit them is that they contain correlated noise which tends to be higher than other measurements. \\
+ Now, if we instead use the redundancy of the telescope baselines, we reduce our number of unknowns for which we must solve. Thus, we instead have the number of true visibilities equal to the number of unique baselines. This will depend on the number of arrays and their layout. For dishes arranged in the north-south and east-west direction, we find that the minimum size array, which can be used to solve the set of equations, is a $2 \times 3$ array. For such an array, we have 30 knowns (obtained from the real and imaginary components of the 15 measured visibilities) which are used to solve for 6 $\eta$'s and 6 $\phi$'s, as well as 14 values from the true visibilities of 7 unique baselines. The unique baselines are shown on the diagram and are chosen with the assumption that the north-east and south-west baselines do not see the same sky signal, i.e. we assume an asymmetric sky. Altogether, 30 knowns are used to solve for 26 unknowns. Using the diagram, we can write out the equations as 
+ 
+ \begin{subequations}
+ \begin{equation*}
+c_{1,2} = exp [(\eta_1 + \eta_2) + i(\phi_2 - \phi_1)] y_1 + n_{1,2}
+\end{equation*}
+ \begin{equation*}
+c_{2,3} = exp [(\eta_2 + \eta_3) + i(\phi_3 - \phi_2)] y_1 + n_{2,3}
+\end{equation*}
+($c_{45}$ and $c_{56}$ the same baseline of 1 with true visibility $y_1$)
+ \begin{equation*}
+c_{1,3} = exp [(\eta_1 + \eta_3) + i(\phi_3 - \phi_1)] y_2 + n_{1,3}
+\end{equation*}
+($c_{46}$ has the same baseline of 2 with true visibility $y_2$)
+ \begin{equation*}
+c_{1,4} = exp [(\eta_1 + \eta_4) + i(\phi_4 - \phi_1)] y_3 + n_{1,4}
+\end{equation*}
+($c_{25}$ and $c_{36}$ the same baseline of 2 with true visibility $y_3$)
+ \begin{equation*}
+c_{1,5} = exp [(\eta_1 + \eta_5) + i(\phi_5 - \phi_1)] y_{\sqrt{10}, NE} + n_{1,5}
+\end{equation*}
+($c_{26}$ has the same NE baseline of ${\sqrt{10}}$  with true visibility $y_{\sqrt{10}, NE}$)
+\begin{equation*}
+c_{2,4} = exp [(\eta_2 + \eta_4) + i(\phi_4 - \phi_2)] y_{\sqrt{10},SW} + n_{2,4}
+\end{equation*}
+($c_{35}$ has the same SW baseline of ${\sqrt{10}}$ with true visibility $y_{\sqrt{10}, SW}$)
+\begin{equation*}
+c_{1,6} = exp [(\eta_1 + \eta_6) + i(\phi_6 - \phi_1)] y_{\sqrt{13},NE} + n_{1,6}
+\end{equation*}
+\begin{equation*}
+c_{3,4} = exp [(\eta_3 + \eta_4) + i(\phi_4 - \phi_3)] y_{\sqrt{13},SW} + n_{3,4}
+\end{equation*}
+ \end{subequations}\\
+
+\subsubsection{Logarithmic Calibration}
+
+The set of equations can be treated as a linear system if we take the log of each side. We can rewrite equation \ref{measured vis eqn} as 
+
+\begin{equation}
+c_{ij} = g^*_i g_j y_{i-j} \left( 1 + \frac{n_{ij}}{ g^*_i g_j y_{i-j}} \right)
+\end{equation}
+
+where $ g^*_i g_j = exp[(\eta_i + \eta_j +i(\phi_j - \phi_i))]$
+
+Taking the log of each side then gives
+
+\begin{equation}
+In c_{ij} = \eta_i + \eta_j +i(\phi_j - \phi_i) + In y_{i-j} + w_{ij}
+\end{equation}
+
+where $w_{ij} = In\left( 1 + \frac{n_{ij}}{ g^*_i g_j y_{i-j}} \right)$. We can then separate the real and imaginary parts of the equation. This means that the real true sky and the gain amplitude are solved for separately from the imaginary true sky and gain phase. The two equations are
+
+\begin{subequations}
+\begin{equation}\label{amplitude calibration}
+In |c_{ij}| = \eta_i + \eta_j + In |y_{i-j}| + Re w_{i,j}
+\end{equation}
+\begin{equation}
+arg|c_{ij}| = i(\phi_j - \phi_i) + arg |y_{i-j}| + Im w_{i,j}
+\end{equation}
+\end{subequations}
+
+The amplitude calibration, in equation \ref{amplitude calibration},  is written in matrix form, \textbf{d} = \textbf{A x} + Re\textbf{w}, where \textbf{d} are the known measured visibilities, \textbf{A} is the array configuration matrix, \textbf{x} is the matrix of unknown which consists of the gain amplitude and unique baselines. These matrices are given as follows
+
+\begin{equation}\label{least sq eqn with dAx}
+\setcounter{MaxMatrixCols}{13}
+\begin{pmatrix} In |c_{1,2}|  \\ In |c_{2,3}|\\ In |c_{4,5}|\\In |c_{5,6}|\\In |c_{1,3}|\\
+In |c_{4,6}|\\In |c_{1,4}|\\ In |c_{2,5}|\\.\\.\\In |c_{1,6}|\\In |c_{3,4}|
+ \end{pmatrix}
+=
+\begin{pmatrix}
+1&1&0&0&0&0&1&0&0&0&0&0&0\\
+0&1&1&0&0&0&1&0&0&0&0&0&0\\
+0&0&0&1&1&0&1&0&0&0&0&0&0\\
+0&0&0&0&1&1&1&0&0&0&0&0&0\\
+1&0&1&0&0&0&0&1&0&0&0&0&0\\
+0&0&0&1&0&1&0&1&0&0&0&0&0\\
+1&0&0&1&0&0&0&0&1&0&0&0&0\\
+0&1&0&0&1&0&0&0&1&0&0&0&0\\
+&&&.&&&.&&&.\\
+&&&.&&&.&&&.\\
+1&0&0&0&0&1&0&0&0&0&0&1&0\\
+0&0&1&1&0&0&0&0&0&0&0&0&1\\
+\end{pmatrix}
+\begin{pmatrix}
+\eta_1\\\eta_2\\\eta_3\\\eta_4\\\eta_5\\\eta_6\\y_{1}\\y_2\\y_3\\y_{\sqrt{10},NE}\\y_{\sqrt{10},SW}\\y_{\sqrt{13},NE}\\y_{\sqrt{13},SW}
+\end{pmatrix}
++
+\begin{pmatrix}
+Rew_{1,2}\\Rew_{2,3}\\Rew_{4,5}\\Rew_{5,6}\\Rew_{1,3}\\Rew_{4,6}\\Rew_{1,4}\\Rew_{2,5}\\.\\.\\Rew_{1,6}\\Rew_{3,4}
+\end{pmatrix}
+\end{equation}\\
+
+
+This set of equations has no unique solution, even in the noiseless case (in which we assume that each antenna has negligible noise, i.e. $w_{ij}=0$ for all $i,j$). This degeneracy can be understood quite simply if we refer to equation \ref{measured and true signal one antenna}. For a single antenna, if we were to multiply the gain by a factor, $\alpha$, and divide the true sky signal by the same factor, the signal measured by the antenna will remain the same. This degeneracy is broken by constraining the sum of the gain amplitudes. We have the same constraint requirement for the phase calibration. However, there are two additional constraints required for phase calibration. If we were to rotate the sky clockwise by a degree, $\phi_{rot}$, and rotate the antennae by the same degree anti-clockwise, the gain phase would be the same. We thus constraint the product of the phase and antenna position, for both x and y positions. This gives 3 constraints in total for the phase calibration and 1 for the amplitude calibration. 
+
+The least squares equation is then used to solve for the set of equations, presented here in its familiar form\\
+ \textbf{x} = [\textbf{A}$^t$ \textbf{N}$^{-1}$ \textbf{A}]$^{-1}$ \textbf{A}$^t$ \textbf{N}$^{-1}$ \textbf{d}
+
+where the noise covariance matrix is expressed as $\textbf{N} = \left< Re \textbf{w} Re \textbf{w}^t \right>$ for the amplitude calibration, with the imaginary components taking the same form for the phase calibration. The constraints required to break degeneracies are then added as extra rows in the \textbf{A},\textbf{N} and \textbf{d} matrices. We maintain diagonality of the noise matrix when adding the constraints, and simply set the last value of the matrix to be \textbf{N}[-1][-1]=1 for the amplitude calibration, in order to weight the constraint. \\
+
+Let us now look at the noise covariance matrix in a bit more detail. In the redundant calibration method put forth by Wieringa, 1992, the noise covariance matrix as set to the identity. However, in Liu et al, 2010, it is argued that using an inverse variance weighting provides a more optimal solution for the calibration. The noise covariance matrix is then chosen to be a diagonal matrix, since we are assuming uncorrelated noise between different baselines, with the diagonal components equal to [Liu et al, 2010]
+
+\begin{equation}
+N_{\alpha \alpha} = \frac{\sigma^2}{|c_\alpha|^2}
+\end{equation}
+
+
+where we have assumed gaussian noise with spread, $\sigma$. Notice the changed notation for the measured visibilities in this equation, since we have used the subscript, $\alpha$, to denote each baseline. We can then assign $\alpha=1$ to the baseline formed between antennae $i=1,j=2$, and so on for each measured visibility described in the set of equations. We will consider both the cases of a weighted noise covariance matrix and an identity matrix, depending on which is more suitable. We will return to this a bit later on. For now though, let us consider the noiseless case for the amplitude calibration in order to be certain that we obtain perfect gain recovery and that the degeneracies are well broken. Although the equations thus far have been designed for the $ 2 \times 3$ array described in the diagram, we will consider larger arrays due to the reduced calibration error that arises from increasing the size of the array. For a $5 \times 5$ array, the recovered gain amplitudes were plotted against simulated gain amplitudes. 
+ 
+ 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../../../media/zahra/DATA/example_5by5_array_full_lmax/gain_scatter_no_noise}
+	\caption{Recovered vs simulated gain amplitudes, $\eta$, for a noiseless $5 \times 5$ array, with gain fluctuations on the order of 0.1.}
+	\label{fig:gainscatternonoise}
+\end{figure}
+
+Now, let us consider an array of the same size with gaussian noise, as described previously. Unless otherwise stated, it is assumed that the arrays used have a system temperature of $T_{sys} = 50 K$, and a channel width of 390 kHz (obtained using the 400 MHz bandwidth of HIRAX with 1024 frequency channels) and an integration time of $\tau = 10 s$. We will investigate the effect that antenna noise and gain fluctuations have on the recovered gain errors.\\
+
+The least squares error is computed as the two dimensional matrix,
+
+\begin{equation}\label{least sq eqn}
+\mathbf{\Sigma} = [\textbf{A}^t \textbf{N}^{-1} \textbf{A}]^{-1}
+\end{equation}
+
+with the errors for each antenna equal to the square root of the diagonal of $\mathbf{\Sigma}$. The quantity $diag(\mathbf{\Sigma})^{1/2}$, contains the errors for all unknowns, for which we are solving, i.e. both the gains and true visibilities. We quote only the gain errors here.
+
+ First, we will assume no gain fluctuations, and compute the least squares error for two different antenna noise levels. Thus, we can deduce the effect that lowering system temperature will have on our ability to recover gains. 
+
+
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}[b]{0.48\linewidth}
+		\includegraphics[width=\linewidth]{../corrcal2/5by5_leastsqerr_5K_tsys}
+		%\caption{With outliers (70 maps)}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.48\linewidth}
+		\includegraphics[width=\linewidth]{../corrcal2/5by5_leastsqerr_50K_tsys}
+		%\caption{With outliers removed (66 maps)}
+	\end{subfigure}
+	\caption{Least squares error plotted for a noisy $5 \times 5$ array with 6 m dishes placed edge to edge. The plots show two separate noise levels, averaged over 10 realisations, with the left and right plots assuming antenna system temperatures of $T_{sys}=5 K$ and $T_{sys}=50 K$, respectively. As seen, the noise makes a significant difference to gain errors. We also notice the symmetry of the errors which is due to the baseline redundancy, although the error differences are small.}
+	\label{fig:lstsq_error_5by5}
+\end{figure}
+
+A factor of ten increase in the noise level gives a corresponding increase in the gain error. The dependence of the gain error on antenna location is symmetric due to the different baselines to which the antennae contribute. The centrally located antennae contribute to a larger number of redundant baselines, as compared to those antennae that are placed on the outskirts. As a result, the edge placed antennae have a higher calibration error. The gain errors obtained with logarithmic calibration has been investigated in papers such as Liu et al 2010 and Dillon 2016, and we see the same pattern for calibration errors. The difference is that Liu computed the errors for different realisations of a gaussian sky, whereas we have considered only different realisations of antenna noise. Dillon has assumed a constant noise, which gives a slightly different variation in calibration errors, but we will come back to this in a bit. Of course, the colour scale of the plots informs us of the weak dependence that antenna location has on the calibration error. There is a higher dependence of gain error on the number of antennae in the array, assuming that the antennae are placed such that they increase baseline redundancy. If new antennae are added as outliers that form completely separate baselines, we do not expect this to reduce the calibration errors of the array. Thus, we explicitly investigate the variation of gain error with regular grid arrays by computing the least squares error for 3 arrays of sizes, $10 \times 10$, $15 \times 15$ and $16 \times 16$, with the 6 m dishes again placed edge to edge. Note that, because we are only comparing the least squares errors of arrays relative to each other, we need not optimize the gain residuals by computing the inverse variance weighting in the noise covariance matrix. Hence, we set the noise covariance matrix to be equal to identity. This reduces the time required to generate the simulated plots. Therefore, the scales on the plots in Figure \ref{fig:lstsq_error_10by10_15by15_16by16} should not be compared to that of figure \ref{fig:lstsq_error_5by5}. Equation \ref{least sq eqn} for the least squares error is reduced to the simplified $\mathbf{\Sigma} = [\textbf{A}^t \textbf{A}]^{-1}$.This simple expression cannot be evaluated by taking the direct inverse since \textbf{A} is never a square matrix and is therefore not invertible. This is true for any \textbf{A} matrix if we hope to find unique gain solutions. Thus, we rely on taking the pseudoinverse of $[\textbf{A}^t \textbf{A}]$ [Dillon, 2013]. Once again, we plot the square root of the diagonals of $\mathbf{\Sigma}$. Note that the dependence of these errors is only on the \textbf{A} matrix and is thus unaffected by the gain amplitude fluctuations. \\ 
+
+%gain errors we would expect if each visibility had the same amplitude and were
+%measured with a foreground S/N of 1, Dillon 2016
+
+\begin{figure}[h!]
+	\centering
+\begin{subfigure}[b]{0.48\linewidth}
+	\includegraphics[width=\linewidth]{../PIPELINE/example_nosims_square/colour_scatterplot_10by10_identity_matrix}
+\end{subfigure}
+\begin{subfigure}[b]{0.48\linewidth}
+	\includegraphics[width=\linewidth]{../PIPELINE/example_nosims_square/square_colour_scatterplot_15by15_identity_matrix}
+\end{subfigure}
+\begin{subfigure}[b]{0.48\linewidth}
+	\includegraphics[width=\linewidth]{../PIPELINE/example_nosims_square/square_colour_scatterplot_16by16_identity_matrix_amp}
+\end{subfigure}
+	\caption{Least squares error for 3 arrays of size $10 \times 10$, $15 \times 15$ and $16 \times 16$, with the 6 m dishes again placed edge to edge. We assume an identity noise when running these simulations and thus observe a higher gain error at the centre dishes. The difference in antennae gain error for a given array is small. We instead focus on the reduced gain error for larger arrays, which is expected for arrays with similar baseline redundancies.}
+\label{fig:lstsq_error_10by10_15by15_16by16}
+\end{figure}
+
+The symmetry of the gain errors is similar to that of figure \ref{fig:lstsq_error_5by5} but we notice that the centre of the array has a larger error than the centre of the array. This is because the ring of antennae around the centre contribute to more redundant baselines than those situated at the absolute centre. This was not clear in the $5 \times 5$ array due to the weighting which was used. Dillon, 2016 has also assumed an identity noise matrix and obtained the same colour variation in his gain error plots. Once more, we notice from the scale that the the difference in error is small within each array layout. Thus, we turn our attention to the maximal errors for each array size. It is clear from the plots that larger arrays result in reduced gain errors. Liu showed that for antennae with similar baseline redundancies, we can expect error to scale as $\Delta \eta \propto 1/\sqrt{N}$. Thus, we expect a factor of $ \sim 1.5$ decrease in error between the $10 \times 10$ and $15 \times 15$, and a  corresponding $ \sim 1.6$ error reduction for the $16 \times 16$, which is what we obtain. 
+
+Now, we mentioned that the gain error depends more on the baseline redundancy than the array size. For instance, if an array is increased by adding outlier dishes that do not contribute to the redundancy of the baselines, the maximum gain error may increase [Dillon, 2016]. We present simulations for 5 different array layouts in order to test calibratability. Further work on array layouts has been undertaken by the HIRAX collaboration and what is shown here is only a test of the effect that the array layouts may have on gain error. There are of course, many factors to consider when choosing a telescope array which is out of the scope of this thesis. When comparing the gain errors for the various arrays, we once more assume an identity noise covariance matrix, so that the errors depend only on \textbf{A}. We present four of the arrays considered by the HIRAX collaboration as an alternative to the square which was shown already in Figure \ref{fig:lstsq_error_10by10_15by15_16by16}. The hex grid and both subgrids all contain 256 dishes, and can thus be compared to the $16 \times 16$ square grid. The 243-dish hera grid plotted here is in fact a scaled down version of the full 331-dish hera layout presented in Dillion, 2016. We notice that all 5 layouts have the same order gain error of $\sim 0.06$, which assures us that there isn't a particular layout that is much less calibratable than any other. However, we can analyze the discrepancies in gain errors and compare these to the baseline redundancy plot in Figure \ref{fig:baselineredundancy5arrays} to find the layout with the optimal baseline-redundancy relation so that we can see the effect of this on the gain error. The two subgrids have the same baseline-redundancy dependence, with 1012 unique baselines and maximum redundancy of 224, and hence the exact same gain errors. The subgrids have more unique baselines than the hera, square and hex. However, these unique baselines have a reduced redundancy. As a result, the gain error for the subgrids is higher than any of the other layouts. With regards to the hex and square, we notice that the baseline-redundancy plot is very similar for both, but the square does have slightly fewer unique baselines which means an increased redundancy of baselines. The arrangement of antennae in the square grid is therefore better for gain calibration than the hex. The hera grid has slightly higher redundancy than all the other arrays, and more unique baselines than the square and hex. Hence, it has the best baseline-redundancy relation and as a result, has the lowest gain errors, despite having fewer dishes.
+
+\begin{figure}
+	\centering
+\begin{subfigure}[b]{0.48\linewidth}
+	\includegraphics[width=\linewidth]{../PIPELINE/example_nosims_hex/hex_color_scatter_16by16_identity_noisecov}
+\end{subfigure}
+\begin{subfigure}[b]{0.48\linewidth}
+	\includegraphics[width=\linewidth]{../PIPELINE/example_hera_like_small/hera_colorplot_identitymat_amp}
+\end{subfigure}
+\begin{subfigure}[b]{0.48\linewidth}
+	\includegraphics[width=\linewidth]{../PIPELINE/example_nosims_jons_subgrid/colourplot_identity_matrix_jons_subgrid_256_amp}
+\end{subfigure}
+\begin{subfigure}[b]{0.48\linewidth}
+	\includegraphics[width=\linewidth]{../PIPELINE/example_nosims_subgrid/subgrid_16by16_identity_noise}
+\end{subfigure}
+\caption{Gain amplitude errors for four array layouts are presented. The top left (hex), bottom left (Subgrid 1) and bottom right (Subgrid 2) have 256 dishes while the top right(HERA) has 243 dishes. These four can be compared with the 256 dish square grid. The hex consists of 6 m dishes placed edge to edge, with every alternate row offset by 3 m so that a singular antenna has 6 antennae placed around it in a hex shape. The overall shape is not a symmetric hex, resulting in an asymmetric pattern in the gain errors. The HERA layout consists of two slanted squares and a separate diamond, that each contain 81 dishes, making up 243 dishes in total. Subgrid 1 has 8 blocks in x and y with 4 dishes in each block. Within each block, the dishes are placed edge-to-edge and between the blocks there is a 2 m gap between the edges of the dishes. Subgrid 2 instead has 2 blocks in x and y with 64 dishes in each block. Once more, the dishes within the block are placed edge-to-edge but we instead have a 3 m gap between the edges of the dishes in the separate blocks.}
+\label{fig:lstsq_4_array_layouts}
+\end{figure}
+
+\clearpage
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../corrcal2/Baseline_redundancy_5_arrays}
+	\caption{Plot showing the unique baselines and their corresponding redundancies for five different array layouts. We can see that the two subgrids have the exact same baseline-redundancy relation. The square, hex and HERA grids are very similar but the HERA has the highest maximum redundancy of 247 and a 512 unique baselines. The square and hex both have maximum redundancy of 240 but the hex has more unique baselines, which means fewer redundancies per unique baseline.}
+	\label{fig:baselineredundancy5arrays}
+\end{figure}
+
+
+\subsubsection{Linear calibration}
+Logarithmic calibration allows us to simplify our equation into a simple linear least squares problem. Though it can provide quick tests for gain calibratability, Logcal is not very accurate due to a slight bias. Thus, linear calibration (Lincal) is commonly used instead, with the results from Logcal providing a good first guess for Lincal. We do not quote results using Lincal in this thesis but instead provide a brief overview of Lincal as motivation for implementing this in future work. Ali 2015 and Liu 2010 discuss improvements to redundant calibration as a result of using Lincal or Omnical, which is a combination of the two algorithms. Further motivation to use Lincal is provided in the next section. 
+
+%Lincal stuff
+
+\subsubsection{Problems with redundant calibration}
+
+One of the drawbacks of redundant calibration, whether we use Logcal or Lincal, is that it assumes perfect redundancy and does not account for dish misalignments. To demonstrate the effect that an offset of as little as 10 cm could have on the gain errors, we introduce random offsets in the x and y positions of each antennae of up to 10 cm. For the $5 \times 5$ array, without gain fluctuations and with $50 K$ system temperature, we compute the mean and standard deviations of the relative gain errors for 100 runs. Note that the randomized dish scatter remains the same for each run and that only the noise and corresponding measured visibilities change for the different runs. We compare histograms of the relative error $\mu$ and $\sigma$ for the perfectly redundant case, that contains no dish scatter, and for the imperfect case with dish scatter. Note that the dish scatter will change the visibilities but we will compute the gain errors assuming a perfect grid, such that the \textbf{A} matrix does not change. In doing so, we find that introducing dish scatters that are on the order of 60 times smaller than the dish separation has roughly the same order increase on the gain errors. Thus, it is worth investigating a calibration algorithm that does not assume complete redundancy.
+
+\begin{figure}
+		\centering
+\begin{subfigure}[b]{0.48\linewidth}
+	\includegraphics[width=\linewidth]{../corrcal2/logcal_5by5_lownoise_nogainfluc_no_dish_scatter/mean_hist_logcal_5by5_nogainfluc_Tsys_50_no_dish_scatter}
+\end{subfigure}
+\begin{subfigure}[b]{0.48\linewidth}
+	\includegraphics[width=\linewidth]{../corrcal2/logcal_5by5_lownoise_nogainfluc_no_dish_scatter/std_hist_logcal_5by5_nogainfluc_Tsys_50_no_dish_scatter}
+\end{subfigure}
+\begin{subfigure}[b]{0.48\linewidth}
+	\includegraphics[width=\linewidth]{../corrcal2/logcal_5by5_lownoise_nogainfluc_pt1_dish_scatter/mean_hist_logcal_5by5_nogainfluc_Tsys_50_pt1_dish_scatter}
+\end{subfigure}
+\begin{subfigure}[b]{0.48\linewidth}
+	\includegraphics[width=\linewidth]{../corrcal2/logcal_5by5_lownoise_nogainfluc_pt1_dish_scatter/std_hist_logcal_5by5_nogainfluc_Tsys_50_pt1_dish_scatter}
+\end{subfigure}
+\caption{The mean and standard deviation of relative amplitude error is plotted for a set of 100 runs. The top two histograms are plotted for the perfectly redundant case in which dishes are perfectly placed on a square grid, 6 m apart. The bottom two plots showcase the more realistic scenario of uncertainties in the dish position which lead to a factor of $\sim 40$ increase in gain errors for 10 cm position uncertainty.}
+\label{hist_logcal_dish_sep_compare_no_dish_sep}
+\end{figure}
+
+
+
+
+
+
+\bibliographystyle{plain}
+\bibliography{bibthesis}
+
+
+
+\end{document}
